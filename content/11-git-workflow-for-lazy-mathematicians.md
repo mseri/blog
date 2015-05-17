@@ -2,7 +2,7 @@ Id: 11,
 Title: Git workflow for lazy mathematicians
 Date: 2013-10-21T16:40:27.000Z
 Modified: 2013-10-29T15:58:55.000Z
-Tags:
+Tags: tutorial, git
 Category: Blog
 Slug: git-workflow-for-lazy-mathematicians
 Authors: Marcello Seri

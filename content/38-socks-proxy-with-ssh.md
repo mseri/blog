@@ -2,7 +2,7 @@ Id: 38,
 Title: Socks proxy with ssh
 Date: 2014-10-31T18:24:36.000Z
 Modified: 2014-10-31T18:26:17.000Z
-Tags:
+Tags: Tips, vpn, socks proxy, ssh
 Category: Blog
 Slug: socks-proxy-with-ssh
 Authors: Marcello Seri

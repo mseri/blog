@@ -2,7 +2,7 @@ Id: 30,
 Title: Modern Art in Space
 Date: 2014-04-20T09:55:28.000Z
 Modified: 2014-04-20T09:55:27.000Z
-Tags:
+Tags: Hubble, pictures, space, hubble
 Category: Blog
 Slug: modern-art-in-space
 Authors: Marcello Seri

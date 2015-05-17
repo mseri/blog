@@ -2,7 +2,7 @@ Id: 31,
 Title: Move to ghc 7.8.2 on MacOSX
 Date: 2014-06-01T15:17:42.000Z
 Modified: 2014-06-02T11:51:51.000Z
-Tags:
+Tags: tutorial, cabal, ghc 7.8, setup, haskell
 Category: Blog
 Slug: move-to-ghc-7-8-2-on-macosx
 Authors: Marcello Seri

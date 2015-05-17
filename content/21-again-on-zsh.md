@@ -2,7 +2,7 @@ Id: 21,
 Title: Again on zsh
 Date: 2013-12-18T18:45:04.000Z
 Modified: 2013-12-18T18:50:12.000Z
-Tags:
+Tags: long life to zsh, prezto, custom theme
 Category: Blog
 Slug: again-on-zsh
 Authors: Marcello Seri

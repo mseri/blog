@@ -2,7 +2,7 @@ Id: 13,
 Title: A great workaround for targeting links in Ghost
 Date: 2013-10-29T15:53:23.000Z
 Modified: 2013-10-29T16:02:36.000Z
-Tags:
+Tags: ghost, hack, target, workaround
 Category: Blog
 Slug: a-great-workaround-for-targeting-links-in-ghost
 Authors: Marcello Seri

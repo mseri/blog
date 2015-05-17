@@ -2,7 +2,7 @@ Id: 8,
 Title: nginx, ghost 0.3.3 and modsecurity
 Date: 2013-10-18T11:00:00.000Z
 Modified: 2013-10-29T15:59:25.000Z
-Tags:
+Tags: nginx, modsecurity, fix, ghost
 Category: Blog
 Slug: nginx-ghost-0-3-3-and-modsecurity
 Authors: Marcello Seri

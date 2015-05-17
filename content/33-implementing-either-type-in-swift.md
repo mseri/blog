@@ -2,7 +2,7 @@ Id: 33,
 Title: Implementing Either type in Swift
 Date: 2014-06-04T14:11:25.000Z
 Modified: 2014-06-04T16:11:02.000Z
-Tags:
+Tags: haskell, either, types, swift
 Category: Blog
 Slug: implementing-either-type-in-swift
 Authors: Marcello Seri

@@ -2,7 +2,7 @@ Id: 17,
 Title: On the differential logistic equation
 Date: 2013-12-06T14:15:40.000Z
 Modified: 2013-12-06T14:44:10.000Z
-Tags:
+Tags: mathematics, logistic equation, applied math, ODE, population growth, verhulst equation, exponential growth
 Category: Blog
 Slug: thought-on-the-differential-logistic-equation
 Authors: Marcello Seri

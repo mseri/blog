@@ -25,20 +25,6 @@ TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = 'en'
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
-
-DEFAULT_PAGINATION = 5
-
-PAGINATION_PATTERNS = (
-     (1, '{base_name}/', '{base_name}/index.html'),
-     (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
-)
-
 ARTICLE_URL     = '{slug}/'
 ARTICLE_SAVE_AS = '{slug}/index.html'
 
@@ -54,3 +40,18 @@ GPLUS    = "+MarcelloSeri"
 GHUB     = "mseri"
 MATHJAX = True
 
+DEFAULT_PAGINATION = 5
+
+# This is broken as of Pelican 3.5.0
+# see https://github.com/getpelican/pelican/issues/1615
+# PAGINATION_PATTERNS = (
+#       (1, '{base_name}/', '{base_name}/index.html'),
+#       (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
+# )
+
+# Feed generation is usually not desired when developing
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None

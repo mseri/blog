@@ -2,7 +2,7 @@ Id: 34,
 Title: Piping with Swift
 Date: 2014-06-16T10:03:04.000Z
 Modified: 2014-06-16T10:31:56.000Z
-Tags:
+Tags: swift, pipe, operators, functional
 Category: Blog
 Slug: piping-with-swift
 Authors: Marcello Seri

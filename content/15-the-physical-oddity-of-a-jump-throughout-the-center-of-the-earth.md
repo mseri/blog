@@ -1,7 +1,7 @@
 Id: 15,
 Title: The physical oddity of a jump throughout the center of the Earth
 Date: 2013-11-07T18:23:37.000Z
-Tags:
+Tags: 
 Category: Blog
 Slug: the-physical-oddity-of-a-jump-throughout-the-center-of-the-earth
 Authors: Marcello Seri

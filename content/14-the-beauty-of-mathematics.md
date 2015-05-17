@@ -2,7 +2,7 @@ Id: 14,
 Title: The beauty of mathematics
 Date: 2013-11-05T19:36:46.000Z
 Modified: 2013-11-05T19:36:46.000Z
-Tags:
+Tags: mathematics, beauty
 Category: Blog
 Slug: the-beauty-of-mathematics
 Authors: Marcello Seri

@@ -2,7 +2,7 @@ Id: 22,
 Title: Convert djvu files to a decently small pdf
 Date: 2013-12-22T21:05:25.000Z
 Modified: 2013-12-22T21:05:25.000Z
-Tags:
+Tags: tips, djvu, conversion, pdf
 Category: Blog
 Slug: convert-djvu-files-to-a-decently-small-pdf
 Authors: Marcello Seri

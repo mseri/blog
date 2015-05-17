@@ -2,7 +2,7 @@ Id: 28,
 Title: Installing scientific python libraries on OSX
 Date: 2014-02-19T19:06:40.000Z
 Modified: 2015-01-13T21:09:40.000Z
-Tags:
+Tags: tutorial, homebrew, matplotlib, numpy
 Category: Blog
 Slug: installing-scientific-python-libraries-on-osx
 Authors: Marcello Seri

@@ -2,7 +2,7 @@ Id: 24,
 Title: Edward Snowden interviewed by the NDR channel
 Date: 2014-02-05T16:08:00.000Z
 Modified: 2014-02-07T16:51:17.000Z
-Tags:
+Tags: leaks, Video Interview, NSA, Edward Snowden, Global Surveillance
 Category: Blog
 Slug: edward-snowden-interviewed-by-the-ndr-channel
 Authors: Marcello Seri

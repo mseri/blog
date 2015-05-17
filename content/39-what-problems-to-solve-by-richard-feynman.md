@@ -2,7 +2,7 @@ Id: 39,
 Title: What Problems to Solve - By Richard Feynman
 Date: 2014-11-21T15:16:10.000Z
 Modified: 2014-11-21T15:16:10.000Z
-Tags:
+Tags: feynman
 Category: Blog
 Slug: what-problems-to-solve-by-richard-feynman
 Authors: Marcello Seri

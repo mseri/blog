@@ -2,7 +2,7 @@ Id: 9,
 Title: A simple script to update ghost
 Date: 2013-10-19T19:04:01.000Z
 Modified: 2013-10-29T16:00:23.000Z
-Tags:
+Tags: ghost, bash
 Category: Blog
 Slug: a-simple-script-to-update-ghost
 Authors: Marcello Seri

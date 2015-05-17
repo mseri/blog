@@ -2,7 +2,7 @@ Id: 18,
 Title: On iTerm2 and  solarized dark
 Date: 2013-12-07T18:45:37.000Z
 Modified: 2013-12-07T18:49:21.000Z
-Tags:
+Tags: long life to zsh, solarized, iTerm 2, Tips
 Category: Blog
 Slug: on-iterm2-and-solarized-dark
 Authors: Marcello Seri

@@ -2,7 +2,7 @@ Id: 3,
 Title: Ghost on Amazon EC2 without using sudo
 Date: 2013-09-24T11:00:00.000Z
 Modified: 2013-10-29T15:56:32.000Z
-Tags:
+Tags: Amazon EC2, nginx, forever, security, iptables
 Category: Blog
 Slug: ghost-on-amazon-ec2-without-using-sudo
 Authors: Marcello Seri

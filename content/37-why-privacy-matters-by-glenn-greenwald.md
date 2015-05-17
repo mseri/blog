@@ -2,7 +2,7 @@ Id: 37,
 Title: Why privacy matters by Glenn Greenwald
 Date: 2014-10-19T14:59:53.000Z
 Modified: 2014-10-19T15:01:42.000Z
-Tags:
+Tags: Snowden, Mass surveillance, video
 Category: Blog
 Slug: why-privacy-matters-by-glenn-greenwald
 Authors: Marcello Seri

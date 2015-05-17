@@ -2,7 +2,7 @@ Id: 41,
 Title: Left pipe in Haskell
 Date: 2014-11-21T15:24:54.000Z
 Modified: 2014-11-21T15:24:54.000Z
-Tags:
+Tags: haskell, pipe, random toughts
 Category: Blog
 Slug: left-pipe-in-haskell
 Authors: Marcello Seri

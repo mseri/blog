@@ -2,7 +2,7 @@ Id: 29,
 Title: Installing Scientific Python 3 libraries on OSX (and julia with IJulia)
 Date: 2014-04-15T13:35:03.000Z
 Modified: 2014-04-15T15:00:24.000Z
-Tags:
+Tags: qutip, scipy, numpy, pip, tutoria, ipython, python3, julia, ijulia
 Category: Blog
 Slug: installing-scientific-python-3-libraries-on-osx-and-julia-with-ijulia
 Authors: Marcello Seri

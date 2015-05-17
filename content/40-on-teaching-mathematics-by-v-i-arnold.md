@@ -2,7 +2,7 @@ Id: 40,
 Title: On teaching mathematics - By V. I. Arnold
 Date: 2015-02-06T01:11:05.000Z
 Modified: 2015-02-06T01:11:55.000Z
-Tags:
+Tags: mathematics, arnold, letter, teaching
 Category: Blog
 Slug: on-teaching-mathematics
 Authors: Marcello Seri

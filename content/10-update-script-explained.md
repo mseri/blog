@@ -2,7 +2,7 @@ Id: 10,
 Title: Update script explained
 Date: 2013-10-21T14:02:38.000Z
 Modified: 2013-10-29T16:00:05.000Z
-Tags:
+Tags: ghost, update, bash
 Category: Blog
 Slug: update-script-explained
 Authors: Marcello Seri

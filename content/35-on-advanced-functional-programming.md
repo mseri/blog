@@ -2,7 +2,7 @@ Id: 35,
 Title: On Advanced Functional Programming
 Date: 2014-10-15T00:58:59.000Z
 Modified: 2014-10-19T14:56:32.000Z
-Tags:
+Tags: functional programming, courses, edX, references
 Category: Blog
 Slug: on-advanced-functional-programming
 Authors: Marcello Seri

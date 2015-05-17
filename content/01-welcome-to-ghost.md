@@ -2,7 +2,7 @@ Id: 1,
 Title: Welcome to Ghost
 Date: 2013-09-22T11:00:00.000Z
 Modified: 2013-10-18T19:20:54.000Z
-Tags:
+Tags: Getting Started
 Category: Blog
 Slug: welcome-to-ghost
 Authors: Marcello Seri

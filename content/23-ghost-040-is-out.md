@@ -2,7 +2,7 @@ Id: 23,
 Title: Ghost 0.4.0 is out
 Date: 2014-01-13T13:20:46.000Z
 Modified: 2014-01-13T13:20:46.000Z
-Tags:
+Tags: ghost, update, script, news
 Category: Blog
 Slug: ghost-0-4-0-is-out
 Authors: Marcello Seri

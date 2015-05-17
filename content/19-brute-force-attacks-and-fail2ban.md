@@ -2,7 +2,7 @@ Id: 19,
 Title: Brute force attacks and fail2ban
 Date: 2013-12-12T15:00:07.000Z
 Modified: 2013-12-12T15:01:37.000Z
-Tags:
+Tags: fix, regexp, fail2ban, brute force
 Category: Blog
 Slug: brute-force-attacks-and-fail2ban
 Authors: Marcello Seri

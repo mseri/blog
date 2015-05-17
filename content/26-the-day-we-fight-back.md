@@ -2,7 +2,7 @@ Id: 26,
 Title: The Day We Fight Back
 Date: 2014-02-11T16:25:34.000Z
 Modified: 2014-02-11T16:25:34.000Z
-Tags:
+Tags: Edward Snowden, Global Surveillance, NSA, Day We Fight Back, 13 principles
 Category: Blog
 Slug: the-day-we-fight-back
 Authors: Marcello Seri

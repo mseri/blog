@@ -2,7 +2,7 @@ Id: 25,
 Title: The pale blue dot from Mars (and more)
 Date: 2014-02-07T16:50:52.000Z
 Modified: 2014-02-07T16:52:00.000Z
-Tags:
+Tags: NASA, pale blue dot, JPL
 Category: Blog
 Slug: the-pale-blue-dot-from-mars-and-more
 Authors: Marcello Seri
