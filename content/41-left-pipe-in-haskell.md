@@ -1,4 +1,4 @@
-Id: 41,
+Id: 41
 Title: Left pipe in Haskell
 Date: 2014-11-21T15:24:54.000Z
 Modified: 2014-11-21T15:24:54.000Z

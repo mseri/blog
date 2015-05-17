@@ -1,4 +1,4 @@
-Id: 16,
+Id: 16
 Title: Deploying Anchor CMS on OpenShift
 Date: 2013-11-08T18:24:02.000Z
 Modified: 2013-11-22T12:01:13.000Z

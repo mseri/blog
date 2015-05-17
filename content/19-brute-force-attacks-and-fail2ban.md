@@ -1,4 +1,4 @@
-Id: 19,
+Id: 19
 Title: Brute force attacks and fail2ban
 Date: 2013-12-12T15:00:07.000Z
 Modified: 2013-12-12T15:01:37.000Z

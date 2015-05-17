@@ -1,4 +1,4 @@
-Id: 36,
+Id: 36
 Title: Fix WiFi on OS X by tweaking the MTU
 Date: 2014-10-15T23:18:23.000Z
 Modified: 2014-10-19T14:54:46.000Z

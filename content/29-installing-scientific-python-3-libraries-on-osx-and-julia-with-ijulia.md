@@ -1,4 +1,4 @@
-Id: 29,
+Id: 29
 Title: Installing Scientific Python 3 libraries on OSX (and julia with IJulia)
 Date: 2014-04-15T13:35:03.000Z
 Modified: 2014-04-15T15:00:24.000Z

@@ -1,4 +1,4 @@
-Id: 18,
+Id: 18
 Title: On iTerm2 and  solarized dark
 Date: 2013-12-07T18:45:37.000Z
 Modified: 2013-12-07T18:49:21.000Z

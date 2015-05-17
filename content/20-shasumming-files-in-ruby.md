@@ -1,4 +1,4 @@
-Id: 20,
+Id: 20
 Title: Shasumming files in ruby
 Date: 2013-12-13T22:33:31.000Z
 Modified: 2013-12-13T22:42:19.000Z

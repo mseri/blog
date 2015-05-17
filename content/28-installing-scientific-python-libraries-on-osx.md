@@ -1,4 +1,4 @@
-Id: 28,
+Id: 28
 Title: Installing scientific python libraries on OSX
 Date: 2014-02-19T19:06:40.000Z
 Modified: 2015-01-13T21:09:40.000Z

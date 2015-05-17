@@ -1,4 +1,4 @@
-Id: 10,
+Id: 10
 Title: Update script explained
 Date: 2013-10-21T14:02:38.000Z
 Modified: 2013-10-29T16:00:05.000Z

@@ -1,4 +1,4 @@
-Id: 22,
+Id: 22
 Title: Convert djvu files to a decently small pdf
 Date: 2013-12-22T21:05:25.000Z
 Modified: 2013-12-22T21:05:25.000Z

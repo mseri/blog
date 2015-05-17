@@ -1,4 +1,4 @@
-Id: 31,
+Id: 31
 Title: Move to ghc 7.8.2 on MacOSX
 Date: 2014-06-01T15:17:42.000Z
 Modified: 2014-06-02T11:51:51.000Z

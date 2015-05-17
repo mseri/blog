@@ -1,4 +1,4 @@
-Id: 25,
+Id: 25
 Title: The pale blue dot from Mars (and more)
 Date: 2014-02-07T16:50:52.000Z
 Modified: 2014-02-07T16:52:00.000Z

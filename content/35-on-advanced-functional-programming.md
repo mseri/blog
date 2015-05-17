@@ -1,4 +1,4 @@
-Id: 35,
+Id: 35
 Title: On Advanced Functional Programming
 Date: 2014-10-15T00:58:59.000Z
 Modified: 2014-10-19T14:56:32.000Z

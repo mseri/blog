@@ -1,4 +1,4 @@
-Id: 32,
+Id: 32
 Title: Fix Hombrew on OS X Yosemite
 Date: 2014-06-03T15:58:37.000Z
 Modified: 2014-08-29T10:40:50.000Z

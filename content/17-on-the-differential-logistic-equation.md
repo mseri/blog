@@ -1,4 +1,4 @@
-Id: 17,
+Id: 17
 Title: On the differential logistic equation
 Date: 2013-12-06T14:15:40.000Z
 Modified: 2013-12-06T14:44:10.000Z

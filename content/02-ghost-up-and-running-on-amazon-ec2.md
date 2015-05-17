@@ -1,4 +1,4 @@
-Id: 2,
+Id: 2
 Title: Ghost up and running on Amazon EC2
 Date: 2013-09-23T11:00:00.000Z
 Modified: 2013-10-29T15:57:08.000Z

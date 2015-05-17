@@ -1,4 +1,4 @@
-Id: 24,
+Id: 24
 Title: Edward Snowden interviewed by the NDR channel
 Date: 2014-02-05T16:08:00.000Z
 Modified: 2014-02-07T16:51:17.000Z

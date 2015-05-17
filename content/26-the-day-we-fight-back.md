@@ -1,4 +1,4 @@
-Id: 26,
+Id: 26
 Title: The Day We Fight Back
 Date: 2014-02-11T16:25:34.000Z
 Modified: 2014-02-11T16:25:34.000Z

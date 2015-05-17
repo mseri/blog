@@ -1,4 +1,4 @@
-Id: 5,
+Id: 5
 Title: Save your battery life
 Date: 2013-09-29T11:00:00.000Z
 Modified: 2013-10-29T16:01:57.000Z
