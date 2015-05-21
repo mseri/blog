@@ -20,9 +20,9 @@ Recently, `ghc` reached version `7.8`, and that shipped a huge amount of improve
 The solution was pretty simple and straightforward in the end, and I believe this could be handy for other people too strognly enough to write this post.
 
 First of all I uninstalled ghc 7.6, cabal-install or haskell platform (if you have it). Then I reinstalled the 7.8 branch of ghc, thanks to Homebrew that was pretty straightforward:
-```
-brew install ghc --devel
-```
+
+    :::sh
+    brew install ghc --devel
 
 Additionally I had to remove the `.cabal` and `.ghc` folder in my home. There were pieces of configurations that were creating some conflicts, move them if you feel unsure and want to avoid the deletion. 
 
@@ -31,18 +31,20 @@ Then I needed `cabal-install`. This requires slightly more work, especially it d
 First download the sources for `cabal-install` from [here](http://www.haskell.org/cabal/download.html). Just the `cabal-install tool` sources, it is going to update the `Cabal` library during its setup.
 
 Untar the file, e.g.
-```
-tar zxvf cabal-install-1.20.0.2.tar.gz
-```
+
+    :::sh
+    tar zxvf cabal-install-1.20.0.2.tar.gz
+
 and enter the newly created folder, e.g
-```
-cd cabal-install-1.20.0.2
-```
+
+    :::sh
+    cd cabal-install-1.20.0.2
 
 Now it all reduces to run
-```
-./bootstrap.sh --no-doc
-```
+
+    :::sh
+    ./bootstrap.sh --no-doc
+
 (append `--global` if you prefer to install it in `/usr/local` instead of `$HOME/cabal`).
 
 The `--no-docs` flag seemed necessary to avoid a number of errors appearing in the compilation process and forcing me to install a number of packages by hand. Sadly I could not figure out the problem in the script yet, but that flag seems a reasonable workaround and I will install the docs later anyhow.
@@ -50,9 +52,10 @@ The `--no-docs` flag seemed necessary to avoid a number of errors appearing in t
 You may still get some error related to broken package, in such cas just `ghc-pkg unregister <brokenpackagename>` and rerun the script (in my case they were `text` and `mtl`).
 
 When cabal is installed it is a good idea to run
-```
-cabal update
-```
+
+    :::sh
+    cabal update
+
 and follow the instructions.
 
 Remember that `.cabal/bin` must be in your `$PATH`.
@@ -72,49 +75,51 @@ I've additionally got a strange error related to `happy` and `haskell-src-exts`,
 When the setup is complete, you can run `hoogle data` to create a local database of entries, or `hoogle data all` if you want the complete hoogle dataset (this takes a loooong time).
 
 If you don't plan to use `goa` or `lambdabot` you can integrate `hoogle` in `ghci` by adding 
-```
-:def hoogle \str -> return $ ":! hoogle --count=15 \"" ++ str ++ "\""
-```
+
+    :::haskell
+    :def hoogle \str -> return $ ":! hoogle --count=15 \"" ++ str ++ "\""
+
 to your `.ghci` file.
 
 I believe that `ghci` is nothing without [lambdabot](http://www.haskell.org/haskellwiki/Lambdabot). Therefore `cabal install goa lambdabot` is the inevitable second step. Note that `goa` is not a mistake but a [useful addition](http://hackage.haskell.org/package/goa).
 
 `lambdabot <= 4.3.0.1` have some problems with `ghc-7.8.2` and you will get a compilation error. To fix it you first `cabal install goa` by itself, then `cabal get lambdabot; cd lambdabot-4.3.0.1` and then you need to replace the content of `src/Lambdabot/Monad.hs-boot` with
-```
-{-# LANGUAGE RankNTypes #-}
-module Lambdabot.Monad where
 
-import Control.Monad.Reader
-import Data.IORef
+    :::haskell
+    {-# LANGUAGE RankNTypes #-}
+    module Lambdabot.Monad where
 
-data IRCRWState
-data IRCRState
-newtype LB a = LB {runLB :: ReaderT (IRCRState, IORef IRCRWState) IO a} 
+    import Control.Monad.Reader
+    import Data.IORef
 
-instance Monad LB
-```
+    data IRCRWState
+    data IRCRState
+    newtype LB a = LB {runLB :: ReaderT (IRCRState, IORef IRCRWState) IO a} 
+
+    instance Monad LB
+
 (the above code is due to [artella-coding](https://github.com/mokus0/lambdabot/pull/79) and should be merged in the next release of lambdabot). 
 Then save and run `cabal configure && cabal install`.
 
 Then in my `.ghci` I have
-```
-:m - Prelude
-:m + GOA
-setLambdabotHome "/Users/marcelloseri/.cabal/bin"
-:def bs        lambdabot "botsnack"
-:def pl        lambdabot "pl"
-:def unpl      lambdabot "unpl"
-:def redo      lambdabot "redo"
-:def undo      lambdabot "undo"
-:def index     lambdabot "index"
-:def docs      lambdabot "docs"
-:def instances lambdabot "instances"
-:def hoogle    lambdabot "hoogle"
-:def source    lambdabot "fptools"
-:def where     lambdabot "where"
-:def version   lambdabot "version"
-:def src       lambdabot "src"
-```
+
+    :::haskell
+    :m - Prelude
+    :m + GOA
+    setLambdabotHome "/Users/marcelloseri/.cabal/bin"
+    :def bs        lambdabot "botsnack"
+    :def pl        lambdabot "pl"
+    :def unpl      lambdabot "unpl"
+    :def redo      lambdabot "redo"
+    :def undo      lambdabot "undo"
+    :def index     lambdabot "index"
+    :def docs      lambdabot "docs"
+    :def instances lambdabot "instances"
+    :def hoogle    lambdabot "hoogle"
+    :def source    lambdabot "fptools"
+    :def where     lambdabot "where"
+    :def version   lambdabot "version"
+    :def src       lambdabot "src"
 
 I like to see what my code should look like. Often [hlint](http://community.haskell.org/~ndm/hlint/) is of great help for this (especially when you run it directly in your favourite editor, e.g. `vim` and `Sublime Text`): thus `cabal install hlint`.
 

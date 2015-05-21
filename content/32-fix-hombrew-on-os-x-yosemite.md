@@ -18,13 +18,13 @@ The first error I've got while running `brew update` was related to _missing sys
 **Update**: as of this morning Homebrew has been fixed, you will not need to modify Hombrew's files if you update to Yosemite after having run `brew update`.
 
 If you did update the files as above and get a _failed merge_ error, you will need to edit them again and fix the merge. On top of each file you will see something like
-```
-<<<<<<< HEAD:mergetest
-Your changes
-=======
-Something new
->>>>>>> 4e2b407f501b68f8588aa645acafffa0224b9b78:mergetest
-```
+
+    <<<<<<< HEAD:mergetest
+    Your changes
+    =======
+    Something new
+    >>>>>>> 4e2b407f501b68f8588aa645acafffa0224b9b78:mergetest
+
 Delete everything except for the 'Something new' line. Then save and in the end run `cd $(brew --repository) && git commit -a -m 'fix brew update'`
 
 ------

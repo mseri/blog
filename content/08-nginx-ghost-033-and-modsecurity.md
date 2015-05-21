@@ -17,12 +17,12 @@ Due to some security fixes in the last ghost version, modsecurity interpret the 
 
 If I understood what expressjs/connect are doing under the hood, there should be no problem in dropping the rule that creates this false positive from the modsecrutiry configuration. The faster way (assuming that you don't need this rule somewhere else) is to comment it in the configuration file
 
-```
-sed -i '/981246/s/^/# /' modsecurity_crs_41_sql_injection_attacks.conf
-```
+    ::sh
+    sed -i '/981246/s/^/# /' modsecurity_crs_41_sql_injection_attacks.conf
+
 and then reload [nginx](http://nginx.org)
-```
-/opt/nginx/sbin/nginx -s reload
-```
+
+    ::sh
+    /opt/nginx/sbin/nginx -s reload
 
 Otherwise you should [selectively remove](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual#secruleremovebyid) the rule for the subdomain that is pointing to your ghost instance. But I suppose that if you need this last configuration you already know how to do it...

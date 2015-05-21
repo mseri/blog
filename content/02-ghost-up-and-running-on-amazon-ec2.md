@@ -19,9 +19,10 @@ _screen_ is a sort of VNC or Remote Desktop for Unix consoles. More technically 
  > If your local computer crashes, or you are connected via a modem and lose the connection, the processes or login sessions you establish through screen don't go away. You can resume your screen sessions with the following command: `screen -r`
  
 Awesome! In fact what I did was just run
-```
-screen sudo /usr/local/bin/npm start --production
-```
+
+    :::sh
+    screen sudo /usr/local/bin/npm start --production
+
 close the terminal and log into my ghost blog to write this post. 
 
 **As you can see things kept working properly!**

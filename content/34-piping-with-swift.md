@@ -17,62 +17,64 @@ Given that in Swift `|`, `.` and `||` have already quite precise and distinct me
 Swift is unbelievably flexible from this point of view: one can easily define new generic `infix`, `prefix` or `suffix` operator, and state their associativity and precedence properties. You'll soon see that the syntax speaks by itself!
 
 Let's try to define a left associative generic pipe.
-```
-operator infix |> { 
-    associativity left 
-}
-func |> <L,R>(left: L, right: L -> R) -> R {
-    return right(left);
-}
-```
+
+    :::swift
+    operator infix |> { 
+        associativity left 
+    }
+    func |> <L,R>(left: L, right: L -> R) -> R {
+        return right(left);
+    }
 
 Then we could use it to chain some function together in an elegant way. For example
-```
-func unique<T:Hashable>(array: Array<T>) -> Array<T>{
-    var filter = Dictionary<T,Bool>()
-    var result = Array<T>()
-    for i in 0..array.count {
-        if let elem = filter[array[i]] {
-            continue
-        } else {
-            filter[array[i]] = true
-            result.append(array[i])
+
+    :::swift
+    func unique<T:Hashable>(array: Array<T>) -> Array<T>{
+        var filter = Dictionary<T,Bool>()
+        var result = Array<T>()
+        for i in 0..array.count {
+            if let elem = filter[array[i]] {
+                continue
+            } else {
+                filter[array[i]] = true
+                result.append(array[i])
+            }
         }
+        return result
     }
-    return result
-}
 
-[1, 2, 3, 3, 3, 4, 5, 5, 6, 7] |> sort |> unique |> toString |> println
+    [1, 2, 3, 3, 3, 4, 5, 5, 6, 7] |> sort |> unique |> toString |> println
 
-// prints '[1,2,3,4,5,6,7]'
-```
+    // prints '[1,2,3,4,5,6,7]'
 
 I strongly believe that some (better) implementation of the pipe should become part of Swift standard library. For example it would be nice to be able to chain subscripts (e.g. `filter[array[i]]` replaced by `i |> array[$0] |> filter[$0]`) or more flexible maps (e.g. `[1, 2, 3, 3, 3, 4, 5, 5, 6, 7] |> sort |> unique |> map($0, {x in x * x})`) . But maybe I am asking for too much...
 
 While writing this example, I was wondering what is the best way to remove duplicates in a Swift array? The shortest code I could come up with is
-```
-func unique<T:Hashable>(array: T[]) -> T[] {
-    var filter = Dictionary<T,Bool>()
-    for i in 0..array.count {
-            filter[array[i]] = true
+
+    :::swift
+    func unique<T:Hashable>(array: T[]) -> T[] {
+        var filter = Dictionary<T,Bool>()
+        for i in 0..array.count {
+                filter[array[i]] = true
+        }
+        return Array(filter.keys)
     }
-    return Array(filter.keys)
-}
-```
+
 but it is probably not the fastest one. Nevertheless, I would probably use an underlying dictionary to implement a `Set` type and use the `Set` to remove duplicates. Note here that `T[]` is just syntactic sugar for `Array<T>`.
 
 Another version, using the builtin `contains` function could be
-```
-func unique<T : Equatable>(array: T[]) -> T[] {
-    var result = T[]()
-    for x in array {
-        if !contains(result, x) {
-            result += x
+
+    :::swift
+    func unique<T : Equatable>(array: T[]) -> T[] {
+        var result = T[]()
+        for x in array {
+            if !contains(result, x) {
+                result += x
+            }
         }
+        return result
     }
-    return result
-}
-```
+
 Again `+=` stands for `append` when used with arrays.
 
 I guess the fastest code would be to use a quicksort and remove the duplicates while sorting, but it (as my second implementation of `unique`) would not preserve the order of appearence.

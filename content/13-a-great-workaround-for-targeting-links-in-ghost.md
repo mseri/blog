@@ -24,11 +24,12 @@ HuyNQ has a post showing a workaround that is as simple as it is brilliant!
 Apparently the markdown interpreter of Ghost makes no assumption regarding the characters contained in the link you add: this means that `"` is not converted to `&dquot;`, but is transferred to the code as it is _(this is potentially bad, as it could be used for attacks, but imho if some attacker can change the text in the database you should have other more serious worries)_.
 
 This means that adding `` to the URL will generate an anchor with the proper target. In other words
-```
-[the text you see](http://theli.nk)
-```
+
+    [the text you see](http://theli.nk)
+
 will generate
-```
-<a href="http://theli.nk">the text you see</a>
-```
+
+    :::html
+    <a href="http://theli.nk">the text you see</a>
+
 that is exactly what I was looking for.

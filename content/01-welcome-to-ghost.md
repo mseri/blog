@@ -7,6 +7,10 @@ Category: Blog
 Slug: welcome-to-ghost
 Authors: Marcello Seri
 
+**Update**: this site is now statically served using Pelican. I had problems with my VPS provider and finally decided to simplify the management and opted for a statically generated website. Ghost was very light and did well its job, if I had a multi-user environment I would be sticking with it. I still keep all the content from the previous blog, including this post.
+
+* * *
+
 That's just the welcome post of a succesful [ghost](http://ghost.org) installation. I like to keep it and have a look of what one can do with Markdown.
 
 Down in the page, if for some reason you want to read it, you will find a broken image. Don't worry, it's meant to be so :)

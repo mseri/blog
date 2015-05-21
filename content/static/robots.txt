@@ -1,1 +1,8 @@
 User-agent: *
+Disallow: /theme/
+Disallow: /tag/
+Disallow: /tags/
+Disallow: /category/
+Disallow: /author/
+Disallow: /authors/
+Disallow: /uploads/

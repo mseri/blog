@@ -33,20 +33,23 @@ If you set up ghost to listen on the port 8080, it's likely that you have nothin
 ![The AWS console](/images/03-screenshot.png)
 
 If it doesn't work try to execute the following command (only for linux) in a terminal and it should start working
-```
-sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
-```
+    
+    :::sh
+    sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
+
 If you are still using port 2360 replace 8080 with the appropriate value. You may need to enable the access to the proper ports, to do it is enough to execute the following. 
-```
-sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
-sudo iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
-```
+
+    :::sh
+    sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+    sudo iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
+
 I reccomend to **not play with iptables rules in a production environment if you don't know what you are doing**.
 
 To check if the rules have been accepted you can list the configuration with 
-```
-sudo iptables -L
-```
+
+    :::sh
+    sudo iptables -L
+
 and to delete the previous rules in case they didn't work just type them again in the terminal with `-A` replaced by `-D`.
 
 This same procedure can be adapted to other unix systems just using the appropriate firewall rules (like packet filter on BSD).
@@ -54,33 +57,36 @@ This same procedure can be adapted to other unix systems just using the appropri
 ## Install and use forever
 
 Now that we can start ghost without any need of using sudo, we only have to install forever. Open a terminal and execute
-```
-sudo /usr/local/bin/npm install -g forever
-```
+
+    :::sh
+    sudo /usr/local/bin/npm install -g forever
+
 then enter in the ghost folder with `cd path_to_your/ghost_folder` and run
-```
-NODE_ENV=production forever start index.js
-```
+    
+    :::sh
+    NODE_ENV=production forever start index.js
 
 Open your browser and enjoy your Ghost Blog!
 
 _If you are using the development configuration instead of the production one, just drop `NODE_ENV=production` from the previous command._
 
 To kill the server, just use
-```
-forever list
-forever stop 0
-```
+    
+    :::sh
+    forever list
+    forever stop 0
+
 where 0 is the ghost process. Or eventually
-```
-forever stopall
-```
+
+    :::sh
+    forever stopall
 
 ### Check permissions
 
 If you were running your ghost blog using sudo, you may not be able to access the database or some folders. In such case is enough to fix its permissions. Open a terminal, enter in the ghost folder with `cd path_to_your/ghost_folder` and execute
-```
-sudo chown yourusername -R *
-sudo chgrp yourusergroup -R *
-```
+
+    :::sh
+    sudo chown yourusername -R *
+    sudo chgrp yourusergroup -R *
+
 where you have to replace `yourusername` and `yourusergroup` with the appropriate values. For Amazon EC2 the are in general both equal to `ec2-user`. 

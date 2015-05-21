@@ -27,22 +27,17 @@ Apparently the filter that I was using for sasl had some problems: tonight I've 
 
 A check on it is pretty easy to do. It is enough to run
 
-```
-fail2ban-regex /var/log/mail.log /etc/fail2ban/filter.d/sasl.conf
-```
+    :::sh
+    fail2ban-regex /var/log/mail.log /etc/fail2ban/filter.d/sasl.conf
 
 to see if the filters contained in `/etc/fail2ban/filter.d/sasl.conf` are identifying anything in the logs. Despite `mail.log` was filled by lines of the form
 
-```
-Dec 11 03:23:44 ____ postfix/smtpd[12734]: warning: unknown[___.___.___.___]: SASL LOGIN authentication failed: Connection lost to authentication server
-Dec 11 03:23:44 ____ postfix/smtpd[12735]: warning: hostname kursejifjalet.com does not resolve to address ___.___.___.___: Name or service not known
-```
+    Dec 11 03:23:44 ____ postfix/smtpd[12734]: warning: unknown[___.___.___.___]: SASL LOGIN authentication failed: Connection lost to authentication server
+    Dec 11 03:23:44 ____ postfix/smtpd[12735]: warning: hostname kursejifjalet.com does not resolve to address ___.___.___.___: Name or service not known
 
 I got a negative answer. Apparently, when I first setted up my configuration I probably slightly changed the filter (or I had an older version???) with a broken regexp. Anyhow the attack exposed the problem, and the fix is pretty simple. It was enough to modify the filter line in `/etc/fail2ban/filter.d/sasl.conf` with 
 
-```
-failregex = (?i): warning: [-._\w]+\[<HOST>\]: SASL LOGIN authentication failed(: [A-Za-z0-9+/ ]*)?$
-```
+    failregex = (?i): warning: [-._\w]+\[<HOST>\]: SASL LOGIN authentication failed(: [A-Za-z0-9+/ ]*)?$
 
 and reload `fail2ban` to fix the issue.
 
@@ -52,6 +47,4 @@ and reload `fail2ban` to fix the issue.
 
 Anyway if you happen to have the same problem, I suggest you to use the filter rule suggested on the link above (it is more generic and not adapted to a particular setting):
 
-```
-failregex = (?i): warning: [-._\w]+\[<HOST>\]: SASL (?:LOGIN|PLAIN|(?:CRAM|DIGEST)-MD5) authentication failed(: [A-Za-z0-9+/ ]*)?$
-```
+    failregex = (?i): warning: [-._\w]+\[<HOST>\]: SASL (?:LOGIN|PLAIN|(?:CRAM|DIGEST)-MD5) authentication failed(: [A-Za-z0-9+/ ]*)?$

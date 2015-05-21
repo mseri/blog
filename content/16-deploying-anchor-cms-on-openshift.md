@@ -29,7 +29,8 @@ To use your account I strongly encourage you to install and set up  the OpenShif
 To install the [rhc Client Tools](https://www.openshift.com/developers/rhc-client-tools-install) go [straight to this website](https://www.openshift.com/developers/rhc-client-tools-install) and follow the instructions.
 
 On a Mac OSX + brew configuration you may get an error related to SSL certificates when you run `gem install rhc` step. I have solved the problem with the following procedure
-
+    
+    :::sh
     $ brew update
     $ brew install openssl
     $ brew link openssl --force
@@ -38,7 +39,8 @@ On a Mac OSX + brew configuration you may get an error related to SSL certificat
 If you use `rvm` you may even try with `rvm osx-ssl-certs update all`.
 
 Now that `rhc` is installed, you have to link it with your OpenShift account. 
-
+    
+    :::sh
     $ mkdir anchor_tutorial
     $ cd anchor_tutorial
     $ rhc setup
@@ -55,6 +57,7 @@ it is very important that you use a simple and recallable string. For this tutor
 
 To install Anchor we need a recent version of php. Sadly the one contained in openshift's cartridge `php` is not recent enough, but the problem can be solved easily using instead the `zend server` cartridge. To create an app just type
 
+    :::sh
 	$ rhc create-app anchor zend-5.6
 
 And wait some time. When you are prompted for cloning and accepting the security certificate just type `yes` and hit return.
@@ -75,7 +78,8 @@ You have to accept a licence, save a password and just click `Next` at the Licen
 
 Having secured our zend app, is time to add mysql to the application. Do it with
 
-    rhc add-cartridge mysql-5.1 --app anchor
+    :::sh
+    $ rhc add-cartridge mysql-5.1 --app anchor
 
 Again annotate the following informations:
     
@@ -88,12 +92,14 @@ _A good idea to increase security now would be to install phpmyadmin or login to
 
 For the setup of Anchor we need to annotate something more. Use the address for `SSH To:` that you obtained previously and save the output of the following command
 
-     $ ssh uuid@anchor-mseritutorial.rhcloud.com 'env | grep MYSQL'
+    :::sh
+    $ ssh uuid@anchor-mseritutorial.rhcloud.com 'env | grep MYSQL'
 
 ## Step 3: Install Anchor
 
 We can do it from the terminal in the following way
 
+    :::sh
     $ cd anchor/php
     $ git rm health_check.php
     $ wget http://anchorcms.com/download -O anchorcms.tar.gz
@@ -113,6 +119,7 @@ _Do not yet push this change on the remote repository, otherwise you will loose 
 
 Each time you push some code online, the remote repository is overwritten with the content of your push. First we need to save in our repository the changes made by the installer. We can do it in the following way:
 
+    :::sh
     $ ssh uuid@anchor-mseritutorial.rhcloud.com 'tar c app-root/runtime/repo/php/install' > install.tar
     $ ssh uuid@anchor-mseritutorial.rhcloud.com 'tar c app-root/runtime/repo/php/anchor/config' > config.tar
     $ rm -rf anchor/config install
@@ -122,6 +129,7 @@ Each time you push some code online, the remote repository is overwritten with t
 
 Then we need to move the content folder in a space that the remote keeps safe and separated from the repository deployment. This can be done creating the file `.openshift/action_hooks/build` (as before you just need `$ nano ../.openshift/action_hooks/build`) with the following content
 
+    :::bash
     #!/bin/bash 
     
     if [ ! -d $OPENSHIFT_DATA_DIR/content ]; then
@@ -142,6 +150,7 @@ Then we need to move the content folder in a space that the remote keeps safe an
 
 We are almost ready. Before pushing the changes we need to modify the file `.gitignore` contained in the `php` folder. Open it with `$ nano .gitignore` and delete the lines
 
+    :::sh
     # generated config
     /anchor/config/app.php
     /anchor/config/db.php
@@ -156,6 +165,7 @@ We are almost ready. Before pushing the changes we need to modify the file `.git
 
 Save the changes and finally deploy a working Anchor copy with
     
+    :::sh
     $ cd ..
     $ git add .
     $ git commit -m "Configured Anchor"
@@ -165,10 +175,12 @@ Save the changes and finally deploy a working Anchor copy with
 
 You may try many themes before being happy with what you have, but each time you push changes the server is restarted. To speed things up and avoid the restart is enough to add a special empty file:
 
+    :::sh
     $ touch .openshift/markers/hot_deploy
 
 Of course you have to deploy it:
 
+    :::sh
     $ git add .
     $ git commit -m "Added Hot Deploy"
     $ git push
@@ -177,6 +189,7 @@ You can find many themes online, a good source is [Anchor Themes](http://anchort
 
 To install a new theme is enough to download it and add its folder inside the folder `anchor/php/themes` (you can already see the `default` theme folder, don't replace it _default_ is just the theme's name). Finally push it as usual: 
 
+    :::sh
     $ git add .
     $ git commit -m "Added Theme"
     $ git push
@@ -189,12 +202,14 @@ As a final note I particularly like [Balzac](https://github.com/ColeTownsend/Bal
 
 To create a backup simply run
 
+    :::sh
     $ rhc snapshot save -a anchor
 
 It will save a `anchor.tar.gz` file containing the full content of the online `anchor` folder.
 
 To restore from a backup run: 
 
+    :::sh
     $ rhc snapshot restore -a anchor -f {/path/to/anchor.tar.gz}
     
 Remark: here the name that we are using is always `anchor` just because it is the name that we gave to the application at the beginning of Step 1.

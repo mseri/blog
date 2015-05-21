@@ -18,9 +18,8 @@ I copy and paste from the [man page](http://linuxcommand.org/man_pages/ssh1.html
 
 Run in your terminal
 
-```
-ssh -D 9090  your_username@your_academic_ssh_server
-```
+    :::sh
+    ssh -D 9090  your_username@your_academic_ssh_server
 
 and setup your browser to use a socks proxy with address `localhost` (or `127.0.0.1`) and port `9090`.
 
