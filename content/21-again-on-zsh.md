@@ -31,31 +31,32 @@ To avoid too many jumps I am copying them here:
 
 0. Clean your previous Zsh configuration (**create a Backup copy of the files before proceeding!!!**)
 
-    :::sh
-    rm -r .z* .oh-my-zsh
+        :::sh
+        rm -r .z* .oh-my-zsh
         
 1. Launch Zsh:
 
-    :::sh
-    zsh
+        :::sh
+        zsh
 
 2. Clone the repository:
 
-    :::sh
-    git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+        :::sh
+        git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
 3. Create a new Zsh configuration by copying the Zsh configuration files provided:
 
-    :::sh
-    setopt EXTENDED_GLOB
-    for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-        ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-    done
+        :::sh
+        setopt EXTENDED_GLOB
+        for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N)
+        do
+            ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+        done
 
 4. Set Zsh as your default shell (if it is not):
 
-    :::sh
-    chsh -s /bin/zsh
+        :::sh
+        chsh -s /bin/zsh
 
 5. Open a new Zsh terminal window or tab.
 
@@ -90,24 +91,25 @@ I mimicked what they did in [YADR](https://github.com/skwp/dotfiles) (another ve
 
 1. First of all you need to create a new folder
       
-    :::sh
-    $ mkdir ~/.zsh.prompts
+        :::sh
+        $ mkdir ~/.zsh.prompts
    
-  where you are going to save your theme.
+    where you are going to save your theme.
 
 2. Modify the `Prompt` section of `.zpreztorc` to look like 
-    
-    # Set the prompt theme to load.
-		# Setting it to 'random' loads a random theme.
-		# Auto set to 'off' on dumb terminals.
-		# zstyle ':prezto:module:prompt' theme 'sorin'
-		autoload promptinit
-		fpath=($HOME/.zsh.prompts $fpath)
-		promptinit
-		
-		zstyle ':prezto:module:prompt' theme 'YOURTHEMENAME'
+        
+        :::sh
+        # Set the prompt theme to load.
+        # Setting it to 'random' loads a random theme.
+        # Auto set to 'off' on dumb terminals.
+        # zstyle ':prezto:module:prompt' theme 'sorin'
+        autoload promptinit
+        fpath=($HOME/.zsh.prompts $fpath)
+        promptinit
 
-  where `YOURTHEMENAME` is the name that you have chosen for your theme.
+        zstyle ':prezto:module:prompt' theme 'YOURTHEMENAME'
+
+    where `YOURTHEMENAME` is the name that you have chosen for your theme.
  
 3. Create your theme file in `.zsh.prompts`. Note that its name must be `prompt_YOURTHEMENAME_setup`, otherwise it will not be recognised.
  

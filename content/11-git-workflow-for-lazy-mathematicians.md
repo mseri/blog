@@ -117,15 +117,15 @@ Add the remote repository for your project and push your local project to the re
 
 - for Bitbucket
 
-    :::sh
-    git remote add origin https://user@bitbucket.org/path_to/repo.git
-    git push origin master
+        :::sh
+        git remote add origin https://user@bitbucket.org/path_to/repo.git
+        git push origin master
 
 - for GitHub
 
-    :::sh
-    git remote add origin https://user@github.com/path_to/repo.git
-    git push origin master
+        :::sh
+        git remote add origin https://user@github.com/path_to/repo.git
+        git push origin master
 
 ### Save changes
 At each stage of completion you should [commit your code](http://gitref.org/basic/#commit) into your local repository with:
