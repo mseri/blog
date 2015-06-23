@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Marcello Seri'
 SITENAME = 'Tales of a Fractal Spectrum'
 SITEDESC = 'Free thoughts of a geeky mathematician'
-SITEURL = ''
+SITEURL = 'localhost:8000'
 
 SITE_LOGO_URL = 'images/gauss_logo.png'
 
@@ -28,6 +28,11 @@ DEFAULT_LANG = 'en'
 
 ARTICLE_URL     = '{slug}/'
 ARTICLE_SAVE_AS = '{slug}/index.html'
+PAGE_URL     = '{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
+
+DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
 
 PLUGIN_PATHS = ['../pelican-plugins/']
 PLUGINS      = ['sitemap']
@@ -40,6 +45,7 @@ FACEBOOK = "marcello.seri"
 GPLUS    = "+MarcelloSeri"
 GHUB     = "mseri"
 MATHJAX = True
+COOKIECONSENT = True
 
 DEFAULT_PAGINATION = 5
 
