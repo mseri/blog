@@ -78,3 +78,7 @@ For example
 In some sense you still have a kind of `assert` without having to stop the execution and raise and exception. This let's you control certain kind of errors or expected behaviors with much ease.
 
 Additionally, it would be pretty easy to use `generics` and `typealias`es to shorten sensibly the notation and clean the code above.
+
+- - - - - - -
+
+**Update**: as a more comprehensive guide on how one can use these and deeper functional concepts in swift I can point you to the nice post [Swift Functors, Applicatives, and Monads in Pictures](http://www.mokacoding.com/blog/functor-applicative-monads-in-pictures/).
