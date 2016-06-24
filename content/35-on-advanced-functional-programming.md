@@ -7,7 +7,7 @@ Category: Blog
 Slug: on-advanced-functional-programming
 Authors: Marcello Seri
 
-In few days, tomorrow if I'm not mistaken, you will be able to attend the new [Erik Meijer's introduction to Functional Programming on edX](https://www.edx.org/course/delftx/delftx-fp101x-introduction-functional-2126). If you have any interest in mathematics or programming, I am sure that this is something that you have to watch.
+In few days, tomorrow if I'm not mistaken, you will be able to attend the new [Erik Meijer's introduction to Functional Programming on edX](https://www.edx.org/course/introduction-functional-programming-delftx-fp101x-0). If you have any interest in mathematics or programming, I am sure that this is something that you have to watch.
 
 I am saying new because a similar course was held in 2010 by the same person, you can still watch it here:
 [Erik Meijer's MSDN Channel 9 lecture series on functional programming](http://lambda-the-ultimate.org/node/3642)
@@ -24,4 +24,8 @@ I've struggled a bit to find all the lectures, so I've decided to link them here
 4. [The Quick Essence of Functional Programming](http://channel9.msdn.com/Shows/Going+Deep/C9-Lectures-Dr-Ralf-Lmmel-AFP-The-Quick-Essence-of-Functional-Programming)
 5. [Going Bananas](http://channel9.msdn.com/Shows/Going+Deep/C9-Lectures-Dr-Ralf-Lmmel-Going-Bananas)
 
-Given that we are here. Channel 9 provides other nice set of lectures, in particular [Yuri Gurevich - Introduction to Algorithms and Computational Complexity](http://channel9.msdn.com/Series/C9-Lectures-Yuri-Gurevich-Introduction-to-Algorithms-and-Computational-Complexity), [Greg Meredith - Monadic Design Patterns for the Web](http://channel9.msdn.com/Series/C9-Lectures-Greg-Meredith-Monadic-Design-Patterns-for-the-Web) and the very recent [Thinking for Programmers by Leslie Lamport](http://channel9.msdn.com/Events/Build/2014/3-642) (~~he is one of LaTeX developer~~ he is really a [big guy](http://research.microsoft.com/en-us/news/features/lamport-031814.aspx) in computer sicence, and among the other things he is one of LaTeX developers).
+Given that we are here. Channel 9 provides other nice set of lectures, in particular [Yuri Gurevich - Introduction to Algorithms and Computational Complexity](http://channel9.msdn.com/Series/C9-Lectures-Yuri-Gurevich-Introduction-to-Algorithms-and-Computational-Complexity), [Greg Meredith - Monadic Design Patterns for the Web](http://channel9.msdn.com/Series/C9-Lectures-Greg-Meredith-Monadic-Design-Patterns-for-the-Web) and the very recent [Thinking for Programmers by Leslie Lamport](http://channel9.msdn.com/Events/Build/2014/3-642) (he is really a [big guy](http://research.microsoft.com/en-us/news/features/lamport-031814.aspx) in computer sicence, and among the other things he is one of LaTeX developers).
+
+- - - - - -
+
+UPDATE: updated link to edx course (. Also, recently there was another mooc on functional programming that I've found extremely good: [Introduction to Functional Programming in OCaml](https://www.fun-mooc.fr/courses/parisdiderot/56002/session01/about). Sadly registrations are closed now, but it's really worth to add it to your todo list in case they reopen them.
