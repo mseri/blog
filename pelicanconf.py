@@ -19,7 +19,8 @@ STATIC_PATHS = [
 EXTRA_PATH_METADATA = {
     'static/robots.txt': {'path': 'robots.txt'},
     'static/CNAME': {'path': 'CNAME'},
-    'static/favicon.ico': {'path': 'favicon.ico'}
+    'static/favicon.ico': {'path': 'favicon.ico'},
+    'static/keybase.txt': {'path': 'keybase.txt'}
     }
 
 TIMEZONE = 'Europe/London'
@@ -41,7 +42,7 @@ THEME = '../pelican-themes/purity/'
 
 SOCIAL   = True
 TWITTER  = "marcelloseri"
-FACEBOOK = "marcello.seri" 
+FACEBOOK = "marcello.seri"
 GPLUS    = "+MarcelloSeri"
 GHUB     = "mseri"
 MATHJAX = True
