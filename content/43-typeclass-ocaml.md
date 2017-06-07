@@ -29,8 +29,10 @@ comments and I'll try to update and correct the text.
 
 In what follows, I will focus on Monoids, Functors (not to be confused with
 OCaml's module functors), Applicatives, Alternatives and, only briefly, Monads
-(these will be the core of another talk, that will be followed by a final one on
-the Free Monad -- I will link the notes here if they are made public).
+(these will be the
+[core of another talk](https://medium.com/@huund/monadic-error-handling-1e2ce66e3810),
+that will be followed by a final one on the Free Monad -- I will link the
+notes here if they are made public).
 
 There is plenty more to discuss: Semigroups, Categories, Semigroupoids,
 F-Algebras (scary, but these are really powerful and useful: [f-algebras-video],
