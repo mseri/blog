@@ -110,6 +110,7 @@ let flip f x y = f y x
 let compose f g x = f (g x)
 let (<.>) f g = fun x -> f (g x)   (* <- compose *)
 let (>.>) g f = fun x -> f (g x)   (* first apply [g] then [f] but writing them the other way around *)
+let cons x xs = x :: xs
 ```
 
 # Monoids
@@ -849,7 +850,7 @@ module Alternative_Utils (A: ALTERNATIVE) = struct
     <|> pure []
 
   (** One or more *)
-  let some v = let rec some_ v = List.cons <$> v <*> (delay @@ fun _ -> many_ v)
+  let some v = let rec some_ v = cons <$> v <*> (delay @@ fun _ -> many_ v)
     and many_ v = some_ v <|> pure []
     in some_ v
   *)
@@ -912,7 +913,7 @@ above.
 ```ocaml
 (* this is our parser type *)
 type 'a p = text -> ('a * text) list
-````
+```
 
 Note that `text` is more general a priori than a list of character, but I've
 chosen this implementation for ease of use. Using some lazy char producer would
