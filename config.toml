@@ -1,0 +1,91 @@
+baseURL = "https://www.mseri.me"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "A fractal spectrum of tales"
+description = "Free thoughts of a geeky mathematician"
+googleAnalytics = "UA-44365202-1"
+disqusShortname = "talesofafractalspectrum"
+rssLimit = 10
+
+theme = "m10c"
+[params]
+  author = "Marcello Seri"
+  description = "Free thoughts of a geeky mathematician"
+  avatar = "/images/gauss_logo.png"
+  show_summary = true
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/mseri"
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/marcelloseri"
+  [[params.social]]
+    name = "award"
+    url = "https://academic.mseri.me"
+
+[params.style]
+  darkestColor = "#242930"
+  darkColor = "#353b43"
+  primaryColor = "#ffa500" #"#57cc8a"
+  lightColor = "#ebeef0" #"#afbac4"
+  lightestColor = "#ffffff"
+
+
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  post = "/:slug/"
+
+[outputFormats]
+  [RSS]
+    baseName = "index"
+    path = "/feed/rss.xml"
+
+[menu]
+  [[menu.nav]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.nav]]
+    name = "About"
+    url = "https://academic.mseri.me"
+    weight = 3
+  [[menu.naw]]
+    name = "GitHub"
+    url = "https://github.com/mseri"
+    weight = 4
+  [[menu.nav]]
+    name = "Twitter"
+    url = "https://twitter.com/marcelloseri"
+    weight = 5
+  [[menu.nav]]
+    name = "RSS"
+    url = "/feed/rss.xml"
+    weight = 6
+
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = true
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = true
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true
