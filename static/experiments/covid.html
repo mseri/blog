@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <!-- Load plotly.js into the DOM -->
     <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <title>COVID-19 Europe data maps</title>
     <style>
         ol {
             -moz-column-count: 4;
@@ -18,17 +19,86 @@
 </head>
 
 <body>
-    <div>Pick a day: <input type='date' id='target' min='2020-01-01'></div>
+    <div>
+        <h3>Pick a day: <input type='date' id='target' min='2020-01-01'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Pick a metric: <select id='keys'></select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            In case of errors, please reload the page.</h3>
+    </div>
     <div id='myDiv' width="800px" height="600px">
         <!-- Plotly chart will be drawn inside this DIV -->
     </div>
-    <div id='data'></div>
+    <div>
+        <h3>Countries (in descending order)</h3>
+        <div id='data'></div>
+    </div>
 
     <script type="text/javascript">
         let today = new Date().toISOString().slice(0, 10);
         let input = document.getElementById('target');
         input.setAttribute("max", today);
         input.value = today;
+
+        let keys = [
+            {
+                key: "new_cases_smoothed_per_million",
+                name: "New cases per 100k",
+                fun: function (value) { return (parseFloat(value) * 10).toFixed(2); }
+            },
+            {
+                key: "new_deaths_smoothed_per_million",
+                name: "New deaths per 100k",
+                fun: function (value) { return (parseFloat(value) * 10).toFixed(2); }
+            },
+            {
+                key: "new_tests_smoothed_per_thousand",
+                name: "New tests per 100k",
+                fun: function (value) { return (parseFloat(value) / 100).toFixed(2); }
+            },
+            {
+                key: "total_cases_per_million",
+                name: "Total cases per 100k",
+                fun: function (value) { return (parseFloat(value) * 10).toFixed(2); }
+            },
+            {
+                key: "total_deaths_per_million",
+                name: "Total deaths per 100k",
+                fun: function (value) { return (parseFloat(value) * 10).toFixed(2); }
+            },
+            {
+                key: "total_tests_per_thousand",
+                name: "Total tests per 100k",
+                fun: function (value) { return (parseFloat(value) / 100).toFixed(2); }
+            },
+            {
+                key: "population",
+                name: "Population",
+                fun: function (value) { return (parseFloat(value)).toFixed(2); }
+            },
+            {
+                key: "population_density",
+                name: "Population Density",
+                fun: function (value) { return (parseFloat(value)).toFixed(2); }
+            },
+            {
+                key: "life_expectancy",
+                name: "Life Expectancy",
+                fun: function (value) { return (parseFloat(value)).toFixed(2); }
+            },
+            {
+                key: "gdp_per_capita",
+                name: "GDP per capita (USD)",
+                fun: function (value) { return (parseFloat(value)).toFixed(2); }
+            }
+        ]
+
+        let select = document.getElementById('keys');
+        keys.forEach((value, index) => {
+            var option = document.createElement('option');
+            option.setAttribute("value", index);
+            option.innerHTML = value.name;
+            select.appendChild(option);
+        });
+        select.value = "0"
 
         /* DATA FIELDS
         aged_65_older: "13.188"
@@ -74,27 +144,24 @@
         total_tests_per_thousand: ""
         */
 
-        function draw(rows, is_redraw) {
-            var rows = rows.filter(row => row.continent == 'Europe' && row.date == input.value);
-
+        function draw(rawrows, is_redraw) {
             function unpack(rows, key) {
-                return rows.map(function (row) { return row[key]; });
+                return rows.map((row) => row[key]);
+            }
+            let selected = keys[select.value];
+            let mapper = row => selected.fun(row[selected.key]);
+
+            function rate(rows) {
+                return rows.map(mapper);
             }
 
-            function rate_over_ht(row) {
-                return (parseFloat(row["new_cases_smoothed_per_million"]) * 10).toFixed(2);
-            }
-            function cases_per_ht(rows) {
-                return rows.map(row => rate_over_ht(row));
-            }
+            let rows = rawrows.filter(row => row.date == input.value);
 
-            var ol = document.createElement('ol');
+            let ol = document.createElement('ol');
             document.getElementById('data').innerHTML = "";
             rows.map(function (row) {
-                return { location: row.location, rate: rate_over_ht(row) }
-            }).sort(function (l, r) {
-                return r.rate - l.rate
-            }).forEach(function (row) {
+                return { location: row.location, rate: mapper(row) }
+            }).sort((l, r) => r.rate - l.rate).forEach((row) => {
                 let label = `${row.location}: ${row.rate}`
                 var li = document.createElement('li');
                 li.innerHTML = label;
@@ -102,21 +169,21 @@
                 document.getElementById('data').appendChild(ol);
             });
 
-            let maxrate = Math.max(...cases_per_ht(rows));
+            let maxrate = Math.max(...rate(rows));
 
-            var data = [{
+            let data = [{
                 type: 'choropleth',
                 locationmode: 'country names',
                 locations: unpack(rows, "location"),
-                z: cases_per_ht(rows),
+                z: rate(rows),
                 text: unpack(rows, "location"),
                 colorscale: [
-                    [0, 'rgb(242,240,247)'], [0.2 * maxrate, 'rgb(218,218,235)'],
-                    [0.4 * maxrate, 'rgb(188,189,220)'], [0.6 * maxrate, 'rgb(158,154,200)'],
-                    [0.8 * maxrate, 'rgb(117,107,177)'], [1 * maxrate, 'rgb(84,39,143)']
+                    [0, 'rgb(242,240,247)'], [0.2, 'rgb(218,218,235)'],
+                    [0.4, 'rgb(188,189,220)'], [0.6, 'rgb(158,154,200)'],
+                    [0.8, 'rgb(117,107,177)'], [1, 'rgb(84,39,143)']
                 ],
                 colorbar: {
-                    title: 'New cases per 100k',
+                    title: selected.name,
                     thickness: 20
                 },
                 marker: {
@@ -127,8 +194,8 @@
                 }
             }];
 
-            var layout = {
-                title: 'COVID-19 new cases per 100k',
+            let layout = {
+                title: `COVID-19 ${selected.name.toLowerCase()}`,
                 height: 600,
                 width: 1000,
                 geo: {
@@ -143,10 +210,13 @@
         }
 
         Plotly.d3.csv('https://covid.ourworldindata.org/data/owid-covid-data.csv', function (err, rows) {
-            window.rows = rows;
+            let rawrows = rows.filter(row => row.continent == 'Europe');
+            window.rows = rawrows;
 
             input.addEventListener("change", (event) => {
-                let date = event.target.value;
+                draw(window.rows, true);
+            })
+            select.addEventListener("change", (event) => {
                 draw(window.rows, true);
             })
             draw(window.rows, false);
