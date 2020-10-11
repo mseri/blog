@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- Load plotly.js into the DOM -->
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <style>
+        ol {
+            -moz-column-count: 4;
+            -moz-column-gap: 20px;
+            -webkit-column-count: 4;
+            -webkit-column-gap: 20px;
+            column-count: 4;
+            column-gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Pick a day: <input type='date' id='target' min='2020-01-01'></div>
+    <div id='myDiv' width="800px" height="600px">
+        <!-- Plotly chart will be drawn inside this DIV -->
+    </div>
+    <div id='data'></div>
+
+    <script type="text/javascript">
+        let today = new Date().toISOString().slice(0, 10);
+        let input = document.getElementById('target');
+        input.setAttribute("max", today);
+        input.value = today;
+
+        /* DATA FIELDS
+        aged_65_older: "13.188"
+        aged_70_older: "8.643"
+        cardiovasc_death_rate: "304.195"
+        continent: "Europe"
+        date: "2020-10-11"
+        diabetes_prevalence: "10.08"
+        extreme_poverty: "1.1"
+        female_smokers: "7.1"
+        gdp_per_capita: "11803.431"
+        handwashing_facilities: ""
+        hospital_beds_per_thousand: "2.89"
+        human_development_index: "0.785"
+        iso_code: "ALB"
+        life_expectancy: "78.57"
+        location: "Albania"
+        male_smokers: "51.2"
+        median_age: "38.0"
+        new_cases: "165.0"
+        new_cases_per_million: "57.335"
+        new_cases_smoothed: "159.143"
+        new_cases_smoothed_per_million: "55.3"
+        new_deaths: "3.0"
+        new_deaths_per_million: "1.042"
+        new_deaths_smoothed: "3.429"
+        new_deaths_smoothed_per_million: "1.191"
+        new_tests: ""
+        new_tests_per_thousand: ""
+        new_tests_smoothed: ""
+        new_tests_smoothed_per_thousand: ""
+        population: "2877800.0"
+        population_density: "104.871"
+        positive_rate: ""
+        stringency_index: ""
+        tests_per_case: ""​​
+        tests_units: ""
+        total_cases: "15231.0"​​
+        total_cases_per_million: "5292.585"
+        total_deaths: "416.0"
+        total_deaths_per_million: "144.555"
+        total_tests: ""​​
+        total_tests_per_thousand: ""
+        */
+
+        function draw(rows, is_redraw) {
+            var rows = rows.filter(row => row.continent == 'Europe' && row.date == input.value);
+
+            function unpack(rows, key) {
+                return rows.map(function (row) { return row[key]; });
+            }
+
+            function rate_over_ht(row) {
+                return (parseFloat(row["new_cases_smoothed_per_million"]) * 10).toFixed(2);
+            }
+            function cases_per_ht(rows) {
+                return rows.map(row => rate_over_ht(row));
+            }
+
+            var ol = document.createElement('ol');
+            document.getElementById('data').innerHTML = "";
+            rows.map(function (row) {
+                return { location: row.location, rate: rate_over_ht(row) }
+            }).sort(function (l, r) {
+                return r.rate - l.rate
+            }).forEach(function (row) {
+                let label = `${row.location}: ${row.rate}`
+                var li = document.createElement('li');
+                li.innerHTML = label;
+                ol.appendChild(li);
+                document.getElementById('data').appendChild(ol);
+            });
+
+            let maxrate = Math.max(...cases_per_ht(rows));
+
+            var data = [{
+                type: 'choropleth',
+                locationmode: 'country names',
+                locations: unpack(rows, "location"),
+                z: cases_per_ht(rows),
+                text: unpack(rows, "location"),
+                colorscale: [
+                    [0, 'rgb(242,240,247)'], [0.2 * maxrate, 'rgb(218,218,235)'],
+                    [0.4 * maxrate, 'rgb(188,189,220)'], [0.6 * maxrate, 'rgb(158,154,200)'],
+                    [0.8 * maxrate, 'rgb(117,107,177)'], [1 * maxrate, 'rgb(84,39,143)']
+                ],
+                colorbar: {
+                    title: 'New cases per 100k',
+                    thickness: 20
+                },
+                marker: {
+                    line: {
+                        color: 'rgb(255,255,255)',
+                        width: 2
+                    }
+                }
+            }];
+
+            var layout = {
+                title: 'COVID-19 new cases per 100k',
+                height: 600,
+                width: 1000,
+                geo: {
+                    scope: 'europe',
+                    projection: {
+                        type: 'robinson'
+                    }
+                }
+            };
+
+            Plotly.newPlot("myDiv", data, layout, { showLink: false });
+        }
+
+        Plotly.d3.csv('https://covid.ourworldindata.org/data/owid-covid-data.csv', function (err, rows) {
+            window.rows = rows;
+
+            input.addEventListener("change", (event) => {
+                let date = event.target.value;
+                draw(window.rows, true);
+            })
+            draw(window.rows, false);
+        });
+
+    </script>
+</body>
+
+</html>
