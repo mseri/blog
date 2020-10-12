@@ -22,7 +22,7 @@
     <div>
         <h3>Pick a day: <input type='date' id='target' min='2020-01-01'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             Pick a metric: <select id='keys'></select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            In case of errors, please reload the page.</h3>
+            Pick a continent: <select id='region'></select></h3>
     </div>
     <div id='myDiv' width="800px" height="600px">
         <!-- Plotly chart will be drawn inside this DIV -->
@@ -202,6 +202,10 @@
                 height: 600,
                 width: 1000,
                 geo: {
+                    // scope can be
+                    // 'world', 'usa', 'europe', 'asia', 'africa', 'north america', 'south america'
+                    // while ourlworldindata has the following values for continent
+                    // North America, Asia, Africa, Europe, South America, Oceania
                     scope: 'europe',
                     projection: {
                         type: 'robinson'
