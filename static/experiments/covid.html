@@ -40,12 +40,12 @@
     </div>
 
     <script type="text/javascript">
-        let today = new Date().toISOString().slice(0, 10);
-        let input = document.getElementById('target');
+        const today = new Date().toISOString().slice(0, 10);
+        const input = document.getElementById('target');
         input.setAttribute("max", today);
         input.value = today;
 
-        let keys = [
+        const keys = [
             {
                 key: "new_cases_smoothed_per_million",
                 name: "New cases per 100k",
@@ -98,7 +98,7 @@
             }
         ]
 
-        let select = document.getElementById('keys');
+        const select = document.getElementById('keys');
         keys.forEach((value, index) => {
             var option = document.createElement('option');
             option.setAttribute("value", index);
@@ -155,16 +155,16 @@
             function unpack(rows, key) {
                 return rows.map((row) => row[key]);
             }
-            let selected = keys[select.value];
-            let mapper = row => selected.fun(row[selected.key]);
+            const selected = keys[select.value];
+            const mapper = row => selected.fun(row[selected.key]);
 
             function rate(rows) {
                 return rows.map(mapper);
             }
 
-            let rows = rawrows.filter(row => row.date == input.value);
+            const rows = rawrows.filter(row => row.date == input.value);
 
-            let ol = document.createElement('ol');
+            const ol = document.createElement('ol');
             document.getElementById('data').innerHTML = "";
             rows.map(function (row) {
                 return { location: row.location, rate: mapper(row) }
@@ -176,9 +176,9 @@
                 document.getElementById('data').appendChild(ol);
             });
 
-            let maxrate = Math.max(...rate(rows));
+            const maxrate = Math.max(...rate(rows));
 
-            let data = [{
+            const data = [{
                 type: 'choropleth',
                 locationmode: 'country names',
                 locations: unpack(rows, "location"),
@@ -197,7 +197,7 @@
                 }
             }];
 
-            let layout = {
+            const layout = {
                 title: `COVID-19 ${selected.name.toLowerCase()}`,
                 height: 600,
                 width: 1000,
@@ -212,17 +212,16 @@
             Plotly.newPlot("myDiv", data, layout, { showLink: false });
         }
 
-        Plotly.d3.csv('https://covid.ourworldindata.org/data/owid-covid-data.csv', function (err, rows) {
-            let rawrows = rows.filter(row => row.continent == 'Europe');
-            window.rows = rawrows;
+        Plotly.d3.csv('https://covid.ourworldindata.org/data/owid-covid-data.csv', function (err, data) {
+            const rows = data.filter(row => row.continent == 'Europe');
 
             input.addEventListener("change", (event) => {
-                draw(window.rows, true);
+                draw(rows, true);
             })
             select.addEventListener("change", (event) => {
-                draw(window.rows, true);
+                draw(rows, true);
             })
-            draw(window.rows, false);
+            draw(rows, false);
         });
 
     </script>
