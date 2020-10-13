@@ -1,5 +1,5 @@
 ---
-title: "46 Micro Course in Spectra Sub Riemannian Geometry"
+title: "Micro Course in Spectral Sub Riemannian Geometry"
 date: 2020-10-13T22:38:21+02:00
 tags: ["mathematics", "blog", "sub-Riemannian", "geometry", "lecture notes", "teaching"]
 categories: ["Blog"]
