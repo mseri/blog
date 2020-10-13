@@ -48,33 +48,33 @@
         const keys = [
             {
                 key: "new_cases_smoothed_per_million",
-                name: "New cases per 100k",
-                fun: function (value) { return (parseFloat(value) * 10).toFixed(2); }
+                name: "New cases per 1M",
+                fun: function (value) { return parseFloat(value).toFixed(2); }
             },
             {
                 key: "new_deaths_smoothed_per_million",
-                name: "New deaths per 100k",
-                fun: function (value) { return (parseFloat(value) * 10).toFixed(2); }
+                name: "New deaths per 1M",
+                fun: function (value) { return parseFloat(value).toFixed(2); }
             },
             {
                 key: "new_tests_smoothed_per_thousand",
-                name: "New tests per 100k",
-                fun: function (value) { return (parseFloat(value) / 100).toFixed(2); }
+                name: "New tests per 1k",
+                fun: function (value) { return parseFloat(value).toFixed(2); }
             },
             {
                 key: "total_cases_per_million",
-                name: "Total cases per 100k",
-                fun: function (value) { return (parseFloat(value) * 10).toFixed(2); }
+                name: "Total cases per 1M",
+                fun: function (value) { return parseFloat(value).toFixed(2); }
             },
             {
                 key: "total_deaths_per_million",
-                name: "Total deaths per 100k",
-                fun: function (value) { return (parseFloat(value) * 10).toFixed(2); }
+                name: "Total deaths per 1M",
+                fun: function (value) { return parseFloat(value).toFixed(2); }
             },
             {
                 key: "total_tests_per_thousand",
-                name: "Total tests per 100k",
-                fun: function (value) { return (parseFloat(value) / 100).toFixed(2); }
+                name: "Total tests per 1k",
+                fun: function (value) { return parseFloat(value).toFixed(2); }
             },
             {
                 key: "population",
@@ -162,7 +162,7 @@
                 return rows.map(mapper);
             }
 
-            const rows = rawrows.filter(row => row.date == input.value);
+            const rows = rawrows.filter(row => (row.date == input.value) && (row.population > 1000000));
 
             const ol = document.createElement('ol');
             document.getElementById('data').innerHTML = "";
@@ -176,15 +176,12 @@
                 document.getElementById('data').appendChild(ol);
             });
 
-            const maxrate = Math.max(...rate(rows));
-
-            const data = [{
+            const data = {
                 type: 'choropleth',
                 locationmode: 'country names',
                 locations: unpack(rows, "location"),
                 z: rate(rows),
                 text: unpack(rows, "location"),
-                autoscale: true,
                 colorbar: {
                     title: selected.name,
                     thickness: 20
@@ -195,7 +192,24 @@
                         width: 2
                     }
                 }
-            }];
+            };
+
+            console.log(select.value);
+            if (["0", "1"].includes(select.value)) {
+                const maxrate = Math.max(...rate(rows));
+                let first = 0.1;
+                if (maxrate > 50 && !isNaN(maxrate)) { first = 50 / maxrate }
+                let second = 0.4;
+                if (maxrate > 200 && !isNaN(maxrate)) { second = 200 / maxrate }
+                data.colorscale = [
+                    [0, 'rgb(124,252,0)'],
+                    [first, 'rgb(255,255,0)'],
+                    [second, 'rgb(255,140,0)'],
+                    [1, 'rgb(193,7,44)']
+                ];
+            } else {
+                data.autoscale = true;
+            }
 
             const layout = {
                 title: `COVID-19 ${selected.name.toLowerCase()}`,
@@ -213,7 +227,7 @@
                 }
             };
 
-            Plotly.newPlot("myDiv", data, layout, { showLink: false });
+            Plotly.newPlot("myDiv", [data], layout, { showLink: false });
         }
 
         Plotly.d3.csv('https://covid.ourworldindata.org/data/owid-covid-data.csv', function (err, data) {
