@@ -1,6 +1,6 @@
 ---
 title: "Lecture notes on Hamiltonian mechanics (update)"
-date: 2020-04-20T15:20:19+02:00
+date: 2020-10-11T22:00:21+02:00
 tags: ["mathematics", "blog", "mechanics", "lecture notes", "teaching"]
 categories: ["Blog"]
 slug: "hamiltonian-mechanics-AMS"
