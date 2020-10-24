@@ -30,7 +30,7 @@ And for `qutip` you just do
 
 ### A better IPython
 
-In the [last post](https://www.mseri.me/installing-scientific-python-libraries-on-osx/) we installed ipython with a minimal working configuration. Recently I started enjoying writing my simulation with the notebooks of iJulia (we will discuss it soon) and [iPython](http://ipython.org/notebook.html): two very nice web based environment to write (and execute) your code.
+In the [last post](https://www.mseri.me/installing-scientific-python-libraries-on-osx/) we installed ipython with a minimal working configuration. Recently I started enjoying writing my simulation with the notebooks of iJulia (we will discuss it soon) and [iPython](https://ipython.org/notebook.html): two very nice web based environment to write (and execute) your code.
 
 To run the iPython notebook one should type
 
@@ -55,13 +55,13 @@ If you now run, let's say, `ipython3 notebook`, after a moment you should see a 
 
 ## Julia for fast computations
 
-[Julia](http://julialang.org) is a recent "high-level, high-performance dynamic programming language for technical computing" developed as an open source project at MIT. It is extremely fast and powerful but as readable as python (if not more).
+[Julia](https://julialang.org) is a recent "high-level, high-performance dynamic programming language for technical computing" developed as an open source project at MIT. It is extremely fast and powerful but as readable as python (if not more).
 
-It can nicely and simply interface with C, Fortran and Python and is [bloody fast](http://julialang.org/benchmarks/).
+It can nicely and simply interface with C, Fortran and Python and is [bloody fast](https://julialang.org/benchmarks/).
 
 I've been using it for the exercises of NLP in coursera and some simulations and I really enjoy it.
 
-To install julia you have few alternatives. You can grab a [binary precompiled installer from the official website](http://julialang.org/downloads/), install the nice (open source and free) IDE [Julia Studio](http://forio.com/products/julia-studio/) or use homebrew (my first choice):
+To install julia you have few alternatives. You can grab a [binary precompiled installer from the official website](https://julialang.org/downloads/), install the nice (open source and free) IDE [Julia Studio](https://forio.com/products/julia-studio/) or use homebrew (my first choice):
 
     :::sh
     brew tap staticfloat/julia
@@ -71,7 +71,7 @@ If you get errors, or you want to install the support for gnuplot plots, I [redi
 
 After having installed julia, open a terminal and run `julia` or open Julia Studio, and have fun!
 
-There are many resources to learn coding in julia. If you don't want to read the full docs (they are pretty short, is not a big deal) you can use the resources linked at the [Teaching Julia page](http://julialang.org/teaching/), in particular you may find easy to start with [Julia Tutorial](http://nbviewer.ipython.org/github/JuliaX/JuliaTutorial/blob/master/JuliaTutorial.ipynb), with [Learn X in Y minutes](http://learnxinyminutes.com/docs/julia/) or with the [series of Julia Studio tutorials](http://forio.com/products/julia-studio/tutorials/).
+There are many resources to learn coding in julia. If you don't want to read the full docs (they are pretty short, is not a big deal) you can use the resources linked at the [Teaching Julia page](https://julialang.org/teaching/), in particular you may find easy to start with [Julia Tutorial](https://nbviewer.ipython.org/github/JuliaX/JuliaTutorial/blob/master/JuliaTutorial.ipynb), with [Learn X in Y minutes](https://learnxinyminutes.com/docs/julia/) or with the [series of Julia Studio tutorials](https://forio.com/products/julia-studio/tutorials/).
 
 After you played a bit with it. The time to install some packages arrives. The most important, imho, is [IJulia](https://github.com/JuliaLang/IJulia.jl). A kernel for IPython that lets you write your julia code in a ipython notebook. Inside the julia environment (namely, after having opened a terminal and run `julia`) execute the following
 
@@ -87,8 +87,8 @@ To use IJulia you just need to run
     :::sh
     ipython3 notebook --profile julia
 
-and eventually make an alias out of it if you plan to use it often. A simple IJulia tutorial from the MIT can be found [on IPython website](http://nbviewer.ipython.org/url/jdj.mit.edu/~stevenj/IJulia%20Preview.ipynb).
+and eventually make an alias out of it if you plan to use it often. A simple IJulia tutorial from the MIT can be found [on IPython website](https://nbviewer.ipython.org/url/jdj.mit.edu/~stevenj/IJulia%20Preview.ipynb).
 
-Additionally you may want to install `PyPlot` and `Winston` for plots. You can find a [list of available packages and their description on Julia website](http://docs.julialang.org/en/latest/packages/packagelist/" target=_"blank) or with a search on google or on [GitHub](http://www.github.com).
+Additionally you may want to install `PyPlot` and `Winston` for plots. You can find a [list of available packages and their description on Julia website](https://docs.julialang.org/en/latest/packages/packagelist/" target=_"blank) or with a search on google or on [GitHub](https://www.github.com).
 
-To understand how to make complex plots with matplotlib using julia's pyplot interface I've found the following post extremely useful: [Naval Warfare with JuMP + Julia](http://iaindunning.com/2014/subs-battleships.html).
+To understand how to make complex plots with matplotlib using julia's pyplot interface I've found the following post extremely useful: [Naval Warfare with JuMP + Julia](https://iaindunning.com/2014/subs-battleships.html).

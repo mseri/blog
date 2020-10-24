@@ -16,15 +16,15 @@ For this same reason, I used to add the anchor attribute `target="_blank"` to al
 
 With its markdown syntax you can just add links writing 
 
-    [the text you see](http://theli.nk) 
+    [the text you see](https://theli.nk) 
 
 but this will just create 
 
-    <a href="http://theli.nk">the text you see</a>
+    <a href="https://theli.nk">the text you see</a>
 
 **Is there any wayt to add the `target="_blank"` attribute?**
 
-Well, we could write the whole anchor by hand, but this is not really what I was looking for. I didn't really spend much time trying to solve the issues, but I had the great luck of reading a post [here](http://huynq.net/)...
+Well, we could write the whole anchor by hand, but this is not really what I was looking for. I didn't really spend much time trying to solve the issues, but I had the great luck of reading a post [here](https://huynq.net/)...
 
 HuyNQ has a post showing a workaround that is as simple as it is brilliant!
 
@@ -32,11 +32,11 @@ Apparently the markdown interpreter of Ghost makes no assumption regarding the c
 
 This means that appending `" target="_blank` to the URL will generate an anchor with the proper target. In other words
 
-    [the text you see](http://theli.nk" target="_blank)
+    [the text you see](https://theli.nk" target="_blank)
 
 will generate
 
     :::html
-    <a href="http://theli.nk" target="_blank">the text you see</a>
+    <a href="https://theli.nk" target="_blank">the text you see</a>
 
 that is exactly what I was looking for.

@@ -4,7 +4,7 @@ https://keybase.io/mseri
 
 I hereby claim:
 
-  * I am an admin of http://www.mseri.me
+  * I am an admin of https://www.mseri.me
   * I am mseri (https://keybase.io/mseri) on keybase.
   * I have a public key with fingerprint 4DFF F06D F74F DE5E 6AD4  B2F7 05C0 CD01 5D10 C4B4
 
@@ -23,7 +23,7 @@ To do so, I am signing this object:
         },
         "service": {
             "hostname": "www.mseri.me",
-            "protocol": "http:"
+            "protocol": "https:"
         },
         "type": "web_service_binding",
         "version": 1

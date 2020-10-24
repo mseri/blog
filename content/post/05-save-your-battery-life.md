@@ -26,7 +26,7 @@ At the moment I am developing a small applet for Mac OSX that reminds me to conn
 * It is better to charge the battery with the device turned off
 * If you need to store the battery without using it for a period of time, discharge to 40-50%
 
-To remember to make a full discharge once a month Apple prepared a [downloadable calendar event](http://www.apple.com/batteries/images/notebook_icalreminder.ics). Just open it in your favourite calendar application and it will set up a monthly reminder.
+To remember to make a full discharge once a month Apple prepared a [downloadable calendar event](https://www.apple.com/batteries/images/notebook_icalreminder.ics). Just open it in your favourite calendar application and it will set up a monthly reminder.
 
 Hopefully these tips should help you to extend the longevity and the capacity of your li-ion batteries, on the other hand it seems pretty clear that these best practices are hard to follow.
 
@@ -34,12 +34,12 @@ Hopefully these tips should help you to extend the longevity and the capacity of
 
 For additional informations have a look at the following links:
 
-- Battery University: [Charging Li-Ion Batteries](http://batteryuniversity.com/learn/article/charging_lithium_ion_batteries)
-, [How to Prolong Lithium Based Batteries](http://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries)
-- Gigaom: [Extend the battery life of your MacBook, no matter how old it is](http://gigaom.com/2013/06/22/extend-the-battery-life-of-your-macbook-no-matter-how-old-it-is/)
-- Fergyblog: [How to Prolong Lithium-Ion Battery Life](http://fer.gy/2012/04/15/how-to-prolong-lithium-ion-battery-life/)
-- Ars Technica: [What is the Best Way to Use a Li-Ion Battery?](http://arstechnica.com/gadgets/2011/02/ask-ars-what-is-the-best-way-to-use-an-li-ion-battery/)
-- Geeknizer: [How to Extend Battery Life](http://geeknizer.com/how-to-increase-battery-life/)
+- Battery University: [Charging Li-Ion Batteries](https://batteryuniversity.com/learn/article/charging_lithium_ion_batteries)
+, [How to Prolong Lithium Based Batteries](https://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries)
+- Gigaom: [Extend the battery life of your MacBook, no matter how old it is](https://gigaom.com/2013/06/22/extend-the-battery-life-of-your-macbook-no-matter-how-old-it-is/)
+- Fergyblog: [How to Prolong Lithium-Ion Battery Life](https://fer.gy/2012/04/15/how-to-prolong-lithium-ion-battery-life/)
+- Ars Technica: [What is the Best Way to Use a Li-Ion Battery?](https://arstechnica.com/gadgets/2011/02/ask-ars-what-is-the-best-way-to-use-an-li-ion-battery/)
+- Geeknizer: [How to Extend Battery Life](https://geeknizer.com/how-to-increase-battery-life/)
 
 ---
 ### Update

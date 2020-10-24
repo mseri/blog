@@ -9,7 +9,7 @@ disqus_identifier: 17
 katex: true
 ---
 
-This fall I am teaching Mathematical Methods for Scientist. This week we started to talk about differential equations and for the lecture I was looking for an example of a broadely used [first order ODE](http://en.wikipedia.org/wiki/Ordinary_differential_equation): my final choice has been the logistic equation.
+This fall I am teaching Mathematical Methods for Scientist. This week we started to talk about differential equations and for the lecture I was looking for an example of a broadely used [first order ODE](https://en.wikipedia.org/wiki/Ordinary_differential_equation): my final choice has been the logistic equation.
 
 It is a fairly simple differential equation that is used to describe the growth (and saturation) of populations in environments with competition for limited resources. Before entering into more details I think it's time to digress slightly and talk about something simpler.
 
@@ -23,7 +23,7 @@ $$
 
 where where $r > 0$ describes the growth rate and $P(t)$ is the quantity describing the number of cells at time $t$ (the population size).
 
-The solution of such equation is a simple exponential (if you don't trust me, trust at least [wolfram alpha](http://www.wolframalpha.com/input/?i=dP%2Fdt+%3D+r+P%28t%29)):
+The solution of such equation is a simple exponential (if you don't trust me, trust at least [wolfram alpha](https://www.wolframalpha.com/input/?i=dP%2Fdt+%3D+r+P%28t%29)):
 
 $$
 P(t) = c e^{rt}.
@@ -59,7 +59,7 @@ $$
 
 where $r>0$ is the rate of growth (as before) and $K > P_0$ is a parameter that measures what is the maximal amount of resources (or, from a different point of view, how big our population can become).
 
-[Separating variables](http://en.wikipedia.org/wiki/Separation_of_variables) we can easily solve the equation and, with some algebra we get
+[Separating variables](https://en.wikipedia.org/wiki/Separation_of_variables) we can easily solve the equation and, with some algebra we get
 
 $$
 \frac{K P}{K-P} = \frac{P}{1-P/K} = C e^{rt}.
@@ -71,7 +71,7 @@ $$
 C = \frac{K P&#95;0}{K - P&#95;0}
 $$ 
 
-and therefore (with few other algebraic steps) we get as solution the [logistic function](http://en.wikipedia.org/wiki/Logistic_function):
+and therefore (with few other algebraic steps) we get as solution the [logistic function](https://en.wikipedia.org/wiki/Logistic_function):
 
 $$ 
 P(t) = \frac{ K P&#95;0 e^{rt} }{ K + P&#95;0 ( e^{rt} -1 )}.
@@ -83,12 +83,12 @@ If you compare this solution with the exponential growth of the bacteria you can
 
 Remember this graph when you look to graphs describing the incredible growth of something. You should not be surprised if you recognise it. 
 
-Make an experiment, look to a graph of the diffusion of internet on your country (or in the world), or to one about the production of crops or oil, or to the [Google Trends](http://www.google.co.uk/trends) graph of searches for different social networks.
+Make an experiment, look to a graph of the diffusion of internet on your country (or in the world), or to one about the production of crops or oil, or to the [Google Trends](https://www.google.co.uk/trends) graph of searches for different social networks.
 
 ![Trends for different social networks](/images/17-trends.png)
 
-Note that if you set $K=2A/B$, $r=B$ and $P_0 = K/(1+e^{BC})$, for some numbers $A,B,C$ whose meaning I don't really know, you obtain the equation of the [**Hubbert Model of Oil Production**](http://en.wikipedia.org/wiki/Hubbert_peak_theory) that is used to predict when the maximum of oil production will be reached and how the production will behave afterward.
+Note that if you set $K=2A/B$, $r=B$ and $P_0 = K/(1+e^{BC})$, for some numbers $A,B,C$ whose meaning I don't really know, you obtain the equation of the [**Hubbert Model of Oil Production**](https://en.wikipedia.org/wiki/Hubbert_peak_theory) that is used to predict when the maximum of oil production will be reached and how the production will behave afterward.
 
 Note, moreover, that in the limit $K\to+\infty$ we go back to the exponential growth model.
 
-Finally, do not confuse this logistic equation with the [logistic map](http://en.wikipedia.org/wiki/Logistic_map). They are strictly related but the study of the logistic map is a completely different story.
+Finally, do not confuse this logistic equation with the [logistic map](https://en.wikipedia.org/wiki/Logistic_map). They are strictly related but the study of the logistic map is a completely different story.

@@ -12,7 +12,7 @@ disqus_identifier: 1
 
 * * *
 
-That's just the welcome post of a succesful [ghost](http://ghost.org) installation. I like to keep it and have a look of what one can do with Markdown.
+That's just the welcome post of a succesful [ghost](https://ghost.org) installation. I like to keep it and have a look of what one can do with Markdown.
 
 Down in the page, if for some reason you want to read it, you will find a broken image. Don't worry, it's meant to be so :)
 
@@ -41,13 +41,13 @@ or with numbers!
 
 ### Links
 
-Want to link to a source? No problem. If you paste in url, like http://ghost.org - it'll automatically be linked up. But if you want to customise your anchor text, you can do that too! Here's a link to [the Ghost website](http://ghost.org). Neat.
+Want to link to a source? No problem. If you paste in url, like https://ghost.org - it'll automatically be linked up. But if you want to customise your anchor text, you can do that too! Here's a link to [the Ghost website](https://ghost.org). Neat.
 
 ### What about Images?
 
 Images work too! Already know the URL of the image you want to include in your article? Simply paste it in like this to make it show up:
 
-![The Ghost Logo](http://tryghost.org/ghost.png)
+![The Ghost Logo](https://web.archive.org/web/20181110152239if_/http://cdn.travelllll.com/ghost/ghost.png)
 
 Not sure which image you want to use yet? That's ok too. Leave yourself a descriptive placeholder and keep writing. Come back later and drag and drop the image in to upload:
 

@@ -10,7 +10,7 @@ disqus_identifier: 21
 
 I already wrote about the great pleasure of moving to zsh in a previous post, but I feel that I should update you on the progresses.
 
-From the last time I moved from Oh-My-Zsh to [Prezto](https://github.com/sorin-ionescu/prezto), a different [_dotfiles framework_](http://dotfiles.github.io). I've found it much lighter and faster than oh-my-zsh, despite not having the same amount of plugins and themes. 
+From the last time I moved from Oh-My-Zsh to [Prezto](https://github.com/sorin-ionescu/prezto), a different [_dotfiles framework_](https://dotfiles.github.io). I've found it much lighter and faster than oh-my-zsh, despite not having the same amount of plugins and themes. 
 
 In fact, as far as I understood, prezto was born as a fork of oh-my-zsh and was later completely rewritten to be more zshish and better optimised. 
 
@@ -131,4 +131,4 @@ Or, for something similar, have fun and try
         print -P -- "$BG[$code]$code: Test %{$reset_color%}"
     done
 
-Have fun. Thanks to zsh and [iTerm2](http://www.iterm2.com/#/section/home) I am happily going back to use [vim](http://www.vim.org) but that's another story...
+Have fun. Thanks to zsh and [iTerm2](https://www.iterm2.com/#/section/home) I am happily going back to use [vim](https://www.vim.org) but that's another story...

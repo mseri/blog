@@ -80,11 +80,11 @@ Again `+=` stands for `append` when used with arrays.
 
 I guess the fastest code would be to use a quicksort and remove the duplicates while sorting, but it (as my second implementation of `unique`) would not preserve the order of appearence.
 
-While wrtiting this post, on HN was linked a [very initersting post](http://nomothetis.svbtle.com/smashing-swift) with implementation of some interesting construct, like the [either of the previous post](http://www.mseri.me/implementing-either-type-in-swift) and more, and pointing out problems of the young swift compiler. I think it's a nice reading.
+While wrtiting this post, on HN was linked a [very initersting post](https://nomothetis.svbtle.com/smashing-swift) with implementation of some interesting construct, like the [either of the previous post](https://www.mseri.me/implementing-either-type-in-swift) and more, and pointing out problems of the young swift compiler. I think it's a nice reading.
 
-Additionally I recently stumbled upon the [following stackoverflow thread](http://stackoverflow.com/questions/24027116). I find it quite interesting, especially because it shows a nice extension of Arrays introducing an `each` construct very similar to ruby's one.
+Additionally I recently stumbled upon the [following stackoverflow thread](https://stackoverflow.com/questions/24027116). I find it quite interesting, especially because it shows a nice extension of Arrays introducing an `each` construct very similar to ruby's one.
 
-Another simple example I was working on is the _null coaleshing operator_ that would come handy with Swift's optionals. An interesting discussion in regard can be found (again) in [stackoverflow](http://stackoverflow.com/questions/24082959).
+Another simple example I was working on is the _null coaleshing operator_ that would come handy with Swift's optionals. An interesting discussion in regard can be found (again) in [stackoverflow](https://stackoverflow.com/questions/24082959).
 
 After some time we can start to understand the limitations of Swift, but the language is definitely still under construction and I would not be surprised if it will be different at the time of the final release. 
 

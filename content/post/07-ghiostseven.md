@@ -16,7 +16,7 @@ In the next few days I will add a style for forms elements to look like they do 
 
 In the meanwhile you can play with it (and may be pull some update for merging) going to [github.com/mseri/ghiosSeven](https://github.com/mseri/ghiosSeven).
 
-{{< figure src="https://raw.github.com/mseri/ghiosSeven/master/screenshot/ghioSeven-page.png" title="Screenshot of  ghiOStSeven" width="320px" >}}
+{{< figure src="https://raw.github.com/mseri/ghiosSeven/master/screenshot/ghioSeven-page.png" title="Screenshot of  ghiOStSeven" alt="Screenshot of  ghiOStSeven" width="320px" >}}
 
 ~~There is an annoying bug that I was not able to fix up to now: the ordered lists `<ol>` appear unnumbered. Every fix I've tried seemed not to work. If you have an idea, just let me know please.~~ 
-Thanks to [David](http://theonlycog.com) this is now fixed.
+Thanks to [David](https://theonlycog.com) this is now fixed.

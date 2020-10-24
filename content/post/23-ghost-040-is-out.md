@@ -12,7 +12,7 @@ and the ghost update script has been updated to mirror the changes in the update
 
 Updates for [purity](https://gumroad.com/l/purity) to support all the new features are going to be released very soon.
 
-As you can read from [the official announcement](http://blog.ghost.org/ghost-0-4/), the new release of Ghost comes with a huge amount of features and updates:
+As you can read from [the official announcement](https://blog.ghost.org/ghost-0-4/), the new release of Ghost comes with a huge amount of features and updates:
 
 - **Static pages**. You can now toggle any post to be a "page" from within your post settings menu. This will remove it from your post feed. About / Contact / Terms galore!
 - **Unsaved changes notifications**. We'll now give you a heads up when you're about to lose unsaved changes. So you can, you know, save.

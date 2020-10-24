@@ -8,7 +8,7 @@ slug: "installing-scientific-python-libraries-on-osx"
 disqus_identifier: 28
 ---
 
-For a recent project, I had the necessity to install (or update) some of the scientific python libraries that I use for computation (and to avoit matlab). I was  aware of [a not too recent tutorial](http://www.thisisthegreenroom.com/2011/installing-python-numpy-scipy-matplotlib-and-ipython-on-lion/) in regard that left me quit unhappy at the time, in particular I strongly disagree with their practice of changing OSX official symlinks to point at the new Python install. 
+For a recent project, I had the necessity to install (or update) some of the scientific python libraries that I use for computation (and to avoit matlab). I was  aware of [a not too recent tutorial](https://www.thisisthegreenroom.com/2011/installing-python-numpy-scipy-matplotlib-and-ipython-on-lion/) in regard that left me quit unhappy at the time, in particular I strongly disagree with their practice of changing OSX official symlinks to point at the new Python install. 
 
 Given that I am not alone in the project, I decided to write a short tutorial trying to include all the necessary steps for a successful installation of python, numpy, scipy, matplotlib, ipython and qutip.
 
@@ -16,7 +16,7 @@ Given that I am not alone in the project, I decided to write a short tutorial tr
 The first essential step is to make sure that you have installed [XCode](https://developer.apple.com/xcode/) (since OSX Lion you will find it on the AppStore). If you don't or you don't know what we are talking about I refer you to Google (or DuckDuckGo). A priori we will just need the command line tools.
 
 ## Convert yourself to Homebrew
-Then let's install a serious package manager, and with this I really mean: install [Homebrew](http://brew.sh)!
+Then let's install a serious package manager, and with this I really mean: install [Homebrew](https://brew.sh)!
 
 If you don't have it yet, open a Terminal and install it copying and pasting the following code:
 
@@ -117,13 +117,13 @@ Have fun!!!
 - - - - - -
 
 ## A final remark for Max
-We are probably going to use [QuTiP](http://qutip.org) too. Its setup is quite straightforward, simply run
+We are probably going to use [QuTiP](https://qutip.org) too. Its setup is quite straightforward, simply run
 
     :::sh
     pip install cython
     pip install qutip
 
-and it's installed. You can test the installation pasting the following code in ipython (courtesy of [Introduction to QuTiP](http://nbviewer.ipython.org/github/jrjohansson/qutip-lectures/blob/master/Lecture-0-Introduction-to-QuTiP.ipynb))
+and it's installed. You can test the installation pasting the following code in ipython (courtesy of [Introduction to QuTiP](https://nbviewer.ipython.org/github/jrjohansson/qutip-lectures/blob/master/Lecture-0-Introduction-to-QuTiP.ipynb))
 
     :::python
     from qutip import *
@@ -139,7 +139,7 @@ If you get as output
 
 then the installation was fine.
 
-Have a look at the official [Tutorials page](http://qutip.org/tutorials.html) it is quite fun!
+Have a look at the official [Tutorials page](https://qutip.org/tutorials.html) it is quite fun!
 
 - - - - - -
 Edit: updated Homebrew install link

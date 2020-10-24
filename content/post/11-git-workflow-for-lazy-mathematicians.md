@@ -8,19 +8,19 @@ slug: "git-workflow-for-lazy-mathematicians"
 disqus_identifier: 11
 ---
 
-First of all, what is [git](http://git-scm.com)? Citing its website
+First of all, what is [git](https://git-scm.com)? Citing its website
 > Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 > [It] is easy to learn and has a tiny footprint with lightning fast performance.
 
 In other words Git provides a source control repository that enables you to roll back code changes as needed, to merge the updates when collaborating with others and eventually to have an online backup of your work. 
 
-For remote backup and collaboration you can get a free account on [github](http://www.github.com) or [bitbucket](http://www.bitbucket.org). Note that with this last one, if you have an academical email address, you can get unlimited private git repository with unlimited amount of collaborators. On the other hand, github seems the most common choice for open source projects.
+For remote backup and collaboration you can get a free account on [github](https://www.github.com) or [bitbucket](https://www.bitbucket.org). Note that with this last one, if you have an academical email address, you can get unlimited private git repository with unlimited amount of collaborators. On the other hand, github seems the most common choice for open source projects.
 
 If you are coding numerical algorithms, mathematica notebooks, latex drafts, papers, or whateverelse, you may decide not to use Git, but sooner or later you will be there thinking "if only I had saved that version and could take back just those few lines"... and it's there that Git power enter into play.
 
 I have to admit that I disagree with the description given above: Git is not easy to understand or learn! But if you take the time to understand at least the basics, it will present as a worthwhile and essential tool.
 
-And if you briefly look online, you may discover that I am not the only one to think it (see e.g. [Git+LaTeX Workflow](http://stackoverflow.com/questions/6188780/git-latex-workflow), [Git Basics for LaTeX Users](http://bensresearch.com/downloads/Git.pdf) or [Collaborating with LaTeX and Git](https://www.sharelatex.com/blog/2012/10/16/collaborating-with-latex-and-git.html)).
+And if you briefly look online, you may discover that I am not the only one to think it (see e.g. [Git+LaTeX Workflow](https://stackoverflow.com/questions/6188780/git-latex-workflow), [Git Basics for LaTeX Users](https://bensresearch.com/downloads/Git.pdf) or [Collaborating with LaTeX and Git](https://www.sharelatex.com/blog/2012/10/16/collaborating-with-latex-and-git.html)).
 
 ## Git in four paragraphs and a list
 
@@ -51,9 +51,9 @@ If your output looks like
 
 you already have git installed, if it shows an error you probably don't.
 
-How to install it is really a matter of what OS you are using. You could just go to the home page of [Git](http://git-scm.com) and download an installer, use your favourite package manager or compile the sources.
+How to install it is really a matter of what OS you are using. You could just go to the home page of [Git](https://git-scm.com) and download an installer, use your favourite package manager or compile the sources.
 
-Alternatively you could use the github software for [mac](http://mac.github.com) and [windows](http://windows.github.com). For windows I strongly suggest to use [msysGit](http://msysgit.github.io).
+Alternatively you could use the github software for [mac](https://mac.github.com) and [windows](https://windows.github.com). For windows I strongly suggest to use [msysGit](https://msysgit.github.io).
 
 On any Debian based linux (including Ubuntu) you can use the command line 
 
@@ -69,7 +69,7 @@ Whatever you choose your option to be, I strongly suggest you make a free accoun
 
 _When you register, you shuld use your real name. For a developer and for people involved with open source the BitBucket/GitHub account could be as important as a résumé or a business card. I really suggest you to use the name by which you are known professionally, even if you plan to use just private repositories._
 
-If you like nice graphical interfaces you could use the nice (and free) [Source Tree](http://www.sourcetreeapp.com). Personally Source Tree is the best, anyway on the official [Git website](http://git-scm.com) you can find a good list of alternative graphical interfaces for Git.
+If you like nice graphical interfaces you could use the nice (and free) [Source Tree](https://www.sourcetreeapp.com). Personally Source Tree is the best, anyway on the official [Git website](https://git-scm.com) you can find a good list of alternative graphical interfaces for Git.
 
 ### Introduce yourself to git
 Now that Git is installed you shall check if it is properly configured, i.e. does it know who you are?
@@ -129,7 +129,7 @@ Add the remote repository for your project and push your local project to the re
         git push origin master
 
 ### Save changes
-At each stage of completion you should [commit your code](http://gitref.org/basic/#commit) into your local repository with:
+At each stage of completion you should [commit your code](https://gitref.org/basic/#commit) into your local repository with:
 
     :::sh
     git commit -am "some readable comment"
@@ -144,7 +144,7 @@ Finally you can push your changes to the remote repository:
 #### Commit messages? C'mon...
 If you are not working alone your colleagues will surely appreciate if you follow some convention for your commit messages, and so would you when they are going to commit or when you are looking back to some change.
 
-I would suggest you to use imperative tense ("update" not "updated") and keep the first line very short. I think [A note about git commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) is a good reding in regard.
+I would suggest you to use imperative tense ("update" not "updated") and keep the first line very short. I think [A note about git commit messages](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) is a good reding in regard.
 
 ### View the history of changes
 To view your history is enough to type
@@ -259,7 +259,7 @@ Supposing that there is no conflict, you just have to commit your code and inste
     git pull origin master
 
 ### A finer workflow
-This is the workflow I use when I work in teams. I learned it from [Rails with Git and GitHub](http://railsapps.github.io/rails-git.html). I like how it is explained in that page, this section is borrowed from their article.
+This is the workflow I use when I work in teams. I learned it from [Rails with Git and GitHub](https://railsapps.github.io/rails-git.html). I like how it is explained in that page, this section is borrowed from their article.
 
 When you are using Git for version control, you can commit every time you save a file, even for the tiniest typo fixes. If only you will ever see your Git commits, no one will care. But if you are working on a team, either commercially or as part of an open source project, you will drive your fellow programmers crazy if they try to follow your work and see such "granular” commits. Instead, get in the habit of creating a Git branch each time you begin work to implement a feature. When your new feature is complete, merge the branch and "squash” the commits so your comrades see just one commit for the entire feature.
 
@@ -288,6 +288,6 @@ Finally you can delete the working branch when you're done:
     git branch -D second_proof
 
 ## A final remark
-If you are new to git and want to become a master of the art, instead of my very simple workflow you can read for free the online version of [Pro Git by Scott Chacon](http://git-scm.com/book). 
+If you are new to git and want to become a master of the art, instead of my very simple workflow you can read for free the online version of [Pro Git by Scott Chacon](https://git-scm.com/book). 
 
-You find a very nice free complete interactive crash course on git at [Git Immersion](http://gitimmersion.com). I realised it only after having written my post, it is very very good.
+You find a very nice free complete interactive crash course on git at [Git Immersion](https://gitimmersion.com). I realised it only after having written my post, it is very very good.

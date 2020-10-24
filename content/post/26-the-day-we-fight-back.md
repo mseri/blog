@@ -78,19 +78,19 @@ You can read some interesting comments in a recent post of the EFF: [Internation
 
 ###But why are we so upset, and why should you be? 
 
-Have you ever wandered what the NSA and GCHQ are doing? Here’s just some of what we’ve learned, or had confirmed, in 2013 (from [Reddit blog](http://blog.reddit.com/2014/02/the-day-we-fight-back-against-mass.html)).
+Have you ever wandered what the NSA and GCHQ are doing? Here’s just some of what we’ve learned, or had confirmed, in 2013 (from [Reddit blog](https://blog.reddit.com/2014/02/the-day-we-fight-back-against-mass.html)).
 
 **Collecting call records and contact lists**
 
 -   The NSA collects virtually every phone call record in the United
     States—that’s who you call, who calls you, when, for how long, and
     sometimes where.
-    ([Guardian](http://www.theguardian.com/world/2013/jun/06/nsa-phone-records-verizon-court-order))
+    ([Guardian](https://www.theguardian.com/world/2013/jun/06/nsa-phone-records-verizon-court-order))
 
 -   The NSA "is harvesting hundreds of millions of contact lists from
     personal e-mail and instant messaging accounts around the world,
     many of them belonging to Americans." ([Washington
-    Post](http://www.washingtonpost.com/world/national-security/nsa-collects-millions-of-e-mail-address-books-globally/2013/10/14/8e58b5be-34f9-11e3-80c6-7e6dd8d22d8f_story.html))
+    Post](https://www.washingtonpost.com/world/national-security/nsa-collects-millions-of-e-mail-address-books-globally/2013/10/14/8e58b5be-34f9-11e3-80c6-7e6dd8d22d8f_story.html))
 
 **Collecting data from the fiber-optic backbone of the Internet**
 
@@ -98,12 +98,12 @@ Have you ever wandered what the NSA and GCHQ are doing? Here’s just some of wh
     infrastructure as data flows past," as part of what it calls
     "upstream" collection, including content and metadata of emails, web
     activity, chats, social networks, and everything else. ([Washington
-    Post](http://www.washingtonpost.com/wp-srv/special/politics/prism-collection-documents/))
+    Post](https://www.washingtonpost.com/wp-srv/special/politics/prism-collection-documents/))
 -   NSA "has secretly broken into the main communications links that
     connect Yahoo and Google data centers around the world" and has
     "positioned itself to collect at will from hundreds of millions of
     user accounts, many of them belonging to Americans." ([Washington
-    Post](http://www.washingtonpost.com/world/national-security/nsa-infiltrates-links-to-yahoo-google-data-centers-worldwide-snowden-documents-say/2013/10/30/e51d661e-4166-11e3-8b74-d89d714ca4dd_story.html))
+    Post](https://www.washingtonpost.com/world/national-security/nsa-infiltrates-links-to-yahoo-google-data-centers-worldwide-snowden-documents-say/2013/10/30/e51d661e-4166-11e3-8b74-d89d714ca4dd_story.html))
 
 **Collecting email and SMS messages**
 
@@ -111,14 +111,14 @@ Have you ever wandered what the NSA and GCHQ are doing? Here’s just some of wh
     e-mail and text communications into and out of the country, hunting
     for people who mention information about foreigners under
     surveillance, according to intelligence officials". ([New York
-    Times](http://www.nytimes.com/2013/08/08/us/broader-sifting-of-data-abroad-is-seen-by-nsa.html?_r=0))
+    Times](https://www.nytimes.com/2013/08/08/us/broader-sifting-of-data-abroad-is-seen-by-nsa.html?_r=0))
 
 **Collecting cellphone location data**
 
 -   The NSA "is gathering nearly [5 billion records a
-    day](http://apps.washingtonpost.com/g/page/world/what-is-fascia/637/)
+    day](https://apps.washingtonpost.com/g/page/world/what-is-fascia/637/)
     on the whereabouts of cellphones around the world." ([Washington
-    Post](http://www.washingtonpost.com/world/national-security/nsa-tracking-cellphone-locations-worldwide-snowden-documents-show/2013/12/04/5492873a-5cf2-11e3-bc56-c6ca94801fac_story.html))
+    Post](https://www.washingtonpost.com/world/national-security/nsa-tracking-cellphone-locations-worldwide-snowden-documents-show/2013/12/04/5492873a-5cf2-11e3-bc56-c6ca94801fac_story.html))
 
 **Undermining encryption standards**
 
@@ -127,7 +127,7 @@ Have you ever wandered what the NSA and GCHQ are doing? Here’s just some of wh
     behind-the-scenes persuasion to undermine the major tools protecting
     the privacy of everyday communications in the Internet age." ([New
     York Times and
-    ProPublica](http://www.nytimes.com/2013/09/06/us/nsa-foils-much-internet-encryption.html))
+    ProPublica](https://www.nytimes.com/2013/09/06/us/nsa-foils-much-internet-encryption.html))
 
 **Monitoring people’s porn usage**
 
@@ -136,7 +136,7 @@ Have you ever wandered what the NSA and GCHQ are doing? Here’s just some of wh
     proposed plan to harm the reputations of those whom the agency
     believes are radicalizing others through incendiary speeches."
     ([Washington
-    Post](http://www.huffingtonpost.com/2013/11/26/nsa-porn-muslims_n_4346128.html))
+    Post](https://www.huffingtonpost.com/2013/11/26/nsa-porn-muslims_n_4346128.html))
 
 **Monitoring online gaming communities**
 
@@ -150,11 +150,11 @@ Have you ever wandered what the NSA and GCHQ are doing? Here’s just some of wh
     advertisers to track consumers, using "cookies" and location data to
     pinpoint targets for government hacking and to bolster
     surveillance." ([Washington
-    Post](http://www.washingtonpost.com/blogs/the-switch/wp/2013/12/10/nsa-uses-google-cookies-to-pinpoint-targets-for-hacking/))
+    Post](https://www.washingtonpost.com/blogs/the-switch/wp/2013/12/10/nsa-uses-google-cookies-to-pinpoint-targets-for-hacking/))
 -   NSA "officers on several occasions have channeled their agency’s
     enormous eavesdropping power to spy on love interests." ([Wall
     Street
-    Journal](http://blogs.wsj.com/washwire/2013/08/23/nsa-officers-sometimes-spy-on-love-interests/))
+    Journal](https://blogs.wsj.com/washwire/2013/08/23/nsa-officers-sometimes-spy-on-love-interests/))
 
 For additional informations have a look at one of the following links:
   
@@ -162,8 +162,8 @@ For additional informations have a look at one of the following links:
 Wikipedia](https://en.wikipedia.org/wiki/Mass_surveillance_in_the_United_States)
 - [NSA Spaying - EFF.org](https://eff.org/nsa-spying)
 - [Guardian’s NSA Files
-Decoded](http://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded)
-- [Global surveillance page by the University of Oslo](http://www.ub.uio.no/fag/informatikk-matematikk/informatikk/faglig/bibliografier/no21984.html)
+Decoded](https://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded)
+- [Global surveillance page by the University of Oslo](https://www.ub.uio.no/fag/informatikk-matematikk/informatikk/faglig/bibliografier/no21984.html)
 
 **And if you think that they have the right to do it, you should definitely read this [post of the EFF: 8 Common Excuses for NSA Surveillance - and How to Bust Them](https://www.eff.org/deeplinks/2013/11/busting-eight-common-excuses-nsa-surveillance).**
 

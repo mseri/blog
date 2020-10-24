@@ -8,7 +8,7 @@ slug: "shasumming-files-in-ruby"
 disqus_identifier: 20
 ---
 
-Computing [SHA-\* hashes](http://en.wikipedia.org/wiki/Sha1sum) of files in ruby is in principle very easy.
+Computing [SHA-\* hashes](https://en.wikipedia.org/wiki/Sha1sum) of files in ruby is in principle very easy.
 
 You can either use the `OpenSSL` module or the `digest` one and the sytax is almost interchangeable. I am using the `digest` module just because it seems to be slightly faster (I timed it and on my machine it takes few milliseconds less).
 

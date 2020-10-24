@@ -8,11 +8,11 @@ slug: "convert-djvu-files-to-a-decently-small-pdf"
 disqus_identifier: 22
 ---
 
-Despite there are few decent [djvu](http://en.wikipedia.org/wiki/DjVu) readers, they are not as comfortable as the pdf readers. Moreover, it is not really possible to open djvu files in eInk ebook readers.
+Despite there are few decent [djvu](https://en.wikipedia.org/wiki/DjVu) readers, they are not as comfortable as the pdf readers. Moreover, it is not really possible to open djvu files in eInk ebook readers.
 
 Additionally, if you have ever tried to convert djvu files to pdf (or ps), you should have noted that the output is either corrupted or unbelievably big.
 
-There is an hack that could come in help. Open your `.bashrc` (or `.zshrc` if you use Zsh) and define this new [alias](http://tldp.org/LDP/abs/html/aliases.html) (i.e. add this line somewhere, say at the end of the file)
+There is an hack that could come in help. Open your `.bashrc` (or `.zshrc` if you use Zsh) and define this new [alias](https://tldp.org/LDP/abs/html/aliases.html) (i.e. add this line somewhere, say at the end of the file)
 
     :::sh
     alias djvu2pdf='LC_ALL=C ddjvu -format=pdf -mode=black -quality=85'

@@ -8,7 +8,7 @@ slug: "move-to-ghc-7-8-2-on-macosx"
 disqus_identifier: 31
 ---
 
-Lately I've been playing with some functional languages: [haskell](http://www.haskell.org/), lisp (in particular the scheme dialect, see e.g. [chicken](http://www.call-cc.org) or [racket](http://racket-lang.org)) and [elixir](http://elixir-lang.org) (I very much like it and I really appreciate that it runs on the erlang VM).
+Lately I've been playing with some functional languages: [haskell](https://www.haskell.org/), lisp (in particular the scheme dialect, see e.g. [chicken](https://www.call-cc.org) or [racket](https://racket-lang.org)) and [elixir](https://elixir-lang.org) (I very much like it and I really appreciate that it runs on the erlang VM).
 
 Each of those has something pretty unique and I believe is very worth learning. I cannot stress how much material you can find both online and in libraries to learn them (except for elixir but its website does a really good job and there will be plenty of books very soon out) and how strong thay can change your way of programming. 
 
@@ -27,9 +27,9 @@ First of all I uninstalled ghc 7.6, cabal-install or haskell platform (if you ha
 
 Additionally I had to remove the `.cabal` and `.ghc` folder in my home. There were pieces of configurations that were creating some conflicts, move them if you feel unsure and want to avoid the deletion. 
 
-Then I needed `cabal-install`. This requires slightly more work, especially it didn't quite work for me when I followed [the instructions](http://www.haskell.org/haskellwiki/Cabal-Install).
+Then I needed `cabal-install`. This requires slightly more work, especially it didn't quite work for me when I followed [the instructions](https://www.haskell.org/haskellwiki/Cabal-Install).
 
-First download the sources for `cabal-install` from [here](http://www.haskell.org/cabal/download.html). Just the `cabal-install tool` sources, it is going to update the `Cabal` library during its setup.
+First download the sources for `cabal-install` from [here](https://www.haskell.org/cabal/download.html). Just the `cabal-install tool` sources, it is going to update the `Cabal` library during its setup.
 
 Untar the file, e.g.
 
@@ -61,13 +61,13 @@ and follow the instructions.
 
 Remember that `.cabal/bin` must be in your `$PATH`.
 
-To learn coding in haskell there are few great sources. I think [Learn yourself a Haskell for Great Good!](http://learnyouahaskell.com) is a good place to start, maybe not perfect and not complete but I really really enjoied it (and learnt a lot).
+To learn coding in haskell there are few great sources. I think [Learn yourself a Haskell for Great Good!](https://learnyouahaskell.com) is a good place to start, maybe not perfect and not complete but I really really enjoied it (and learnt a lot).
 
 ## Essential Packages for Using Haskell
 
 Now, this section is mainly for my personal records. There is a number of packages I like to have installed for customizations, help and other stuff. Maybe some of those could interest some reader. Some of the installations will require sensible compilation times and overheating of your machine, it very much feels like installing `gentoo` ~10 years ago... some of you know what I mean :)
 
-I rely very much on [hoogle](http://www.haskell.org/hoogle/) when I code in haskell. Best part of it is that you can have it offline. First install the appropriate package with `cabal install hoogle`. 
+I rely very much on [hoogle](https://www.haskell.org/hoogle/) when I code in haskell. Best part of it is that you can have it offline. First install the appropriate package with `cabal install hoogle`. 
 
 You may be get a warning and be asked to run the install with the flag `--force-reinstall`. Just do it: `cabal install hoogle --force-reinstall`.
 
@@ -82,7 +82,7 @@ If you don't plan to use `goa` or `lambdabot` you can integrate `hoogle` in `ghc
 
 to your `.ghci` file.
 
-I believe that `ghci` is nothing without [lambdabot](http://www.haskell.org/haskellwiki/Lambdabot). Therefore `cabal install goa lambdabot` is the inevitable second step. Note that `goa` is not a mistake but a [useful addition](http://hackage.haskell.org/package/goa).
+I believe that `ghci` is nothing without [lambdabot](https://www.haskell.org/haskellwiki/Lambdabot). Therefore `cabal install goa lambdabot` is the inevitable second step. Note that `goa` is not a mistake but a [useful addition](https://hackage.haskell.org/package/goa).
 
 `lambdabot <= 4.3.0.1` have some problems with `ghc-7.8.2` and you will get a compilation error. To fix it you first `cabal install goa` by itself, then `cabal get lambdabot; cd lambdabot-4.3.0.1` and then you need to replace the content of `src/Lambdabot/Monad.hs-boot` with
 
@@ -122,12 +122,12 @@ Then in my `.ghci` I have
     :def version   lambdabot "version"
     :def src       lambdabot "src"
 
-I like to see what my code should look like. Often [hlint](http://community.haskell.org/~ndm/hlint/) is of great help for this (especially when you run it directly in your favourite editor, e.g. `vim` and `Sublime Text`): thus `cabal install hlint`.
+I like to see what my code should look like. Often [hlint](https://community.haskell.org/~ndm/hlint/) is of great help for this (especially when you run it directly in your favourite editor, e.g. `vim` and `Sublime Text`): thus `cabal install hlint`.
 
-Ans speaking of editors we cannot forget [ghc-mod](http://www.mew.org/~kazu/proj/ghc-mod/en/ghc-mod.html) to provide the integration: `cabal install ghc-mod`.
+Ans speaking of editors we cannot forget [ghc-mod](https://www.mew.org/~kazu/proj/ghc-mod/en/ghc-mod.html) to provide the integration: `cabal install ghc-mod`.
 
-Finally I massively use `pandoc`, look at [its webpage](http://johnmacfarlane.net/pandoc/) if you don't know it. You can installe prebuild binaries but recently I restarted enjying compiling things by myself. The installation via `cabal` is trivial. Just type `cabal install pandoc` and wait. Maybe go to get some coffee... it's not going to be just a couple of minutes. It may fail complaining about `alex`, in such case just run `cabal install alex` and run `cabal install pandoc` again.
+Finally I massively use `pandoc`, look at [its webpage](https://johnmacfarlane.net/pandoc/) if you don't know it. You can installe prebuild binaries but recently I restarted enjying compiling things by myself. The installation via `cabal` is trivial. Just type `cabal install pandoc` and wait. Maybe go to get some coffee... it's not going to be just a couple of minutes. It may fail complaining about `alex`, in such case just run `cabal install alex` and run `cabal install pandoc` again.
 
 Now that my `.cabal` folder is quite huge, I have everything I want to have fun with haskell.
 
-I happen to use many more haskell packages in fact (e.g. `aeson` for the `json` integration) but I usually install them in [local sandboxed environment](http://www.haskell.org/cabal/users-guide/installing-packages.html#developing-with-sandboxes) and try to keep the global user folder more or less stable.
+I happen to use many more haskell packages in fact (e.g. `aeson` for the `json` integration) but I usually install them in [local sandboxed environment](https://www.haskell.org/cabal/users-guide/installing-packages.html#developing-with-sandboxes) and try to keep the global user folder more or less stable.

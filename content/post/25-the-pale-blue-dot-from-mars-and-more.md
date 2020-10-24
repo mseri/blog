@@ -8,17 +8,17 @@ slug: "the-pale-blue-dot-from-mars-and-more"
 disqus_identifier: 25
 ---
 
-In 1990 the Voyager 1, already at 6 billion kilometers from us, turned around to take a picture of our little world from the boundary of the solar system (thanks [Carl Sagan](http://en.wikipedia.org/wiki/Pale&#95;Blue&#95;Dot&#95;&#40;book&#40;" target="&#95;blank) for making it happen).
+In 1990 the Voyager 1, already at 6 billion kilometers from us, turned around to take a picture of our little world from the boundary of the solar system (thanks [Carl Sagan](https://en.wikipedia.org/wiki/Pale&#95;Blue&#95;Dot&#95;&#40;book&#40;" target="&#95;blank) for making it happen).
 
-The picture, in which the Earth is just about as big as 0.12 pixels, was named [Pale Blue Dot](http://en.wikipedia.org/wiki/Pale_Blue_Dot) and I really suggest you to have a look at [its Wikipedia Page](http://en.wikipedia.org/wiki/Pale_Blue_Dot) to know something more about it.
+The picture, in which the Earth is just about as big as 0.12 pixels, was named [Pale Blue Dot](https://en.wikipedia.org/wiki/Pale_Blue_Dot) and I really suggest you to have a look at [its Wikipedia Page](https://en.wikipedia.org/wiki/Pale_Blue_Dot) to know something more about it.
 
-Few days ago the Curiosity rover on Mars took advantage of the martian night to turn toward the sky and take a picture of its brightest star. The result was [published yesterday by NASA/JPL](http://photojournal.jpl.nasa.gov/catalog/PIA17936) and is an incredibly beautiful follow up of the pale blue dot picture.
+Few days ago the Curiosity rover on Mars took advantage of the martian night to turn toward the sky and take a picture of its brightest star. The result was [published yesterday by NASA/JPL](https://photojournal.jpl.nasa.gov/catalog/PIA17936) and is an incredibly beautiful follow up of the pale blue dot picture.
 
-![A Pale Blue Dot from Mars](http://www.nasa.gov/sites/default/files/styles/946xvariable_height/public/pia17936_evening_star.jpg)
+![A Pale Blue Dot from Mars](https://www.nasa.gov/sites/default/files/styles/946xvariable_height/public/pia17936_evening_star.jpg)
 
-Alone in the dark martian sky you can admire the Earth (a little left of center in the image) and if you get a better resolution image from the [NASA webpage](http://www.nasa.gov/jpl/msl/earth-view-from-mars-pia17936/) you can see our moon is just below Earth. Mars is much closer than the Voyager 1 at the time, and still our world is nothing more than a Pale Blue Dot in the sky.
+Alone in the dark martian sky you can admire the Earth (a little left of center in the image) and if you get a better resolution image from the [NASA webpage](https://www.nasa.gov/jpl/msl/earth-view-from-mars-pia17936/) you can see our moon is just below Earth. Mars is much closer than the Voyager 1 at the time, and still our world is nothing more than a Pale Blue Dot in the sky.
 
-Despite the abundance of planets (some of which compatible with life) found by the [Kepler mission](http://kepler.nasa.gov) I believe that this picture reinforces the reflections made by Carl Sagan (see [Pale Blue Dot: A Vision of the Human Future in Space](http://en.wikipedia.org/wiki/Pale_Blue_Dot:_A_Vision_of_the_Human_Future_in_Space)) concerning the old picture made by Voyager 1:
+Despite the abundance of planets (some of which compatible with life) found by the [Kepler mission](https://kepler.nasa.gov) I believe that this picture reinforces the reflections made by Carl Sagan (see [Pale Blue Dot: A Vision of the Human Future in Space](https://en.wikipedia.org/wiki/Pale_Blue_Dot:_A_Vision_of_the_Human_Future_in_Space)) concerning the old picture made by Voyager 1:
 
 > From this distant vantage point, the Earth might not seem of any particular interest. But for us, it's different. Consider again that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar," every "supreme leader," every saint and sinner in the history of our species lived there – on a mote of dust suspended in a sunbeam.
 

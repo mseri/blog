@@ -65,4 +65,4 @@ ideals are.
 
 Best of luck and happiness.  Sincerely, Richard P. Feynman.
 
-From [Hotel Genius](http://genius.cat-v.org/richard-feynman/writtings/letters/problems).
+From [Hotel Genius](https://genius.cat-v.org/richard-feynman/writtings/letters/problems).

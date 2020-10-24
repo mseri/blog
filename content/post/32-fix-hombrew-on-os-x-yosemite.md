@@ -8,7 +8,7 @@ slug: "fix-hombrew-on-os-x-yosemite"
 disqus_identifier: 32
 ---
 
-If for some reasons you've been crazy enough to install the first developer beta of Mac OSX 10.01 Yosemite, you've probably noticed that [Homebrew](http://brew.sh/) stopped working.
+If for some reasons you've been crazy enough to install the first developer beta of Mac OSX 10.01 Yosemite, you've probably noticed that [Homebrew](https://brew.sh/) stopped working.
 
 One possible fix is to delete homebrew and reinstall everything following this [gist](https://gist.github.com/jpincheira/bd3698fee46735fac252). But I am too lazy and too attached to my list of installed packages to accept it.
 

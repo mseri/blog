@@ -10,7 +10,7 @@ disqus_identifier: 2
 
 I had my free Amazon EC2 instance waiting for this moment since [my last use of it](https://github.com/mseri/pplofthesoil). 
 
-I spent my few free hours setting up a decent (I hope) [theme](https://github.com/mseri/purity) for [Ghost](http://ghost.org), and reading around what to do and what not to do to have it up and running. My main reference was the nice blog post [How to set up an Amazon EC2 instance to host ghost for free](http://www.howtoinstallghost.com/how-to-setup-an-amazon-ec2-instance-to-host-ghost-for-free/).
+I spent my few free hours setting up a decent (I hope) [theme](https://github.com/mseri/purity) for [Ghost](https://ghost.org), and reading around what to do and what not to do to have it up and running. My main reference was the nice blog post [How to set up an Amazon EC2 instance to host ghost for free](https://www.howtoinstallghost.com/how-to-setup-an-amazon-ec2-instance-to-host-ghost-for-free/).
 
 I followed more or less all the steps suggested in the guide but there was still something missing: I wanted my Ghost blog to be running even when I am not logged in the EC2 instance.
 

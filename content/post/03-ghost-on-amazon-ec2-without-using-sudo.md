@@ -8,7 +8,7 @@ slug: "ghost-on-amazon-ec2-without-using-sudo"
 disqus_identifier: 3
 ---
 
-I've been thinking since [yesterday's post](http://www.mseri.me/ghost-up-and-running-on-amazon-ec2/) how to run the ghost blog at the user level, wihout the need of using sudo.
+I've been thinking since [yesterday's post](https://www.mseri.me/ghost-up-and-running-on-amazon-ec2/) how to run the ghost blog at the user level, wihout the need of using sudo.
 
 ## Use Nginx
 
@@ -17,13 +17,13 @@ In a production environment I would probably run ghos as a nginx subdomain (i.e.
 For the sake of completeness I link some of them here: 
 
 - [Dude looks like a ghost](https://blog.igbuend.com/dude-looks-like-a-ghost/)
-- [Setup Ghost with nginx on Debian](http://nls.io/setup-ghost-with-nginx-on-debian/) 
+- [Setup Ghost with nginx on Debian](https://nls.io/setup-ghost-with-nginx-on-debian/) 
 - [Installing Node.js on Amazon EC2](https://github.com/d5/docs/wiki/Installing-Node.js-on-Amazon-EC2) 
-- [How to Host Ghost on a Nginx Subdomain](http://www.howtoinstallghost.com/how-to-host-ghost-on-a-nginx-subdomain/) 
+- [How to Host Ghost on a Nginx Subdomain](https://www.howtoinstallghost.com/how-to-host-ghost-on-a-nginx-subdomain/) 
 
 Even if some of these links are for other Unix systems or just for node instead of ghost, it is pretty straightforward to adapt them to your needs.
 
-Remember, when you are in a production environment, end even when you are just on a test space, to try and secture your system as possible. A decent starting point could be [Top 20 Nginx WebServer Best Security Practices](http://www.cyberciti.biz/tips/linux-unix-bsd-nginx-webserver-security.html) or [Dude looks like a ghost](https://blog.igbuend.com/dude-looks-like-a-ghost/). Moreover, if you are following this last tutorial you should have a look to [How to Secure an nginx Server with Fail2Ban](http://snippets.aktagon.com/snippets/554-how-to-secure-an-nginx-server-with-fail2ban).
+Remember, when you are in a production environment, end even when you are just on a test space, to try and secture your system as possible. A decent starting point could be [Top 20 Nginx WebServer Best Security Practices](https://www.cyberciti.biz/tips/linux-unix-bsd-nginx-webserver-security.html) or [Dude looks like a ghost](https://blog.igbuend.com/dude-looks-like-a-ghost/). Moreover, if you are following this last tutorial you should have a look to [How to Secure an nginx Server with Fail2Ban](https://snippets.aktagon.com/snippets/554-how-to-secure-an-nginx-server-with-fail2ban).
 
 ## Use iptables to forward port 80
 

@@ -8,7 +8,7 @@ slug: "on-iterm2-and-solarized-dark"
 disqus_identifier: 18
 ---
 
-This weekend I've spent some time to understand [Z Shell](http://en.wikipedia.org/wiki/Z_shell). I admit that I've should have done it ages ago. I actually regret not having done it ages ago, I would have saved a lot of time.
+This weekend I've spent some time to understand [Z Shell](https://en.wikipedia.org/wiki/Z_shell). I admit that I've should have done it ages ago. I actually regret not having done it ages ago, I would have saved a lot of time.
 
 Moving your `.bashrc` to your new `.zshrc` is almost just copy and paste. And you suddently find yourself with a shell that makes you feel in the future!
 
@@ -18,9 +18,9 @@ If you additionally install [oh my zsh](https://github.com/robbyrussell/oh-my-zs
 >
 > **“OH MY ZSHELL!”**
 
-Being in a time for changes, I decided it was time to change my prompt and my usual color scheme. I've been already using [Solarized](http://ethanschoonover.com/solarized) in vim and Sublime Text for quite some time now, and it seemed a reasonable choice.
+Being in a time for changes, I decided it was time to change my prompt and my usual color scheme. I've been already using [Solarized](https://ethanschoonover.com/solarized) in vim and Sublime Text for quite some time now, and it seemed a reasonable choice.
 
-I downloaded it and installed it on osx Terminal. Everything went fine and the terminal was correctly showing the new colour set. The real problem appeared when I installed the colour scheme for [iTerm2](http://www.iterm2.com/) (my favourite term on osx)... I kept getting a greyscale coloroscheme (on the right in the screenshot), something very different from the expected output (left terminal in the picture). 
+I downloaded it and installed it on osx Terminal. Everything went fine and the terminal was correctly showing the new colour set. The real problem appeared when I installed the colour scheme for [iTerm2](https://www.iterm2.com/) (my favourite term on osx)... I kept getting a greyscale coloroscheme (on the right in the screenshot), something very different from the expected output (left terminal in the picture). 
 
 ![On the left you can see the correct color scheme, on the right the one that I was getting](/images/18-term.png)
 

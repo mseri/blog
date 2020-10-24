@@ -8,11 +8,11 @@ slug: "update-script-explained"
 disqus_identifier: 10
 ---
 
-I am going to proceed step by step through the code of the script that I have [posted few days ago](http://www.mseri.me/a-simple-script-to-update-ghost/). 
+I am going to proceed step by step through the code of the script that I have [posted few days ago](https://www.mseri.me/a-simple-script-to-update-ghost/). 
 
-I purposedly updated the script to be a bit more general and flexible (but not too much). At the end of the file I explain how to run it. You should [make a backup](http://docs.ghost.org/installation/upgrading/) before doing the update (the simplest way is probably running `tar czf backup.tar.gz YOUR_GHOST_FOLDER`). Be careful that there is no warranty with this script and I will not take any responsibility for claims or damages consequent to the use of it.
+I purposedly updated the script to be a bit more general and flexible (but not too much). At the end of the file I explain how to run it. You should [make a backup](https://docs.ghost.org/installation/upgrading/) before doing the update (the simplest way is probably running `tar czf backup.tar.gz YOUR_GHOST_FOLDER`). Be careful that there is no warranty with this script and I will not take any responsibility for claims or damages consequent to the use of it.
 
-The following line is called _sha bang_ and simply tells your system that the file contains a set of instructions that has to be executed by the [_bash_](http://en.wikipedia.org/wiki/Bash_(Unix_shell)) interpreter.
+The following line is called _sha bang_ and simply tells your system that the file contains a set of instructions that has to be executed by the [_bash_](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) interpreter.
 
     ::sh
     #!/bin/bash
@@ -49,14 +49,14 @@ The code proceed saving the current location in a variable, we will need it late
 The following three lines simply take care to download `GHOSTUPDATEFILE` and unzip it in `GHOSTUPDATELOCATION`.
 
     :::sh
-    wget http://ghost.org/zip/$(echo $GHOSTUPDATEFILE)
+    wget https://ghost.org/zip/$(echo $GHOSTUPDATEFILE)
     unzip $GHOSTUPDATEFILE -d $GHOSTUPDATELOCATION
     echo "Ghost downloaded and unzipped"
 
 For this step to be effective you need to have installed `wget`. If this is not the case you should install it or replace the wget line with
 
     :::sh
-    curl -O http://ghost.org/zip/$(echo $GHOSTUPDATEFILE)
+    curl -O https://ghost.org/zip/$(echo $GHOSTUPDATEFILE)
 
 Note that you will anyhow read the message _Ghost downloaded and unzipped_, even if there have been errors during the execution. If I have time, I may change this behavior in a future version but I don't plan to do it for the moment.
 
@@ -71,7 +71,7 @@ Note that you will anyhow read the message _Ghost downloaded and unzipped_, even
     npm install --production
     echo "NPM updated"
 
-These few lines of code simply do what is mechanically suggested to do in the [ghost upgrade instruction page](http://docs.ghost.org/installation/upgrading/): go into the new ghost folder and copy all the files in your active ghost environment, then move back to your ghost environment and run npm update.
+These few lines of code simply do what is mechanically suggested to do in the [ghost upgrade instruction page](https://docs.ghost.org/installation/upgrading/): go into the new ghost folder and copy all the files in your active ghost environment, then move back to your ghost environment and run npm update.
 
 After this update process is finished, hopefully without errors, we go back to our first location and remove the temporary update file and update folder.
 

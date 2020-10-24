@@ -8,7 +8,7 @@ slug: "left-pipe-in-haskell"
 disqus_identifier: 41
 ---
 
-If you read this blog, you know that I am very biased by having worked with unix shells for almost two decades and that I am addicted to the use of pipes (see e.g. [Piping with Swift](http://www.mseri.me/piping-with-swift/)). I really find much more natural to see data moving from left to right.
+If you read this blog, you know that I am very biased by having worked with unix shells for almost two decades and that I am addicted to the use of pipes (see e.g. [Piping with Swift](https://www.mseri.me/piping-with-swift/)). I really find much more natural to see data moving from left to right.
 
 Yesterday I was thinking that in Haskell everything is an expression and that you can easily define infix operators. Thus it must be possible to implement a shell-like pipe.
 

@@ -21,7 +21,7 @@ We measure visitors to our website using Google Analytics. This records what pag
 
 The information we collect from analytics helps us understand what parts of our sites are doing well, how people arrive at our site and so on. Like most websites, we use this information to make our website better.
 
-You can learn more about [Google Analytics](http://www.google.com/analytics/learn/privacy.html) or [opt out if you wish](https://tools.google.com/dlpage/gaoptout).
+You can learn more about [Google Analytics](https://www.google.com/analytics/learn/privacy.html) or [opt out if you wish](https://tools.google.com/dlpage/gaoptout).
 
 <!-- These plug-ins are currently not used !-->
 <!-- ## Facebook, Twitter and other social networks

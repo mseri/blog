@@ -8,7 +8,7 @@ slug: "the-beauty-of-mathematics"
 disqus_identifier: 14
 ---
 
-After having watched this video I hope you will agree with [Bertrand Russell](http://en.wikipedia.org/wiki/Bertrand_Russell):
+After having watched this video I hope you will agree with [Bertrand Russell](https://en.wikipedia.org/wiki/Bertrand_Russell):
 
 > &quot;Mathematics, rightly viewed, possesses not only truth, but supreme beauty &mdash; a beauty cold and austere, without the gorgeous trappings of painting or music.&quot;
 >

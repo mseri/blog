@@ -8,15 +8,15 @@ slug: "deploying-anchor-cms-on-openshift"
 disqus_identifier: 16
 ---
 
-Some of you may already know that installing [ghost](http://www.ghost.org) on [OpenShift](http://www.openshift.org) is extremely easy (and free). You can [check this post](http://ghost-laures.rhcloud.com) if you don't believe me.
+Some of you may already know that installing [ghost](https://www.ghost.org) on [OpenShift](https://www.openshift.org) is extremely easy (and free). You can [check this post](https://ghost-laures.rhcloud.com) if you don't believe me.
 
-I was wandering how is it with other small and less known CMS. Given that I was already making some local tests with [Anchor CMS](http://anchorcms.com" _target="blank) for a friend, and given that there is almost nothing around about its deployment on Open Shift I decided to give it a try and write about it.
+I was wandering how is it with other small and less known CMS. Given that I was already making some local tests with [Anchor CMS](https://anchorcms.com" _target="blank) for a friend, and given that there is almost nothing around about its deployment on Open Shift I decided to give it a try and write about it.
 
-I could find only three references online. Two were forum posts arguing that it is impossible to install it and one is the blog post titled [Ancor CMS on OpenShift](http://sruiz.co.uk/sruiz/blog/2013/09/07/anchor-cms-on-openshift/" _target="blank), that explain how to install Anchor in a working but long and painful way.
+I could find only three references online. Two were forum posts arguing that it is impossible to install it and one is the blog post titled [Ancor CMS on OpenShift](https://sruiz.co.uk/sruiz/blog/2013/09/07/anchor-cms-on-openshift/" _target="blank), that explain how to install Anchor in a working but long and painful way.
 
 In this post I explain you how to do it in 10 minutes (but you need a unix machine: \*BSD, Linux or Mac are fine). You will need the following:
 
-- A terminal that can execute wget, tar, [git](http://www.mseri.me/git-workflow-for-lazy-mathematicians/) and ssh.
+- A terminal that can execute wget, tar, [git](https://www.mseri.me/git-workflow-for-lazy-mathematicians/) and ssh.
 - A decent web browser.
 
 ## Step 0: the necessary tools
@@ -64,11 +64,11 @@ To install Anchor we need a recent version of php. Sadly the one contained in op
 And wait some time. When you are prompted for cloning and accepting the security certificate just type `yes` and hit return.
 Remember to annotate somewhere the informations printed at the end of the procedure:
 
-    URL:        http://anchor-mseritutorial.rhcloud.com/
+    URL:        https://anchor-mseritutorial.rhcloud.com/
     SSH to:     uuid@anchor-mseritutorial.rhcloud.com
     Git remote: ssh://uuid@anchor-mseritutorial.rhcloud.com/~/git/anchor.git/
 
-_Notice that the `URL` is simply `http://APP\_NAME-DOMAIN\_NAME.rhcloud.com/`. Notice moreover that we have a new subfolder called **anchor**: it is a clone of our online repository, the website content will go in `anchor/php`._ 
+_Notice that the `URL` is simply `https://APP\_NAME-DOMAIN\_NAME.rhcloud.com/`. Notice moreover that we have a new subfolder called **anchor**: it is a clone of our online repository, the website content will go in `anchor/php`._ 
 
 Before doing anything, follow the instruction that says 
 
@@ -103,7 +103,7 @@ We can do it from the terminal in the following way
     :::sh
     $ cd anchor/php
     $ git rm health_check.php
-    $ wget http://anchorcms.com/download -O anchorcms.tar.gz
+    $ wget https://anchorcms.com/download -O anchorcms.tar.gz
     $ tar zxvf anchorcms.tar.gz --strip-components 1
     $ rm -f anchorcms.tar.gz
     $ git add .
@@ -112,7 +112,7 @@ We can do it from the terminal in the following way
 
 The first four lines are to replace the content of the `php` folder with the code of Anchor, the last three lines are to add the new files to the repository and push (and deploy) the changes online.
 
-The last command will take some time before finishing. When it is done, it is time to configure our Anchor installation: navigate to your website (in our case was http://anchor-mseritutorial.rhcloud.com), click on "_Run the installer_" and use the information that you annotated in the second step to complete the set-up.
+The last command will take some time before finishing. When it is done, it is time to configure our Anchor installation: navigate to your website (in our case was https://anchor-mseritutorial.rhcloud.com), click on "_Run the installer_" and use the information that you annotated in the second step to complete the set-up.
 
 You will end up on a green screen telling you to create a `.htaccess` file in the root folder and paste there some code. Don't click on any of the buttons yet. Just copy the code, and from your terminal: type `nano .htaccess`, paste the code, press `Ctrl x`, type `y` and finally press return. 
 
@@ -186,7 +186,7 @@ Of course you have to deploy it:
     $ git commit -m "Added Hot Deploy"
     $ git push
 
-You can find many themes online, a good source is [Anchor Themes](http://anchorthemes.com), or you can build your own one using the official documentation or [some tutorial]( http://webdesign.tutsplus.com/tutorials/creating-a-theme-for-anchor-cms).
+You can find many themes online, a good source is [Anchor Themes](https://anchorthemes.com), or you can build your own one using the official documentation or [some tutorial]( https://webdesign.tutsplus.com/tutorials/creating-a-theme-for-anchor-cms).
 
 To install a new theme is enough to download it and add its folder inside the folder `anchor/php/themes` (you can already see the `default` theme folder, don't replace it _default_ is just the theme's name). Finally push it as usual: 
 
@@ -219,4 +219,4 @@ Remark: here the name that we are using is always `anchor` just because it is th
 
 Now log in, post something and enjoy your newly installed CMS!
 
-The tutorial installation is going to be online and visible for the next few days at the url [http://anchor-mseritutorial.rhcloud.com/](http://anchor-mseritutorial.rhcloud.com/). I use that account for tests, I don't plan to keep this installation of anchor alive forever (and moreover I don't use it, it's just empty), so don't be upset if the link is not going anymore in the future.
+The tutorial installation is going to be online and visible for the next few days at the url [https://anchor-mseritutorial.rhcloud.com/](https://anchor-mseritutorial.rhcloud.com/). I use that account for tests, I don't plan to keep this installation of anchor alive forever (and moreover I don't use it, it's just empty), so don't be upset if the link is not going anymore in the future.

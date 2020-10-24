@@ -14,7 +14,7 @@ Often enough this requires long and complicated procedures involving the setup o
 
 Luckily is even more common to have some level of ssh access provided directly by each institution. Indeed, there is a not too well known `ssh` option that let you use your encrypted connection to start a local socks proxy that could be used in the place of the VPN. 
 
-I copy and paste from the [man page](http://linuxcommand.org/man_pages/ssh1.html)
+I copy and paste from the [man page](https://linuxcommand.org/man_pages/ssh1.html)
 > **-D port**: Specifies a local “dynamic” application-level port forwarding. This works by allocating a socket to listen to port on the local side, and whenever a connection is made to this port, the connec  tion is forwarded over the secure channel, and the application protocol is then used to determine where to connect to from the remote machine.  Currently the SOCKS4 and SOCKS5 protocols are supported, and ssh will act as a SOCKS server.  [...]
 
 Run in your terminal
