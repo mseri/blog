@@ -1,6 +1,7 @@
 ---
 title: "On doing a PhD (in STEM)"
 date: 2020-12-04T10:45:35+01:00
+updated: 2021-02-19T09:37:00+01:00
 tags: ["blog", "academia"]
 categories: ["Blog"]
 slug: on-doing-phd
@@ -12,6 +13,8 @@ I was asked a few times in the recent past if doing a PhD is worth the effort. S
 Not long ago, Jacopo Bertolotti shared his thoughts on the same matter in a nice [twitter thread](https://web.archive.org/web/20201122162854/https://twitter.com/j_bertolotti/status/1330547247948460032).
 
 Since that really resonated with what I had to say, I'll let him speak also for me and add a few more comments at the end.
+
+For another very interesting and useful take on the matter, have also a look at [Matt Might's illustrated guide to a Ph.D.](http://matt.might.net/articles/phd-school-in-pictures/).
 
 >  A few days ago I was asked by some last year students advice on how to decide whether doing a PhD is the right thing to do. I will put here a summary of what I told them, just in case it can be useful for someone else.
 
