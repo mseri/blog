@@ -36,7 +36,7 @@ This means that appending `" target="_blank` to the URL will generate an anchor 
 
 will generate
 
-    :::html
+```html
     <a href="https://theli.nk" target="_blank">the text you see</a>
-
+```
 that is exactly what I was looking for.

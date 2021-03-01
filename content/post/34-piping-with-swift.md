@@ -19,17 +19,17 @@ Swift is unbelievably flexible from this point of view: one can easily define ne
 
 Let's try to define a left associative generic pipe.
 
-    :::swift
+```swift
     operator infix |> { 
         associativity left 
     }
     func |> <L,R>(left: L, right: L -> R) -> R {
         return right(left);
     }
-
+```
 Then we could use it to chain some function together in an elegant way. For example
 
-    :::swift
+```swift
     func unique<T:Hashable>(array: Array<T>) -> Array<T>{
         var filter = Dictionary<T,Bool>()
         var result = Array<T>()
@@ -43,7 +43,7 @@ Then we could use it to chain some function together in an elegant way. For exam
         }
         return result
     }
-
+```
     [1, 2, 3, 3, 3, 4, 5, 5, 6, 7] |> sort |> unique |> toString |> println
 
     // prints '[1,2,3,4,5,6,7]'
@@ -52,7 +52,7 @@ I strongly believe that some (better) implementation of the pipe should become p
 
 While writing this example, I was wondering what is the best way to remove duplicates in a Swift array? The shortest code I could come up with is
 
-    :::swift
+```swift
     func unique<T:Hashable>(array: T[]) -> T[] {
         var filter = Dictionary<T,Bool>()
         for i in 0..array.count {
@@ -60,12 +60,12 @@ While writing this example, I was wondering what is the best way to remove dupli
         }
         return Array(filter.keys)
     }
-
+```
 but it is probably not the fastest one. Nevertheless, I would probably use an underlying dictionary to implement a `Set` type and use the `Set` to remove duplicates. Note here that `T[]` is just syntactic sugar for `Array<T>`.
 
 Another version, using the builtin `contains` function could be
 
-    :::swift
+```swift
     func unique<T : Equatable>(array: T[]) -> T[] {
         var result = T[]()
         for x in array {
@@ -75,7 +75,7 @@ Another version, using the builtin `contains` function could be
         }
         return result
     }
-
+```
 Again `+=` stands for `append` when used with arrays.
 
 I guess the fastest code would be to use a quicksort and remove the duplicates while sorting, but it (as my second implementation of `unique`) would not preserve the order of appearence.

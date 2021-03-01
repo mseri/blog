@@ -14,16 +14,16 @@ Additionally, if you have ever tried to convert djvu files to pdf (or ps), you s
 
 There is an hack that could come in help. Open your `.bashrc` (or `.zshrc` if you use Zsh) and define this new [alias](https://tldp.org/LDP/abs/html/aliases.html) (i.e. add this line somewhere, say at the end of the file)
 
-    :::sh
+```sh
     alias djvu2pdf='LC_ALL=C ddjvu -format=pdf -mode=black -quality=85'
-
+```
 Save and reopen your terminal.
 
 Now, running
 
-    :::sh
+```sh
     djvu2pdf file.djvu output.pdf
-
+```
 will create a relatively small file with decent/good quality.
 
 Note that the `-mode=black` option improves sensibily the size of the file, but at the price of destroying some of the figures. 

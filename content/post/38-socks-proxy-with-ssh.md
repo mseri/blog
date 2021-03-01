@@ -19,9 +19,9 @@ I copy and paste from the [man page](https://linuxcommand.org/man_pages/ssh1.htm
 
 Run in your terminal
 
-    :::sh
+```sh
     ssh -D 9090  your_username@your_academic_ssh_server
-
+```
 and setup your browser to use a socks proxy with address `localhost` (or `127.0.0.1`) and port `9090`.
 
 There is even a more complete solution for linux and mac (note, it does not work on OS X 10.10 Yosemite, and has some problems with OS X 10.9 Mavericks) called [`sshuttle`](https://github.com/apenwarr/sshuttle).

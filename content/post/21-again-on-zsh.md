@@ -20,10 +20,10 @@ The setup requires three steps instead of just one but it's worth doing it.
 
 If you already use zsh I suggest you to make a backup copy of your configuration. It's enough to do the following from a terminal:
 
-    :::sh
+```sh
     $ cd ~
     $ tar czf zshBackup.tar.gz .z* .oh-my-zsh
-
+```
 (remove `.oh-my-zsh` from the line if you have not installed it)
 
 Then go to the [Prezto GitHub page](https://github.com/sorin-ionescu/prezto) and follow the instructions there. 
@@ -32,33 +32,33 @@ To avoid too many jumps I am copying them here:
 
 0. Clean your previous Zsh configuration (**create a Backup copy of the files before proceeding!!!**)
 
-        :::sh
+    ```sh
         rm -r .z* .oh-my-zsh
         
-1. Launch Zsh:
+```1. Launch Zsh:
 
-        :::sh
+    ```sh
         zsh
-
+```
 2. Clone the repository:
 
-        :::sh
+    ```sh
         git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-
+```
 3. Create a new Zsh configuration by copying the Zsh configuration files provided:
 
-        :::sh
+    ```sh
         setopt EXTENDED_GLOB
         for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N)
         do
             ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
         done
-
+```
 4. Set Zsh as your default shell (if it is not):
 
-        :::sh
+    ```sh
         chsh -s /bin/zsh
-
+```
 5. Open a new Zsh terminal window or tab.
 
 At this point you can happily see your new zsh theme.
@@ -92,14 +92,14 @@ I mimicked what they did in [YADR](https://github.com/skwp/dotfiles) (another ve
 
 1. First of all you need to create a new folder
       
-        :::sh
+    ```sh
         $ mkdir ~/.zsh.prompts
-   
+```   
     where you are going to save your theme.
 
 2. Modify the `Prompt` section of `.zpreztorc` to look like 
         
-        :::sh
+    ```sh
         # Set the prompt theme to load.
         # Setting it to 'random' loads a random theme.
         # Auto set to 'off' on dumb terminals.
@@ -107,7 +107,7 @@ I mimicked what they did in [YADR](https://github.com/skwp/dotfiles) (another ve
         autoload promptinit
         fpath=($HOME/.zsh.prompts $fpath)
         promptinit
-
+```
         zstyle ':prezto:module:prompt' theme 'YOURTHEMENAME'
 
     where `YOURTHEMENAME` is the name that you have chosen for your theme.
@@ -118,17 +118,17 @@ I mimicked what they did in [YADR](https://github.com/skwp/dotfiles) (another ve
 
 You may find the function provided in [oh-my-zsh's spectrum file](https://github.com/robbyrussell/oh-my-zsh/blob/master/lib/spectrum.zsh) helpful. For example it is enough to type the following in your Zsh terminal to see all the colours available
 
-    :::sh
+```sh
     for code in {000..255}; do
         print -P -- "$code: %F{$code}Test%f"
     done
-
+```
 Or, for something similar, have fun and try
 
-    :::sh
+```sh
     for code in {000..255}; do
         ((cc = code + 1))
         print -P -- "$BG[$code]$code: Test %{$reset_color%}"
     done
-
+```
 Have fun. Thanks to zsh and [iTerm2](https://www.iterm2.com/#/section/home) I am happily going back to use [vim](https://www.vim.org) but that's another story...

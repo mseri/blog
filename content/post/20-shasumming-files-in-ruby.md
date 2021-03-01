@@ -14,9 +14,9 @@ You can either use the `OpenSSL` module or the `digest` one and the sytax is alm
 
 My first code was
 
-    :::ruby
+```ruby
     require 'digest'
-
+```
     filename = '/path/to/the/file'
     Digest::SHA1.hexdigest(File.read(filename))
 
@@ -24,9 +24,9 @@ Then I made the hashes for a folder containing files of different sizes. For som
 
 I don't really know why the problem happened, but [apparently the solution is fairly easy](https://www.ruby-forum.com/topic/180458). I am now using a variation of the script proposed in the previous link that seems to run pretty smoothly and got rid of the error:
 
-    :::ruby
+```ruby
     require 'digest/sha1'
-
+```
     filename = '/path/to/the/file'
     buf = ''
     d = Digest::SHA1.new

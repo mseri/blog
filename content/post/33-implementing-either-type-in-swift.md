@@ -18,13 +18,13 @@ But let's come to the hearth of this post. I find abstract types and monadic con
 
 As you can read in [Apple Inc. “The Swift Programming Language.” ebook](https://itun.es/gb/jEUH0.l), the _optional_ type in Swift is nothing but synctactic sugar for the following enum
 
-    :::swift
+```swift
     /* Reimplement the Swift standard library's optional type */
     enum OptionalValue<T> {
         case None
         case Some(T)
     }
-
+```
     var possibleInteger: OptionalValue<Int> = .None
     possibleInteger = .Some(100)
 
@@ -32,7 +32,7 @@ Where`T` represents a generic type, `nil` is indeed syntactic sugar for `Optiona
 
 You can then use a `switch` and swift pattern matching capabilities to manage the error
 
-    :::swift
+```swift
     switch possibleInteger {
     case .Some(let value) :
         /* just type 'value' here to see '100' appearing in playground REPL */
@@ -40,25 +40,25 @@ You can then use a `switch` and swift pattern matching capabilities to manage th
     case .None :
         println("Error: no value.")
     }
-
+```
 I am not going in the realm of Monads (yet) and [try to explain them](https://www.haskell.org/haskellwiki/Monad_tutorials_timeline), but I think that the [_either_](https://www.haskell.org/ghc/docs/latest/html/libraries/base/Data-Either.html) type could be very useful in Swift. As for the _optional_, we can easily define it as
 
-    :::swift
+```swift
     enum Either<T1, T2> {
         case Left(T1)
         case Right(T2)
     }
-
+```
 As in Haskell, Either is parameterized by two types, not one. A value of the Either type _either_ contains a value of type `T1` or of type `T2`. With it, we can discriminate between two possibilities and using Swift pattern matching we can write a nice, clean code. 
 
 Either can be used as a [generalization of optional types](https://www.fpcomplete.com/school/starting-with-haskell/basics-of-haskell/10_Error_Handling) in which Left not only encodes failure but is accompanied by an error message (so often `T1` will be just `String`). Then Right encodes success and the accompanying value.
 
 For example
 
-    :::swift
+```swift
     var possibleInteger: Either<String,Int> = .Left("Not a number")
     var possibleInteger2: Either<String,Int> = .Right(3)
-
+```
     switch possibleInteger1 {
     case .Left(let errorText) :
         println("Error: \(errorText)")

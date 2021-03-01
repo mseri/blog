@@ -41,14 +41,14 @@ Moreover Git provides a set of commands that allow more collaborators (or the si
 ## First of all install Git
 But the zeroeth step is always to check if git is already installed on your computer (Mac OSX and many Linux distros have it pre-installed). Open a terminal and type
 
-    :::sh
+```sh
     git version
-
+```
 If your output looks like
 
-    :::sh
+```sh
     git version 1.8.3.4
-
+```
 you already have git installed, if it shows an error you probably don't.
 
 How to install it is really a matter of what OS you are using. You could just go to the home page of [Git](https://git-scm.com) and download an installer, use your favourite package manager or compile the sources.
@@ -57,14 +57,14 @@ Alternatively you could use the github software for [mac](https://mac.github.com
 
 On any Debian based linux (including Ubuntu) you can use the command line 
 
-    :::sh
+```sh
     sudo apt-get install git-core
-
+```
 Similarly, on red hat based (like Fedora), you can use
 
-    :::sh
+```sh
     yum install git-core
-
+```
 Whatever you choose your option to be, I strongly suggest you make a free account either on BitBucket or GitHub (or both).
 
 _When you register, you shuld use your real name. For a developer and for people involved with open source the BitBucket/GitHub account could be as important as a résumé or a business card. I really suggest you to use the name by which you are known professionally, even if you plan to use just private repositories._
@@ -75,37 +75,37 @@ If you like nice graphical interfaces you could use the nice (and free) [Source 
 Now that Git is installed you shall check if it is properly configured, i.e. does it know who you are?
 Open a terminal (keep it open... we will use it a lot) and type
 
-    :::sh
+```sh
     git config -l --global
-
+```
 You should see `user.name=Your Name` and `user.email=your_email_address`. The email address will identify you to any services that use your Git repo, therefore it is important that these values are correct and are the one used to register your BitBucket/GitHub/OtherServiceUsingGit account.
 
 If the previous output was wrong, you can fix it easily with
 
-    :::sh
+```sh
     git config --global user.name 'Your Name'
     git config --global user.email youremail@somedomain.com
-
+```
 ## Git Init
 
 If you want to start using Git with your project you have to initialise it. **Be sure to be in your project's root directory.**
 
 Initialise Git and make your first commit:
 
-    :::sh
+```sh
     git init
     git add .
     git commit -m 'first commit'
-
+```
 The `-m 'first commit'` simply attach a global message (with content 'first commit') to the commit. 
 
 > You should include a short descriptive comment with every commit.
 
 At any time with you can check your repository status with
 
-    :::sh
+```sh
     git status
-
+```
 ### Add a remote repository
 If you want an offsite copy of your work or you plan to share your work with others you should get a Bitbucket/Github account.
 
@@ -118,29 +118,29 @@ Add the remote repository for your project and push your local project to the re
 
 - for Bitbucket
 
-        :::sh
+    ```sh
         git remote add origin https://user@bitbucket.org/path_to/repo.git
         git push origin master
-
+```
 - for GitHub
 
-        :::sh
+    ```sh
         git remote add origin https://user@github.com/path_to/repo.git
         git push origin master
-
+```
 ### Save changes
 At each stage of completion you should [commit your code](https://gitref.org/basic/#commit) into your local repository with:
 
-    :::sh
+```sh
     git commit -am "some readable comment"
-
+```
 Here we use the `-am` argument: `-m` adds a commit message, while `-a` automatically makes a snapshot of all the changes done to _tracked files_, adds new files and removes any files you may have marked for deletion (otherwise you have to use `git rm`, adding an additional step).
 
 Finally you can push your changes to the remote repository:
 
-    :::sh
+```sh
     git push origin master
-
+```
 #### Commit messages? C'mon...
 If you are not working alone your colleagues will surely appreciate if you follow some convention for your commit messages, and so would you when they are going to commit or when you are looking back to some change.
 
@@ -149,9 +149,9 @@ I would suggest you to use imperative tense ("update" not "updated") and keep th
 ### View the history of changes
 To view your history is enough to type
 
-    :::sh
+```sh
     git log
-
+```
 The output will be something like
     
     commit 7dbba9ab8bb2031ed52abf6a2dc11cc335ece5a1
@@ -196,10 +196,10 @@ When you compile LaTeX documents, and in general when you compile any code, you 
 
 If you like terminal you could do as follows.
 
-    :::sh
+```sh
     touch .gitignore
     echo '.DS_Store' >> .gitignore
-
+```
 Or open `.gitignore` with your favourite editor and add all the files and folder Git has to ignore. For LaTeX you `.gitignore` could look like
 
     # For Mac users
@@ -227,14 +227,14 @@ Of course, you don't want to just be able to see changes, you want to be able to
 
 To restore your files to an earlier version, simply run:
 
-    :::sh
+```sh
     git checkout f69606d7e24ad45b31bb6eb4b38192bd07f274fc *
-
+```
 This tells git to `checkout` the files from the older version specified by the third argument (remember we refer to versions by their long identifier of numbers and letters). The files in your project now have their contents restored to the older version, but you still need to create a new version to mark this change in Git:
 
-    :::sh
+```sh
     git commit -a -m "Restore files to previous version"
-
+```
 You could of course edit your files at this previous version before creating a new version in git.
 
 Another common situation is you decide that you want to undo only one set of changes from a while ago. Perhaps you've edited the document in three steps: 
@@ -243,9 +243,9 @@ Another common situation is you decide that you want to undo only one set of cha
 3) Adding in a figure. 
 At each step you've created a new version in git, but now you decide that you didn't really want to update you acknowledgements. Unfortunately this is sandwiched between other changes so a simple rollback like before won't do. Fear not, because git is clever enough to do what you want, with the revert command:
 
-    :::sh
+```sh
     git revert f69606d7e24ad45b31bb6eb4b38192bd07f274fc
-
+```
 The final parameter should be the identifier of the version that introduced the changes you want to undo.
 
 Note: _Git revert undoes the changes introduced by the version that you pass to it. It does not revert the project to that version. This is a commonly confused command so be careful! To put the whole project back to a previous version, use the first method described at the top of this section._
@@ -255,9 +255,9 @@ Suppose that some collaborator made an important change and pushed it on the rem
 
 Supposing that there is no conflict, you just have to commit your code and instead of pushin it, pull it from the remote:
 
-    :::sh
+```sh
     git pull origin master
-
+```
 ### A finer workflow
 This is the workflow I use when I work in teams. I learned it from [Rails with Git and GitHub](https://railsapps.github.io/rails-git.html). I like how it is explained in that page, this section is borrowed from their article.
 
@@ -265,28 +265,28 @@ When you are using Git for version control, you can commit every time you save a
 
 Here's how you could create a new Git branch for a section named "Second Proof":
 
-    :::sh
+```sh
     git checkout -b second_proof
-
+```
 The command creates a new branch named "second_proof" and switches to it, analogous to copying all your files to a new directory and moving to work in the new directory (though that is not really what happens with Git).
 
 When the new feature is complete, merge the working branch to "master" and squash the commits so you have just one commit for the entire feature:
 
-    :::sh
+```sh
     git checkout master
     git merge --squash second_proof
     git commit -am "secion named 'Second Proof' complete"
-
+```
 If everithing goes smoothly you can push your changes
 
-    :::sh
+```sh
     git push origin master
-
+```
 Finally you can delete the working branch when you're done:
 
-    :::sh
+```sh
     git branch -D second_proof
-
+```
 ## A final remark
 If you are new to git and want to become a master of the art, instead of my very simple workflow you can read for free the online version of [Pro Git by Scott Chacon](https://git-scm.com/book). 
 

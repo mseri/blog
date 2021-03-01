@@ -22,9 +22,9 @@ The solution was pretty simple and straightforward in the end, and I believe thi
 
 First of all I uninstalled ghc 7.6, cabal-install or haskell platform (if you have it). Then I reinstalled the 7.8 branch of ghc, thanks to Homebrew that was pretty straightforward:
 
-    :::sh
+```sh
     brew install ghc --devel
-
+```
 Additionally I had to remove the `.cabal` and `.ghc` folder in my home. There were pieces of configurations that were creating some conflicts, move them if you feel unsure and want to avoid the deletion. 
 
 Then I needed `cabal-install`. This requires slightly more work, especially it didn't quite work for me when I followed [the instructions](https://www.haskell.org/haskellwiki/Cabal-Install).
@@ -33,19 +33,19 @@ First download the sources for `cabal-install` from [here](https://www.haskell.o
 
 Untar the file, e.g.
 
-    :::sh
+```sh
     tar zxvf cabal-install-1.20.0.2.tar.gz
-
+```
 and enter the newly created folder, e.g
 
-    :::sh
+```sh
     cd cabal-install-1.20.0.2
-
+```
 Now it all reduces to run
 
-    :::sh
+```sh
     ./bootstrap.sh --no-doc
-
+```
 (append `--global` if you prefer to install it in `/usr/local` instead of `$HOME/cabal`).
 
 The `--no-docs` flag seemed necessary to avoid a number of errors appearing in the compilation process and forcing me to install a number of packages by hand. Sadly I could not figure out the problem in the script yet, but that flag seems a reasonable workaround and I will install the docs later anyhow.
@@ -54,9 +54,9 @@ You may still get some error related to broken package, in such cas just `ghc-pk
 
 When cabal is installed it is a good idea to run
 
-    :::sh
+```sh
     cabal update
-
+```
 and follow the instructions.
 
 Remember that `.cabal/bin` must be in your `$PATH`.
@@ -77,19 +77,19 @@ When the setup is complete, you can run `hoogle data` to create a local database
 
 If you don't plan to use `goa` or `lambdabot` you can integrate `hoogle` in `ghci` by adding 
 
-    :::haskell
+```haskell
     :def hoogle \str -> return $ ":! hoogle --count=15 \"" ++ str ++ "\""
-
+```
 to your `.ghci` file.
 
 I believe that `ghci` is nothing without [lambdabot](https://www.haskell.org/haskellwiki/Lambdabot). Therefore `cabal install goa lambdabot` is the inevitable second step. Note that `goa` is not a mistake but a [useful addition](https://hackage.haskell.org/package/goa).
 
 `lambdabot <= 4.3.0.1` have some problems with `ghc-7.8.2` and you will get a compilation error. To fix it you first `cabal install goa` by itself, then `cabal get lambdabot; cd lambdabot-4.3.0.1` and then you need to replace the content of `src/Lambdabot/Monad.hs-boot` with
 
-    :::haskell
+```haskell
     {-# LANGUAGE RankNTypes #-}
     module Lambdabot.Monad where
-
+```
     import Control.Monad.Reader
     import Data.IORef
 
@@ -104,7 +104,7 @@ Then save and run `cabal configure && cabal install`.
 
 Then in my `.ghci` I have
 
-    :::haskell
+```haskell
     :m - Prelude
     :m + GOA
     setLambdabotHome "/Users/marcelloseri/.cabal/bin"
@@ -121,7 +121,7 @@ Then in my `.ghci` I have
     :def where     lambdabot "where"
     :def version   lambdabot "version"
     :def src       lambdabot "src"
-
+```
 I like to see what my code should look like. Often [hlint](https://community.haskell.org/~ndm/hlint/) is of great help for this (especially when you run it directly in your favourite editor, e.g. `vim` and `Sublime Text`): thus `cabal install hlint`.
 
 Ans speaking of editors we cannot forget [ghc-mod](https://www.mew.org/~kazu/proj/ghc-mod/en/ghc-mod.html) to provide the integration: `cabal install ghc-mod`.

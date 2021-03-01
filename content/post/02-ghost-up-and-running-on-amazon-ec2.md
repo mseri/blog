@@ -21,9 +21,9 @@ _screen_ is a sort of VNC or Remote Desktop for Unix consoles. More technically 
  
 Awesome! In fact what I did was just run
 
-    :::sh
+```sh
     screen sudo /usr/local/bin/npm start --production
-
+```
 close the terminal and log into my ghost blog to write this post. 
 
 **As you can see things kept working properly!**

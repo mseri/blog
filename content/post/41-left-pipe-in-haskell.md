@@ -14,28 +14,28 @@ Yesterday I was thinking that in Haskell everything is an expression and that yo
 
 First of all, composition `(.)` is too strong, the pipe I have in mind is like `($)` but reversed. In fact, my second attempt (I feel embarassed by the first, I am not going to post it ;-P) was
 
-    :::haskell
+```haskell
     ($>) = flip ($)
-
+```
 One can immediately check that it is typed correctly as 
 
-    :::haskell
+```haskell
     ($>) :: a -> (a -> b) -> b
-
+```
 Now I can do e.g.
 
-    :::haskell
+```haskell
     import Data.List
-
+```
     [3,1,4,2,2,6] $> sort $> filter (\x -> x < 4) $> map even $> and
 
 and get the result without complaints.
 
 This is just a stupid example but I find it more expressive (again probably because I use too much the shell) than
 
-    :::haskell
+```haskell
     and . map even . filter (\x -> x < 4) . sort $ [3,1,4,2,2,6]
-
+```
 at least for certain kind of progressive filtering of data.
 
 I am now following **fp101x** on **edX**. It is quite good! I will soon(?) post a brief cheatsheet that I made to recall how to use Functors, Monads and other interesting constructs.

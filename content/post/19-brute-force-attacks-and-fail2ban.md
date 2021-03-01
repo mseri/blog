@@ -28,9 +28,9 @@ Apparently the filter that I was using for sasl had some problems: tonight I've 
 
 A check on it is pretty easy to do. It is enough to run
 
-    :::sh
+```sh
     fail2ban-regex /var/log/mail.log /etc/fail2ban/filter.d/sasl.conf
-
+```
 to see if the filters contained in `/etc/fail2ban/filter.d/sasl.conf` are identifying anything in the logs. Despite `mail.log` was filled by lines of the form
 
     Dec 11 03:23:44 ____ postfix/smtpd[12734]: warning: unknown[___.___.___.___]: SASL LOGIN authentication failed: Connection lost to authentication server
