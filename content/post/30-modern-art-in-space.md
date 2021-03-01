@@ -10,7 +10,7 @@ disqus_identifier: 30
 
 Well... the title is a spoiler, but is this a painting? Are those falling meteors? What is that?
 
-![Hubble Telescope Modern Art](https://www.spacetelescope.org/static/archives/images/medium/potw1404a.jpg)
+![Hubble Telescope Modern Art](https://esahubble.org/static/archives/images/medium/potw1404a.jpg)
 
 The first time I've seen it, out of context, I tought it was a crop of some decaying taken from LHC.
 
@@ -20,4 +20,4 @@ In fact, this is a picture coming from the Hubble Space Telescope. But a quite u
 
 > It is suspected that in this case, Hubble had locked onto a bad guide star, potentially a double star or binary. This caused an error in the tracking system, resulting in this remarkable picture of brightly coloured stellar streaks
 
-You can get the picture in full resolution and many other sizes on its [official Space Telescope page](https://www.spacetelescope.org/images/potw1404a/).
+You can get the picture in full resolution and many other sizes on its [official Space Telescope page](https://esahubble.org/images/potw1404a/).
