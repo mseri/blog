@@ -30,5 +30,6 @@ Note that the `-mode=black` option improves sensibily the size of the file, but 
 
 If you really need the figures, you could drop the option or create a different alias, e.g.
 
-    :::sh
-    alias djvu2pdf4pics='LC_ALL=C ddjvu -format=pdf -quality=85'
+```sh
+alias djvu2pdf4pics='LC_ALL=C ddjvu -format=pdf -quality=85'
+```

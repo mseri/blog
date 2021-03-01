@@ -182,8 +182,9 @@ The output will be something like
 
 You can user the weird code appearing next to the commit line to see what has changed in that particular commit:
 
-  :::sh
-  git show 9cf461946076c7849726ff4a8a48e43d7e191f07 --word-diff=color
+```sh
+git show 9cf461946076c7849726ff4a8a48e43d7e191f07 --word-diff=color
+```
 
 The first part of the output replicates the log. In the second part the changes are shown in detail. You can see the text that was added in highlighted green and the text that was removed in red. The affected files appear in higlighted white before the red/green text.
 

@@ -58,8 +58,9 @@ it is very important that you use a simple and recallable string. For this tutor
 
 To install Anchor we need a recent version of php. Sadly the one contained in openshift's cartridge `php` is not recent enough, but the problem can be solved easily using instead the `zend server` cartridge. To create an app just type
 
-    :::sh
-	$ rhc create-app anchor zend-5.6
+```sh
+$ rhc create-app anchor zend-5.6
+```
 
 And wait some time. When you are prompted for cloning and accepting the security certificate just type `yes` and hit return.
 Remember to annotate somewhere the informations printed at the end of the procedure:
