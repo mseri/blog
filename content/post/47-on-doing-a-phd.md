@@ -2,7 +2,7 @@
 title: "On doing a PhD (in STEM)"
 date: 2020-12-04T10:45:35+01:00
 updated: 2021-02-19T09:37:00+01:00
-tags: ["blog", "academia"]
+tags: ["blog", "academia", "PhD"]
 categories: ["Blog"]
 slug: on-doing-phd
 disqus_identifier: 47
