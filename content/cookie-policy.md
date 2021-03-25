@@ -15,6 +15,8 @@ Privacy matters but it can be confusing. This page explains our approach to priv
 
 These are just the key points. If you need detail, keep reading.
 
+<!-- These plug-ins are currently not used !-->
+<!--
 ## Measuring our visitors
 
 We measure visitors to our website using Google Analytics. This records what pages you view within our site, how you arrived at our site and some basic information about your computer. All of that information is anonymous - so we don't know who you are; just that somebody visited our site.
@@ -23,14 +25,13 @@ The information we collect from analytics helps us understand what parts of our 
 
 You can learn more about [Google Analytics](https://www.google.com/analytics/learn/privacy.html) or [opt out if you wish](https://tools.google.com/dlpage/gaoptout).
 
-<!-- These plug-ins are currently not used !-->
-<!-- ## Facebook, Twitter and other social networks
+ ## Facebook, Twitter and other social networks
 
 These services provide social buttons and similar features which we use on our website - such as the “Like” and “Tweet” buttons.
 
 To do so we embed code that they provide and we do not control ourselves. To function their buttons generally know if you'’'re logged in; for example Facebook use this to say “x of your friends like this”. We do not have any access to that information, nor can we control how those networks use it.
 
-Social networks therefore could know that you’re viewing this website, if you use their services (that isn’t to say they do, but their policies may change). As our website is remarkably inoffensive we imagine this is not a concern for most users. !-->
+Social networks therefore could know that you’re viewing this website, if you use their services (that isn’t to say they do, but their policies may change). As our website is remarkably inoffensive we imagine this is not a concern for most users.
 
 ## Discussion comments
 
@@ -41,6 +42,7 @@ To do so we embed code that Disqus provide and we do not control ourselves. Disq
 Logging in to Disqus can be done in many ways, including via Facebook. If you login via social network, Disqus will be able to link your activity to that network. In this way, your Disqus activity may be personally identifiable.
 
 Disqus will know what pages you viewed in our site and what you wrote on those comments. Of course all comments you leave are also publicly visible on the Internet alongside your name, so we do not imagine this is a concern for many people.
+!-->
 
 ## Updates to this policy
 
