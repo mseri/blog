@@ -4,6 +4,5 @@ date: {{ .Date }}
 tags: []
 categories: ["Blog"]
 slug:
-disqus_identifier:
 draft: true
 ---
