@@ -1,6 +1,7 @@
 ---
 title: "Material from Hamiltonian Mechanics 2021"
 date: 2021-03-26T00:15:46+01:00
+updated: 2021-03-29T00:15:27+01:00
 tags: ["mathematics", "blog", "teaching"]
 categories: ["Blog"]
 slug: links-from-hm
@@ -48,6 +49,7 @@ Some courses that touch on similar concepts, often from different point of views
 - Paper [Spherical Pendulum, Action and Spin](https://webspace.science.uu.nl/~hanss102/gm349/RDWW96.pdf) and [Hamiltonian Monodromy and Morse Theory](https://www.researchgate.net/publication/336224144_Hamiltonian_Monodromy_and_Morse_Theory)
 - Video course on [asymptotics and perturbation methods](https://youtube.com/playlist?list=PL5EH0ZJ7V0jV7kMYvPcZ7F9oaf_YAlfbI) by Strogatz
 - Very informative video: [Steven Strogatz: ask me anything](https://www.youtube.com/watch?v=wZBEFmkmogs)
+- Shameless AD: [Micro Lectures](https://www.few.vu.nl/~trt800/ddtg/serinotes.pdf) on sub-Riemannian Geometry [Part 1](https://www.youtube.com/watch?v=RqM9_PzO5-M) and [Part 2](https://www.youtube.com/watch?v=VDR0jUMCHsc), complemented by this talk on [sub-Riemannian billiards](https://www.youtube.com/watch?v=Rp5pHUjSRw8).
 
 ## Further material for the projects and extra lectures
 
@@ -67,15 +69,15 @@ In addition to the material added above (lots of it is not open access unfortuna
 
 ## Meeting (virtually) with your peers
 
-To meet with your peers you can use, for example, the free and open solutions [Jitsi meet](https://meet.jit.si/) and [Jami](https://jami.net/). For small groups you could also setup a [Gather Town](gather.town) room.
+To meet with your peers you can use, for example, the free and open solutions [Jitsi meet](https://meet.jit.si/) and [Jami](https://jami.net/). For small groups you could also setup a [Gather Town](gather.town) or a [Wonder](https://www.wonder.me/) room.
 
 For mathematics, it is enormously useful to be able to share computations and drawings.
 To this end you may use your webcams, mobile phones as webcams (there are plenty of good free apps for that), tablets with collaborative whiteboards, ...
 
+If you want to do fancy stuff with change of scenes and interactive polls, like the one done by [3blue1brown](https://itempool.com/) with [itempool](https://itempool.com/), you can spend some time playing with [OBS Studio](https://obsproject.com/).
+
 For what concerns collaborative whiteboards I have tried the following, and they all seem to work fine (each has its pros and cons, so I list them all): [microsoft whiteboard](https://whiteboard.microsoft.com), [google](https://jamboard.google.com), [ziteboard](https://ziteboard.com/), [whiteboard](https://witeboard.com/) and [Explain Everything](https://explaineverything.com/).
 
-For editing mathematics online collaboratively I usually use latex and the [overleaf online editor](https://www.overleaf.com/).
-
-I don't know if it is collaborative, but I have many colleagues that praised [Mathcha](https://www.mathcha.io/).
+For editing mathematics online collaboratively I usually use latex and the [overleaf online editor](https://www.overleaf.com/). I don't know if it is collaborative, but I have many colleagues that praised [Mathcha](https://www.mathcha.io/).
 
 
