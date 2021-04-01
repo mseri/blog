@@ -14,7 +14,7 @@ Not long ago, Jacopo Bertolotti shared his thoughts on the same matter in a nice
 
 Since that really resonated with what I had to say, I'll let him speak also for me and add a few more comments at the end.
 
-For another very interesting and useful take on the matter, have also a look at [Matt Might's illustrated guide to a Ph.D.](http://matt.might.net/articles/phd-school-in-pictures/).
+For another very interesting and useful take on the matter, have also a look at [Matt Might's illustrated guide to a Ph.D.](https://web.archive.org/web/20210329135545/http://matt.might.net/articles/phd-school-in-pictures/).
 
 >  A few days ago I was asked by some last year students advice on how to decide whether doing a PhD is the right thing to do. I will put here a summary of what I told them, just in case it can be useful for someone else.
 

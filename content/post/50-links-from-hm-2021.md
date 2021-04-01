@@ -17,7 +17,7 @@ The books on SpringerLinks linked below are accessible from our students for fre
 
 - As reference for hamiltonian mechanics you can use [_Knauf, A. (2018) Mathematical Physics: Classical Mechanics_](https://link.springer.com/book/10.1007%2F978-3-662-55774-7)
 
-- Two other famous and very good books on classical mechanics are _Arnold, V.I. (1989) Mathematical Methods of Classical Mechanics_, Second Edition, Springer, and _Marsden, A, Ratiu, T (1998) Introduction to Mechanics and Symmetry, Second Edition_, Springer. Finally, [F. Zadra](https://sites.google.com/view/fzadra/) recommended me [_Fasano, Marmi (2006) Analytical mechanics_](http://homepage.sns.it/marmi/papers/Fasano,%20A.%20&%20Marmi,%20S.%20-%20Analytical%20mechanics%20(Oxford,%202006).pdf), Oxford University Press, directly accessible from one of the authors' website, which also seems very nice.
+- Two other famous and very good books on classical mechanics are _Arnold, V.I. (1989) Mathematical Methods of Classical Mechanics_, Second Edition, Springer, and _Marsden, A, Ratiu, T (1998) Introduction to Mechanics and Symmetry, Second Edition_, Springer. Finally, [F. Zadra](https://sites.google.com/view/fzadra/) recommended me [_Fasano, Marmi (2006) Analytical mechanics_](https://web.archive.org/web/20180417155852/http://homepage.sns.it/marmi/papers/Fasano,%20A.%20&%20Marmi,%20S.%20-%20Analytical%20mechanics%20(Oxford,%202006).pdf), Oxford University Press, directly accessible from one of the authors' website, which also seems very nice.
 
 - For a review of differential geometry, you can refer to [_Lee, J.M. (2012) Introduction to smooth manifolds_](https://link.springer.com/book/10.1007%2F978-1-4419-9982-5) or to my [Analysis on Manifolds lecture notes](https://github.com/mseri/AoM/releases). A concise summary can be also found in:
     - Knauf, appendices A and B
@@ -27,7 +27,7 @@ The books on SpringerLinks linked below are accessible from our students for fre
 
 - A wonderful text on symplectic geometry is [_Cannas da Silva, A. (2006) Lectures on Symplectic Geometry_](https://people.math.ethz.ch/~acannas/Papers/lsg.pdf).
 
-- Finally, two interesting resources on the KAM theorem are [Poschel's article](https://arxiv.org/abs/0908.2234) and [Broer's one](http://www.math.rug.nl/~broer/pdf/Ultimate.pdf).
+- Finally, two interesting resources on the KAM theorem are [Poschel's article](https://arxiv.org/abs/0908.2234) and [Broer's one](https://web.archive.org/web/20090625190403/http://www.math.rug.nl/~broer/pdf/Ultimate.pdf).
 
 ## Extra material on similar topics
 
@@ -69,7 +69,7 @@ In addition to the material added above (lots of it is not open access unfortuna
 
 ## Meeting (virtually) with your peers
 
-To meet with your peers you can use, for example, the free and open solutions [Jitsi meet](https://meet.jit.si/) and [Jami](https://jami.net/). For small groups you could also setup a [Gather Town](gather.town) or a [Wonder](https://www.wonder.me/) room.
+To meet with your peers you can use, for example, the free and open solutions [Jitsi meet](https://meet.jit.si/) and [Jami](https://jami.net/). For small groups you could also setup a [Gather Town](https://gather.town) or a [Wonder](https://www.wonder.me/) room.
 
 For mathematics, it is enormously useful to be able to share computations and drawings.
 To this end you may use your webcams, mobile phones as webcams (there are plenty of good free apps for that), tablets with collaborative whiteboards, ...

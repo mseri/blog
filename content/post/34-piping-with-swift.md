@@ -80,7 +80,7 @@ Again `+=` stands for `append` when used with arrays.
 
 I guess the fastest code would be to use a quicksort and remove the duplicates while sorting, but it (as my second implementation of `unique`) would not preserve the order of appearence.
 
-While wrtiting this post, on HN was linked a [very initersting post](https://nomothetis.svbtle.com/smashing-swift) with implementation of some interesting construct, like the [either of the previous post](https://www.mseri.me/implementing-either-type-in-swift) and more, and pointing out problems of the young swift compiler. I think it's a nice reading.
+While wrtiting this post, on HN was linked a [very initersting post](https://nomothetis.svbtle.com/smashing-swift) with implementation of some interesting construct, like the [either of the previous post]({{< relref "33-implementing-either-type-in-swift.md" >}}) and more, and pointing out problems of the young swift compiler. I think it's a nice reading.
 
 Additionally I recently stumbled upon the [following stackoverflow thread](https://stackoverflow.com/questions/24027116). I find it quite interesting, especially because it shows a nice extension of Arrays introducing an `each` construct very similar to ruby's one.
 
