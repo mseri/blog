@@ -1,7 +1,7 @@
 ---
 title: "Material from Hamiltonian Mechanics 2021"
 date: 2021-03-26T00:15:46+01:00
-updated: 2021-03-29T00:15:27+01:00
+updated: 2021-04-13T00:10:38+01:00
 tags: ["mathematics", "blog", "teaching"]
 categories: ["Blog"]
 slug: links-from-hm
@@ -78,6 +78,4 @@ If you want to do fancy stuff with change of scenes and interactive polls, like 
 
 For what concerns collaborative whiteboards I have tried the following, and they all seem to work fine (each has its pros and cons, so I list them all): [microsoft whiteboard](https://whiteboard.microsoft.com), [google](https://jamboard.google.com), [ziteboard](https://ziteboard.com/), [whiteboard](https://witeboard.com/) and [Explain Everything](https://explaineverything.com/).
 
-For editing mathematics online collaboratively I usually use latex and the [overleaf online editor](https://www.overleaf.com/). I don't know if it is collaborative, but I have many colleagues that praised [Mathcha](https://www.mathcha.io/).
-
-
+For editing mathematics online collaboratively I usually use latex and the [overleaf online editor](https://www.overleaf.com/) or [HackMD](https://hackmd.io). I don't know if it is collaborative, but I have many colleagues that praised [Mathcha](https://www.mathcha.io/).
