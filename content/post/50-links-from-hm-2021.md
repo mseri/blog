@@ -49,7 +49,8 @@ Some courses that touch on similar concepts, often from different point of views
 - Paper [Spherical Pendulum, Action and Spin](https://webspace.science.uu.nl/~hanss102/gm349/RDWW96.pdf) and [Hamiltonian Monodromy and Morse Theory](https://www.researchgate.net/publication/336224144_Hamiltonian_Monodromy_and_Morse_Theory)
 - Video course on [asymptotics and perturbation methods](https://youtube.com/playlist?list=PL5EH0ZJ7V0jV7kMYvPcZ7F9oaf_YAlfbI) by Strogatz
 - Very informative video: [Steven Strogatz: ask me anything](https://www.youtube.com/watch?v=wZBEFmkmogs)
-- Shameless AD: [Micro Lectures](https://www.few.vu.nl/~trt800/ddtg/serinotes.pdf) on sub-Riemannian Geometry [Part 1](https://www.youtube.com/watch?v=RqM9_PzO5-M) and [Part 2](https://www.youtube.com/watch?v=VDR0jUMCHsc), complemented by this talk on [sub-Riemannian billiards](https://www.youtube.com/watch?v=Rp5pHUjSRw8).
+- Shameless AD: [Micro Lectures](https://www.few.vu.nl/~trt800/ddtg/serinotes.pdf) on sub-Riemannian Geometry [Part 1](https://www.youtube.com/watch?v=RqM9_PzO5-M) and [Part 2](https://www.youtube.com/watch?v=VDR0jUMCHsc), complemented by this talk on [sub-Riemannian billiards](https://www.youtube.com/watch?v=Rp5pHUjSRw8)
+- [Interactive demonstrations on the stationary action principle by Cleon Teunissen](http://cleonis.nl/physics/phys256/energy_position_equation.php), and there are plenty more if you navigate through the site
 
 ## Further material for the projects and extra lectures
 
