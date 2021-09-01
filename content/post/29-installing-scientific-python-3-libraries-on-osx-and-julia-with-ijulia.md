@@ -91,4 +91,4 @@ and eventually make an alias out of it if you plan to use it often. A simple IJu
 
 Additionally you may want to install `PyPlot` and `Winston` for plots. You can find a [list of available packages and their description on Julia website](https://docs.julialang.org/en/latest/packages/packagelist/" target=_"blank) or with a search on google or on [GitHub](https://www.github.com).
 
-To understand how to make complex plots with matplotlib using julia's pyplot interface I've found the following post extremely useful: [Naval Warfare with JuMP + Julia](https://iaindunning.com/2014/subs-battleships.html).
+To understand how to make complex plots with matplotlib using julia's pyplot interface I've found the following post extremely useful: [Naval Warfare with JuMP + Julia](https://web.archive.org/web/20150228013248/https://iaindunning.com/2014/subs-battleships.html).

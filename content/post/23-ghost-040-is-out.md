@@ -10,7 +10,7 @@ disqus_identifier: 23
 
 and the ghost update script has been updated to mirror the changes in the update procedure. You can find it here: https://gist.github.com/mseri/7059958
 
-Updates for [purity](https://gumroad.com/l/purity) to support all the new features are going to be released very soon.
+Updates for `purity` to support all the new features are going to be released very soon.
 
 As you can read from [the official announcement](https://blog.ghost.org/ghost-0-4/), the new release of Ghost comes with a huge amount of features and updates:
 

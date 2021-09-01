@@ -144,5 +144,4 @@ A teacher of mathematics, who has not got to grips with at least some of the vol
 Translated by A.V. GORYUNOV
 Published in: Uspekhi Mat. Nauk 53 (1998), no. 1, 229—234;
 English translation: Russian Math. Surveys 53 (1998), no. 1, 229—236.
-Source of this text:
-https://www.ceremade.dauphine.fr/~msfr/articles/arnold/PRE_anglais.ps 
+[Source](https://web.archive.org/web/20051013143411/https://www.ceremade.dauphine.fr/~msfr/articles/arnold/PRE_anglais.ps)

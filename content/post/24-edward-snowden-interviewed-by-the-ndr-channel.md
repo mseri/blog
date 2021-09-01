@@ -31,7 +31,7 @@ The integral video has been recently uploaded on [LiveLeak]( https://www.livelea
 You can keep updated on the leaks at one of the following links:
 
 - [The NSA files decoded on The Guardian](https://www.theguardian.com/world/the-nsa-files)
-- [Global surveillance page by the University of Oslo](https://www.ub.uio.no/fag/informatikk-matematikk/informatikk/faglig/bibliografier/no21984.html)
+- [Global surveillance page by the University of Oslo](https://web.archive.org/web/20210526004004/https://www.ub.uio.no/fag/naturvitenskap-teknologi/informatikk/faglig/bibliografier/no21984.html)
 - [The Snowden files: why the British public should be worried about GCHQ on The Guardian](https://www.theguardian.com/world/2013/oct/03/edward-snowden-files-john-lanchester)
 - [The Promise of May, the Betrayal of June, and the Larger Lesson of Manning and Snowden on Verdict](https://verdict.justia.com/2013/07/17/the-promise-of-may-the-betrayal-of-june-and-the-larger-lesson-of-manning-and-snowden)
 - [Edward Snowden page on The Guardian](https://www.theguardian.com/world/edward-snowden)

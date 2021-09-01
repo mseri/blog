@@ -30,9 +30,9 @@ This is not made up by me, but **stated in a number of international tratises**:
 
 Since few months we had the confirmation that even the most important defender of human rights and democracy is daily violating them unpunished. 
 
-The Day We Fight Back’s main international action is to [sign and promote the 13 Principles](https://en.necessaryandproportionate.org/text) that **outline how communications surveillance can be conducted consistent with human rights and serve as a model for surveillance reform**. Over the past year, nearly 370 organizations have come together to support it. Today is time for us to give it a greater meaning.
+The Day We Fight Back’s main international action is to [sign and promote the 13 Principles](https://web.archive.org/web/20180304042809/https://necessaryandproportionate.org/principles) that **outline how communications surveillance can be conducted consistent with human rights and serve as a model for surveillance reform**. Over the past year, nearly 370 organizations have come together to support it. Today is time for us to give it a greater meaning.
 
-I want to give you a summary of these principles, _part of the official text has been deleted or rewritten by me to summarize it_: please refer to the [13 Principles official page](https://en.necessaryandproportionate.org/text) to read the official full text.
+I want to give you a summary of these principles, _part of the official text has been deleted or rewritten by me to summarize it_: please refer to the [13 Principles official page](https://web.archive.org/web/20180304042809/https://necessaryandproportionate.org/principles) to read the official full text.
 
 1. **LEGALITY**  
   Any limitation to the right to privacy must be prescribed by law. This law must be clear, precise and updated.
@@ -48,7 +48,7 @@ I want to give you a summary of these principles, _part of the official text has
 
 5. **PROPORTIONALITY**  
    Communications surveillance should be regarded as a highly intrusive act that interferes with the rights to privacy and freedom of opinion and expression, threatening the foundations of a democratic society. Decisions about communications surveillance must be made by weighing the benefit sought to be achieved against the harm that would be caused to the individual’s rights and to other competing interests, and should involve a consideration of the sensitivity of the information and the severity of the infringement on the right to privacy.
-[This is a very important point, please have a look at the full text](https://en.necessaryandproportionate.org/text#principle_5)
+[This is a very important point, please have a look at the full text](https://web.archive.org/web/20180304042809/https://necessaryandproportionate.org/principles#principle_5)
 
 6. **COMPETENT JUDICIAL AUTHORITY**   
    Determinations related to communications surveillance must be made by a competent judicial authority that is impartial and independent. 
@@ -163,7 +163,7 @@ Wikipedia](https://en.wikipedia.org/wiki/Mass_surveillance_in_the_United_States)
 - [NSA Spaying - EFF.org](https://eff.org/nsa-spying)
 - [Guardian’s NSA Files
 Decoded](https://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded)
-- [Global surveillance page by the University of Oslo](https://www.ub.uio.no/fag/informatikk-matematikk/informatikk/faglig/bibliografier/no21984.html)
+- [Global surveillance page by the University of Oslo](https://web.archive.org/web/20210526004004/https://www.ub.uio.no/fag/naturvitenskap-teknologi/informatikk/faglig/bibliografier/no21984.html)
 
 **And if you think that they have the right to do it, you should definitely read this [post of the EFF: 8 Common Excuses for NSA Surveillance - and How to Bust Them](https://www.eff.org/deeplinks/2013/11/busting-eight-common-excuses-nsa-surveillance).**
 

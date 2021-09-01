@@ -51,7 +51,7 @@ I am not going in the realm of Monads (yet) and [try to explain them](https://ww
 ```
 As in Haskell, Either is parameterized by two types, not one. A value of the Either type _either_ contains a value of type `T1` or of type `T2`. With it, we can discriminate between two possibilities and using Swift pattern matching we can write a nice, clean code. 
 
-Either can be used as a [generalization of optional types](https://www.fpcomplete.com/school/starting-with-haskell/basics-of-haskell/10_Error_Handling) in which Left not only encodes failure but is accompanied by an error message (so often `T1` will be just `String`). Then Right encodes success and the accompanying value.
+Either can be used as a [generalization of optional types](https://web.archive.org/web/20180620003318/https://www.schoolofhaskell.com/school/starting-with-haskell/basics-of-haskell/10_Error_Handling) in which Left not only encodes failure but is accompanied by an error message (so often `T1` will be just `String`). Then Right encodes success and the accompanying value.
 
 For example
 

@@ -20,7 +20,7 @@ If you are coding numerical algorithms, mathematica notebooks, latex drafts, pap
 
 I have to admit that I disagree with the description given above: Git is not easy to understand or learn! But if you take the time to understand at least the basics, it will present as a worthwhile and essential tool.
 
-And if you briefly look online, you may discover that I am not the only one to think it (see e.g. [Git+LaTeX Workflow](https://stackoverflow.com/questions/6188780/git-latex-workflow), [Git Basics for LaTeX Users](https://bensresearch.com/downloads/Git.pdf) or [Collaborating with LaTeX and Git](https://www.sharelatex.com/blog/2012/10/16/collaborating-with-latex-and-git.html)).
+And if you briefly look online, you may discover that I am not the only one to think it (see e.g. [Git+LaTeX Workflow](https://stackoverflow.com/questions/6188780/git-latex-workflow), [Git Basics for LaTeX Users](https://web.archive.org/web/20161230040639/http://downloads.bensresearch.com/Git.pdf) or [Collaborating with LaTeX and Git](https://web.archive.org/web/20130116135737/https://www.sharelatex.com/blog/2012/10/16/collaborating-with-latex-and-git.html)).
 
 ## Git in four paragraphs and a list
 
