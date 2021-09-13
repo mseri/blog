@@ -44,7 +44,7 @@ Some courses that touch on similar concepts, often from different point of views
 - Lecture notes: [Perturbation theory in cestial mechanics](https://web.ma.utexas.edu/mp_arc/c/07/07-303.pdf)
 - Simulation: [Rolling disk](https://rotations.berkeley.edu/the-rolling-disk/) (and other rolling rigid bodies) -- not reallyuseful to solve the exercise but nice to watch :D
 - Paper: [The rotor and the pendulum](https://www.researchgate.net/publication/45636436_The_Rotor_and_the_Pendulum), on the general link between rigid body motion and the pendulum
-- Lecture notes: [Introduction to Mechanics](https://core.ac.uk/download/pdf/4887416.pdf) by Marsden
+- Lecture notes: [Introduction to Mechanics](https://core.ac.uk/download/pdf/4887416.pdf) by Marsden and [Lectures on Machsnics](http://www.cds.caltech.edu/~marsden/volume/LecturesOnMechanics/lom.pdf#page11) by the same author
 - Video lecture on [differential forms](https://youtu.be/4zicWglBfIE) (part of a very nice course on discrete differential geometry)
 - Paper [Spherical Pendulum, Action and Spin](https://webspace.science.uu.nl/~hanss102/gm349/RDWW96.pdf) and [Hamiltonian Monodromy and Morse Theory](https://www.researchgate.net/publication/336224144_Hamiltonian_Monodromy_and_Morse_Theory)
 - Video course on [asymptotics and perturbation methods](https://youtube.com/playlist?list=PL5EH0ZJ7V0jV7kMYvPcZ7F9oaf_YAlfbI) by Strogatz
