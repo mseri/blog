@@ -1,6 +1,7 @@
 ---
 title: "A Micro Course on Sub-Riemannian Geometry"
 date: 2021-10-21T09:30:42+02:00
+update: 2021-10-29T§16:14:00+02:00
 slug: "micro-course-on-sR-geometry"
 tags: ["mathematics", "blog", "differential geometry", "control theory", "seminar"]
 categories: ["Blog"]
@@ -22,3 +23,10 @@ My slides are also [available for download](https://few.vu.nl/~trt800/ddtg/serin
 Keep an eye out for the DDT&G, they have a lot of very interesting micro courses already, and more are coming!
 
 I hope you enjoy. I should have posted them here much earlier.
+
+- - - 
+
+I recently gave one more talk on this subject, giving more emphasis the connections to the physics of magnetic systems. I link it here for future reference:
+
+{{< youtube 9nut8RoIF3M >}}
+
