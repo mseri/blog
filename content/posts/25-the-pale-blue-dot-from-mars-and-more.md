@@ -8,7 +8,7 @@ slug: "the-pale-blue-dot-from-mars-and-more"
 disqus_identifier: 25
 ---
 
-In 1990 the Voyager 1, already at 6 billion kilometers from us, turned around to take a picture of our little world from the boundary of the solar system (thanks [Carl Sagan](https://en.wikipedia.org/wiki/Pale&#95;Blue&#95;Dot&#95;&#40;book&#40;" target="&#95;blank) for making it happen).
+In 1990 the Voyager 1, already at 6 billion kilometers from us, turned around to take a picture of our little world from the boundary of the solar system (thanks [Carl Sagan](https://en.wikipedia.org/wiki/Pale_Blue_Dot_(book)) for making it happen).
 
 The picture, in which the Earth is just about as big as 0.12 pixels, was named [Pale Blue Dot](https://en.wikipedia.org/wiki/Pale_Blue_Dot) and I really suggest you to have a look at [its Wikipedia Page](https://en.wikipedia.org/wiki/Pale_Blue_Dot) to know something more about it.
 

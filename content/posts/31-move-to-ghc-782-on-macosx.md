@@ -122,9 +122,9 @@ Then in my `.ghci` I have
     :def version   lambdabot "version"
     :def src       lambdabot "src"
 ```
-I like to see what my code should look like. Often [hlint](https://community.haskell.org/~ndm/hlint/) is of great help for this (especially when you run it directly in your favourite editor, e.g. `vim` and `Sublime Text`): thus `cabal install hlint`.
+I like to see what my code should look like. Often [hlint](https://web.archive.org/web/20140723054205/http://community.haskell.org/~ndm/hlint/) is of great help for this (especially when you run it directly in your favourite editor, e.g. `vim` and `Sublime Text`): thus `cabal install hlint`.
 
-Ans speaking of editors we cannot forget [ghc-mod](https://www.mew.org/~kazu/proj/ghc-mod/en/ghc-mod.html) to provide the integration: `cabal install ghc-mod`.
+Ans speaking of editors we cannot forget [ghc-mod](https://web.archive.org/web/20140919013812/https://www.mew.org/~kazu/proj/ghc-mod/en/ghc-mod.html) to provide the integration: `cabal install ghc-mod`.
 
 Finally I massively use `pandoc`, look at [its webpage](https://johnmacfarlane.net/pandoc/) if you don't know it. You can installe prebuild binaries but recently I restarted enjying compiling things by myself. The installation via `cabal` is trivial. Just type `cabal install pandoc` and wait. Maybe go to get some coffee... it's not going to be just a couple of minutes. It may fail complaining about `alex`, in such case just run `cabal install alex` and run `cabal install pandoc` again.
 

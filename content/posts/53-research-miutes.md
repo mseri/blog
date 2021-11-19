@@ -1,7 +1,7 @@
 ---
 title: "Research Miutes"
 date: 2021-11-11T21:34:28+01:00
-update: 2021-11-19T12:36:00+01:00
+lastmodified: 2021-11-19T12:36:00+01:00
 tags: ["mathematics", "blog", "research minutes", "popularization"]
 categories: ["Blog"]
 ---

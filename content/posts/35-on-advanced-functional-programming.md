@@ -11,7 +11,7 @@ disqus_identifier: 35
 In few days, tomorrow if I'm not mistaken, you will be able to attend the new [Erik Meijer's introduction to Functional Programming on edX](https://www.edx.org/course/introduction-functional-programming-delftx-fp101x-0). If you have any interest in mathematics or programming, I am sure that this is something that you have to watch.
 
 I am saying new because a similar course was held in 2010 by the same person, you can still watch it here:
-[Erik Meijer's MSDN Channel 9 lecture series on functional programming](https://lambda-the-ultimate.org/node/3642)
+[Erik Meijer's MSDN Channel 9 lecture series on functional programming](https://web.archive.org/web/20150220020356/https://lambda-the-ultimate.org/node/3642)
 
 The main reason I'm writing this post (more than just advertising the course above) is that there is a second part, by [Dr. Ralf Lämmel](https://softlang.wikidot.com/rlaemmel:teaching), that I was not aware of.
 
