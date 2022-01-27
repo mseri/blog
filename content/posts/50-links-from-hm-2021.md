@@ -1,7 +1,7 @@
 ---
 title: "Material from Hamiltonian Mechanics 2021"
 date: 2021-03-26T00:15:46+01:00
-updated: 2021-04-13T00:10:38+01:00
+updated: 2022-01-27T00:13:22+01:00
 tags: ["mathematics", "blog", "teaching"]
 categories: ["Blog"]
 slug: links-from-hm
@@ -33,6 +33,7 @@ The books on SpringerLinks linked below are accessible from our students for fre
 
 Some courses that touch on similar concepts, often from different point of views:
 
+- Lecture Notes: [Classical Mechanics of Transport](https://unishare.nl/index.php/s/eAYsg7ADKQXa2Wy/download/A%20Knauf%20-%20Classical%20Mechanics%20and%20Transport.pdf), part of 4 extremely interesting mini-courses for [a recent conference at the Lorentz Center in Leiden (NL)](https://www.lorentzcenter.nl/learning-from-insulators-new-trends-in-the-study-of-conductivity-of-metals.html)
 - Video course: [Lectures on the Geometry of Theoretical Physics](https://www.fau.tv/course/id/242) by Schiller
 - Video course: [Modern Physics: Classical Mechanics](https://www.youtube.com/watch?v=pyX8kQ-JzHI) by Susskind  (part of his big program: The Theoretical Minimum)
 - Book (open access): [Sussman and Wisdom, Structure and interpretation of classical mechanics](https://mitpress.mit.edu/sites/default/files/titles/content/sicm_edition_2/book.html). Its objective is to make everything explicitly computable at each point which means it can treat a different part of the material but from a unique perspective, very fun and informative!
