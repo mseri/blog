@@ -1,7 +1,7 @@
 ---
 title: "Material from Hamiltonian Mechanics 2021"
 date: 2021-03-26T00:15:46+01:00
-updated: 2021-04-13T00:10:38+01:00
+updated: 2022-02-09T00:14:38+01:00
 tags: ["mathematics", "blog", "teaching"]
 categories: ["Blog"]
 slug: links-from-hm
@@ -65,6 +65,7 @@ In addition to the material added above (lots of it is not open access unfortuna
 - Ott, Chaos in Dynamical systems
 - [R. Montgomery, Gauge theory of the falling cat](https://pdfs.semanticscholar.org/a9e0/63e5bc89d3251c6c1c188e4304ac5c9ff520.pdf) and [its relations to the n-body problem](https://qig.itp.uni-hannover.de/~giulini/papers/DiffGeom/LittlejohnReinsch_RMP69_1997.pdf)
 - [Sachkov, Introduction to geometric control](https://arxiv.org/abs/1903.00211)
+- [Teschl, Ordinary Differential Equations and Dynamical Systems](https://www.mat.univie.ac.at/~gerald/ftp/book-ode/index.html). Make sure to check out also [his book on quantum mechanics](https://www.mat.univie.ac.at/~gerald/ftp/book-schroe/index.html).
 
 [![A spotted animal homeomorphic to a sphere - Wikimedia](https://upload.wikimedia.org/wikipedia/commons/2/24/Spot_the_cow.gif)](https://commons.wikimedia.org/wiki/File:Spot_the_cow.gif)
 
