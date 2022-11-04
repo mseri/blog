@@ -17,6 +17,9 @@ theme = "m10c"
     name = "github"
     url = "https://github.com/mseri"
   [[params.social]]
+    name = "mastodon"
+    url = "https://mathstodon.xyz/@mseri"
+  [[params.social]]
     name = "twitter"
     url = "https://twitter.com/marcelloseri"
   [[params.social]]
