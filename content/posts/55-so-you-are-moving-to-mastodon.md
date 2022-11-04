@@ -24,3 +24,5 @@ For example, I had an account on mastodon.social from a number of years ago and 
 There is really *no particular reason*, besides the high amount of mathematicians on mathstodon and a name I find particularly cool.
 
 Some lists of people per category are found on [communitywiki](https://communitywiki.org/trunk) and [fediverse.info](https://fediverse.info/explore/people). I still find it nicer to find them randomly stumbling on some tagged post or from the federated timelines.
+
+Update: noise keeps growing, there is agrowing number of articles and orimers on mainstream medias, like the [mastodon primer by gizmodo](https://gizmodo.com/how-to-join-mastodon-twitter-alternative-elon-musk-1849739031) and the [artcile on mashable](https://mashable.com/article/mastodon-twitter-alternative-elon-musk). And with this the number of interesting instances is growing. I srat hoping I can get rid of twitter soon!
