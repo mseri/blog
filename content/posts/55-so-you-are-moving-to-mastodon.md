@@ -16,6 +16,7 @@ Let's get to the mian resources:
 - [A Brief Mastodon Guide for Social Media Worriers](https://axbom.com/mastodon-guide/) is really brief. The section [Writing your First Toot](https://axbom.com/mastodon-guide/#writing-your-first-toot) contains the essence of the community care to take into account when posting.
 - [An Increasingly Less-Brief Guide to Mastodon](https://github.com/joyeusenoelle/GuideToMastodon/) contains some useful FAQs.
 - [Fedi Tips](https://fedi.tips/) is an unofficial guide to mastodon and the [fediverse](https://axbom.com/fediverse/), contains a whole lot of information if you get really into it.
+- - [Everything I know about mastodon by Danielle Navarro](https://blog.djnavarro.net/posts/2022-11-03_what-i-know-about-mastodon/) contains a fairly detailed introduction to mastodon, including a step by step tutorial on the main features.
 
 When moving from twitter it is often convenient to keep some sort of bridge between the two, I am using [Moa](https://moa.party/) and it is working very well.
 
