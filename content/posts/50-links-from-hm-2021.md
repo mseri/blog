@@ -36,7 +36,7 @@ Some courses that touch on similar concepts, often from different point of views
 - Lecture Notes: [Classical Mechanics of Transport](https://unishare.nl/index.php/s/eAYsg7ADKQXa2Wy/download/A%20Knauf%20-%20Classical%20Mechanics%20and%20Transport.pdf), part of 4 extremely interesting mini-courses for [a recent conference at the Lorentz Center in Leiden (NL)](https://www.lorentzcenter.nl/learning-from-insulators-new-trends-in-the-study-of-conductivity-of-metals.html)
 - Video course: [Lectures on the Geometry of Theoretical Physics](https://www.fau.tv/course/id/242) by Schiller
 - Video course: [Modern Physics: Classical Mechanics](https://www.youtube.com/watch?v=pyX8kQ-JzHI) by Susskind  (part of his big program: The Theoretical Minimum)
-- Book (open access): [Sussman and Wisdom, Structure and interpretation of classical mechanics](https://mitpress.mit.edu/sites/default/files/titles/content/sicm_edition_2/book.html). Its objective is to make everything explicitly computable at each point which means it can treat a different part of the material but from a unique perspective, very fun and informative!
+- Book (open access): [Sussman and Wisdom, Structure and interpretation of classical mechanics](https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/9579/sicm_edition_2.zip/book.html). Its objective is to make everything explicitly computable at each point which means it can treat a different part of the material but from a unique perspective, very fun and informative!
 - Article: [Demistifying gauge symmetries](https://arxiv.org/pdf/1901.10420.pdf) (physics oriented)
 - Slides and notes: [Hidden symmetries of the hydrogen atom](https://math.ucr.edu/home//baez/hydrogen/4d/).
 - Some simulations: [mseri/teachingplayground](https://github.com/mseri/teachingplayground)
@@ -67,7 +67,16 @@ In addition to the material added above (lots of it is not open access unfortuna
 - [R. Montgomery, Gauge theory of the falling cat](https://pdfs.semanticscholar.org/a9e0/63e5bc89d3251c6c1c188e4304ac5c9ff520.pdf) and [its relations to the n-body problem](https://qig.itp.uni-hannover.de/~giulini/papers/DiffGeom/LittlejohnReinsch_RMP69_1997.pdf)
 - [Sachkov, Introduction to geometric control](https://arxiv.org/abs/1903.00211)
 
-[![A spotted animal homeomorphic to a sphere - Wikimedia](https://upload.wikimedia.org/wikipedia/commons/2/24/Spot_the_cow.gif)](https://commons.wikimedia.org/wiki/File:Spot_the_cow.gif)
+{{< rawhtml >}}
+<div style="display:block;margin-left:auto;margin-right:auto;margin-top:1em;margin-bottom:1em;">
+    <video style="margin-bottom:-1.5em" width="290" autoplay="" loop="" alt="A spotted animal homeomorphic to a sphere. Source: Wikimedia">
+      <source src="/videos/Spot_the_cow.webm" type="video/webm">
+      <source src="/videos/Spot_the_cow.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p>Source: <a href="https://commons.wikimedia.org/wiki/File:Spot_the_cow.gif">Wikimedia</a>.</p>
+</div>
+{{< /rawhtml >}}
 
 ## Meeting (virtually) with your peers
 
