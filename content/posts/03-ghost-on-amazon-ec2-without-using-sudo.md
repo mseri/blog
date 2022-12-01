@@ -18,7 +18,7 @@ For the sake of completeness I link some of them here:
 
 - [Dude looks like a ghost](https://blog.igbuend.com/dude-looks-like-a-ghost/)
 - [Setup Ghost with nginx on Debian](https://web.archive.org/web/20131021214247/https://nls.io/setup-ghost-with-nginx-on-debian/) 
-- Installing Node.js on Amazon EC2 (Does not exist any longer at github.com/d5/docs/wiki/Installing-Node.js-on-Amazon-EC2) 
+- Installing Node.js on Amazon EC2 (used to be github.com/d5/docs/wiki/Installing-Node.js-on-Amazon-EC2 but does no longer exist) 
 - [How to Host Ghost on a Nginx Subdomain](https://www.howtoinstallghost.com/how-to-host-ghost-on-a-nginx-subdomain/) 
 
 Even if some of these links are for other Unix systems or just for node instead of ghost, it is pretty straightforward to adapt them to your needs.
