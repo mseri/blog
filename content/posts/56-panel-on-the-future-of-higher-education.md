@@ -3,12 +3,11 @@ title: "Panel discussion on the Future of Higher Education"
 date: 2023-03-27T13:28:03+02:00
 tags: ["education", "mathematics"]
 categories: ["Blog"]
-draft: true
 ---
 
 Recently I was invited to participate to a panel discussion as part of a [symposium on the future of higher education](https://www.rug.nl/fse/education/the-future-of-higher-education-launch-symposium-of-the-centre-for-learning-and-teaching#panel) hosted by our faculty for the launch of the Centre for Learning and Teaching.
 
-I joined other four incredible panelists and we have been given in advance five quite broad (and though) questions on some imporant aspects of (high) education. I want report here my contribution, with some extra commentary at the end.
+I joined other four incredible panelists and we have been given in advance five quite broad (and though) questions on some important aspects of (high) education. I want report here my contribution, with some extra commentary at the end.
 
 > Given the abundance of misinformation and its central role in advancing dangerous political movements, how can we, as educators, prepare students to be not only discerning but also empathetic and just intellectual agents? How can we promote intellectual humility and openness rather than scientific elitism through our courses and study programs?
 
@@ -21,21 +20,21 @@ In the few minutes that remain, I will do my best to address all of them in a co
 
 My starting assumption comes from a quote from a book, "Calling bullshit: the art of skepticism in a data-drive world", published by Carl Bergstrom in 2020:
 
-> Even the most educated and savvy consumer of information is easily misled in today's complex information exosystem.
+> Even the most educated and savvy consumer of information is easily misled in today's complex information ecosystem.
 
 I am sure most of you can agree that it is very easy nowadays to get confused by the current information overload. Let me quote another book, the last, one I promise. This is older and predates social media; at the time the issue was misinformation via the newspapers.
 The book is from 1996, by John Allen Paulos, "A mathematician reads the newspaper".
 
-> There are so many ways in which events, organisations and we ourselves may be linked that it is almost impossible to believe the significance of all of them. Yet many do, sometimes arguing that the probability of all of this or that coincidence is so low that it must mean something. Such people fail to realize that though is unlikely that _any_ particular sequence of events specified beforehand will occurr, there is a high probability that _some_ remarkable sequence of events will be observed subsequently.
+> There are so many ways in which events, organisations and we ourselves may be linked that it is almost impossible to believe the significance of all of them. Yet many do, sometimes arguing that the probability of all of this or that coincidence is so low that it must mean something. Such people fail to realize that though is unlikely that _any_ particular sequence of events specified beforehand will occur, there is a high probability that _some_ remarkable sequence of events will be observed subsequently.
 
 The book goes on to give an exercise (and many examples. You can try it yourselves.
 Dream up a coincidence-inspired theory and support it with as much circumstantial and adventitious evidence as you can find. You will be surprised how easy it is to come up with crazy stories and back them up by random facts!
 
-It is, indeed, remarkably easy to provide reasonably sounding data and reasoning  to instil doubts in our minds. We are all failable on this and I am sure we can all think of examples where we thought we knew better but we ended up being fooled.
+It is, indeed, remarkably easy to provide reasonably sounding data and reasoning  to instil doubts in our minds. We are all fallible on this and I am sure we can all think of examples where we thought we knew better but we ended up being fooled.
 
 If you add this to our unconscious biases, e.g. the confirmation bias, we have a really hard job in front of us.
 
-I think, thoughm, that being aware of our limitations can five us an advantage. Achieving this kind of awareness should already happen in school, but it is also part of our duty as higher education institutions to keep pursuing it. But how can we do that? I don't think there is any obvious answer, especially thinking at our sever time limitations.
+I think, though, that being aware of our limitations can five us an advantage. Achieving this kind of awareness should already happen in school, but it is also part of our duty as higher education institutions to keep pursuing it. But how can we do that? I don't think there is any obvious answer, especially thinking at our sever time limitations.
 
 The "easy" step, where possible, is probably to integrate media and information literacy in the curriculum (if this is not already the case) and _keep it up to date with the technological advances_ (which is arguably very hard).
 
@@ -45,15 +44,15 @@ At the same time we should give our students opportunities to cooperate and enga
 
 This leads me to the main point I would like to bring to the discussion.
 
-My experience is that, perphaps due to our cult of success and personality, students (and sometimes also peers) have often rather distorted view of the lecturers, believing for example that we have always been perfect students, that we always know everything about what we teach and the we know by hearth how to solve any problem.
+My experience is that, perhaps due to our cult of success and personality, students (and sometimes also peers) have often rather distorted view of the lecturers, believing for example that we have always been perfect students, that we always know everything about what we teach and the we know by hearth how to solve any problem.
 
 We should be open on the fact that we are also human beings with our shares of limitations, faults and failures. And we should make it absolutely clear that research is about figuring things out, navigating a sea of uncertainty by making mistakes and learning from them.
 
-What I am trying to say is that uncertainty is a big, ointegral part of the game and we should not shy away from it.
+What I am trying to say is that uncertainty is a big, integral part of the game and we should not shy away from it.
 
 I think that by being open and accepting our limitations, and by engaging in these exercises of critical thinking and multicultural respectful dialogues, we can provide for us and our students instruments to evaluate information and their sources, to critically reflect on them and to engage in constructive discussions over them.
 
-I also think that this could make it clear how providing an informad answer requires a lot of time and energy, and that even then we should accept to be proven wrong, perhaps also showing the valure and efforts behing expert opinions.
+I also think that this could make it clear how providing an informed answer requires a lot of time and energy, and that even then we should accept to be proven wrong, perhaps also showing the value and efforts being expert opinions.
 
 And with this I would like to conclude and hear your opinions.
 
