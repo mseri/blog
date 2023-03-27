@@ -65,4 +65,4 @@ It is quite a pity that the meeting was not recorded, I hope somebody has taken 
 
 I was discussing this at some point after the meeting, when I was caught off guard by somebody observing that I have been an educator for over a decade years and that I am heavily engaged in discussions on the state of academia and education. So after all, my doubts may have been more my impostor syndrome speaking that the reality.
 
-Nobody uses the comments on this blog, but I am curious on what is your opinion on this topic. f Go and [have a look at the questions](https://www.rug.nl/fse/education/the-future-of-higher-education-launch-symposium-of-the-centre-for-learning-and-teaching#panel), what do you think? What can or cannot we do? What should we (or should not) do?
+Nobody uses the comments on this blog, but I am curious on what is your opinion on this topic. Go and [have a look at the questions](https://www.rug.nl/fse/education/the-future-of-higher-education-launch-symposium-of-the-centre-for-learning-and-teaching#panel), what do you think? What can or cannot we do? What should we (or should not) do?
