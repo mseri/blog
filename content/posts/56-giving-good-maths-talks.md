@@ -1,6 +1,6 @@
 ---
 title: "Giving Good Maths Talks"
-date: 2023-04-07T11:59:27+02:00
+date: 2023-04-07T10:59:27+02:00
 tags: ["mathematics", "education", "blog"]
 categories: ["Blog"]
 ---
