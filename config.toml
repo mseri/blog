@@ -33,7 +33,6 @@ theme = "m10c"
   lightColor = "#ebeef0" #"#afbac4"
   lightestColor = "#ffffff"
 
-
 [taxonomies]
   tag = "tags"
 
@@ -92,3 +91,10 @@ theme = "m10c"
   [privacy.youtube]
     disable = false
     privacyEnhanced = true
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
