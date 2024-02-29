@@ -3,8 +3,7 @@ title: "A brief intro to Git"
 date: 2024-02-29T14:56:34+01:00
 tags: ["git", "mathematics"]
 categories: ["Blog"]
-params:
-  toc: true
+toc: true
 ---
 
 This is a followup to my [previous post on git from 11 years ago]({{< ref "/posts/11-git-workflow-for-lazy-mathematicians.md" >}}).
