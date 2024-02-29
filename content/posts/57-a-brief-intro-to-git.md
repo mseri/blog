@@ -3,10 +3,11 @@ title: "A brief intro to Git"
 date: 2024-02-29T14:56:34+01:00
 tags: ["git", "mathematics"]
 categories: ["Blog"]
-draft: true
+params:
+  toc: true
 ---
 
-This is a followup to my [previous post on git from 11 years ago]({{< ref "/posts/11-git-workflow-for-lazy-mathematicians.md" }}).
+This is a followup to my [previous post on git from 11 years ago]({{< ref "/posts/11-git-workflow-for-lazy-mathematicians.md" >}}).
 I've been using git for a while now and I've learned a few things since then, that I think are worth sharing.
 
 I am not going to explain in detail what git is, how to install it and how it works; there are plenty of resources for that.
@@ -19,7 +20,7 @@ It took a long time for me to break my old habits and adopt the new ones, but I 
 ## Getting started
 
 There is nothing new here.
-You need to install `git`, which pretty much will depend on the operating system running in your computer, and [configure it with your name and email]({{> ref "/posts/11-git-workflow-for-lazy-mathematicians.md#introduce-yourself-to-git }}).
+You need to install `git`, which pretty much will depend on the operating system running in your computer, and [configure it with your name and email]({{< ref "/posts/11-git-workflow-for-lazy-mathematicians.md#introduce-yourself-to-git" >}}).
 
 ## Creating a repository
 
