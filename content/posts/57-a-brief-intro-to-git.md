@@ -1,8 +1,9 @@
 ---
-title: "A brief intro to Git"
+title: "A brief introduction to git, with an eye towards mathematicians"
 date: 2024-02-29T14:56:34+01:00
 tags: ["git", "mathematics"]
 categories: ["Blog"]
+slug: "a-brief-intro-to-git"
 toc: true
 ---
 
@@ -97,7 +98,7 @@ This will interactively show you the changes that have been made to the file and
 You can then choose which changes to add for consideration in the new commit and which to ignore.
 The changes that you choose to ignore will be kept in the file, but they will not be added to the repository.
 
-## Tracking Changes
+## Tracking changes
 
 To see the changes that we have committed, the `git log` command is your friend.
 ```bash
@@ -113,7 +114,7 @@ This will show the changes that have been made to the file `main.tex` in the com
 Note that you don't need to write the full hash, just enough characters to uniquely identify the commit.
 Usually 4 or 5 characters are enough.
 
-## Reverting Changes
+## Reverting changes
 
 At some point you realised that you made a mistake and you want to revert to a previous version of the file.
 This is done with the `git restore` command.
