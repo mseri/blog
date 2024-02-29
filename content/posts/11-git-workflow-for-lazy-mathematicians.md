@@ -8,6 +8,8 @@ slug: "git-workflow-for-lazy-mathematicians"
 disqus_identifier: 11
 ---
 
+This post is pretty old, You can refer to [my new post here]({{< ref "/posts/57-a-brief-intro-to-git.md" >}}) for a more modern version.
+
 First of all, what is [git](https://git-scm.com)? Citing its website
 > Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 > [It] is easy to learn and has a tiny footprint with lightning fast performance.
