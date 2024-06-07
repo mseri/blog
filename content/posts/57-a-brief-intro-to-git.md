@@ -71,7 +71,7 @@ using `git`. And I really want to emphasize that it is about _changes_ and not _
 Let's add a new file
 ```bash
 ; echo "Hello, world!" > main.tex
-; git add hello.tex
+; git add main.tex
 ; git commit -m "Add main.tex file"
 ```
 
