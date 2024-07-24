@@ -94,6 +94,22 @@ Have fun!
 
 The `llm` library is really flexible, have a look at its documentation to get an idea of the many ways you can interact with it.
 
+The author of this tool has a nice blog full of examples of use, and is always on top of the novelties. For example you can already use it to try [the new Llama 3.1 model](https://simonwillison.net/2024/Jul/23/llm-gguf/).
+Quoting its blog post, you can install the model by running:
+
+```bash
+llm install llm-gguf
+llm gguf download-model \
+  https://huggingface.co/lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/resolve/main/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf \
+  --alias llama-3.1-8b-instruct --alias l31i
+```
+
+and then chat with it as we did above, runinng:
+
+```bash
+llm chat -m l31i
+```
+
 ## The harder way: coding your own interaction
 
 If you are like me and you prefer to use the command line, you can use the [Hugging Face Transformers](https://huggingface.co/transformers/) library to run LLMs locally.
