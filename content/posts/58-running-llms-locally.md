@@ -21,8 +21,6 @@ Before we move on, let me clarify that I am not going to cover the ethical impli
 
 Moreover, don't expect answers as good as the ones you get from the famous cloud-based services that I listed above. The models that you can run on average (or even good) consumer hardware need to be greatly compressed at the expense of the quality of the response, but they are good enough for many use cases.
 
-A benchmark and comparison of the main language models in the wild can be found on the [LMSYS Chatbot Arena Leaderboard](https://chat.lmsys.org/?leaderboard).
-
 ## The easiest way: GUIs
 
 There are a few applications that allow you to run LLMs locally with a graphical interface. In my opinion the nicest and easiest to use is the open source project [GPT4All](https://www.nomic.ai/gpt4all).
@@ -39,6 +37,8 @@ The project itself is [well documented](https://docs.gpt4all.io/gpt4all_desktop/
 Depending on the RAM and GPU you have, you can choose between different models. This is rather confusing, and very poorly explained in my opinion. It took some trial and error to find the right models for my system and one that was producing good enough answers for my use cases.
 
 So far, I had the best experiences with the models called `Nous Hermes 2 Mistral DPO` and `Llama 3 Instruct`. They both worked fine on the iMac with 16Gb of RAM but struggled on the Mac Mini with 8Gb of RAM. There I had to use `Phi-3 Mini Instruct` to get decent results at decent performances.
+
+A benchmark and comparison of the main language models in the wild can be found on the [LMSYS Chatbot Arena Leaderboard](https://chat.lmsys.org/?leaderboard), this will give you an idea of the quality of the models you can run locally.
 
 Once the model is downloaded and installed you can head to the `Chat` tab and start chatting with the model. At some point you may notice that responses are cut out before they are finished. This is because the tool has a limit on the length of the response it can generate. You can change this limit in the `Settings` tab, by increasing the number of tokens in the `Maximum Response Length` option.
 
