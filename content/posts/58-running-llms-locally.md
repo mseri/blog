@@ -92,6 +92,8 @@ llm chat -m Phi-3-mini-4k-instruct -p max_length 4096
 
 Have fun!
 
+A remark is in order here. The `Phi3 mini` [does not yet quite work with `llm`](https://github.com/simonw/llm-gpt4all/issues/30), although the output is often usable. You can still try it [following the instructions here](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf#how-to-use-with-llamafile), at least, that is what I have done while waiting for the fix to land :)
+
 The `llm` library is really flexible, have a look at its documentation to get an idea of the many ways you can interact with it.
 
 The author of this tool has a nice blog full of examples of use, and is always on top of the novelties. For example you can already use it to try [the new Llama 3.1 model](https://simonwillison.net/2024/Jul/23/llm-gguf/).
