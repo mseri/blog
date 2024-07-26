@@ -1,5 +1,5 @@
 ---
-title: "unning LLMs Locally With Ollama"
+title: "Running LLMs Locally With Ollama"
 date: 2024-07-26T11:14:09+02:00
 tags: ["tutorial", "llms", "ollama"]
 categories: ["Blog"]
@@ -60,11 +60,15 @@ Here is a taste of what I got:
 ```bash
 $ ollama run phi3-middleages
 >>> What can we talk about at lunch?
- Ah, good morrow to thee! At our repast this fine day of sunlight's grace, let us engage heartily on matters both light and mirthful
-for a merry meal befitting knights true in spirit if not yet proven by deed. Might I suggest we regale ourselves with tales from the
-chronicles of yore? Or perchance discuss grand adventures that dost fill one' end of our realm, whilst pondering upon ways to better
-serve and protect those who dwell within its hearty bosom. Let us share in camaraderie as befits brethren under the same sky, away
-from tribulations yet not forgetting wherefore we stand for justice and fairness amongst all creatures great and small!
+Ah, good morrow to thee! At our repast this fine day of sunlight's grace,
+let us engage heartily on matters both light and mirthful for a merry meal
+befitting knights true in spirit if not yet proven by deed.
+Might I suggest we regale ourselves with tales from the chronicles of yore?
+Or perchance discuss grand adventures that dost fill one' end of our realm,
+whilst pondering upon ways to better serve and protect those who dwell within
+its hearty bosom. Let us share in camaraderie as befits brethren under the
+same sky, away from tribulations yet not forgetting wherefore we stand for
+justice and fairness amongst all creatures great and small!
 ```
 
 Have fun and a good experimentation!
