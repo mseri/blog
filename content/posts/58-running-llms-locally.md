@@ -131,7 +131,7 @@ If you have few resources, you can try the very small yet very performant `gemma
 ```bash
 llm gguf download-model \
   https://huggingface.co/lmstudio-community/gemma-2-2b-it-GGUF/blob/main/gemma-2-2b-it-Q4_K_M.gguf \
-  --alias gemma-2-4b-instruct --alias g2i
+  --alias gemma-2-2b-instruct --alias g2i
 llm chat -m g2i
 ```
 
@@ -139,10 +139,10 @@ llm chat -m g2i
 
 Of course you can go further in the deep hole and start coding your own ways to interact. There are a lot of ways to this, a rather immediate one (if you allow me to use this term) it to use the [Hugging Face Transformers](https://huggingface.co/transformers/) library to run LLMs locally.
 While powerful, this approach requires more coding knowledge and may be overkill unless you need very specific functionality.
-For complex applications you probably also want to look at the [langchain](https://www.langchain.com/langchain) library.
+For complex applications you probably also want to look at the [`langchain`](https://www.langchain.com/langchain) library.
 
 I have played a bit with this library and I found it to be very powerful and relatively easy to use, but so far I never needed the extra flexibility it provides.
 It is so easy to use the `llm` command above that I don't see any reason to use this method unless you want to code your own interaction with the model.
 
 On Apple hardware, you can squeeze a bit more power out of your system by using the [`mlx`](https://github.com/ml-explore/mlx/) library.
-You can find plenty of example of use in the [mlx-examples](https://github.com/ml-explore/mlx-examples/) repository.
+You can find plenty of example of use in the [`mlx-examples`](https://github.com/ml-explore/mlx-examples/) repository.
