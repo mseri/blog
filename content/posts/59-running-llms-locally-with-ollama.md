@@ -12,16 +12,19 @@ This open-source project makes it incredibly easy to run LLMs on your local mach
 While it does not seem as flexible as the `llm` python library I presented in the other post and it can scare some users with its command-line interface, I was impressed by its ease of use and the wide range of models it supports.
 I am not overselling this, its simplicity is staggering: you can get started with just a few commands.
 
+Technical note: `ollama` also comes with a nice [python library](https://github.com/ollama/ollama-python) that you can use to interact with the models programmatically, if you are into that.
+And in principle you can write a library in any language that can interact with the Ollama server, as it is just a [REST API](https://github.com/ollama/ollama/blob/main/docs/api.md).
+
 - - -
 
 Ollama is available for macOS, Linux, and Windows.
 The easiest way to install it, is to [head to the website](https://ollama.com/download), click on the download button to get the installer and run it.
 
 Once installed, you can start using Ollama right away.
-Here's how to run the `Phi 3` model that was cumbersome to use in my other post:
+Here's how to run the `gemma2:2b` model that was cumbersome to use in my other post:
 
 ```bash
-ollama run phi3
+ollama run gemma2:2b
 ```
 
 The session will start with a simple prompt where you can type your text and get the model's response, and a description of few commands to find help and terminate the session.
