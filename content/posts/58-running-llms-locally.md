@@ -52,8 +52,10 @@ Once the model is downloaded and installed you can head to the `Chat` tab and st
 At some point you may notice that responses are cut out before they are finished. This is because the tool has a limit on the length of the response it can generate.
 You can change this limit in the `Settings` tab, by increasing the number of tokens in the `Maximum Response Length` option.
 
-If for some reasons you are not happy with `GPT4All`, you can try [Jan](https://jan.ai/).
-It is also open source and, from what I understand, more performant than `GPT4All` with practically the same functionalities.
+If for some reasons you are not happy with `GPT4All`, you can try [Msty](https://msty.app/), [Jan](https://jan.ai/) or [LMStudio](https://lmstudio.ai/).
+`Jan` and `LMStudio` are also open source and some people claim also more performant than `GPT4All` with practically the same functionalities.
+`Msty` is closed source but seems to be rather well designed and easy to use.
+What I find nicer of the these three alternatives is that they allow to use a wider range of models, including `gemma2`, that seems to be the best performing small model for me.
 
 ## The geeky way: command line interface
 
@@ -89,16 +91,16 @@ Then you can check the available models by running:
 llm models
 ```
 
-The model will be downloaded in the background the first time you try using it. For example, to chat with `Phi-3 Mini` model you can run:
+The model will be downloaded in the background the first time you try using it. For example, to chat with `Mini Orca` model, a rather small model from microsoft, you can run:
 
 ```bash
-llm chat -m Phi-3-mini-4k-instruct
+llm chat -m orca-mini-3b-gguf2-q4_0
 ```
 
 Also in this case, if you notice that the responses are cut too short, try extending the maximum number of tokens. You can do this by running:
 
 ```bash
-llm chat -m Phi-3-mini-4k-instruct -p max_length 4096
+llm chat -m orca-mini-3b-gguf2-q4_0 -p max_length 2048
 ```
 
 Have fun!
@@ -124,10 +126,23 @@ and then chat with it as we did above, runinng:
 llm chat -m l31i
 ```
 
+If you have few resources, you can try the very small yet very performant `gemma2` model, by running:
+
+```bash
+llm gguf download-model \
+  https://huggingface.co/lmstudio-community/gemma-2-2b-it-GGUF/blob/main/gemma-2-2b-it-Q4_K_M.gguf \
+  --alias gemma-2-4b-instruct --alias g2i
+llm chat -m g2i
+```
+
 ## The harder way: coding your own interaction
 
-If you are like me and you prefer to use the command line, you can use the [Hugging Face Transformers](https://huggingface.co/transformers/) library to run LLMs locally.
+Of course you can go further in the deep hole and start coding your own ways to interact. There are a lot of ways to this, a rather immediate one (if you allow me to use this term) it to use the [Hugging Face Transformers](https://huggingface.co/transformers/) library to run LLMs locally.
 While powerful, this approach requires more coding knowledge and may be overkill unless you need very specific functionality.
+For complex applications you probably also want to look at the [langchain](https://www.langchain.com/langchain) library.
 
 I have played a bit with this library and I found it to be very powerful and relatively easy to use, but so far I never needed the extra flexibility it provides.
 It is so easy to use the `llm` command above that I don't see any reason to use this method unless you want to code your own interaction with the model.
+
+On Apple hardware, you can squeeze a bit more power out of your system by using the [`mlx`](https://github.com/ml-explore/mlx/) library.
+You can find plenty of example of use in the [mlx-examples](https://github.com/ml-explore/mlx-examples/) repository.
