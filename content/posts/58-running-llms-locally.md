@@ -38,12 +38,14 @@ To do this, click on the `Download` button in the `Models` tab, and then select 
 
 Depending on the RAM and GPU you have, you can choose between different models. This is rather confusing, and very poorly explained in my opinion. It took some trial and error to find the right models for my system and one that was producing good enough answers for my use cases.
 
-Selecting an appropriate model can be confusing due to limited documentation. Through trial and error, I found the following models worked well:
+Selecting an appropriate model can be confusing due to limited documentation.
+Through trial and error, I found the following models worked well:
 
 - For systems with 16GB RAM (e.g., my iMac):
   - `Nous Hermes 2 Mistral DPO`
   - `Llama 3 Instruct`
 - For systems with 8GB RAM (e.g., my Mac Mini):
+  - `Gemma2`, `2b` version
   - `Phi-3 Mini Instruct`
 
 A benchmark and comparison of the main language models in the wild can be found on the [LMSYS Chatbot Arena Leaderboard](https://chat.lmsys.org/?leaderboard), this will give you an idea of the quality of the models you can run locally.

@@ -21,7 +21,7 @@ Ollama is available for macOS, Linux, and Windows.
 The easiest way to install it, is to [head to the website](https://ollama.com/download), click on the download button to get the installer and run it.
 
 Once installed, you can start using Ollama right away.
-Here's how to run the `gemma2:2b` model that was cumbersome to use in my other post:
+Here's how to run the `gemma2:2b` model, in my experience one of the best small models:
 
 ```bash
 ollama run gemma2:2b
@@ -41,7 +41,7 @@ This software allows one to do a lot more: it is possible to run the models in a
 
 Perhaps the one feature to mention is the possibility to create custom models using [`Modelfiles`](https://github.com/ollama/ollama/blob/main/docs/modelfile.md). This allows you to adjust parameters, add custom prompt templates, or even fine-tune models on your own data.
 
-Here's a simple example of a Modelfile:
+Here's a simple example of a Modelfile building on top of `phi3`, the model that was cumbersome to run in my other post:
 ```
 FROM phi3
 PARAMETER temperature 0.7
@@ -53,7 +53,7 @@ Save this as `Modelfile` and create a new custom model with
 ollama create phi3-middleages -f Modelfile
 ```
 
-You can now toal with Bit, the polite dragon hunter, by running
+You can now talk with Bit, the polite dragon hunter, by running
 
 ```bash
 ollama run phi3-middleages
