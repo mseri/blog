@@ -21,7 +21,7 @@ theme = "m10c"
     url = "https://mathstodon.xyz/@mseri"
   [[params.social]]
     name = "twitter"
-    url = "https://twitter.com/marcelloseri"
+    url = "https://bsky.app/profile/mseri.me"
   [[params.social]]
     name = "award"
     url = "https://academic.mseri.me"
@@ -63,7 +63,7 @@ theme = "m10c"
     weight = 4
   [[menu.nav]]
     name = "Twitter"
-    url = "https://twitter.com/marcelloseri"
+    url = "https://bsky.app/profile/mseri.me"
     weight = 5
   [[menu.nav]]
     name = "RSS"
