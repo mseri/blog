@@ -8,9 +8,9 @@ katex: true
 slug: "riemann-rearrangement-theorem"
 ---
 
-One of the first exercises when studying convergence of infinite series asks to show that \(\sum_{n=1}^{\infty} \frac{1}{n}\) is divergent while \(\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}\) is convergent. In more technical terms, \(\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}\) is a [**conditionally convergent** series](https://en.wikipedia.org/wiki/Conditionally_convergent).
+One of the first exercises when studying convergence of infinite series asks to show that $\sum_{n=1}^{\infty} \frac{1}{n}$ is divergent while $\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}$ is convergent. In more technical terms, $\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}$ is a [**conditionally convergent** series](https://en.wikipedia.org/wiki/Conditionally_convergent).
 
-This is in contrast to **absolutely convergent** series, that is, infinite sums \(\sum_{n=1}^{\infty} a_n\) such that \(\sum_{n=1}^{\infty} |a_n|\) is also convergent.
+This is in contrast to **absolutely convergent** series, that is, infinite sums $\sum_{n=1}^{\infty} a_n$ such that $\sum_{n=1}^{\infty} |a_n|$ is also convergent.
 
 What is peculiar about conditionally convergent series, is that it is possible to rearrange the terms in the sequence so that the sum of the rearrangement converges to any arbitrary number. This is called [**Riemann's rearrangement theorem**](https://en.wikipedia.org/wiki/Riemann_series_theorem).
 
