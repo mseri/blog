@@ -4,6 +4,7 @@ date: 2024-12-14T14:59:53.000Z
 lastmod: 2024-12-14T15:01:42.000Z
 tags: ["mathematics", "interactive demonstration"]
 categories: ["Blog"]
+katex: true
 slug: "riemann-rearrangement-theorem"
 ---
 
