@@ -8,7 +8,6 @@ description = "Free thoughts of a geeky mathematician"
 rssLimit = 10
 
 theme = "m10c"
-renderer.unsafe = true
 
 [params]
 author = "Marcello Seri"
@@ -83,10 +82,6 @@ useSessionStorage = false
 [privacy.instagram]
 disable = false
 simple = false
-[privacy.twitter]
-disable = false
-enableDNT = true
-simple = false
 [privacy.x]
 disable = false
 enableDNT = true
@@ -99,6 +94,8 @@ disable = false
 privacyEnhanced = true
 
 [markup]
+[markup.renderer]
+unsafe = true
 [markup.tableOfContents]
 endLevel = 3
 ordered = false

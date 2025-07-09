@@ -1,1 +1,1 @@
-<embed src="{{ .Site.BaseURL }}/{{ .Get "url" }}" style="height:auto; width: 100%;" type="application/pdf" >
+<embed src="{{ .Site.BaseURL }}/{{ .Get "url" }}" style="height:{{ .Get "height" | default "100%" }}; width: 100%;" type="application/pdf" >
