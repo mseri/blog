@@ -1,0 +1,13 @@
+{{ $href := .Get "url" | default "" }}
+{{ $img := .Get "img" | absURL }}
+{{ $alt := .Get "alt" | default "" }}
+
+<div style="text-align: center; margin: 1em 0; display: block;">
+    {{ if $href }}
+    <a href="{{ $href }}">
+    {{ end }}
+    <img src="{{ $img }}" alt="{{ $alt }}" style="max-width: 75%; height: auto;" />
+    {{ if $href }}
+    </a>
+    {{ end }}
+</div>
