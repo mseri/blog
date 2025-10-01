@@ -5,7 +5,7 @@ tags: [ai, education]
 categories: ["Blog"]
 ---
 
-I think an update on my previous blog post on [AI in education]]({{< relref "61-AI-in-education.md" >}}) is in order. The discussion has been evolving, I am starting to see early signs of polarization, and a mix of denial and overly enthusiastic adoption. Ethical considerations, which had been largely ignored for a good while, are finally getting an increasingly relevant role if not in the decision making, at least in the reflections from many academics. And experimentation is picking up, starting to provide some clarity on the ups and downs of the current revolution.
+I think an update on my previous blog post on [AI in education]({{< relref "61-AI-in-education.md" >}}) is in order. The discussion has been evolving, I am starting to see early signs of polarization, and a mix of denial and overly enthusiastic adoption. Ethical considerations, which had been largely ignored for a good while, are finally getting an increasingly relevant role if not in the decision making, at least in the reflections from many academics. And experimentation is picking up, starting to provide some clarity on the ups and downs of the current revolution.
 
 *But is it really a revolution?* I can see the disruption, perhaps the fear and unrest that come from a novel hyped thing that is not fully understood yet and that we are not used to. But I don't really see a revolution, at least in the sense of something that would fundamentally change the way we do things.
 
