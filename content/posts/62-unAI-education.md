@@ -37,7 +37,7 @@ At the moment, I see more and more of this push to blindly adopt generative AI a
 
 At the time of writing this post, it contains 1,348 signatures. You may consider this a minority, but given the inertia of academics and the fact that many are largely unaware of this letter, I think this is already a significant number. Have a read, it is worth it, and if you agree with enough of it, consider signing it.
 
-Of course there are plenty of other voices that argue for the opposite, but I think this is an important step to have a balanced discussion. And it is important also to avoid ignoring the critical evidence that is already available, and overshadowed by the hype and marketing campaigns: you can find a good collection of resources in this [Critical AI page](https://olivia.science/ai).
+Of course there are plenty of other voices that argue for the opposite, but I think this is an important step to [have a balanced discussion](https://mindwise-groningen.nl/inviting-thoughts-about-ai-in-education/). And it is important also to avoid ignoring the critical evidence that is already available, and overshadowed by the hype and marketing campaigns: you can find a good collection of resources in this [Critical AI page](https://olivia.science/ai).
 
 So, is generative AI in education really a revolution? I don't think so. At least not in the way that matters most. The real revolution would be finally recognizing that education is fundamentally about human connection, struggle, and growth, and start actively defending these principles. Generative AI can become a useful tool in this process, but only if we resist the temptation to let it replace what makes learning truly transformative: the messy, social, deeply human experience of learning together.
 
