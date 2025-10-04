@@ -1,6 +1,6 @@
 ---
 title: "My journey with meditation: a retrospective"
-date: 2025-10-05T08:31:37+02:00
+date: 2025-10-25T08:31:37+02:00
 tags: [meditation, reflection]
 categories: ["Blog"]
 ---
