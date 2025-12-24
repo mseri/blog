@@ -3,6 +3,7 @@ title: "Journey in Progress: my experience with meditation"
 date: 2025-12-25T08:31:37+02:00
 tags: [meditation, reflection]
 categories: ["Blog"]
+draft: true
 ---
 
 Have you ever felt like you are constantly running behind, never quite in control? If so, you are not alone. For a long time, I felt this way too, and sometimes I still do. But over the past couple of years, I have experienced a significant shift in my mindset and overall well-being. I hope that sharing this journey might resonate with others who have felt the same way. It has been helpful for me to read about others' struggles and small victories, so I hope this might do the same for someone else.
