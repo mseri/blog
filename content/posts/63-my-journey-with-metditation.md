@@ -5,7 +5,7 @@ tags: [meditation, reflection]
 categories: ["Blog"]
 ---
 
-Have you ever felt like you are constantly running behind, never quite in control? If so, you are not alone. For a long time, I felt this way too, and sometimes I still do. But over the past couple of years, I have experienced a shift in my mindset and overall well-being. I hope that sharing this journey might resonate with others who have felt the same way. Reading about others' struggles and small victories has always helped me, so I hope this might do the same for you.
+Have you ever felt like you are constantly running behind, never quite in control? If so, you are not alone. For a long time, I felt this way too, and sometimes I still do. But over the past couple of years, I have experienced a shift in my mindset and overall well-being. I hope that sharing this journey might resonate with others who have felt the same way. Reading about others' struggles and small victories has always helped me, so I hope this might do the same for someone else.
 
 If you know me or have listened to the [early episodes of Degrees of Freedom](https://creators.spotify.com/pod/profile/degrees-of-freedom/episodes/S1-Ep7---Failing-Forward-e2oidaa/a-abhk913), this won't come as a surprise. I have spoken openly about feeling overwhelmed, as if I were always chasing my own agenda without ever catching up. That sense of being perpetually behind has mostly faded, and this is not due to changes in my work environment. The truth is, I seem to be relating to things differently. I am not sharing this because I have "figured it all out", far from it! But I have noticed that even small internal shifts can ripple outward in how we parent, work, or show up for others.
 
