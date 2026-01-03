@@ -17,7 +17,7 @@ Before that, I had quit most social media and reduced my screen time. That helpe
 
 The push I needed came from a Black Friday discount on the Headspace app (which, for the record, I wouldn't recommend). The discount gave me the excuse to commit; paying for something made it harder to back out.
 
-For the first few months, I stuck to short sessions to fit them into my packed schedule. The experience felt cliché and was underwhelming at first. The more I meditated, the more I noticed how scattered my mind was and how difficult it was to stay present. *I was constantly lost in thoughts*. But I decided to stick with it, reading that this was normal, just becoming aware of the noise that had always been there. Still, I didn't see any other changes. For all I knew, I was wasting my time.
+For the first few months, I stuck to short sessions to fit them into my packed schedule. The experience felt cliché and was underwhelming at first. The more I meditated, the more I noticed how scattered my mind was and how difficult it was to stay present. *I was constantly lost in thoughts*. But I decided to stick with it, [reading that this was normal](https://dharmalabco.substack.com/p/the-waterfall-experience), just becoming aware of the noise that had always been there. Still, I didn't see any other changes. For all I knew, I was wasting my time.
 
 A few months in, the effort felt lighter. I began to notice temporary relaxation while following the breath or listening to sounds around me. I increased the time slightly, reaching 10 to 15 minutes in the morning before work. I would close my office door, sit with my breath, and wait for 9:00 to roll around. But beyond that, nothing felt different.
 
