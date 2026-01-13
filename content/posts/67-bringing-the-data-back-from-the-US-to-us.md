@@ -1,5 +1,5 @@
 ---
-title: "Bringing the data backm from the US to us"
+title: "Bringing the data back: from the US to us"
 date: 2026-01-13T10:12:23+01:00
 tags: [privacy, tooling, cloud, europe]
 categories: ["Blog"]
