@@ -109,7 +109,7 @@ In that case you would need to install your own NAS and run Syncthing on it, whi
 
 ## Knowledge management and writing
 
-Beyond storage there are plenty of other cloud-based tools, like wikis, notes, and writing assistants, that could be convenient. Here I have found quite a few interesting options.
+Beyond storage there are plenty of other convenient cloud-based tools. Here what I thought are interesting opportunities, that do not fit with the lists above.
 
 ### Nuclino
 
@@ -127,13 +127,29 @@ The server cannot read user content, which is exactly the direction I would like
 
 It is extremely appealing from a sovereignty perspective. My biggest issue, for now, is that it is almost entirely French‑centred (including documentation) and I have not yet found a hosting provider that offers it as a managed service in English. I will definitely also keep an eye on this.
 
-### LanguageTool
+## Others
 
-Finally, for something that really does not fit with the rest, there is [**LanguageTool**](https://languagetool.org/). This is a multilingual AI‑powered grammar and style checker that integrates nicely into browsers and editors.
+Finally, for some things that really does not fit with the rest.
+
+### Language help
+
+[**LanguageTool**](https://languagetool.org/) is a multilingual AI‑powered grammar and style checker that integrates nicely into browsers and editors.
 
 I have it on the list, because there have been discussions to provide Grammarly licenses to our students (I don't know if we do, and honestly hope not). Since Grammarly is US‑based, I was curious to see if a EU-based alternative existed, and it turns out that LanguageTool fits this bill.
 
 I don't use either of them, so I cannot really compare. But it is here, just in case...
+
+### Markdown collaboration
+
+[**HedgeDoc**](https://hedgedoc.org) is an open‑source, self‑hosted collaborative Markdown editor for real‑time note‑taking, presentations and diagrams. It is simply excellent. I need to find a good managed hosting to move away from HackMD to this. It is not very hard to self-host, but right now I don't have the time to look after it.
+
+### Photo and video management
+
+[**Immich**](https://immich.app) is a high‑performance, open‑source self‑hosted solution for photo and video backup with automatic device syncing, face recognition, ML‑powered search, albums and sharing. Essentially a privacy‑respecting Google Photos replacement.
+
+The downsite is only that you have to host yourself. But from what I saw, it is a relatively smooth sail that can give you full control over your media library without vendor lock‑in.
+
+[**Ente Photos**](<https://ente.io>) offers end‑to‑end encrypted photo and video backup with EU servers, open‑source apps, family sharing and easy Apple and Google Photos migration. Unlike Immich it is a hosted service and it strikes a good balance between convenience and privacy for non‑technical users. I was impressed by how well made it looks, the many positive experience and the pricing.
 
 ## Where this leaves me
 
