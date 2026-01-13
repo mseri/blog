@@ -32,7 +32,7 @@ So far it has proven to be quite reliable though, so it may just be a non-worry.
 
 ### Nextcloud
 
-**Nextcloud** (<https://nextcloud.com>) is a self‑hostable content collaboration platform. Many people already know it and it is available from many vendors all over the world: it provides file sync and sharing, among other things, all under your own control.
+[**Nextcloud**](https://nextcloud.com) is a self‑hostable content collaboration platform. Many people already know it and it is available from many vendors all over the world: it provides file sync and sharing, among other things, all under your own control.
 
 With inexpensive EU hosting (for example Hetzner Storage Share at <https://www.hetzner.com/storage/storage-share>, or [the good cloud](https://thegood.cloud/), a local Dutch providers) it is one of the most compelling ways to keep your data in Europe while still enjoying a reasonably modern collaboration experience.
 
@@ -88,7 +88,7 @@ Similar to Internxt, I like the concept and the focus on privacy, but I have see
 
 ### Jottacloud
 
-**Jottacloud** (<https://jottacloud.com/en/>) is a Norwegian cloud storage and backup service, with all data stored on their own servers in Norway under GDPR and strict local privacy laws. It has no end-to-end encryption offer, but I also decided to mention it since it seems a solid privacy-oriented service with very competitive pricing and good reviews.
+[**Jottacloud**](https://jottacloud.com/en/) is a Norwegian cloud storage and backup service, with all data stored on their own servers in Norway under GDPR and strict local privacy laws. It has no end-to-end encryption offer, but I also decided to mention it since it seems a solid privacy-oriented service with very competitive pricing and good reviews.
 
 ### Koofr
 
@@ -122,7 +122,7 @@ The server cannot read user content, which is exactly the direction I would like
 
 ### LaSuite (Suite numérique)
 
-**LaSuite** (<https://lasuite.numerique.gouv.fr/en>, is a collection of digital tools curated by the French government for public‑sector collaboration, hosted on secure French infrastructure. I knew they had developed [Docs](https://github.com/suitenumerique/docs), which I really liked, and was pleasantly surprised to discover that they now have this whole suite of tools, including spreadsheets, presentations, forms, wikis, and more.
+[**LaSuite**](https://lasuite.numerique.gouv.fr/en), is a collection of digital tools curated by the French government for public‑sector collaboration, hosted on secure French infrastructure. I knew they had developed [Docs](https://github.com/suitenumerique/docs), which I really liked, and was pleasantly surprised to discover that they now have this whole suite of tools, including spreadsheets, presentations, forms, wikis, and more.
 
 It is extremely appealing from a sovereignty perspective. My biggest issue, for now, is that it is almost entirely French‑centred (including documentation) and I have not yet found a hosting provider that offers it as a managed service in English. I will definitely also keep an eye on this.
 
