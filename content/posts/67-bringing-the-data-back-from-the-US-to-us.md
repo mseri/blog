@@ -133,8 +133,6 @@ I don't use either of them, so I cannot really compare. But it is here, just in 
 
 Reducing US reliance also means looking beyond storage and office tools to everyday browsing habits. Here are privacy‑respecting search alternatives with strong EU ties.
 
-### Search engines
-
 - [**Ecosia**](https://www.ecosia.org) is a Berlin‑based nonprofit search engine that uses Bing backend but plants trees with ad revenue, stores minimal data, and complies with strict German/EU privacy laws. I used it for a while and liked the idea, but I found the search results not as good as other engines unfortunately. Especially given its environmental focus, I promised myself to keep giving it another try every now and then.
 
 - [**Qwant**](https://www.qwant.com) is a French privacy‑focused search engine that doesn't track users or sell data, using its own index plus Bing fallback, with dedicated EU servers and kids' search. I had mixed results with it, so maybe it is a problem with Bing itself that I am having. But it is worth a try, it is a nice option to have.
