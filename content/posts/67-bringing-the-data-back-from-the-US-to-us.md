@@ -3,8 +3,7 @@ title: "Bringing the data backm from the US to us"
 date: 2026-01-13T10:12:23+01:00
 tags: [privacy, tooling, cloud, europe]
 categories: ["Blog"]
-draft: true
---
+---
 
 For a while, but especially over the past few months, I have been trying to be increasingly more conscious of the digital tools I use. It is so convenient to rely on the usual US‑based suspects for email, storage, and collaboration, that we may forget that we are their product and that they may take all of our staff away from us in a whim, with no chances to appeal or get it back before we are locked out.
 
