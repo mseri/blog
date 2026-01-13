@@ -34,7 +34,7 @@ So far it has proven to be quite reliable though, so it may just be a non-worry.
 
 [**Nextcloud**](https://nextcloud.com) is a self‑hostable content collaboration platform. Many people already know it and it is available from many vendors all over the world: it provides file sync and sharing, among other things, all under your own control.
 
-With inexpensive EU hosting (for example Hetzner Storage Share at <https://www.hetzner.com/storage/storage-share>, or [the good cloud](https://thegood.cloud/), a local Dutch providers) it is one of the most compelling ways to keep your data in Europe while still enjoying a reasonably modern collaboration experience.
+With inexpensive EU hosting (for example [Hetzner Storage Share](https://www.hetzner.com/storage/storage-share), or [the good cloud](https://thegood.cloud/), a local Dutch providers) it is one of the most compelling ways to keep your data in Europe while still enjoying a reasonably modern collaboration experience.
 
 It lacks e2e encryption, but for many use cases I think it provides a good trade‑off between privacy, convenience, and sovereignty. This fits also in the next section, as Nextcloud works well as a file storage and sync solution.
 
