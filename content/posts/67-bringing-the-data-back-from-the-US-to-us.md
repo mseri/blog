@@ -16,14 +16,14 @@ I also have to admit that I am in a comfortable situation. Working in academia, 
 
 For instance, nationwide, the most obvious starting point is [SURF](https://surf.nl/), a cooperative ICT provider for Dutch education and research. For participating universities, like ours, they offer storage, computing, identity management and collaboration tools tailored to our needs. My experience has been very positive, their services are well managed, clean and stable. The problem starts if you want to properly collaborate with people outside the cooperative, which is what we started needing for EWM-NL, or if you want to use similar services for your own personal use. Which is where this list comes in.
 
-I have not explored e-mail hosting providers in depth yet. I have been happily using [fastmail](https://fastmail.com) for years. This is based in Australia, so privacy-wise is probably not the best, but it is a stable company and I always had good experiences with their service and their customer support.
+I have not explored e-mail hosting providers in depth yet. I have been happily using [Fastmail](https://fastmail.com) for years. This is based in Australia, so privacy-wise is probably not the best, but it is a stable company and I always had good experiences with their service and their customer support.
 I have been recommended [Tutanota](https://tutanota.com) (Germany) and [Proton Mail](https://proton.me) (Switzerland) as lean privacy‑friendly alternatives, but I have not personally tried either of them (yet).
 
 ## Communication and office suites
 
 Something I have been using a lot over the years is Google Workspace (Docs, Sheets, Slides, Drive, Gmail, Calendar). So my first focus was for alternatives that would allow me to keep a similar workflow without relying on US‑based services.
 
-- [**Proton**](https://proton.me) is probably the one I am most comfortable recommending to non‑technical friends: [end‑to‑end encrypted mail](https://proton.me/mail), VPN, [calendar and drive](https://proton.me/drive), and more, all under one account, with data encrypted and stored in Switzerland and EU data centres.
+- [**Proton**](https://proton.me) is probably the one I am most comfortable recommending to non‑technical friends: [end‑to‑end encrypted mail](https://proton.me/mail), VPN, [Drive](https://proton.me/drive), and a lot more, all under one account, with data encrypted and stored in Switzerland and EU data centres.
 
   I like their VPN a lot and can warmly recommend it (alternatively have a look at [Mullvad](http://mullvad.net/)). And I keep hearing excellent reviews of their mail service, to the point that if I decide to leave Fastmail this is most likely going to be my first choice.
 
@@ -38,7 +38,9 @@ Something I have been using a lot over the years is Google Workspace (Docs, Shee
 
   It lacks e2e encryption, but for many use cases I think it provides a good trade‑off between privacy, convenience, and sovereignty. This fits also in the next section, as Nextcloud works well as a file storage and sync solution.
 
-- [**mailbox.org**](https://mailbox.org/en) is a German email provider that has grown into a full workspace, with Mail, Calendar, Drive, Meet and Office tools in one place. All data is stored in their own data centres in Berlin, powered by renewable energy and protected under strict German and EU privacy laws, with end‑to‑end encrypted email, encrypted cloud storage, and GDPR‑compliant video conferencing.
+- [**mailbox.org**](https://mailbox.org/en) is a German email provider that has grown into a full workspace, with mail, calendar, [Drive](https://mailbox.org/en/product/drive/), Meeting and Office tools in one place.
+
+  All data is stored in their own data centres in Berlin, powered by renewable energy (this is commont to many other services in this posto, although I did not make it explicit) and protected under strict German and EU privacy laws, with end‑to‑end encrypted email, encrypted cloud storage, and GDPR‑compliant video conferencing.
 
   I have not tested it personally, but it seems a solid option that is worth considering, and the pricing is quite reasonable.
 
