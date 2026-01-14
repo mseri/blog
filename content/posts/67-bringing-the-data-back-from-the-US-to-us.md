@@ -6,17 +6,15 @@ categories: ["Blog"]
 toc: true
 ---
 
-## Premise
-
 For a while, but especially over the past few months, I have been trying to be increasingly more conscious of the digital tools I use. It is so convenient to rely on the usual US‑based suspects for email, storage, and collaboration, that we may forget that we are their product and that they may take all of our staff away from us in a whim, with no chances to appeal or get it back before we are locked out.
 
 I used to trust Apple at least for privacy, but their push to harness us in their cloud services and the complexity to escape, coupled with my falling trust towards anything in the US, is making me look also for alternatives to their cloud offering.
 
-This post is a small snapshot of where I am in the process, mostly prompted by a [recent post](https://www.zeitgeistofbytes.com/p/bye-bye-big-tech-how-i-migrated-to) I saw online. Below you can find the work‑in‑progress list of EU‑based tools that I have explored and I am considering as alternatives. I have yet to find a balance between convenience, privacy, and sovereignty that works for me, so I included some personal impressions to this list but I cannot yet say what I will do.
+This post is a small snapshot of where I am in the process, mostly prompted by a [recent post](https://www.zeitgeistofbytes.com/p/bye-bye-big-tech-how-i-migrated-to) I saw online, and backed by many options that I have been exploring also for the collaboration within [EWM-NL](https://www.ewmnetherlands.nl). Below you can find the work‑in‑progress list of EU‑based tools that I have explored and I am considering as alternatives. I have yet to find a balance between convenience, privacy, and sovereignty that works for me, so I included some personal impressions to this list but I cannot yet say what I will do.
 
 I also have to admit that I am in a comfortable situation. Working in academia, data sovereignty is increasingly a requirement rather than a choice. So it is not surprising that for data sharing and collaborations we already have in-house or in-country tools.
 
-For instance, nationwide, the most obvious starting point is [SURF](https://surf.nl/), a cooperative ICT provider for Dutch education and research. For participating universities, like ours, they offer storage, computing, identity management and collaboration tools tailored to our needs. My experience has been very positive, their services are well managed, clean and stable. The problem starts if you want to properly collaborate with people outside the cooperative or if you want to use similar services for your own personal use. Which is where this list comes in.
+For instance, nationwide, the most obvious starting point is [SURF](https://surf.nl/), a cooperative ICT provider for Dutch education and research. For participating universities, like ours, they offer storage, computing, identity management and collaboration tools tailored to our needs. My experience has been very positive, their services are well managed, clean and stable. The problem starts if you want to properly collaborate with people outside the cooperative, which is what we started needing for EWM-NL, or if you want to use similar services for your own personal use. Which is where this list comes in.
 
 I have not explored e-mail hosting providers in depth yet. I have been happily using [fastmail](https://fastmail.com) for years. This is based in Australia, so privacy-wise is probably not the best, but it is a stable company and I always had good experiences with their service and their customer support.
 I have been recommended [Tutanota](https://tutanota.com) (Germany) and [Proton Mail](https://proton.me) (Switzerland) as lean privacy‑friendly alternatives, but I have not personally tried either of them (yet).
@@ -39,6 +37,10 @@ Something I have been using a lot over the years is Google Workspace (Docs, Shee
   With inexpensive EU hosting (for example [Hetzner Storage Share](https://www.hetzner.com/storage/storage-share), or [the good cloud](https://thegood.cloud/), a local Dutch providers) it is one of the most compelling ways to keep your data in Europe while still enjoying a reasonably modern collaboration experience.
 
   It lacks e2e encryption, but for many use cases I think it provides a good trade‑off between privacy, convenience, and sovereignty. This fits also in the next section, as Nextcloud works well as a file storage and sync solution.
+
+- [**mailbox.org**](https://mailbox.org/en) is a German email provider that has grown into a full workspace, with Mail, Calendar, Drive, Meet and Office tools in one place. All data is stored in their own data centres in Berlin, powered by renewable energy and protected under strict German and EU privacy laws, with end‑to‑end encrypted email, encrypted cloud storage, and GDPR‑compliant video conferencing.
+
+  I have not tested it personally, but it seems a solid option that is worth considering, and the pricing is quite reasonable.
 
 - [**Infomaniak’s KSuite**](https://www.infomaniak.com/en/ksuite) seems also a very interesting “European Google Workspace clone”: they have [kDrive for storage](https://www.infomaniak.com/en/ksuite/kdrive) that also allows for online document editing, e-mail, calendars, chat and more, all on a Swiss, privacy‑focused cloud.
 
