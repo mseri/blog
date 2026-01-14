@@ -14,7 +14,7 @@ This post is a small snapshot of where I am in the process, mostly prompted by a
 
 I also have to admit that I am in a comfortable situation. Working in academia, data sovereignty is increasingly a requirement rather than a choice. So it is not surprising that for data sharing and collaborations we already have in-house or in-country tools.
 
-For instance, nationwide, the most obvious starting point is [SURF](https://surf.nl/), a cooperative ICT provider for Dutch education and research. For participating universities, like ours, they offer storage, computing, identity management and collaboration tools tailored to our needs. My experience has been very positive, their services are well managed, clean and stable. The problem starts if you want to properly collaborate with people outside the cooperative, which is what we started needing for EWM-NL, or if you want to use similar services for your own personal use. Which is where this list comes in.
+For instance, nationwide, the most obvious starting point is [SURF](https://surf.nl/), a cooperative ICT provider for Dutch education and research. For participating universities, like ours, they offer storage, computing, identity management and collaboration tools tailored to our needs. My experience has been very positive; their services are well managed, clean and stable. The problem starts if you want to properly collaborate with people outside the cooperative, which is what we started needing for EWM-NL, or if you want to use similar services for your own personal use, which is where this list comes in.
 
 I have not explored e-mail hosting providers in depth yet. I have been happily using [Fastmail](https://fastmail.com) for years. This is based in Australia, so privacy-wise is probably not the best, but it is a stable company and I always had good experiences with their service and their customer support.
 I have been recommended [Tutanota](https://tutanota.com) (Germany) and [Proton Mail](https://proton.me) (Switzerland) as lean privacy‑friendly alternatives, but I have not personally tried either of them (yet).
@@ -40,17 +40,17 @@ Something I have been using a lot over the years is Google Workspace (Docs, Shee
 
 - [**mailbox.org**](https://mailbox.org/en) is a German email provider that has grown into a full workspace, with mail, calendar, [Drive](https://mailbox.org/en/product/drive/), Meeting and Office tools in one place.
 
-  All data is stored in their own data centres in Berlin, powered by renewable energy (this is commont to many other services in this posto, although I did not make it explicit) and protected under strict German and EU privacy laws, with end‑to‑end encrypted email, encrypted cloud storage, and GDPR‑compliant video conferencing.
+  All data is stored in their own data centres in Berlin, powered by renewable energy (this is common to many other services in this post, although I did not make it explicit) and protected under strict German and EU privacy laws, with end‑to‑end encrypted email, encrypted cloud storage, and GDPR‑compliant video conferencing.
 
   I have not tested it personally, but it seems a solid option that is worth considering, and the pricing is quite reasonable.
 
-- [**Infomaniak’s KSuite**](https://www.infomaniak.com/en/ksuite) seems also a very interesting “European Google Workspace clone”: they have [kDrive for storage](https://www.infomaniak.com/en/ksuite/kdrive) that also allows for online document editing, e-mail, calendars, chat and more, all on a Swiss, privacy‑focused cloud.
+- [**Infomaniak’s KSuite**](https://www.infomaniak.com/en/ksuite) seems also an interesting European Google Workspace clone: they have [kDrive for storage](https://www.infomaniak.com/en/ksuite/kdrive) that also allows for online document editing, e-mail, calendars, chat and more, all on a Swiss, privacy‑focused cloud.
 
-  On paper it looks really excellent. In practice my experiment stalled because I could not figure out how to try the free kSuite and kDrive, and the management panel looked like business/enterprise oriented more than personal.
+  On paper it looks really excellent. In practice, my experiment stalled because I could not figure out how to try the free kSuite and kDrive, and the management panel looked more business/enterprise-oriented than personal.
 
-  It remains on my _to be properly tested_ list, but I think it will need quite some simplification of the onboarding to be usable for personal use.
+  It remains on my "to be properly tested" list, but I think it will need quite some simplification of the onboarding to be usable for personal use.
 
-- [**Drime**](https://drime.cloud) provides an EU‑hosted, GDPR‑compliant cloud storage service with collaborative editing features. It looks promising but, at the time of writing, still feels more like an MVP than a fully battle‑tested platform. And the lack of actual screenshots in the website does not help my  confidence.
+- [**Drime**](https://drime.cloud) provides an EU‑hosted, GDPR‑compliant cloud storage service with collaborative editing features. It looks promising but, at the time of writing, still feels more like an MVP than a fully battle‑tested platform. And the lack of actual screenshots on the website does not inspire confidence.
 
 - [**OnlyOffice**](https://www.onlyoffice.com) is a collaborative online office suite with editors for text documents, spreadsheets, presentations and forms. You can self‑host it or use their EU‑hosted cloud, OnlyOffice Doc. It is not the cheapest option out there, but seems a well‑designed platform that can integrate nicely with Nextcloud or other storage solutions, so worth a mention here.
 
@@ -58,8 +58,7 @@ Something I have been using a lot over the years is Google Workspace (Docs, Shee
 
 ## Storage and file‑centric tools
 
-One of the first services I replaced was Dropbox.
-I was annoyed by the lack of encryption and the fact that they have (had?) former US secretaries of state in their board. But with Snowden's revelations I simply decided it was time to move on.
+One of the first services I replaced was Dropbox. I was annoyed by the lack of encryption and the fact that they have (had?) former US secretaries of state on their board. After Snowden's revelations, I simply decided it was time to move on.
 
 ### End-to-end encrypted
 
@@ -67,15 +66,15 @@ I was annoyed by the lack of encryption and the fact that they have (had?) forme
 
   I have been using it for a while now and I am quite happy with it. So even if it is not the cheapest option out there, so far it has been able to deliver a smooth experience. The one hiccup I had was resolved quickly by their support team, to add to the positive experience.
 
-  To me it is one of the stronger “Dropbox/Google Drive, but actually private and EU‑focused” options.
+  To me it is one of the stronger Dropbox-but-actually-private-and-EU‑based options.
 
 - [**Internxt**](https://internxt.com) is also an EU‑based, open‑source, end-to-end encrypted cloud storage provider. I really like its offering as a pure storage service, and the fact that it is open source. 
 
   My main worry is that I have encountered mixed reviews about their reliability, so I would probably test it carefully before committing to it for important data.
 
-- [**Filen**](https://filen.io), like the previous two services, offers end‑to‑end encrypted cloud storage from Germany. It also offers a chat interface and a collaborative pure-text notes editing.
+- [**Filen**](https://filen.io), like the previous two services, offers end‑to‑end encrypted cloud storage from Germany. It also offers a chat interface and collaborative plain-text note editing.
 
-  Similar to Internxt, I like the concept and the focus on privacy, but I have seen mixed reviews about reliability and, differently from Internxt, it had no security audit. I would probably test it carefully before committing to it for important data.
+  Similar to Internxt, I like the concept and the focus on privacy, but I have seen mixed reviews about reliability and, unlike Internxt, it has had no security audit. I would probably test it carefully before committing to it for important data.
 
 ### Other privacy-focused options
 
@@ -91,11 +90,9 @@ I was annoyed by the lack of encryption and the fact that they have (had?) forme
 
 ### Notable mention (sync only)
 
-- [**Syncthing**](https://syncthing.net) is an entirely different beast: open‑source, peer‑to‑peer file synchronization without any central server.
+- [**Syncthing**](https://syncthing.net) is an entirely different beast: open‑source, peer‑to‑peer file synchronisation without any central server.
 
-  It is perfect for keeping your own devices in sync without trusting a third‑party host, but by design it does not solve the “I need a hosted collaboration space” problem. I have tried it out and it works very well for what it does.
-
-  In that case you would need to install your own NAS and run Syncthing on it, which is not for everyone, but for tech-savvy users could be a great way to keep full control of your data.
+  It is perfect for keeping your own devices in sync without trusting a third‑party host, but by design it does not solve the "I need a hosted collaboration space" problem. I have tried it out and it works very well for what it does. If you want always-on syncing, you would need to install your own NAS and run Syncthing on it, which is not for everyone—but for tech-savvy users it could be a great way to keep full control of your data.
 
 ## Knowledge management and writing
 
@@ -121,7 +118,7 @@ Finally, for some things that really does not fit with the rest.
 
 [**LanguageTool**](https://languagetool.org/) is a multilingual AI‑powered grammar and style checker that integrates nicely into browsers and editors.
 
-I have it on the list, because there have been discussions to provide Grammarly licenses to our students (I don't know if we do, and honestly hope not). Since Grammarly is US‑based, I was curious to see if a EU-based alternative existed, and it turns out that LanguageTool fits this bill.
+I have it on the list because there have been discussions about providing Grammarly licences to our students (I don't know if we do, and honestly hope not). Since Grammarly is US‑based, I was curious to see if an EU-based alternative existed, and it turns out that LanguageTool fits this bill.
 
 I don't use either of them, so I cannot really compare. But it is here, just in case...
 
@@ -129,7 +126,7 @@ I don't use either of them, so I cannot really compare. But it is here, just in 
 
 - [**Immich**](https://immich.app) is a high‑performance, open‑source self‑hosted solution for photo and video backup with automatic device syncing, face recognition, ML‑powered search, albums and sharing. Essentially a privacy‑respecting Google Photos replacement.
 
-  The downsite is only that you have to host yourself. But from what I saw, it is a relatively smooth sail that can give you full control over your media library without vendor lock‑in.
+  The downside is that you have to host it yourself. But from what I saw, it is relatively smooth sailing and can give you full control over your media library without vendor lock‑in.
 
 - [**Ente Photos**](<https://ente.io>) offers end‑to‑end encrypted photo and video backup with EU servers, open‑source apps, family sharing and easy Apple and Google Photos migration. Unlike Immich it is a hosted service and it strikes a good balance between convenience and privacy for non‑technical users. I was impressed by how well-made it looks, the incredibly positive reviews and the good pricing.
 
@@ -137,9 +134,9 @@ I don't use either of them, so I cannot really compare. But it is here, just in 
 
 Reducing US reliance also means looking beyond storage and office tools to everyday browsing habits. Here are privacy‑respecting search alternatives with strong EU ties.
 
-- [**Ecosia**](https://www.ecosia.org) is a Berlin‑based nonprofit search engine that uses Bing backend but plants trees with ad revenue, stores minimal data, and complies with strict German/EU privacy laws. I used it for a while and liked the idea, but I found the search results not as good as other engines unfortunately. Especially given its environmental focus, I promised myself to keep giving it another try every now and then.
+- [**Ecosia**](https://www.ecosia.org) is a Berlin‑based nonprofit search engine that uses Bing's backend but plants trees with ad revenue, stores minimal data, and complies with strict German/EU privacy laws. I used it for a while and liked the idea, but unfortunately I found the search results not as good as other engines. Especially given its environmental focus, I promised myself to keep giving it another try every now and then.
 
-- [**Qwant**](https://www.qwant.com) is a French privacy‑focused search engine that doesn't track users or sell data, using its own index plus Bing fallback, with dedicated EU servers and kids' search. I had mixed results with it, so maybe it is a problem with Bing itself that I am having. But it is worth a try, it is a nice option to have.
+- [**Qwant**](https://www.qwant.com) is a French privacy‑focused search engine that doesn't track users or sell data, using its own index plus Bing fallback, with dedicated EU servers and kids' search. I had mixed results with it, so maybe the problem is with Bing itself. Still worth a try; it is a nice option to have.
 
 - [**Kagi**](https://kagi.com) is a paid, ad‑free search engine that prioritises quality results and user privacy. No tracking or data sales, with features like custom filters on the results (no Pinterest or Qwora, yay!) and Privacy Pass for anonymous authentication. While US‑based, it has a strong privacy ethos, and as a paying user I am having a great experience so far.
 
@@ -150,6 +147,6 @@ I can't really remember when was the last time I used Google Search.
 
 ## Where this leaves me
 
-This is not a conclusion, and surely not comprehensive. Take it as just a snapshot. I hope it may be useful to others as well, and it is now here for me to not forget :D
+This is not a conclusion, and surely not comprehensive. Take it as just a snapshot. I hope it may be useful to others as well, and it is now here so I don't forget :D
 
 If you know of other EU-based privacy-focused services that I should check out, please let me know! I'd be happy to keep expanding this list.
