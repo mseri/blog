@@ -19,6 +19,8 @@ For instance, nationwide, the most obvious starting point is [SURF](https://surf
 I have not explored e-mail hosting providers in depth yet. I have been happily using [Fastmail](https://fastmail.com) for years. This is based in Australia, so privacy-wise is probably not the best, but it is a stable company and I always had good experiences with their service and their customer support.
 I have been recommended [Tutanota](https://tutanota.com) (Germany) and [Proton Mail](https://proton.me) (Switzerland) as lean privacy‑friendly alternatives, but I have not personally tried either of them (yet).
 
+UPDATE (2026.19.01): After sharing this post, I was made aware of the fact that even though the company is Australian, [Fastmail servers are all in the US](https://www.fastmail.help/hc/en-us/articles/1500000280221-How-Fastmail-provides-a-secure-service#physicalsecurity). I guess this means I will have to look for alternatives after all...
+
 ## Communication and office suites
 
 Something I have been using a lot over the years is Google Workspace (Docs, Sheets, Slides, Drive, Gmail, Calendar). So my first focus was for alternatives that would allow me to keep a similar workflow without relying on US‑based services.
