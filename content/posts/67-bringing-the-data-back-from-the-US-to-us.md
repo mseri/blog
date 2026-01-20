@@ -152,3 +152,11 @@ I can't really remember when was the last time I used Google Search.
 This is not a conclusion, and surely not comprehensive. Take it as just a snapshot. I hope it may be useful to others as well, and it is now here so I don't forget :D
 
 If you know of other EU-based privacy-focused services that I should check out, please let me know! I'd be happy to keep expanding this list.
+
+## Updates
+
+After posting this on [Bluesky](https://bsky.app/profile/mseri.me/post/3mcrghcafrc2l) and [Mastodon](https://mathstodon.xyz/@mseri/115921273414585014), I have received some extra recommendations.
+
+Concerning VPNs, [NordVPN](https://nordvpn.com/) has been mentioned as a VPN based in Panama but with headquarters (and partly ownership) in Europe. I used to have an account with them. I did leave because they were spamming me too much to convince me to use their other services, but the VPN worked remarkably well.
+
+Moreover, there are some websites providing interesting lists of European-based providers that may be worth exploring further: [european.cloud](https://european.cloud/>), [European Alternatives](https://european-alternatives.eu/category/cloud-computing-platforms) and [Awesome Privacy](https://awesome-privacy.xyz/) (this last one is not Europe-only, but shows clearly the locations of each service).
