@@ -16,7 +16,7 @@ Our obsession with power is driven by the same need for safety that drives other
 
 And then, to make sense of it, we will follow this phantomatic AGI in building a more powerful one, that will be tasked to find what the real question is to the answer we got. And we will keep on building more and more powerful AGIs, in a never-ending quest for meaning or power, until we realize that we have been chasing our own tails all along, harming the world and ourselves in the process.
 
-I hope we will eventually break this loop. I think small specialized models can get a long way in helping us solve real problems, without the need to build mastodontic data centers, sucking up enormous amounts of resources and exhausting storage and computing drives from consumers that would actually need them. All things that are already happening.
+I hope we will eventually break this loop. I think small specialized models can get a long way in helping us solve real problems, without the need to build mastodontic data centers, sucking up enormous amounts of resources and exhausting [storage](https://www.heise.de/en/news/WD-and-Seagate-confirm-Hard-drives-for-2026-sold-out-11178917.html) and computing hardware from consumers that would actually need them. All things that are already happening.
 
 It this the first time in years that electronic prices are skyrocketing, and it is not because of geopolitical issues this time, just greed to get teraflops supremacy in the overhyped AI market.
 
