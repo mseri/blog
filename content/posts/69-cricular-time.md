@@ -3,7 +3,6 @@ title: "Circular Time"
 date: 2026-02-17T10:15:42+01:00
 tags: [philosophy, time, ai, rant]
 categories: ["Blog"]
-draft: true
 ---
 
 > ’Forty-two,’ said Deep Thought, with infinite majesty and calm.
