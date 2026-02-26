@@ -1,16 +1,15 @@
 ---
 title: "First steps with Category Theory and OCaml"
 date: 2017-06-04T22:00:54.000Z
-lastmod: 2017-06-04T22:00:54.000Z
+lastmod: 2026-02-26T22:00:54.000Z
 tags: ["ocaml", "blog", "monad", "functor", "typeclass"]
 categories: ["Blog"]
 slug: "typeclass-ocaml"
 disqus_identifier: 43
+toc: true
 ---
 
-# Introduction
-
-Category theory is an abstrac mathematical framework that had a huge influence
+Category theory is an abstract mathematical framework that had a huge influence
 on pure functional programming design patterns. The abstractions and laws that
 come bundled with the mathematical concepts allow us to write safer and
 composable interfaces, very prone to equational reasoning, at the price of a
@@ -77,10 +76,10 @@ provides more context that what I could do in this brief notes. It also
 discusses the Traversables that we are largely ignoring for this seminar. The
 main difference between the two is that we are not discussing traversables and
 instead spend some time on applicatives. Also some examples differ, although I
-have tryed to use a signature as close as possible for the final parser
+have tried to use a signature as close as possible for the final parser
 implementation.
 
-# Why
+## Why
 
 Abstract classes are
 
@@ -97,9 +96,9 @@ only to test a minimal subset of the functions to ensure that the whole api is
 correct.
 
 As a brief example, you probably have already used `map` or `bind` over many
-different types, e.g. `option`, `resutl` or `list`.
+different types, e.g. `option`, `result` or `list`.
 
-# Helpers
+## Helpers
 
 We will need some preliminary helpers (I will use the same syntax as [clarity]
 for those):
@@ -114,7 +113,7 @@ let (>.>) g f = fun x -> f (g x)   (* first apply [g] then [f] but writing them 
 let cons x xs = x :: xs
 ```
 
-# Monoids
+## Monoids
 
 Let's start with the the complicated (sounding) mathematical definition. A
 monoid is an algebraic structure closed under an associative operation (often
@@ -323,7 +322,7 @@ let example4 () =
 ```
 
 
-# Functors
+## Functors
 
 Mathematically functors are a bit more complicated than monoids: they are
 structure-preserving maps between categories. If monoids represent the things
@@ -435,7 +434,7 @@ end
 ```
 
 
-## Applicative Functors
+### Applicative Functors
 
 Applicative functors are a special class of functors carrying some more
 structure. Again quoting [typeclassopedia]:
@@ -716,13 +715,13 @@ You can find plenty of examples of applicative instances at
 [hackage-control.applicative].
 
 
-## Small monadic intermission
+### Small monadic intermission
 
 We will not say much about monads in this brief notes, although they perfectly
 fit the final examples. But a digression here to plant a seed is in order.
 
 We saw that every `Applicative` is a `Functor`. Every `Monad` is an
-`Applicative`. The defition turns out to be the following (bear in mind that
+`Applicative`. The definition turns out to be the following (bear in mind that
 there are laws that should be satisfied by these functions. We will not discuss
 them here)
 
@@ -799,7 +798,7 @@ You can see the incredible amount of helpers for imperative programming that
 come as part of monads here: [hackage-control.monad].
 
 
-## Mixing things up: the `Alternative`s
+### Mixing things up: the `Alternative`s
 
 We have discussed functors and monoids as separate beasts, however there is no
 reason for them to be separate... indeed sometimes we can define a monoid over
@@ -872,7 +871,7 @@ will appear soon in the context of the implementation of the parser in the next
 session.
 
 
-# A practical example - monadic parsing library
+## A practical example - monadic parsing library
 
 We will try to use the patterns seen above to implement a simple parsing
 library, strongly inspired by [hutton].  You can see similar implementations
