@@ -8,7 +8,7 @@ toc: true
 
 For a while, but especially over the past few months, I have been trying to be increasingly more conscious of the digital tools I use. It is so convenient to rely on the usual US‑based suspects for email, storage, and collaboration, that we may forget that we are their product and that they may take all of our staff away from us in a whim, with no chances to appeal or get it back before we are locked out.
 
-I used to trust Apple at least for privacy, but their push to harness us in their cloud services and the complexity to escape, coupled with my falling trust towards anything in the US, is making me look also for alternatives to their cloud offering.
+I used to trust Apple at least for privacy, but their push to harness us in their cloud services and the complexity to escape, coupled with my falling trust towards anything in the US, is making me look also for alternatives to their cloud offering. We are at a unique point in recent years where [a shift to take back control of our data seems to have become again increasing possible](https://pluralistic.net/2026/01/01/39c3) and we should not overlook it.
 
 This post is a small snapshot of where I am in the process, mostly prompted by a [recent post](https://www.zeitgeistofbytes.com/p/bye-bye-big-tech-how-i-migrated-to) I saw online, and backed by many options that I have been exploring also for the collaboration within [EWM-NL](https://www.ewmnetherlands.nl). Below you can find the work‑in‑progress list of EU‑based tools that I have explored and I am considering as alternatives. I have yet to find a balance between convenience, privacy, and sovereignty that works for me, so I included some personal impressions to this list but I cannot yet say what I will do.
 
