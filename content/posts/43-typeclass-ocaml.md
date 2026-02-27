@@ -2,7 +2,7 @@
 title: "First steps with Category Theory and OCaml"
 date: 2017-06-04T22:00:54.000Z
 lastmod: 2026-02-26T22:00:54.000Z
-tags: ["ocaml", "blog", "monad", "functor", "typeclass"]
+tags: ["ocaml", "parser combinators", "category theory", "monad", "functor", "applicative", "typeclass"]
 categories: ["Blog"]
 slug: "typeclass-ocaml"
 disqus_identifier: 43
