@@ -515,91 +515,6 @@ module Alternative_Utils (A: ALTERNATIVE) = struct
 end
 ```
 
-We have not discussed this specific example in the post, but I thought it was interesting to show a case in which the delay is not really needed, and how this does not really get in the way of the implementation.
-
-```ocaml
-(* 
-   Option modules: here there is no recursion, so delay takes a particularly
-   simple form
-*)
-
-module OptionF: (FUNCTOR with type 'a t = 'a option) = struct
-  type 'a t = 'a option
-  let fmap f = function
-    | Some x -> Some (f x)
-    | None -> None
-end
-
-module OptionA: (APPLICATIVE with type 'a t = 'a option) = struct
-  include OptionF
-  let pure x = Some x
-  let ap f x =
-    match f, x with
-    | Some f, Some x -> Some (f x)
-    | _ -> None
-end
-
-module OptionAlternative: (ALTERNATIVE with type 'a t = 'a option) = struct
-  include OptionA
-  let empty = None
-  let (<|>) o1 o2 =
-    match o1 with
-    | Some _ as res -> res
-    | None -> o2
-
-  let delay f = f ()
-end
-```
-
-```ocaml
-(*
-   A test with Option
-*)
-
-module OptionExample = struct
-  open OptionAlternative
-  module OptAlt = Alternative_Utils(OptionAlternative)
-  open OptAlt
-  
-  (* Imagine looking up a database port from multiple sources: *)
-  let get_env_var () = None           (* For example the variable was not set *)
-  let get_config () = Some 5432       (* But is in the local config file *)
-  let get_default () = Some 8080      (* And we have a default value *)
-  
-  (* We can use OptAlt to chain fallbacks: the first `Some` wins automatically. 
-    Recall from the previous blog post that `<|>` means
-    "try the left side; if it is None, fall back to the right side." *)
-  let resolved_port = get_env_var () <|> get_config () <|> get_default () 
-  (*  val resolved_port : int OptionAlternative.t = Some 5432 *)
-  
-  (* Suppose we require three specific settings to start a server *)
-  let required_configs =[
-    Some "localhost"; 
-    Some "admin"; 
-    Some "secret_password"
-  ]
-  
-  (* We can use sequence to encode an all or nothing scenario.
-  	Again, from the previous blog post `sequenceA` means
-  	"if everything in this list is Some, give me a Some list;
-  	 if even one is None, fail the whole thing." *)
-  
-  let test_success = sequenceA required_configs
-  
-  (* But if even one is missing, so None, ... *)
-  let missing_configs =[
-    Some "localhost"; 
-    None; (* Missing username! *)
-    Some "secret_password"
-  ]
-  
-  let test_failure = sequenceA missing_configs
-end
-
-let test_opt_1 = OptionExample.test_success
-let test_opt_2 = OptionExample.test_failure
-```
-
 ```ocaml
 (* 
    The new parser combinator. Here we need to use delay!
@@ -829,4 +744,91 @@ let doi2bib_dune_content = {|
 |}
 
 let test_parsing_dune_file = DuneSexpParser.(run dune_file_parser doi2bib_dune_content)
+```
+
+### A simpler additional example
+
+We have not discussed this specific example in the post, but I thought it was interesting to show a case in which the delay is not really needed, and how this does not really get in the way of the implementation.
+
+```ocaml
+(* 
+   Option modules: here there is no recursion, so delay takes a particularly
+   simple form
+*)
+
+module OptionF: (FUNCTOR with type 'a t = 'a option) = struct
+  type 'a t = 'a option
+  let fmap f = function
+    | Some x -> Some (f x)
+    | None -> None
+end
+
+module OptionA: (APPLICATIVE with type 'a t = 'a option) = struct
+  include OptionF
+  let pure x = Some x
+  let ap f x =
+    match f, x with
+    | Some f, Some x -> Some (f x)
+    | _ -> None
+end
+
+module OptionAlternative: (ALTERNATIVE with type 'a t = 'a option) = struct
+  include OptionA
+  let empty = None
+  let (<|>) o1 o2 =
+    match o1 with
+    | Some _ as res -> res
+    | None -> o2
+
+  let delay f = f ()
+end
+```
+
+```ocaml
+(*
+   A test with Option
+*)
+
+module OptionExample = struct
+  open OptionAlternative
+  module OptAlt = Alternative_Utils(OptionAlternative)
+  open OptAlt
+  
+  (* Imagine looking up a database port from multiple sources: *)
+  let get_env_var () = None           (* For example the variable was not set *)
+  let get_config () = Some 5432       (* But is in the local config file *)
+  let get_default () = Some 8080      (* And we have a default value *)
+  
+  (* We can use OptAlt to chain fallbacks: the first `Some` wins automatically. 
+    Recall from the previous blog post that `<|>` means
+    "try the left side; if it is None, fall back to the right side." *)
+  let resolved_port = get_env_var () <|> get_config () <|> get_default () 
+  (*  val resolved_port : int OptionAlternative.t = Some 5432 *)
+  
+  (* Suppose we require three specific settings to start a server *)
+  let required_configs =[
+    Some "localhost"; 
+    Some "admin"; 
+    Some "secret_password"
+  ]
+  
+  (* We can use sequence to encode an all or nothing scenario.
+  	Again, from the previous blog post `sequenceA` means
+  	"if everything in this list is Some, give me a Some list;
+  	 if even one is None, fail the whole thing." *)
+  
+  let test_success = sequenceA required_configs
+  
+  (* But if even one is missing, so None, ... *)
+  let missing_configs =[
+    Some "localhost"; 
+    None; (* Missing username! *)
+    Some "secret_password"
+  ]
+  
+  let test_failure = sequenceA missing_configs
+end
+
+let test_opt_1 = OptionExample.test_success
+let test_opt_2 = OptionExample.test_failure
 ```
