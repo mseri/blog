@@ -1,4 +1,47 @@
 .hanchor { font-size: 100%; color: silver; }
+
+pre {
+  position: relative;
+
+  .copy-code-btn {
+    position: absolute;
+    top: 0.4em;
+    right: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    background: transparent;
+    border: 1px solid rgba($light-color, 0.2);
+    border-radius: 4px;
+    color: rgba($light-color, 0.4);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s, color 0.2s, border-color 0.2s, background 0.2s;
+
+    svg {
+      display: block;
+      pointer-events: none;
+    }
+
+    &:hover {
+      color: $lightest-color;
+      border-color: rgba($light-color, 0.5);
+      background: rgba($light-color, 0.08);
+    }
+
+    &.copied {
+      color: $primary-color;
+      border-color: rgba($primary-color, 0.5);
+    }
+  }
+
+  &:hover .copy-code-btn {
+    opacity: 1;
+  }
+}
 h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a { color: white; }
 
 h3#TableOfContents {
@@ -7,7 +50,7 @@ h3#TableOfContents {
 }
 nav#TableOfContents {
   ul {
-      margin-top: 0; 
+      margin-top: 0;
       padding: 0;
       padding-left:1em;
       list-style-type: circle;

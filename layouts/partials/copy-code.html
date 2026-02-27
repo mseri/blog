@@ -1,0 +1,58 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var copyIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>';
+    var checkIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+
+    function getCodeText(pre) {
+      var code = pre.querySelector('code');
+      var el = code || pre;
+
+      // Hugo's syntax highlighter wraps every line in a display:flex span.
+      // Calling innerText on those treats each flex container as a block and
+      // inserts an extra newline, doubling them. Instead, collect the text
+      // content of each line-wrapper span directly and join with a single \n.
+      var lineSpans = el.querySelectorAll('span[style*="display:flex"] > span');
+      if (lineSpans.length > 0) {
+        var lines = [];
+        lineSpans.forEach(function (span) {
+          lines.push(span.textContent);
+        });
+        // textContent preserves the trailing \n on the last line that Hugo
+        // emits, so trim only the very end to avoid a spurious blank line.
+        return lines.join('').replace(/\n$/, '');
+      }
+
+      // Plain (non-highlighted) code block — innerText is fine here because
+      // there are no flex wrappers to cause the doubling problem.
+      return el.innerText.replace(/\n$/, '');
+    }
+
+    document.querySelectorAll('pre').forEach(function (pre) {
+      var button = document.createElement('button');
+      button.className = 'copy-code-btn';
+      button.setAttribute('aria-label', 'Copy code');
+      button.setAttribute('title', 'Copy code');
+      button.innerHTML = copyIcon;
+
+      pre.appendChild(button);
+
+      button.addEventListener('click', function () {
+        var text = getCodeText(pre);
+
+        navigator.clipboard.writeText(text).then(function () {
+          button.classList.add('copied');
+          button.setAttribute('aria-label', 'Copied!');
+          button.setAttribute('title', 'Copied!');
+          button.innerHTML = checkIcon;
+
+          setTimeout(function () {
+            button.classList.remove('copied');
+            button.setAttribute('aria-label', 'Copy code');
+            button.setAttribute('title', 'Copy code');
+            button.innerHTML = copyIcon;
+          }, 2000);
+        });
+      });
+    });
+  });
+</script>
