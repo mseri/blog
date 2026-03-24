@@ -18,35 +18,65 @@ It was like a drug, the pleasure of all this simple bits miracolously working to
 But if one never had the opportunity to experience it, it is really hard to explain or show.
 I would push it as far as to say that it is like certain forms of art. It takes a trained eye to recognize it, it can feel elitary for this, and it surely has an enormous subjective component, with different people arguing for their different, personal aestetic.
 
-This post was prompted by an essay in AEON, [How should we define mathematical beauty?](https://aeon.co/essays/how-should-we-define-mathematical-beauty-in-the-ai-age)
-Well worth reading. The following quote resonates well with my experience
+Some push it even further
+
+> The mathematician’s patterns, like the painter’s or the poet’s must be beautiful; the ideas like the colours or the words, must fit together in a harmonious way. Beauty is the first test: there is no permanent place in the world for ugly mathematics. – [G.H Hardy, A Mathematician's Apology (1941)](https://en.wikiquote.org/wiki/G._H._Hardy#A_Mathematician's_Apology_(1941))
+
+It is an interesting reflection to have, especially in this moment where utility has become the prime driver of scientific research and educational institution have become basically education industries.
+
+Coming back to this post. This whole rant was prompted by an essay in AEON, [How should we define mathematical beauty?](https://aeon.co/essays/how-should-we-define-mathematical-beauty-in-the-ai-age)
+I think it is well worth reading. In particular, following quote was what has set this flow of consciousness in motion
 
 > Do you consider this a beautiful proof? Over the past few months, I have asked many senior mathematicians the very same question, and whether they have certain criteria or a rule-book for deciding and discovering beautiful mathematical structures. The answers were not straightforward and were surprisingly distinct. But most mentioned that a beautiful piece of mathematics should be simple. ‘What do you mean by simple?’ I asked many times, and that was one point of divergence. Simplicity does not evoke the same meaning for mathematicians, even those who work in the same field. Some mean the number of lines in a proof; some mean its self-sufficiency, such as requiring few citations to other lemmas; some mean the simplicity of the proof idea or even of the theorem statement.
 
-Despite the long conversation and the many reads to prepare for the [Good Mathematics Problem](https://creators.spotify.com/pod/profile/not-just-numbers/episodes/S2E01---Good-mathematics-problems--with-Serte-Donderwinkel-and-Steffen-Mller-e2pveue) episode of our podcast. I still feel find my answers unsatisfactory.
+Despite the long conversation and the many reads to prepare for the [Good Mathematics Problem](https://creators.spotify.com/pod/profile/not-just-numbers/episodes/S2E01---Good-mathematics-problems--with-Serte-Donderwinkel-and-Steffen-Mller-e2pveue) episode of It's Not Just Numbers, I am still longing for clarity in my thoughts. And while this discussion may seem irrelevant to most, I came to believe that it is a deeply central reflection on the state of our discipline. 
 
-While this may seem irrelevant to most, it is a deeply central discussion in my opinion. As the development of mathematics as a discipline and the culture around it are both deeply social activities, and the meaning of truth as well as what makes problems interesting and results beautiful is an important and inseparable underlying drive.
+The development of mathematics and the culture around it are both deeply social activities, and the meaning of truth as well as what makes problems interesting and results beautiful is an important and inseparable underlying drive. Being it social and taste-driven, it also means that mathematics is also constantly changing in relation to changes its surrounding environment, and that it can be easily influenced by current trends—and hopefully also influences them in a positive (whatever this means) way.
 
-Being it social and taste-driven also means that it is constantly changing also in relation to changes its surrounding environment, and that it can be easily influenced by current trends and hopefully also influences them in a positive (whatever this means) way.
+I find this to be the key to understand the societal usefulness of mathematics, more than just its (arguably very numerous) applications.
 
-I have always been a huge proponent of exploring mathematics not as a discipline but as a language, and [recently found out](https://arxiv.org/abs/1505.07238) that I am not alone.
+But then we should probably also reflect about what is mathematics. 
 
-On the one hand, mathematics is seen as a realm of eternal, immutable and perfect truths: Plato's hyperuranion, the world of perfect forms, where numbers and shapes exist independently of human thought. I am not opposed to that idea, with the caveat that I think it is but a lens to glimpse into such world. But, like light behaves both as a wave and as a particle, mathematics is also something far more human: a language we invented to make sense of the world, shaped by our needs, our intuitions, and our desire for beauty. Quoting [Jeremy Avigad](https://arxiv.org/abs/1505.07238)
+I have always been a huge proponent of exploring mathematics not as a discipline but as a language, and [recently found out](https://arxiv.org/abs/1505.07238) that I am not alone. On the one hand, mathematics can be perceived as a realm of eternal, immutable and perfect truths: Plato's hyperuranion, the world of perfect forms, where numbers and shapes exist independently of human thought. I am not opposed to that idea, with the caveat that I think it is but a lens to glimpse into such world. On the other hand, like light behaves both as a wave and as a particle, mathematics is also something far more human: a language we invented to make sense of the world, shaped by our needs, our intuitions, and our desire for beauty.
 
-> \[it is\] a system of conventions and norms that is designed to help us make sense of the world and reason efficiently.
+Quoting its abstract, Jeremy Avigad's essay [Mathematics and language](https://arxiv.org/abs/1505.07238)
 
-From this perspective, mathematical truth isn't an empirical fact we trip over in the woods; it's an artifact of a language we have collectively engineered to help us deliberate reliably with one another. Truth, in this sense, has the "dignity of a rule" (Wittgenstein). I needed quite some time to understand what this even means, but I think it is a way to say that it functions as a transcendental norm, not something we discover within experience but something that structures the very possibility of there being experience at all.
+> proposes that we view mathematics as a system of conventions and norms that is designed to help us make sense of the world and reason efficiently.
+
+From this perspective, mathematical truth isn't an empirical fact we trip over in the woods; it's an artifact of a language we have collectively engineered to help us deliberate reliably with one another. Truth, in this sense, has the "dignity of a rule" (Wittgenstein). I needed quite some time to understand what this even means, but I think it is a way to say that it functions as a transcendental norm: not something we discover within experience but something that structures the very possibility of there being experience at all.
 
 I found this as interesting as it is confusing: mathematics as a human language that is not discovered but that itself allows to experience a certain type of reality and discovery. Feels tautological, I'd really like the help of a philosopher here.
 
-Also because, as I mentioned above, I don't think the evolution of mathematics wasn't inevitable. In my experience, it was and is driven by human curiosity and the pursuit of deeper understanding, and sometimes necessity.
+Also because, as I mentioned above, I don't think the evolution of mathematics wasn't inevitable. I would argue that it was (and is) driven by human curiosity and the pursuit of deeper understanding, sometimes necessity.
 
 Seen in this way, mathematics becomes a deeply human creation. Then its truths may not be eternal in the Platonic sense. More likely they would be contingent: shaped by the axioms we choose, the problems we consider important and the beauty we find along the way. This doesn't make them any less true, at least in a "logical" sense, but it does make them a lot more human. And does raise the question: What is truth?
 
-A question we touched upon in [Degrees of Freedom](https://creators.spotify.com/pod/profile/degrees-of-freedom/episodes/S3E03---Education-and-Public-Trust-in-Science-e2oid9a) but to which I lack even more an answer.
+A question we touched upon in [Degrees of Freedom](https://creators.spotify.com/pod/profile/degrees-of-freedom/episodes/S3E03---Education-and-Public-Trust-in-Science-e2oid9a), but to which I lack even more a clear philosophical grounding. However, this is steering the discussion too much from my original intent. I'll get back to it at some other point in the future.
 
-[Mathematics in the age of AI](https://arxiv.org/abs/2603.03684)
+The other half of the reason this post came to be, is the rabbit hole I fell into when I discovered Avigad's adventures in the philosophy of mathematics, particularly in relations to formal proofs and computer (or LLM) assisted mathematics.
+
+Leaving the meaning of truth unaswered, we can still try to reason about its role, especially in relation to beauty. If we agree with Avigad that truth is a a statement in a linguistic framework we use to communicate, then simply knowing that a statement is true cannot be the ultimate goal.
+
+In [Varieties of mathematical understanding](https://arxiv.org/abs/2310.20100), Avigad referst to a comment he received that directly addresses this fact: 
+
+> \[the goal of modern mathematics is\] to get a conceptual and rigorous understanding of which mathematical statements are true. Both adjectives are important.
+
+When a computer churns out a massive, brute-force calculation to prove a theorem, some people instinctively feel cheated and complain that
+
+> there is nothing to understand here, it's only a computation.
+
+While I may partly disagree on this view, I do share that view that we don't just want the answer, we want the 'lightbulb' moment. Avigad quotes the [Xena project](https://xenaproject.wordpress.com/) here, were it is argued that
+
+> Ideas are the purely artistic part of mathematics.
+
+Maybe I am wrong, but it seems to me that this crave conceptual understanding comes from the fact that such understanding is what can be shared, taught, and importantly debated. This, at least to me, is the best part of our job. In this respect, a massive computation is a black box but a beautiful idea can be a bridge between people: it is conceptual understanding what ends up revealing connections, unifying disparate fields, and opening up new avenues of research. Insight and feeling play a way more central role than truth in getting to it.
+
+This does not even try to touch upon another important part of what mathematics is about, which is asking questions...
 
 [Is mathematics obsolete?](https://arxiv.org/abs/2502.14874)
 
-[Varieties of mathematical understanding](https://arxiv.org/abs/2310.20100)
+There's a famous story about the mathematician Srinivasa Ramanujan, who claimed that his insights came to him in dreams from the goddess Namagiri. Whether or not you believe in divine inspiration, there's something poetic about the idea that mathematics is not just a product of the mind, but of the soul.
+
+[Mathematics in the age of AI](https://arxiv.org/abs/2603.03684)
+
+So, mathematics is a language, a tool, and an art. It's a way of seeing the world, of making sense of its patterns, and of finding beauty in its structure. And while AI may change how we do mathematics, it cannot change why we do it.
