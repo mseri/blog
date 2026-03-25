@@ -23,7 +23,7 @@ Some push it even further
 
 It is an interesting reflection to have, especially in this moment where utility has become the prime driver of scientific research and educational institutions have become basically education industries.
 
-Coming back to this post. This whole rant was prompted by an essay in AEON, [How should we define mathematical beauty?](https://aeon.co/essays/how-should-we-define-mathematical-beauty-in-the-ai-age)
+Coming back to this post. This whole rant was prompted by a beautiful essay in AEON, [The eye of the mathematician, by Rita Ahmadi](https://aeon.co/essays/how-should-we-define-mathematical-beauty-in-the-ai-age).
 I think it is well worth reading. In particular, the following quote is what set this flow of consciousness in motion
 
 > Do you consider this a beautiful proof? Over the past few months, I have asked many senior mathematicians the very same question, and whether they have certain criteria or a rule-book for deciding and discovering beautiful mathematical structures. The answers were not straightforward and were surprisingly distinct. But most mentioned that a beautiful piece of mathematics should be simple. ‘What do you mean by simple?’ I asked many times, and that was one point of divergence. Simplicity does not evoke the same meaning for mathematicians, even those who work in the same field. Some mean the number of lines in a proof; some mean its self-sufficiency, such as requiring few citations to other lemmas; some mean the simplicity of the proof idea or even of the theorem statement.
