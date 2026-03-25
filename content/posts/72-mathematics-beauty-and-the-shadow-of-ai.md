@@ -1,9 +1,8 @@
 ---
 title: "Mathematics, Beauty and the Shadow of AI"
 date: 2026-03-19T14:22:01+01:00
-tags: [mathematics, ai, beauty, philosophy]
+tags: [mathematics, ai, beauty, philosophy, truth]
 categories: ["Blog"]
-draft: true
 ---
 
 There is this interesting stereotype that mathematicians deal with the cold, hard truth. Yet, even the most technical mathematics, deep down, is highly warm and playful.
@@ -35,7 +34,7 @@ The development of mathematics and the culture around it are both deeply social 
 
 I find this to be the key to understand the societal usefulness of mathematics, more than just its (arguably very numerous) applications.
 
-But then we should probably also reflect about what is mathematics. 
+If beauty is this subjective and taste-driven, though, it is hard to avoid a deeper question: what is mathematics, really? Is it a body of eternal truths we discover, or something we collectively construct?
 
 There's a famous anecdote about [Srinivasa Ramanujan](https://en.wikipedia.org/wiki/Srinivasa_Ramanujan) who claimed that his insights came to him in dreams from the goddess Namagiri. Whether or not you believe in divine inspiration, there's something poetic about the idea that mathematics is not just a product of the mind, but some sort of spiritual connection to a divine perfect world.
 
@@ -79,7 +78,7 @@ While I may partly disagree on this view, I do share that view that we don't jus
 
 Maybe I am wrong, but it seems to me that this craving for conceptual understanding comes from the fact that such understanding is what can be shared, taught, and importantly debated. This, at least to me, is the best part of our job. In this respect, a massive computation is a black box but a beautiful idea can be a bridge between people: it is conceptual understanding that ends up revealing connections, unifying disparate fields, and opening up new avenues of research. Insight and feeling play a way more central role than truth in getting to it.
 
-This does not even try to touch upon another important part of what mathematics is about, which is asking the "right" questions... Again, with a big asterisk on what "right" means. This slowly but steadily brings us closer to the final point I want to discuss.
+This does not even try to touch upon another important part of what mathematics is about, which is asking the "right" questions... Again, with a big asterisk on what "right" means. This slowly but steadily brings us closer to the final point I want to discuss. What is the role of automation in mathematics?
 
 The advent of computers could have been a threat to mathematics, but it ended up mostly being an ally. Allowing easier typesetting, easier long-distance collaborations, easier ways to share our ideas and to connect with each other, and powerful means of computation. It is enough to think about the use of Mathematica or python in aiding symbolic computations and the enormous impact of numerical methods in our day to day lives. Algorithms may be deemed a computer-sciencey thing, but integrating algebraic, differential, or difference equations sits at the root of many technologies we use every day, from the GPS in our phones to the weather forecast.
 
@@ -91,6 +90,6 @@ So, as (again!) Avigad was asking in a recent essay, [is mathematics obsolete?](
 
 I think the advent of mechanized mathematics, with the increased energy in automatic proofs, especially in lean, is a huge opportunity for new forms of collaboration. Like many have been showing so far. I also tried to argue that the human factor in these developments is unavoidable and central, as figuring out what is interesting and what is meaningful is a very social and human activity. I really hope I am right, and I am more and more convinced that I am not alone in thinking this way. 
 
-In [mathematics in the age of AI](https://arxiv.org/abs/2603.03684), but also in the previous essay, Avigad seems to head in the same direction. Perhaps with more emphasis in embracing AI, which is not necessarily what I am rooting for here. But I think a shared collective dialogue, like the one that has been growing recently, will be the way to decide where we want to head collectively.
+In [mathematics in the age of AI](https://arxiv.org/abs/2603.03684), Avigad seems to head in a similar direction, perhaps with more enthusiasm for embracing AI than I have here. I think such tension is itself part of the conversation that would be worth having. And a shared collective dialogue, like the one that has been growing recently, is exactly how I think we should figure out where we want to head collectively.
 
 Mathematics is a language, a tool, and an art. In all cases, it is a way of seeing the world (real or of ideas), of making sense of its patterns, and of finding beauty in its structure. And while we may need to adapt how we do mathematics to a changing world, this won't change why we do it. Am I scared about change? Maybe. But I am way more curious to see how and energetic to try and steer it in a positive direction.
