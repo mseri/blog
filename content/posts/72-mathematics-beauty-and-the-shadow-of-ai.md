@@ -37,11 +37,13 @@ I find this to be the key to understand the societal usefulness of mathematics, 
 
 But then we should probably also reflect about what is mathematics. 
 
-I have always been a huge proponent of exploring mathematics not as a discipline but as a language, and [recently found out](https://arxiv.org/abs/1505.07238) that I am not alone. On the one hand, mathematics can be perceived as a realm of eternal, immutable and perfect truths: Plato's hyperuranion, the world of perfect forms, where numbers and shapes exist independently of human thought. 
+There's a famous anecdote about [Srinivasa Ramanujan](https://en.wikipedia.org/wiki/Srinivasa_Ramanujan) who claimed that his insights came to him in dreams from the goddess Namagiri. Whether or not you believe in divine inspiration, there's something poetic about the idea that mathematics is not just a product of the mind, but some sort of spiritual connection to a divine perfect world.
 
-There's a famous anecdote about [Srinivasa Ramanujan](https://en.wikipedia.org/wiki/Srinivasa_Ramanujan), a very famous mathematician from the last century, who claimed that his insights came to him in dreams from the goddess Namagiri. Whether or not you believe in divine inspiration, there's something poetic about the idea that mathematics is not just a product of the mind, but some sort of spiritual connection to a divine perfect world (I guess here comes Plato again...).
+And indeed, mathematics can be perceived as a realm of eternal, immutable and perfect truths: Plato's hyperuranion, the world of perfect forms, where numbers and shapes exist independently of human thought. 
 
-On the other hand, like light behaves both as a wave and as a particle, mathematics is also something far more human: a language we invented to make sense of the world, shaped by our needs, our intuitions, and our desire for beauty.
+This is one of many views though. For another perspective, I have always been a huge proponent of exploring mathematics not as a discipline but as a language, and [recently found out](https://arxiv.org/abs/1505.07238) that I am not alone.
+
+Like light behaves both as a wave and as a particle, mathematics could be both the Platonic idea and something far more human: a language we invented to make sense of the world, shaped by our needs, our intuitions, and our desire for beauty.
 
 Quoting its abstract, Jeremy Avigad's essay [Mathematics and language](https://arxiv.org/abs/1505.07238)
 
