@@ -7,6 +7,8 @@ description = "Free thoughts of a geeky mathematician"
 # disqusShortname = "talesofafractalspectrum"
 rssLimit = 10
 
+ignoreLogs = ['warning-goldmark-raw-html']
+
 theme = "m10c"
 
 [params]
