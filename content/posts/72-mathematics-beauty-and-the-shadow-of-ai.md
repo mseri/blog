@@ -96,11 +96,11 @@ Mathematics is a language, a tool, and an art. In all cases, it is a way of seei
 
 ## Updates
 
-The topic seems quite hot. Within two days of making it visible, I started receiving pointers to various related pieces. I'll try to keep track of them here, as they are quite interesting and relevant to the discussion, and so far bring also different perspectives into the mix.
+Within two days of making this post public, I started receiving pointers to various related pieces. I'll try to keep track of them here, as they are quite interesting and relevant to the discussion, and so far also bring different perspectives into the mix.
 
-- [In Math, Rigor Is Vital. But Are Digitized Proofs Taking It Too Far?](https://www.quantamagazine.org/in-math-rigor-is-vital-but-are-digitized-proofs-taking-it-too-far-20260325/). This piece by Quanta nicely complements the discussion. It is a lot nicer than my rambling thoughts and brings in perspectives from many high profile mathematicians, directly involved in the mechanization aspects.
+- [In Math, Rigor Is Vital. But Are Digitized Proofs Taking It Too Far?](https://www.quantamagazine.org/in-math-rigor-is-vital-but-are-digitized-proofs-taking-it-too-far-20260325/). This Quanta piece nicely complements the discussion. It is far nicer than my rambling thoughts and brings in perspectives from many high-profile mathematicians directly involved in mechanization efforts.
 
-- In [a new post]({{< relref "./73-mechanizing-mathematics.md" >}}), I added links to some relevant youtube lectures, including a local public lecture recorded just a couple of days ago, and a reflection on a new manifesto, even better, a call for action, for mathematicians that is fresh from the arxiv. 
+- In [a new post]({{< relref "./73-mechanizing-mathematics.md" >}}), I added links to some relevant YouTube lectures, including a local public lecture recorded just a couple of days ago, and a reflection on a new manifesto (or rather, a call to action) for mathematicians, fresh from the arXiv.
 
-- Keith Devlin's MAA column contains a reflection on [How Will the New AI Impact Mathematics Research?](https://maa.org/math-values/how-will-ai-impact-mathematics-research/). This is part of a broader series of posts, and includes quite interesting bits of history, pointers to old yet actual critiques (like [Dreyfus' one](https://en.wikipedia.org/wiki/Hubert_Dreyfus%27s_views_on_artificial_intelligence), which I was not familiar with), and a whole lot more of interesting points for reflection.
+- Keith Devlin's MAA column reflects on [How Will the New AI Impact Mathematics Research?](https://maa.org/math-values/how-will-ai-impact-mathematics-research/). This is part of a broader series of posts and includes interesting bits of history, pointers to old but still relevant critiques (like [Dreyfus'](https://en.wikipedia.org/wiki/Hubert_Dreyfus%27s_views_on_artificial_intelligence), which I was not familiar with), and many more interesting points for reflection.
 
