@@ -94,4 +94,8 @@ In [mathematics in the age of AI](https://arxiv.org/abs/2603.03684), Avigad seem
 
 Mathematics is a language, a tool, and an art. In all cases, it is a way of seeing the world (real or of ideas), of making sense of its patterns, and of finding beauty in its structure. And while we may need to adapt how we do mathematics to a changing world, this won't change why we do it. Am I scared about change? Maybe. But I am way more curious to see how and energetic to try and steer it in a positive direction.
 
-UPDATE: Shortly after writing this, Quanta published a piece on the same topic: [In Math, Rigor Is Vital. But Are Digitized Proofs Taking It Too Far?](https://www.quantamagazine.org/in-math-rigor-is-vital-but-are-digitized-proofs-taking-it-too-far-20260325/). It can be a nice complement to this discussion.
+UPDATES: 
+
+- 26.05.2026: Shortly after writing this, Quanta published a piece on the same topic: [In Math, Rigor Is Vital. But Are Digitized Proofs Taking It Too Far?](https://www.quantamagazine.org/in-math-rigor-is-vital-but-are-digitized-proofs-taking-it-too-far-20260325/). It can be a nice complement to this discussion, and a lot better written than my rambling thoughts here.
+
+- 28.06.2026: The topic seems quite hot. I wrote more in [a new post yesterday]({{< relref "./73-mechanizing-mathematics.md" >}}) and I was just referred to Keith Devlin's MAA reflection, [How Will the New AI Impact Mathematics Research?](https://maa.org/math-values/how-will-ai-impact-mathematics-research/). I'll save here any other link I receive for reference.
