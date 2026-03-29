@@ -13,16 +13,19 @@ This was a very timely topic, spanning across the boundaries of our departments 
 
 What I loved most was that the lecture ended with a call to action, inviting the mathematical community to avoid being passive or succumbing to despair, and instead rise in a dialogue to set our values and shape our future. This could not resonate more with me. Johan also announced a manifesto on this call to action, born from the discussion that mathematicians, philosophers and historians had at the Lorentz Center. The overall gist is already present in one of the last slides of the lecture, which I quote here:
 
----
 
-> Five focus areas and recommendations:
-> 1. Values — root technology in our epistemic and aesthetic values
-> 2. Practice — engage with how our relationship to mathematics will change
-> 3. Teaching — emphasize posing problems, communicating ideas, evaluating arguments
-> 4. Technology — build open-source, academically governed infrastructure
-> 5. Ethics — develop a living statement of ethical principles
-
----
+{{< rawhtml >}}
+<blockquote style="border: 2px solid #ffa500; border-radius: 4px; padding: 0.5em 1em;">
+  Five focus areas and recommendations:
+  <ol>
+    <li><em>Values</em> — root technology in our epistemic and aesthetic values</li>
+    <li><em>Practice</em> — engage with how our relationship to mathematics will change</li>
+    <li><em>Teaching</em> — emphasize posing problems, communicating ideas, evaluating arguments</li>
+    <li><em>Technology</em> — build open-source, academically governed infrastructure</li>
+    <li><em>Ethics</em> — develop a living statement of ethical principles</li>
+  </ol>
+</blockquote>
+{{< /rawhtml >}}
 
 If you have read any of my previous posts on these topics, you can already see how these recommendations align perfectly with my own views. I was reeeeally curious to read the extended elaboration and, finally, this morning, the manifesto appeared on the arxiv: [Shaping the Future of Mathematics in the Age of AI](https://arxiv.org/abs/2603.24914) by Johan Commelin, Mateja Jamnik, Rodrigo Ochigame, Lenny Taelman, Akshay Venkatesh.
 
