@@ -98,16 +98,18 @@ Mathematics is a language, a tool, and an art. In all cases, it is a way of seei
 
 Within two days of making this post public, I started receiving pointers to various related pieces. I'll try to keep track of them here, as they are quite interesting and relevant to the discussion, and so far also bring different perspectives into the mix.
 
-- [In Math, Rigor Is Vital. But Are Digitized Proofs Taking It Too Far?](https://www.quantamagazine.org/in-math-rigor-is-vital-but-are-digitized-proofs-taking-it-too-far-20260325/). This Quanta piece nicely complements the discussion. It is far nicer than my rambling thoughts and brings in perspectives from many high-profile mathematicians directly involved in old and new formalization efforts.
+- [In Math, Rigor Is Vital. But Are Digitized Proofs Taking It Too Far?](https://www.quantamagazine.org/in-math-rigor-is-vital-but-are-digitized-proofs-taking-it-too-far-20260325/). This Quanta piece nicely complements the discussion and brings in perspectives from many high-profile mathematicians directly involved in old and new formalization efforts.
 
-  It also includes the following quote from Hilbert, which provides an underestimated advice on working with mathematics:
+  It also includes the following quote from Hilbert, which provides an underappreciated piece of advice on working with mathematics:
 
   > “The edifice of science is not raised like a dwelling, in which the foundations are first firmly laid and only then one proceeds to construct and to enlarge the rooms,” the great mathematician David Hilbert wrote in 1905. Rather, scientists should first find “comfortable spaces to wander around and only subsequently, when signs appear here and there that the loose foundations are not able to sustain the expansion of the rooms, \[should they\] support and fortify them.”
 
   > “This is not a weakness,” he continued, “but rather the right and healthy path of development.”
 
+  It is nice to see the discussion unfolding, and finally also start seeing more prominently also [some criticism](https://mathstodon.xyz/@johncarlosbaez/116313875561105634) and community worries. My impression, perhaps by being in a bubble, was that promotion so far had shadowed concerns.
+
 - In [a new post]({{< relref "./73-mechanizing-mathematics.md" >}}), I added links to some relevant YouTube lectures, including a local public lecture recorded just a couple of days ago, and a reflection on a new manifesto (or rather, a call to action) for mathematicians, fresh from the arXiv.
 
-- Keith Devlin's MAA column reflects on [How Will the New AI Impact Mathematics Research?](https://maa.org/math-values/how-will-ai-impact-mathematics-research/). This is part of a broader series of posts and includes interesting bits of history, pointers to old but still relevant critiques (like [Dreyfus'](https://en.wikipedia.org/wiki/Hubert_Dreyfus%27s_views_on_artificial_intelligence), which I was not familiar with), and many more interesting points for reflection.
+- Keith Devlin's MAA column reflects on [How Will the New AI Impact Mathematics Research?](https://maa.org/math-values/how-will-ai-impact-mathematics-research/). This is part of a broader series of articles and includes interesting bits of history, pointers to old but still relevant critiques (including [Dreyfus'](https://en.wikipedia.org/wiki/Hubert_Dreyfus%27s_views_on_artificial_intelligence), which I was not familiar with), and many more interesting points for reflection.
 
-- Tanya Klowden and Terence Tao released a new preprint [Mathematical methods and human thought in the age of AI](https://arxiv.org/abs/2603.26524v1), that from a brief look seems to touch upon similar topics to this post and the [new one]({{< relref "./73-mechanizing-mathematics.md" >}}). I will update this section after I finish reading it.
+- Tanya Klowden and Terence Tao released a new preprint [Mathematical methods and human thought in the age of AI](https://arxiv.org/abs/2603.26524v1), that at a first glance seems to touch upon similar topics to this post and the [new one]({{< relref "./73-mechanizing-mathematics.md" >}}). I will update this section after I finish reading it.
