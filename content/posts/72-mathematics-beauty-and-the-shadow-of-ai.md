@@ -110,3 +110,4 @@ Within two days of making this post public, I started receiving pointers to vari
 
 - Keith Devlin's MAA column reflects on [How Will the New AI Impact Mathematics Research?](https://maa.org/math-values/how-will-ai-impact-mathematics-research/). This is part of a broader series of posts and includes interesting bits of history, pointers to old but still relevant critiques (like [Dreyfus'](https://en.wikipedia.org/wiki/Hubert_Dreyfus%27s_views_on_artificial_intelligence), which I was not familiar with), and many more interesting points for reflection.
 
+- Tanya Klowden and Terence Tao released a new preprint [Mathematical methods and human thought in the age of AI](https://arxiv.org/abs/2603.26524v1), that from a brief look seems to touch upon similar topics to this post and the [new one]({{< relref "./73-mechanizing-mathematics.md" >}}). I will update this section after I finish reading it.
