@@ -48,3 +48,7 @@ Of course, a discussion on mechanization cannot be complete without mentioning t
 And last but not least, all of this should be done within a strong ethical framework. Here the authors call for a "living statement of ethical principles to guide academic mathematicians and mathematical institutions in their interactions with AI systems and developers". Apparently a group of people from the workshop is already working on a first draft. I am really looking forward to reading it!
 
 The manifesto closes with its own call to action. Fittingly, it reads ELDeR: Engage, Learn, Discuss, Reflect. We are not alone; it is time to stand together.
+
+## Updates
+
+Tanya Klowden and Terence Tao released a new preprint [Mathematical methods and human thought in the age of AI](https://arxiv.org/abs/2603.26524v1), that at first glance seems to touch upon similar topics to this post. Their reflection hints at a future where AI-based tools are integrated into mathematical workflows, seeing mathematics as a valuable testbed for exploring broader societal impacts. But the discussion is far more nuanced, also exploring ideas [akin to what I was writing earlier]({{< relref "72-mathematics-beauty-and-the-shadow-of-ai.md" >}}) and a broad range of ethical considerations. If you are interested in the topic, and you are since you have arrived here, it is well worth a closer look.
