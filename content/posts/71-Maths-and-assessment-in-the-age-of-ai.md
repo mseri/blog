@@ -6,7 +6,7 @@ categories: ["Blog"]
 toc: true
 ---
 
-The commoditization of AI—and its rapidly improving ability to solve, explain, and generate mathematical problems—is increasingly getting in the way of our teaching and, even more significantly, disrupting our usual assessment methods.
+The commoditization of AI—and its [rapidly improving ability to solve, explain, and generate mathematical problems](https://mathscholar.org/2026/04/how-effective-are-current-ai-models-on-mathematical-research-problems/)—is increasingly getting in the way of our teaching and, even more significantly, disrupting our usual assessment methods.
 
 For instance, many courses have seen an surge in near-perfect, overly elaborate solutions whose quality is rarely reflected in final exams. Discussion and active participation seem to be declining, replaced by a reliance on LLMs as convenient—albeit impersonal—tutor replacements. This is concerning, as research and experience consistently show that collaboration and productive struggle are key ingredients of learning.
 
