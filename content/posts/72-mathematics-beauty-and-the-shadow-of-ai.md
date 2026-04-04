@@ -30,7 +30,7 @@ I think it is well worth reading. In particular, the following quote is what set
 
 Despite the long conversation and the many reads to prepare for the [Good Mathematics Problem](https://creators.spotify.com/pod/profile/not-just-numbers/episodes/S2E01---Good-mathematics-problems--with-Serte-Donderwinkel-and-Steffen-Mller-e2pveue) episode of It's Not Just Numbers, I am still longing for clarity in my thoughts. And while this discussion may seem irrelevant to most, I came to believe that it is a deeply central reflection on the state of our discipline. 
 
-The development of mathematics and the culture around it are both deeply social activities, and the meaning of truth as well as what makes problems interesting and results beautiful are an important and inseparable underlying drive. As it is social and taste-driven, mathematics is constantly changing in relation to changes in its surrounding environment, and it can be easily influenced by current trends—and hopefully also influences them in a positive (whatever this means) way.
+The development of mathematics and the culture around it are both deeply social activities, and the [meaning of truth](https://www.ams.org/journals/bull/2024-61-03/S0273-0979-2024-01823-0) as well as what makes problems interesting and results beautiful are an important and inseparable underlying drive. As it is social and taste-driven, mathematics is constantly changing in relation to changes in its surrounding environment, and it can be easily influenced by current trends—and hopefully also influences them in a positive (whatever this means) way.
 
 I find this to be the key to understand the societal usefulness of mathematics, more than just its (arguably very numerous) applications.
 
