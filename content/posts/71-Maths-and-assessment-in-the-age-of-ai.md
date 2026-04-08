@@ -6,7 +6,7 @@ categories: ["Blog"]
 toc: true
 ---
 
-The commoditization of AI—and its [rapidly improving ability to solve, explain, and generate mathematical problems](https://mathscholar.org/2026/04/how-effective-are-current-ai-models-on-mathematical-research-problems/)—is increasingly getting in the way of our teaching and, even more significantly, disrupting our usual assessment methods.
+The commoditization of AI—and its rapidly improving ability to solve, explain, and generate mathematical problems—is increasingly getting in the way of our teaching and, even more significantly, disrupting our usual assessment methods.
 
 For instance, many courses have seen an surge in near-perfect, overly elaborate solutions whose quality is rarely reflected in final exams. Discussion and active participation seem to be declining, replaced by a reliance on LLMs as convenient—albeit impersonal—tutor replacements. This is concerning, as research and experience consistently show that collaboration and productive struggle are key ingredients of learning.
 
@@ -38,7 +38,7 @@ But many will not. With AI, they can obtain a hint (or, more often, a verbose, h
 
 Someone suggested setting explicit expectations: tell students to spend, say, 4–8 hours per exercise. I am wary of setting a hard number, as everyone works at a different pace, but the principle is quite interesting. Learning takes time; you need to sleep on a problem and allow your brain to digest it subconsciously. By telling students when to pause, seek help, and how long to try before giving up, we can set better boundaries. Currently, the time between getting stuck and turning to an LLM is often a matter of minutes, far too short for proper learning.
 
-Interestingly, data from conversations and a recent internal survey suggests that newer cohorts are becoming more aware of LLM limitations. Having been exposed to these tools early, many have seen first-hand [how they can mislead](https://irisvanrooijcogsci.com/2025/08/12/ai-slop-and-the-destruction-of-knowledge/) or go off the rails. Students recognize that relying on AI can lead to a shallower understanding, yet the pressure to optimize for grades remains a strong incentive to cut corners.
+Interestingly, data from conversations and a recent internal survey suggests that newer cohorts are becoming more aware of LLM limitations. Having been exposed to these tools early, many have seen first-hand [how they](https://mathscholar.org/2026/04/how-effective-are-current-ai-models-on-mathematical-research-problems/) [can mislead](https://irisvanrooijcogsci.com/2025/08/12/ai-slop-and-the-destruction-of-knowledge/) or go off the rails. Students recognize that relying on AI can lead to a shallower understanding, yet the pressure to optimize for grades remains a strong incentive to cut corners.
 
 But is any of this new? The concerns regarding participation, grade fixation, and a shrinking tolerance for frustration are long-standing issues ([even in high school](https://devlinsangle.blogspot.com/2018/10/its-high-time-to-re-focus-systemic.html)). However, having a free, tireless, judgment-free personal tutor exponentially accelerates these problems. The explosion of LLMs has simply made the challenge of motivating our students more visible.
 
