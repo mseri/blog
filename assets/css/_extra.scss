@@ -1,5 +1,11 @@
 .hanchor { font-size: 100%; color: silver; }
 
+blockquote {
+  border-left: 0.2em solid $primary-color;
+  margin-left: 0;
+  padding-left: 1em;
+}
+
 pre {
   position: relative;
 
