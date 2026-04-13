@@ -1,9 +1,9 @@
 ---
 title: "Workplace Cultures"
-date: 2026-03-28T10:59:52+01:00
+date: 2026-04-22T10:59:52+01:00
 tags: [culture, practices, workplace]
 categories: ["Blog"]
-draft: true
+toc: true
 ---
 
 The one thing I truly value of dialogue-based podcasts is that no matter the topics, the conversation often wanders into unexpected and insightful places. This is how this post came to be, specifically when listening to the [Signals and Threads](https://signalsandthreads.com) episode [Why Testing is Hard and How to Fix it with Will Wilson](https://signalsandthreads.com/why-testing-is-hard-and-how-to-fix-it/).
@@ -12,7 +12,7 @@ In these times of international turmoil, financial crunch and decreasing numbers
 
 At some point it also reminded me of similar ideas in an older episode of the same podcast, [Solving Puzzles in Production with Liora Friedberg](https://signalsandthreads.com/solving-puzzles-in-production/). Which I also needed to re-listen before writing and turned out to be rather interesting in the context of this post.
 
-But let me get to the point.
+But let me get to the point. Two things kept surfacing: flat, trust-based structures, and the tone around failure. And both felt uncomfortably relevant to what is happening at our university.
 
 ## Flatter organization structures
 
@@ -53,11 +53,11 @@ Of course, this needs to go hand in hand with a promotion of openness, collabora
 
 We saw the stigma around failure [during our Young Academy Groningen project](https://www.rug.nl/research/young-academy/what-we-do/cohort-projects/cohortproject2021), when we very unsuccessfully tried to make a collective CV of Failures. We also saw the opportunity though: once problems were discussed in the open, they became easier to recognise, easier to avoid, and much less intimidating for the people coming after us. That matters especially for younger academics, who often enter an environment in which senior colleagues (and sometimes also peers) are seen through idealized and unrealistic lenses. This is a huge benefit of such a change: when failure can be discussed without embarrassment, people speak more openly with one another. The atmosphere becomes less guarded, more cooperative, and in a small but real way lighter. People stop treating mistakes as social danger, they just become useful information.
 
-It should go without saying that this logic should apply also to policies, procedures, and services. They should be assessed honestly, not protected out of habit or pride. If something is not meeting the goals it was meant to meet, we should have the humility to revise it or drop it, sometimes substantially, rather than preserving it because it was produced by some committee, or is an influential someone's pet project. This kind of review, made structural, would make practical improvements easier to introduce without first looking for someone to blame. 
+This shift on failure could also be useful in the classroom. We could have some seminars to make space for confusion, for presenters to share open problems, false starts, and things they do not yet understand, rather than treating every seminar as a stage for polished results. Research is mostly the messy middle, and almost none of our sharing formats make room for it.
+
+It should go without saying that this logic should apply also to policies, procedures, and services. They should be assessed honestly, not protected out of habit or pride. If something is not meeting the goals it was meant to meet, we should have the humility to revise it or drop it, sometimes substantially, rather than preserving it because it was produced by some committee, or is an influential someone's pet project. This kind of review, made structural, would make practical improvements easier to introduce without first looking for someone to blame.
 
 We could also make knowledge transfer count in annual reviews, not as a token acknowledgement but as a genuine criterion. Who has written things down in a way that helps others? Who has made their working methods legible? Who is a supportive and active mentor? These activities currently carry almost no career weight, which is precisely why almost no one does them. We should structure mentorship as an explicit responsibility with real expectations, rather than leaving it as an informal arrangement that works well when a supervisor happens to be naturally good at it and collapses otherwise. Of course we have training, and it is improving, but it is again mostly an HR-related checkbox at the moment.
-
-This shift on failure could also be useful in the classroom. We could have some seminars to make space for confusion, for presenters to share open problems, false starts, and things they do not yet understand, rather than treating every seminar as a stage for polished results. Research is mostly the messy middle, and almost none of our sharing formats make room for it.
 
 In the end, we should drop the slogans (at least internally) and make changes that show people that they are trusted, that is safe to speak, and that we value what they do and are eager to learn from it, rewarding explicitly these behaviours.
 
