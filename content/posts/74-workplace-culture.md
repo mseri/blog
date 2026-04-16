@@ -1,7 +1,7 @@
 ---
 title: "Workplace Cultures"
 date: 2026-04-12T10:59:52+01:00
-tags: [culture, practices, workplace]
+tags: [culture, practices, workplace, governance]
 categories: ["Blog"]
 toc: true
 ---
