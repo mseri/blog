@@ -40,8 +40,7 @@ The contrast with bureaucracy is fundamental. In a bureaucracy, people are treat
 
 **Principle 7 — Paradox (Balance):** The final principle is the capacity to hold apparently conflicting goals in productive tension—scale and agility, innovation and discipline, freedom and accountability. This requires reinventing the notion of control. Many humanocratic organizations are disciplined, but they achieve that discipline through trust, purpose, and peer accountability rather than top-down oversight.
 
-Together, these seven principles give rise to a wide variety of specific practices. The key message, however, isn't to copy what [Haier](https://www.humanocracy.com/movement/episodes/entrepreneurship-scale-zhang-ruimin) or [Buurtzorg](https://link.springer.com/article/10.1007/s41469-024-00184-y) (the Dutch home healthcare provider with over ten thousand nurses working in self-managing teams) are doing. The point is to understand the underlying principle at work, then ask: *How can we bring this to life in a way that fits our own context and culture?*
-
+Together, these seven principles give rise to a wide variety of specific practices. The key message, however, isn't to copy what [Haier](https://www.humanocracy.com/movement/episodes/entrepreneurship-scale-zhang-ruimin) or [Buurtzorg](https://link.springer.com/article/10.1007/s41469-024-00184-y) (the Dutch home healthcare provider with over ten thousand nurses working in self-managing teams) are doing. The point is to understand the underlying principle at work, then ask: *How can we bring this to life in a way that fits our own context and culture?* Let's try.
 
 ## Translation Needed
 
@@ -49,7 +48,7 @@ I'm sure that reading the points above, you might already be questioning my sani
 
 It is a fun thought experiment to imagine discussing this in a university meeting. Picture reading the points aloud and watching your colleagues' faces freeze or nervously grin (though maybe not if you work in economics or business).
 
-They'd be right to be suspicious.
+They would be right to be suspicious.
 
 Over the last few decades, management reforms in academia have often meant using a similar vocabulary to justify cutting permanent positions, outsourcing core services, and centralizing power in the hands of administrators who are increasingly disconnected from the realities of teaching and research. I'm grateful that at least here in the Netherlands, there is a legal requirement for [co-participation](https://nl.wikipedia.org/wiki/Medezeggenschap) in administrative decision-making.
 
@@ -79,7 +78,7 @@ This becomes another interesting thought experiment. According to these principl
 
 At some point, the podcast draws an interesting connection to [servant leadership](https://en.wikipedia.org/wiki/Servant_leadership), though Zanini partly distances himself from the term. He argues that it still implies hierarchy: the idea that you are at the top, graciously choosing to serve those below. Architecting is more radical as it means genuinely reducing your own decision rights in favor of trusting that the team closest to the work is best equipped to manage it.
 
-This raises an important (and perhaps uncomfortable) question: How many of the decisions currently debated at various administrative levels would be resolved faster—and better—by the people actually doing the teaching and research?
+This raises an important (and perhaps uncomfortable) question: How many of the decisions currently debated at various administrative levels would be resolved faster (and better) by the people actually doing the teaching and research?
 
 ## Back to the Roots 
 
