@@ -93,3 +93,8 @@ I feel like I have been digging to find something new and ended up with an archa
 ## Appendix
 
 Before I conclude: If you want to measure how far an institution has drifted from humanocracy's ideals, Zanini suggests using the [Bureaucracy Mass Index (BMI)](https://www.humanocracy.com/course/sites/default/files/2020-07/BMI.pdf). For those of us in academia, there is an immediate test: look back at the last month and count how many hours you spent serving the institution versus how many hours the institution spent serving your work. What do you find?
+
+- - - 
+
+Update: shortly after publishing this post, I was made aware of [Human Capital - The Tragedy of the Education Commons](https://www.penguin.co.uk/books/461384/human-capital-by-standing-guy/9780241688199) by Guy Standing, which seems remarkably related. I guess I have a new read for the spring :)
+
