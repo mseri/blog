@@ -54,7 +54,9 @@ Over the last few decades, management reforms in academia have often meant using
 
 But let's look past the corporate framing. Humanocracy is meant to be a set of driving values that align with the specificity of the organization. The principles, by design, are meant to be translated into something that resonates with academic needs and values before being applied.
 
-**Ownership**, for example, doesn't have to mean giving professors a larger cut of grant overhead or the control of a research unit. It would make more sense if it meant treating a research group or department like a community of adults: trusting them to know what they need, giving them control over their own resources, and holding them accountable for the intellectual and educational value they create. In this sense, it means not treating them as cost centers whose every move requires permission from someone who has never done the work.
+**Ownership**, for example, doesn't have to mean giving professors a larger cut of grant overhead or the control of a research unit. It would make more sense if it meant treating a research group or department like a community of adults: trusting them to know what they need, giving them control over their own resources, and holding them accountable for the intellectual and educational value they create. In this sense, it means not treating them as cost centers whose every move requires permission from someone who has never done the work. 
+
+In some sense I read this as the equivalent of the subsidiarity principle, where decisions are made at the lowest possible level, closest to the workfloor.
 
 **Meritocracy**, in line with DORA, should not be about ranking people by H-index or other citation counts: metrics that, like the algorithms we increasingly rely on, reduce complex human output to a single number. True meritocracy here would mean that influence should follow expertise and contribution, not rank. In a department where the loudest voice in a hiring decision belongs to the person who holds the chair, regardless of their relevance to the field, something has gone wrong. Zanini's version of meritocracy could be an antidote to administrative aristocracy: the slow takeover of an institution by people whose primary skill is managing instead of creating.
 
@@ -92,9 +94,14 @@ I feel like I have been digging to find something new and ended up with an archa
 
 ## Appendix
 
-Before I conclude: If you want to measure how far an institution has drifted from humanocracy's ideals, Zanini suggests using the [Bureaucracy Mass Index (BMI)](https://www.humanocracy.com/course/sites/default/files/2020-07/BMI.pdf). For those of us in academia, there is an immediate test: look back at the last month and count how many hours you spent serving the institution versus how many hours the institution spent serving your work. What do you find?
+If you want to measure how far an institution has drifted from humanocracy's ideals, Zanini suggests using the [Bureaucracy Mass Index (BMI)](https://www.humanocracy.com/course/sites/default/files/2020-07/BMI.pdf). For those of us in academia, there is an immediate test: look back at the last month and count how many hours you spent serving the institution versus how many hours the institution spent serving your work. What do you find?
+
+## Disclaimer
+
+First of all, universities have been riddled with classism, societal biases, and other forms of exclusion since their inception. This is the elephant in the room of the discussion above, but I hope I made it clear that I don't intend to ignore these issues: I hope that this uni-humanocracy could be used to change the culture and help create a more inclusive and empowering environment for everyone.
+
+It should also be clear that national legal frameworks constrain what governance structures universities can adopt, and that other legal regulations must be respected in any redesign. But different principles can lead to different structures and cultures, so I think these kinds of thought experiments remain valuable for fostering culture change and bottom-up development, rather than perpetuating the current top-down, centralized processes.
 
 - - - 
 
-Update: shortly after publishing this post, I was made aware of [Human Capital - The Tragedy of the Education Commons](https://www.penguin.co.uk/books/461384/human-capital-by-standing-guy/9780241688199) by Guy Standing, which seems remarkably related. I guess I have a new read for the spring :)
-
+Update: shortly after publishing this post, I was made aware of [Human Capital - The Tragedy of the Education Commons](https://www.penguin.co.uk/books/461384/human-capital-by-standing-guy/9780241688199) by Guy Standing, which seems remarkably related. I guess I have a new read for the end of spring :)
