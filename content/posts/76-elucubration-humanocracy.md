@@ -1,7 +1,7 @@
 ---
 title: "Elucubrations on Humanocracy at University"
 date: 2026-04-16T19:20:36+02:00
-tags: [culture, practices, workplace, governance]
+tags: [culture, practices, workplace, governance, university]
 categories: ["Blog"]
 toc: true
 ---

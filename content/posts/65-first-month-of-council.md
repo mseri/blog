@@ -1,7 +1,7 @@
 ---
 title: "Our first month in the University Council"
 date: 2025-10-06T12:00:16+02:00
-tags: [university, council]
+tags: [university, council, governance]
 categories: ["Blog"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Four months in the University Council"
 date: 2025-12-18T09:10:59+01:00
-tags: [university, council]
+tags: [university, council, governance]
 categories: ["Blog"]
 ---
 
