@@ -3,7 +3,6 @@ title: "Does University Participation Change You?"
 date: 2026-05-01T11:40:31+02:00
 tags: [university, council]
 categories: ["Blog"]
-draft: true
 ---
 
 Recently, a friend asked me a variation of the question in the title. I was caught off guard. There is a general impression that participating in university politics makes you more bitter and cynical. I don't think it is true, yet. But I have to agree that it had an effect.
