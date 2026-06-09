@@ -6,7 +6,7 @@ categories: ["Blog"]
 toc: true
 ---
 
-I attended an interesting meeting recently, where we debated the role of University and how our education should change in a world that is more and more taken over by generative AI. Since I need to write down a few words on this to share with various colleagues, I may as well do it in a blog post.
+I attended an interesting meeting recently, where we debated the role of University and how our education should change in a world that is more and more taken over by generative AI. Since I need to write down a few words on this to share with various colleagues, I may as well do it in a blog post. This post integrates my thoughts with ideas that I picked up from the conversation. Where possible, I tried to look for and provide the appropriate references.
 
 Yes, this is again about generative AI. If you are overwhelmed by the noise about this topic, I hear you, and I would recommend closing this tab and do something more enjoyable for today.
 Also note that, _unless otherwise specified, I am going to do a disservice to the field and use AI to specifically talk about generative AI, and in almost all cases with this I mean text-based large language models more than any other media._
