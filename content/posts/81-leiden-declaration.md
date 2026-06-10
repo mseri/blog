@@ -5,7 +5,9 @@ tags: [mathematics, ai]
 categories: ["Blog"]
 ---
 
-In [the previous post on mechanizing mathematics]({{< ref "73-mechanizing-mathematics.md" >}}) and on [its relation with beauty and generative AI]({{< ref "72-mathematics-beauty-and-the-shadow-of-ai.md" >}}), I have extensively discussed my views on how societal and technological changes are shaping mathematics and what I hope we will do to respond and evolve with it.
+In [the previous post on mechanizing mathematics]({{< ref "73-mechanizing-mathematics.md" >}}) and on [its relation with beauty and generative AI]({{< ref "72-mathematics-beauty-and-the-shadow-of-ai.md" >}}), I have extensively discussed my views on how societal and technological changes are shaping mathematics and what I hope we will do to respond and evolve with it. I think the response has arrived.
+
+<!--more-->
 
 ![Logo of the Leiden Declaration - a purple tulip](/images/leiden-declaration-logo.png)
 
