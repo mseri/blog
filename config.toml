@@ -1,5 +1,5 @@
 baseURL = "https://www.mseri.me"
-languageCode = "en-us"
+language = "en-us"
 defaultContentLanguage = "en"
 title = "A fractal spectrum of tales"
 description = "Free thoughts of a geeky mathematician"
