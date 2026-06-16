@@ -101,6 +101,6 @@ I think we are beginning to do this more and more, and [our University](http://w
 
 I've also been saying [for a long time](https://www.mseri.me/tags/education/) that I hope that this disruption will be the chance to revise the way we teach, shift the focus on promoting the learning process rather than the final grade.  But this doesn't mean that we have to change everything else to do it or that we should buy-in and deskill our students by “letting ChatGPT do it” and shift the focus on revising its answers. Even if they have the impression that this is what is asked from them by society. Recent research hints in a similar direction [[Science26](https://www.science.org/doi/10.1126/science.aec5115) paywalled].
 
-It is also part of our role to cut through the noise, push back against the nonsense and steer the discussion to a healthier place. And in this case, we want to ensure that whatever we do, AI will serve education, and not the other way around.
+I think it is part of our role to cut through the noise, [push back](https://zenodo.org/records/17065099) against the nonsense and steer the discussion to a healthier place. And in this case, we want to ensure that whatever we do, AI will serve education, and not the other way around.
 
 So let's find the middle ground where we are not giving up the important things, we promote literacy and critical thinking, and we don't give up in shaping elastic minds that can run the world of the future.
