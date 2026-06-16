@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: fig2dev Version 3.2 Patchlevel 5-alpha7 -->
+<!-- CreationDate: Fri Apr 25 13:37:58 2008 -->
+<!-- Magnification: 0.525 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="5.2in" height="3.9in" viewBox="95 39 6209 4730">
+  <rect x="95" y="39" width="6209" height="4730" fill="white" />
+  <g style="stroke-width:.025in; stroke:black; fill:none">
+    <!-- Line -->
+    <polyline points="5480,2574 5527,2574 5574,2740 5669,2480 5881,2480" style="stroke:#0000d1;stroke-width:4; stroke-linejoin:round; stroke-linecap:butt;" />
+    <!-- Line -->
+    <polyline points="118,2244 118,354 2007,354" style="stroke:#ff0000;stroke-width:24; stroke-linejoin:round; stroke-linecap:butt;" />
+    <!-- Line -->
+    <polyline points="2244,2244 2244,1299 3188,1299 3188,354 4133,354" style="stroke:#ff0000;stroke-width:24; stroke-linejoin:round; stroke-linecap:butt;" />
+    <!-- Line -->
+    <polyline points="4370,2244 4370,1771 4842,1771 4842,1299 5314,1299 5314,826 5787,826 5787,354 6259,354" style="stroke:#ff0000;stroke-width:24; stroke-linejoin:round; stroke-linecap:butt;" />
+    <!-- Line -->
+    <polyline points="118,4724 118,4488 354,4488 354,4251 590,4251 590,4015 826,4015 826,3779 1062,3779 1062,3543 1299,3543 1299,3307 1535,3307 1535,3070 1771,3070 1771,2834 2007,2834" style="stroke:#ff0000;stroke-width:24; stroke-linejoin:round; stroke-linecap:butt;" />
+    <!-- Line -->
+    <polyline points="2244,4724 2244,4606 2362,4606 2362,4488 2480,4488 2480,4370 2598,4370 2598,4251 2716,4251 2716,4133 2834,4133 2834,4015 2952,4015 2952,3897 3070,3897 3070,3779 3188,3779 3188,3661 3307,3661 3307,3543 3425,3543 3425,3425 3543,3425 3543,3307 3661,3307 3661,3188 3779,3188 3779,3070 3897,3070 3897,2952 4015,2952 4015,2834 4133,2834" style="stroke:#ff0000;stroke-width:24; stroke-linejoin:round; stroke-linecap:butt;" />
+    <!-- Line -->
+    <polyline points="4370,4724 6259,2834" style="stroke:#00ff00;stroke-width:24; stroke-linejoin:round; stroke-linecap:butt;" />
+    <!-- Text -->
+    <text xml:space="preserve" x="5314" y="236" stroke="#0000d1" fill="#0000d1" font-family="Times" font-style="normal" font-weight="normal" font-size="202" text-anchor="middle">d = 8&#183;1/4 = 2</text>
+    <!-- Text -->
+    <text xml:space="preserve" x="3188" y="236" stroke="#0000d1" fill="#0000d1" font-family="Times" font-style="normal" font-weight="normal" font-size="202" text-anchor="middle">d = 4&#183;1/2 = 2</text>
+    <!-- Text -->
+    <text xml:space="preserve" x="1062" y="2716" stroke="#0000d1" fill="#0000d1" font-family="Times" font-style="normal" font-weight="normal" font-size="202" text-anchor="middle">d = 16&#183;1/8 = 2</text>
+    <!-- Text -->
+    <text xml:space="preserve" x="1062" y="236" stroke="#0000d1" fill="#0000d1" font-family="Times" font-style="normal" font-weight="normal" font-size="202" text-anchor="middle">d = 2&#183;1 = 2</text>
+    <!-- Text -->
+    <text xml:space="preserve" x="5456" y="2716" stroke="#0000d1" fill="#0000d1" font-family="Times" font-style="normal" font-weight="normal" font-size="202" text-anchor="end">d = ... =</text>
+    <!-- Text -->
+    <text xml:space="preserve" x="5716" y="2716" stroke="#0000d1" fill="#0000d1" font-family="Times" font-style="normal" font-weight="normal" font-size="202" text-anchor="start">2</text>
+    <!-- Text -->
+    <text xml:space="preserve" x="3188" y="2716" stroke="#0000d1" fill="#0000d1" font-family="Times" font-style="normal" font-weight="normal" font-size="202" text-anchor="middle">d = 32&#183;1/16 = 2</text>
+    <!-- Line: box -->
+    <rect x="118" y="354" width="1889" height="1889" rx="0" style="stroke:#000000;stroke-width:4; stroke-linejoin:miter; stroke-linecap:butt;" />
+    <!-- Line: box -->
+    <rect x="2244" y="354" width="1889" height="1889" rx="0" style="stroke:#000000;stroke-width:4; stroke-linejoin:miter; stroke-linecap:butt;" />
+    <!-- Line: box -->
+    <rect x="4370" y="354" width="1889" height="1889" rx="0" style="stroke:#000000;stroke-width:4; stroke-linejoin:miter; stroke-linecap:butt;" />
+    <!-- Line: box -->
+    <rect x="118" y="2834" width="1889" height="1889" rx="0" style="stroke:#000000;stroke-width:4; stroke-linejoin:miter; stroke-linecap:butt;" />
+    <!-- Line: box -->
+    <rect x="2244" y="2834" width="1889" height="1889" rx="0" style="stroke:#000000;stroke-width:4; stroke-linejoin:miter; stroke-linecap:butt;" />
+    <!-- Line: box -->
+    <rect x="4370" y="2834" width="1889" height="1889" rx="0" style="stroke:#000000;stroke-width:4; stroke-linejoin:miter; stroke-linecap:butt;" />
+  </g>
+</svg>
