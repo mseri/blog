@@ -4,6 +4,7 @@ date: 2026-06-16T08:44:33+02:00
 tags: [mathematics,geometry,education]
 categories: ["Blog"]
 katex: true
+toc: true
 ---
 
 Geometry is among the anciest branches of mathematics.
