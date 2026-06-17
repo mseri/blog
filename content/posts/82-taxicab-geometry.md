@@ -58,7 +58,7 @@ But back to our main point. As it turns out that in Groningen, in many cases, th
 In terms of our points A and B from the beginning of the post, this looks as follows:
 
 {{< figure
-  src="/images/82-Taxicab-distance.svg"
+  src="/images/82-taxicab-distance.svg"
   alt="Lots of horizontal and vertical lines are crossing to connect points A and B. In all cases the time of travel is 5 min (except one that is 6 min)"
   width="50%"
 >}}
@@ -70,7 +70,7 @@ where, indeed, $\overline{AB} = x + y$. This is our new Pythagoras' theorem and 
 A careful look at my wonderfully hand-drawn map of a neighbourhood of Groningen, shows a remarkable fact: Groningen is locally Manhattan.
 
 {{< figure
-  src="/images/82-Manhattan.png"
+  src="/images/82-manhattan.png"
   alt="A screenshot of Manahattan from Apple Maps."
   width="100%"
 >}}
@@ -83,7 +83,7 @@ is defined as the sum of the absolute differences of their coordinates.
 So, like in Groningen,
 
 {{< figure
-  src="/images/82-Taxicab-distance.svg"
+  src="/images/82-taxicab-distance.svg"
   alt="Lots of horizontal and vertical lines are crossing to connect points A and B. In all cases the time of travel is 5 min (except one that is 6 min)"
   width="50%"
 >}}
