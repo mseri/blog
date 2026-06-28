@@ -48,7 +48,7 @@ For the review system, the situation has already become more unmanageable and un
 
 ## A broader look at ethics
 
-And of course this leads to the often overlooked ethics discussion. It is very easy to "waterwash" all ethical concerns by asking about the ethical implications and water consumption of watching a netflix video or making a google search. But this is just a decoy to avoid talking about the deeper problems behind our current AI gold rush:
+And of course this leads to the [often overlooked ethics discussion](https://mastodon.bida.im/@vannisantoni/116737416701654945). It is very easy to "waterwash" all ethical concerns by asking about the ethical implications and water consumption of watching a netflix video or making a google search. But this is just a decoy to avoid talking about the deeper problems behind our current AI gold rush:
 
 * Data theft: most models are trained on stolen, copyrighted data [[EmpireOfAI](https://en.wikipedia.org/wiki/Empire_of_AI)].
 * Hardware waste: 70% of data centers are unused, yet companies race to build bigger ones.
