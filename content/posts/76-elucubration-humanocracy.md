@@ -4,6 +4,7 @@ date: 2026-04-16T19:20:36+02:00
 tags: [culture, practices, workplace, governance, university]
 categories: ["Blog"]
 toc: true
+draft: true
 ---
 
 There is a particular kind of exhaustion that everyone who works in a university will know well. This isn't the exhaustion of thinking hard; if anything, that kind is regenerative, even pleasurable. We expect to feel tired after wrestling with an intricate proof or brainstorming how to resolve some delicate technical issue. Even when our brains feel fried, we are still energized by it.
