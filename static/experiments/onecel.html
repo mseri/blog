@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>1D Cellular Automata Generator</title>
+    <style>
+        :root {
+            --primary: #3498db;
+            --primary-hover: #2980b9;
+            --bg: #f0f2f5;
+            --surface: #ffffff;
+            --text: #333333;
+            --text-light: #7f8c8d;
+            --border: #e1e4e8;
+        }
+
+        * {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: var(--bg);
+            color: var(--text);
+            -webkit-touch-callout: none;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--surface);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .controls-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            min-width: 120px;
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 0.85em;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        select, input[type="number"] {
+            padding: 10px 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 14px;
+            width: 100%;
+            box-sizing: border-box;
+            background: var(--surface);
+            transition: all 0.2s;
+            cursor: pointer;
+            min-height: 44px;
+        }
+
+        select:focus, input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .pattern-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+        }
+
+        .pattern-controls select {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .pattern-controls .button-group {
+            flex: 0 0 auto;
+        }
+
+        .pattern-controls button {
+            white-space: nowrap;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            background-color: var(--primary);
+            color: white;
+            min-height: 44px;
+            min-width: 44px;
+        }
+
+        button.secondary {
+            background-color: #64748b;
+        }
+
+        button.success {
+            background-color: #22c55e;
+        }
+
+        button.danger {
+            background-color: #ef4444;
+        }
+
+        button:hover:not(:disabled) {
+            transform: translateY(-1px);
+            filter: brightness(1.1);
+        }
+
+        button:active:not(:disabled) {
+            transform: translateY(0);
+        }
+
+        button:disabled {
+            background-color: #cbd5e1;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        #gridCanvas {
+            display: block;
+            margin: 25px auto;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            max-width: 100%;
+            height: auto;
+            cursor: crosshair;
+            touch-action: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .rule-visualization {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3px;
+            margin: 20px auto;
+            padding: 8px;
+        }
+
+        .neighborhood {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            background: var(--surface);
+            padding: 5px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .neighborhood-squares {
+            display: flex;
+            gap: 2px;
+        }
+
+        .rule-operator, .rule-total {
+            align-self: stretch;
+            display: flex;
+            align-items: center;
+            color: #475569;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .rule-total {
+            white-space: nowrap;
+        }
+
+        .neighborhood-square, .result-square {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #94a3b8;
+            border-radius: 2px;
+        }
+
+        .pattern-label, .rule-contribution {
+            color: #64748b;
+            font-size: 10px;
+            font-weight: 600;
+        }
+
+        .pattern-label {
+            margin-bottom: 4px;
+        }
+
+        .rule-contribution {
+            margin-top: 4px;
+        }
+
+        .rule-contribution sup {
+            font-size: 0.75em;
+            line-height: 0;
+        }
+
+        .arrow {
+            font-size: 16px;
+            margin: 4px 0;
+            color: #94a3b8;
+        }
+
+        .explanation {
+            margin-top: 25px;
+            padding: 15px 20px;
+            background: #f0f7ff;
+            border-radius: 8px;
+            font-size: 0.95em;
+            line-height: 1.6;
+            color: #1e293b;
+            border-left: 4px solid var(--primary);
+        }
+
+        .explanation h3 {
+            margin-top: 0;
+            color: #0f172a;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .further-reading {
+            margin: 16px 0 0;
+            text-align: center;
+            color: #475569;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .further-reading a {
+            color: var(--primary-hover);
+            font-weight: 600;
+        }
+
+        .info {
+            text-align: center;
+            margin-top: 20px;
+            color: var(--text-light);
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .controls-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .button-group {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>1D Cellular Automata</h1>
+        
+        <div class="controls-row">
+            <div class="control-group">
+                <label for="width">Grid Width:</label>
+                <input type="number" id="width" min="10" max="300" value="75">
+            </div>
+            
+            <div class="control-group">
+                <label for="rule">Simulation Rule:</label>
+                <select id="rule">
+                    <option value="30">Rule 30 (Chaotic)</option>
+                    <option value="90">Rule 90 (Sierpiński)</option>
+                    <option value="110">Rule 110 (Turing-Complete)</option>
+                    <option value="184">Rule 184 (Traffic)</option>
+                    <option value="custom">Custom (0-255)</option>
+                </select>
+            </div>
+            
+            <div class="control-group" id="customRuleGroup" style="display: none;">
+                <label for="customRule">Custom Value:</label>
+                <input type="number" id="customRule" min="0" max="255" value="30">
+            </div>
+
+            <div class="control-group">
+                <label for="boundary">Edges:</label>
+                <select id="boundary">
+                    <option value="periodic">Periodic (Wrap)</option>
+                    <option value="white">Always White</option>
+                    <option value="black">Always Black</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="rule-visualization" id="ruleVisualization"></div>
+        
+        <div class="controls-row" style="background: transparent; border: none; padding: 0;">
+            <div class="control-group" style="flex: 1;">
+                <label for="preset">Starting Pattern</label>
+                <div class="pattern-controls">
+                    <select id="preset">
+                        <option value="none">Choose a pattern…</option>
+                        <option value="single">Single Cell</option>
+                        <option value="random">Random</option>
+                        <option value="alternating">Alternating</option>
+                        <option value="all-black">All Black</option>
+                        <option value="all-white">All White</option>
+                        <option value="two-cells">Two Cells</option>
+                        <option value="three-cells">Three Cells</option>
+                    </select>
+                    <div class="button-group">
+                        <button class="danger" id="clearBtn">Clear</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="control-group" style="flex: 1; align-items: flex-end;">
+                <label>Simulation</label>
+                <div class="button-group">
+                    <button class="secondary" id="stepBtn">Step</button>
+                    <button id="startBtn">Play</button>
+                    <button id="stopBtn" class="danger" disabled>Stop</button>
+                    <button class="success" id="saveBtn">Save Pattern</button>
+                </div>
+            </div>
+        </div>
+        
+        <canvas id="gridCanvas"></canvas>
+        
+        <div class="info">
+            <p><strong>Pro tip:</strong> Tap and drag on the highlighted top row to draw your custom starting sequence.</p>
+        </div>
+
+        <div class="explanation">
+            <h3>How Rules Work</h3>
+            <p>
+                <strong>Binary</strong> is a way of writing numbers using only 0 and 1. Each position is worth twice the position to its right: 2<sup>0</sup> = 1, 2<sup>1</sup> = 2, 2<sup>2</sup> = 4, and so on. A 1 includes that value; a 0 does not. For example, <strong>101</strong> means 1 × 4 + 0 × 2 + 1 × 1 = <strong>5</strong>.
+            </p>
+            <p>
+                A cellular-automaton rule has eight binary positions—one for each possible three-cell neighborhood. The display reads from <strong>111</strong> to <strong>000</strong>: 111 uses the 2<sup>7</sup> (128) position, 110 uses 2<sup>6</sup> (64), and so on down to 000 using 2<sup>0</sup> (1). The bit below each neighborhood says what the middle cell becomes next: <strong>1 is black</strong> and <strong>0 is white</strong>. Adding the values selected by the 1s gives the rule number.
+            </p>
+            <p>
+                For example, Rule 30 is <strong>00011110</strong>: 0 × 128 + 0 × 64 + 0 × 32 + 1 × 16 + 1 × 8 + 1 × 4 + 1 × 2 + 0 × 1 = <strong>30</strong>. Therefore, its black next-generation neighborhoods are 100, 011, 010, and 001.
+            </p>
+        </div>
+
+        <p class="further-reading">
+            Cellular automata are a rich field of research, appealing to theorists and hobbyists while also having a broad range of applications. For more information, visit <a href="https://en.wikipedia.org/wiki/Cellular_automaton" target="_blank" rel="noopener noreferrer">Wikipedia's Cellular automaton page</a>.
+        </p>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('gridCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let width = 75; 
+        let cellSize = 12; 
+        let rule = 30; 
+        let boundary = 'periodic'; 
+        let grid = []; 
+        let isRunning = false;
+        let animationId = null;
+        let speed = 60; 
+        let currentRow = 0;
+        let maxRows = 40; 
+
+        // Drawing state variables
+        let isDrawing = false;
+        let drawValue = null;
+        let lastDrawnCol = -1;
+
+        // Preset patterns
+        const presets = {
+            'single': (w) => {
+                const arr = new Array(w).fill(0);
+                arr[Math.floor(w / 2)] = 1;
+                return arr;
+            },
+            'random': (w) => {
+                return Array.from({length: w}, () => Math.random() < 0.5 ? 0 : 1);
+            },
+            'alternating': (w) => {
+                return Array.from({length: w}, (_, i) => i % 2);
+            },
+            'all-black': (w) => new Array(w).fill(1),
+            'all-white': (w) => new Array(w).fill(0),
+            'two-cells': (w) => {
+                const arr = new Array(w).fill(0);
+                const center = Math.floor(w / 2);
+                arr[center] = 1;
+                if (center > 0) arr[center - 1] = 1;
+                return arr;
+            },
+            'three-cells': (w) => {
+                const arr = new Array(w).fill(0);
+                const center = Math.floor(w / 2);
+                arr[center] = 1;
+                if (center > 0) arr[center - 1] = 1;
+                if (center < w - 1) arr[center + 1] = 1;
+                return arr;
+            }
+        };
+
+        const commonRules = {
+            '30': 30, '90': 90, '110': 110, '184': 184
+        };
+
+        function init() {
+            updateCanvasSize();
+            createEmptyGrid();
+            applyPreset('single');
+            document.getElementById('preset').value = 'single';
+            setupEventListeners();
+            updateRuleVisualization();
+        }
+
+        function updateRuleVisualization() {
+            const container = document.getElementById('ruleVisualization');
+            container.innerHTML = '';
+
+            const patterns = [
+                {bits: [1,1,1], label: '111'}, {bits: [1,1,0], label: '110'},
+                {bits: [1,0,1], label: '101'}, {bits: [1,0,0], label: '100'},
+                {bits: [0,1,1], label: '011'}, {bits: [0,1,0], label: '010'},
+                {bits: [0,0,1], label: '001'}, {bits: [0,0,0], label: '000'}
+            ];
+
+            patterns.forEach((pattern, index) => {
+                // Wolfram rules assign 111 to the most-significant bit (2^7)
+                // and 000 to the least-significant bit (2^0).
+                const exponent = patterns.length - 1 - index;
+                const resultBit = (rule >> exponent) & 1;
+                const neighborhoodDiv = document.createElement('div');
+                neighborhoodDiv.className = 'neighborhood';
+
+                const patternLabel = document.createElement('div');
+                patternLabel.className = 'pattern-label';
+                patternLabel.textContent = `${pattern.label} = ${parseInt(pattern.label, 2)}`;
+
+                const squaresDiv = document.createElement('div');
+                squaresDiv.className = 'neighborhood-squares';
+
+                pattern.bits.forEach(bit => {
+                    const square = document.createElement('div');
+                    square.className = 'neighborhood-square';
+                    square.style.backgroundColor = bit ? '#1e293b' : 'white';
+                    squaresDiv.appendChild(square);
+                });
+
+                const arrowDiv = document.createElement('div');
+                arrowDiv.className = 'arrow';
+                arrowDiv.textContent = '↓';
+
+                const resultSquare = document.createElement('div');
+                resultSquare.className = 'result-square';
+                resultSquare.style.backgroundColor = resultBit ? '#1e293b' : 'white';
+
+                const contributionDiv = document.createElement('div');
+                contributionDiv.className = 'rule-contribution';
+                contributionDiv.innerHTML = `${resultBit} × 2<sup>${exponent}</sup> = ${resultBit * (2 ** exponent)}`;
+
+                neighborhoodDiv.appendChild(patternLabel);
+                neighborhoodDiv.appendChild(squaresDiv);
+                neighborhoodDiv.appendChild(arrowDiv);
+                neighborhoodDiv.appendChild(resultSquare);
+                neighborhoodDiv.appendChild(contributionDiv);
+                container.appendChild(neighborhoodDiv);
+
+                if (index < patterns.length - 1) {
+                    const plusDiv = document.createElement('div');
+                    plusDiv.className = 'rule-operator';
+                    plusDiv.textContent = '+';
+                    container.appendChild(plusDiv);
+                }
+            });
+
+            const totalDiv = document.createElement('div');
+            totalDiv.className = 'rule-total';
+            totalDiv.textContent = `= ${rule}`;
+            container.appendChild(totalDiv);
+        }
+
+        function updateCanvasSize() {
+            cellSize = Math.max(8, Math.min(20, 800 / width));
+            canvas.width = width * cellSize;
+            canvas.height = maxRows * cellSize;
+        }
+
+        function createEmptyGrid() {
+            grid = [];
+            for (let r = 0; r < maxRows; r++) {
+                grid[r] = new Array(width).fill(0);
+            }
+            currentRow = 0;
+        }
+
+        function drawGrid() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Highlight the first row as an "input zone" if we haven't started running
+            if (currentRow === 0) {
+                ctx.fillStyle = 'rgba(52, 152, 219, 0.15)';
+                ctx.fillRect(0, 0, canvas.width, cellSize);
+            }
+
+            // Draw cells
+            ctx.fillStyle = '#1e293b';
+            for (let r = 0; r < grid.length; r++) {
+                for (let c = 0; c < grid[r].length; c++) {
+                    if (grid[r][c] === 1) {
+                        ctx.fillRect(c * cellSize, r * cellSize, cellSize, cellSize);
+                    }
+                }
+            }
+
+            // Draw grid lines
+            ctx.strokeStyle = '#e2e8f0';
+            ctx.lineWidth = 0.5;
+
+            for (let r = 0; r <= maxRows; r++) {
+                ctx.beginPath();
+                ctx.moveTo(0, r * cellSize);
+                ctx.lineTo(canvas.width, r * cellSize);
+                ctx.stroke();
+            }
+
+            for (let c = 0; c <= width; c++) {
+                ctx.beginPath();
+                ctx.moveTo(c * cellSize, 0);
+                ctx.lineTo(c * cellSize, canvas.height);
+                ctx.stroke();
+            }
+        }
+
+        function setupEventListeners() {
+            // Input/Select changes
+            document.getElementById('width').addEventListener('change', function() {
+                width = parseInt(this.value);
+                if (width < 10) width = 10;
+                if (width > 300) width = 300;
+                this.value = width;
+                updateCanvasSize();
+                createEmptyGrid();
+                applyPreset('single');
+                document.getElementById('preset').value = 'single';
+            });
+
+            document.getElementById('rule').addEventListener('change', function() {
+                if (this.value === 'custom') {
+                    document.getElementById('customRuleGroup').style.display = 'flex';
+                    rule = parseInt(document.getElementById('customRule').value);
+                } else {
+                    document.getElementById('customRuleGroup').style.display = 'none';
+                    rule = commonRules[this.value];
+                }
+                updateRuleVisualization();
+            });
+
+            document.getElementById('customRule').addEventListener('change', function() {
+                rule = Math.max(0, Math.min(255, parseInt(this.value)));
+                this.value = rule;
+                updateRuleVisualization();
+            });
+
+            document.getElementById('boundary').addEventListener('change', e => boundary = e.target.value);
+
+            document.getElementById('preset').addEventListener('change', function() {
+                applyPreset(this.value);
+            });
+
+            // Button actions
+            document.getElementById('clearBtn').addEventListener('click', () => {
+                stopSimulation();
+                createEmptyGrid();
+                document.getElementById('preset').value = 'none';
+                drawGrid();
+            });
+
+            document.getElementById('startBtn').addEventListener('click', startSimulation);
+            document.getElementById('stopBtn').addEventListener('click', stopSimulation);
+            document.getElementById('stepBtn').addEventListener('click', () => {
+                stopSimulation();
+                nextGeneration();
+                drawGrid();
+            });
+
+            document.getElementById('saveBtn').addEventListener('click', savePattern);
+
+            // Canvas drawing - Mouse
+            canvas.addEventListener('mousedown', (e) => {
+                isDrawing = true;
+                handleCanvasInput(e, true);
+            });
+            canvas.addEventListener('mousemove', (e) => {
+                if (isDrawing) handleCanvasInput(e, false);
+            });
+            window.addEventListener('mouseup', () => {
+                isDrawing = false;
+                drawValue = null;
+                lastDrawnCol = -1;
+            });
+
+            // Canvas drawing - Touch
+            canvas.addEventListener('touchstart', (e) => {
+                isDrawing = true;
+                handleCanvasInput(e, true);
+                e.preventDefault();
+            }, { passive: false });
+            canvas.addEventListener('touchmove', (e) => {
+                if (isDrawing) {
+                    handleCanvasInput(e, false);
+                    e.preventDefault();
+                }
+            }, { passive: false });
+            window.addEventListener('touchend', () => {
+                isDrawing = false;
+                drawValue = null;
+                lastDrawnCol = -1;
+            });
+        }
+
+        function handleCanvasInput(e, isFirstTouch) {
+            if (isRunning) return;
+
+            const rect = canvas.getBoundingClientRect();
+            const clientX = (e.touches && e.touches[0]) ? e.touches[0].clientX : e.clientX;
+            const clientY = (e.touches && e.touches[0]) ? e.touches[0].clientY : e.clientY;
+
+            const col = Math.floor((clientX - rect.left) / cellSize);
+            const row = Math.floor((clientY - rect.top) / cellSize);
+
+            // Only interact with the top row
+            if (row === 0 && col >= 0 && col < width) {
+                // If we're editing after starting, reset the grid but keep the first row
+                if (currentRow > 0) {
+                    const tempFirstRow = [...grid[0]];
+                    createEmptyGrid();
+                    grid[0] = tempFirstRow;
+                }
+
+                // Determine paint color on first touch
+                if (isFirstTouch) {
+                    drawValue = grid[0][col] === 0 ? 1 : 0;
+                    lastDrawnCol = col;
+                    grid[0][col] = drawValue;
+                    drawGrid();
+                }
+
+                // Draw a continuous line from lastDrawnCol to current col
+                if (drawValue !== null && lastDrawnCol !== -1) {
+                    const start = Math.min(lastDrawnCol, col);
+                    const end = Math.max(lastDrawnCol, col);
+                    for (let c = start; c <= end; c++) {
+                        if (c >= 0 && c < width) {
+                            grid[0][c] = drawValue;
+                        }
+                    }
+                    lastDrawnCol = col;
+                    drawGrid();
+                }
+            }
+        }
+
+        function applyPreset(presetName) {
+            stopSimulation();
+            createEmptyGrid();
+            const presetFn = presets[presetName];
+            if (presetFn) {
+                grid[0] = presetFn(width);
+            }
+            drawGrid();
+        }
+
+        function startSimulation() {
+            if (isRunning) return;
+            isRunning = true;
+            document.getElementById('startBtn').disabled = true;
+            document.getElementById('stopBtn').disabled = false;
+            animate();
+        }
+
+        function stopSimulation() {
+            if (!isRunning) return;
+            isRunning = false;
+            document.getElementById('startBtn').disabled = false;
+            document.getElementById('stopBtn').disabled = true;
+            if (animationId) clearTimeout(animationId);
+        }
+
+        function savePattern() {
+            const link = document.createElement('a');
+            link.download = 'cellular-automata-pattern.png';
+            link.href = canvas.toDataURL('image/png');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function nextGeneration() {
+            if (currentRow >= maxRows - 1) {
+                grid.shift();
+                grid.push(new Array(width).fill(0));
+                currentRow = maxRows - 1;
+            } else {
+                currentRow++;
+            }
+
+            for (let c = 0; c < width; c++) {
+                let left = (c === 0) ? 
+                    (boundary === 'periodic' ? grid[currentRow-1][width-1] : (boundary === 'black' ? 1 : 0)) : 
+                    grid[currentRow-1][c-1];
+
+                let center = grid[currentRow-1][c];
+
+                let right = (c === width-1) ? 
+                    (boundary === 'periodic' ? grid[currentRow-1][0] : (boundary === 'black' ? 1 : 0)) : 
+                    grid[currentRow-1][c+1];
+
+                let neighborhood = (left << 2) | (center << 1) | right;
+                grid[currentRow][c] = (rule >> neighborhood) & 1;
+            }
+        }
+
+        function animate() {
+            nextGeneration();
+            drawGrid();
+            if (isRunning) {
+                animationId = setTimeout(animate, speed);
+            }
+        }
+
+        window.onload = init;
+    </script>
+</body>
+</html>
