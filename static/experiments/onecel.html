@@ -408,7 +408,8 @@
         let animationId = null;
         let speed = 60; 
         let currentRow = 0;
-        let maxRows = 40; 
+        const minimumRows = 40;
+        let maxRows = minimumRows;
 
         // Drawing state variables
         let isDrawing = false;
@@ -527,6 +528,9 @@
         }
 
         function updateCanvasSize() {
+            // Keep smaller grids at their current height, but add rows once
+            // the grid would otherwise become wider than a 4:3 rectangle.
+            maxRows = Math.max(minimumRows, Math.ceil(width * 4 / 3));
             cellSize = Math.max(8, Math.min(20, 800 / width));
             canvas.width = width * cellSize;
             canvas.height = maxRows * cellSize;
