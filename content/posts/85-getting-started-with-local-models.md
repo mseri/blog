@@ -27,11 +27,16 @@ I am stubborn enough to compile it from sources with my custom flags, but you ca
 For this tutorial I am assuming some familiarity with the command line, so I'll leave it at that with the installation instructions. What matters is that, once installed, you can run an LLM with e.g.
 
 ```bash
-llama-server --hf-repo unsloth/gemma-4-E2B-it-qat-GGUF:UD-Q4_K_XL --spec-type draft-mtp --top-k 64 --temp 1.0 --ctx-size 32768 -ngl 0 --no-mmproj
+llama-server --hf-repo unsloth/gemma-4-E2B-it-qat-GGUF:UD-Q4_K_XL \
+  --top-k 64 --temp 1.0 --ctx-size 32768 \
+  --spec-type draft-mtp \
+  -ngl 0 --no-mmproj
 ```
 or
 ```bash
-llama-cli --hf-repo LiquidAI/LFM2.5-2.6B-GGUF:Q6_K --temp 0.1 --top-k 50 --repeat-penalty 1.1 --ctx-size 32768 -ngl 99
+llama-cli --hf-repo LiquidAI/LFM2.5-2.6B-GGUF:Q6_K \
+  --temp 0.1 --top-k 50 --repeat-penalty 1.1 --ctx-size 32768 \
+  -ngl 99
 ```
 
 Let's examine the commands above in detail, starting from the executables:
@@ -59,6 +64,8 @@ Both commands share a number of options:
 That's it... you are good to go. There is a lot more you can experiment with to optimize inference or run larger models that don't fit in memory, but I think the best way to get it right is to look at the help (which is not as helpful as it sounds!) and play around with the flags.
 
 Note that `llama-server` is able to switch models on the fly; in that case you should create an `ini` file with the presets for each model instead of directly specifying the model. It works fantastically well, but to avoid making this more complex than needed, I'll just [refer you to the documentation](https://github.com/ggml-org/llama.cpp/blob/master/docs/preset.md).
+
+![A screenshot Llama.cpp chat interface in the browser](/images/85-llama-server-ui.png)
 
 ## Which model to run?
 
@@ -138,6 +145,10 @@ To connect `pi` to your local models, you can either use the [`pi-llama`](https:
 where the `id` should match the models you want to use, and the `baseUrl` may need to have 8080 replaced by 9931 very soon.
 
 You are ready to go. Just remember to start `llama-server`, then launch `pi` with `nono` and ask it to read or write some markdown or HTML file and see what happens :)
+
+Beware: processing a not-so-long file can be unbeareably slow if you don't have a decent GPU...
+
+![Pi using the local Gemma4 E2B to summarize this post](/images/85-pi.png)
 
 ## Largish models on low-resource systems
 
