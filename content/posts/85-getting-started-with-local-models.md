@@ -3,7 +3,7 @@ title: "Getting started with local LLMs"
 date: 2026-09-03T23:32:31+02:00
 tags: [ai, tutorials, local models, llm]
 categories: ["Blog"]
-draft: true
+toc: true
 ---
 
 I was discussing options to run LLMs locally, also on low-resource systems, with a colleague today. He was looking into installing OpenClaw or something similar, making me jump out of my chair to warn him.
@@ -20,7 +20,7 @@ Unless you know what you are doing, properly sandboxing the thing and keeping it
 
 ## Running local models
 
-If you look back at my post history, you see that I started with "visual" ways, ending up using AI Studio for a little bit. While it provides a simple way to run LLMs, on my constrained systems it ended up not being flexible enough and needlessly wasting resources. It is quite a while at this point that I stopped all of this and ended up using directly the engine at the core of all those products: [llama.cpp](https://llama.app/)
+If you look back at my post history, you see that I started with "visual" ways, ending up using AI Studio for a little bit (had I started now, I would have probably ended up with [Unsloth Desktop](https://unsloth.ai/docs/desktop)). While it provides a simple way to run LLMs, on my constrained systems it ended up not being flexible enough and needlessly wasting resources. It is quite a while at this point that I stopped all of this and ended up using directly the engine at the core of all those products: [llama.cpp](https://llama.app/)
 
 I am stubborn enough to compile it from sources with my custom flags, but you can now use the installer on the page above (which also bundles a new handy single `llama` command) or you can manually download and run the executables of the latest release from <https://github.com/ggml-org/llama.cpp/releases>.
 
