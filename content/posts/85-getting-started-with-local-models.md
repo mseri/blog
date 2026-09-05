@@ -6,9 +6,9 @@ categories: ["Blog"]
 toc: true
 ---
 
-I was discussing options to run LLMs locally, also on low-resource systems, with a colleague today. He was looking into installing OpenClaw or something similar, making me jump out of my chair to warn him.
+I was discussing options for running LLMs locally, particularly on low-resource systems, with a colleague today. He was looking into installing OpenClaw or something similar, making me jump out of my chair to warn him.
 
-It made me think that it could be a good time to revise the topic here, also because at this point we have very small local models whose quality is comparable to or surpassing GPT-4o or Claude 3.5, and smallish ones that definitely surpass them!
+It made me think that it could be a good time to revisit the topic here, especially because we now have very small local models whose quality is comparable to or better than GPT-4o or Claude 3.5, as well as some smallish ones that definitely surpass them!
 
 ## Beware of the Claws
 
@@ -16,11 +16,11 @@ While famous for the marketing noise that it made at its release and for being a
 
 These AI agents are meant to take control of your computer and independently perform tasks that you assign to them remotely via Telegram, Discord, Slack or some other asynchronous messenger.
 
-Unless you know what you are doing, properly sandboxing the thing and keeping it away from machines or data you care about, this is a [recipe for disaster](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/). Below I will give you an alternative small harness that works well enough with local models, with a way to partially sandbox it, but before that let's see what is the lightest way to run local models (and still have a web interface).
+Unless you know what you are doing and properly sandbox the thing to keep it away from machines and data you care about, this is a [recipe for disaster](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/). Below I will give you an alternative small harness that works well enough with local models, with a way to partially sandbox it, but before that let's see what is the lightest way to run local models (and still have a web interface).
 
 ## Running local models
 
-If you look back at my post history, you see that I started with "visual" ways, ending up using AI Studio for a little bit (had I started now, I would have probably ended up with [Unsloth Desktop](https://unsloth.ai/docs/desktop)). While it provides a simple way to run LLMs, on my constrained systems it ended up not being flexible enough and needlessly wasting resources. It is quite a while at this point that I stopped all of this and ended up using directly the engine at the core of all those products: [llama.cpp](https://llama.app/)
+If you look back at my post history, you see that I started with "visual" solutions, ending up using AI Studio for a little bit (had I started now, I would have probably ended up with [Unsloth Desktop](https://unsloth.ai/docs/desktop)). While it provides a simple way to run LLMs, on my constrained systems it ended up not being flexible enough and needlessly wasting resources. It is quite a while at this point that I stopped all of this and ended up using directly the engine at the core of all those products: [llama.cpp](https://llama.app/)
 
 I am stubborn enough to compile it from sources with my custom flags, but you can now use the installer on the page above (which also bundles a new handy single `llama` command) or you can manually download and run the executables of the latest release from <https://github.com/ggml-org/llama.cpp/releases>.
 
@@ -41,7 +41,7 @@ llama-cli --hf-repo LiquidAI/LFM2.5-2.6B-GGUF:Q6_K \
 
 Let's examine the commands above in detail, starting from the executables:
 
-- `llama-server` starts an OpenAI-compatible server on your computer, exposing a nice html interface for you to use as a local ChatGPT-like chat, accessible at <http://localhost:8080> by default (in the near future this will change to <http://localhost:9931>). This is what you need if you want to use some coding agent or if you are writing your llm-aware scripts (the API is reachable at <http://localhost:8080/v1>)
+- `llama-server` starts an OpenAI-compatible server on your computer, exposing a nice HTML interface for you to use as a local ChatGPT-like chat, accessible at <http://localhost:8080> by default (in the near future this will change to <http://localhost:9931>). This is what you need if you want to use some coding agent or if you are writing your LLM-aware scripts (the API is reachable at <http://localhost:8080/v1>)
 
 - `llama-cli` is a chat-like command line interface; use it only if you are in a terminal, need to make simple experiments, and want to avoid opening a browser.
 
@@ -55,9 +55,9 @@ Both commands share a number of options:
 
 - `--spec-type draft-mtp`: some models, like Qwen or Gemma, have speculative decoders that help speed them up. If you want to know more, look up ngram, MTP, or DSpark; otherwise just try the line above, see if it works, and if the speed improves (you only see improvements with good enough GPUs though).
 
-- `--ctx-size 32768`: this is the model context; in some sense it indicates how much it remembers of the chat. The default is 4096. If you don't need a long chat, keep the default since the longer the context the more additional memory you will need. While the context generally uses 32 bits for its storage, you can reduce this by playing with the `-ctv` and `-ctk` parameters. In many cases setting them both to `q8_0` cuts the amount of memory required for the context by a factor of 4 at a negligible cost, but small models can be a bit sensitive to this. You'll need some trial and error.
+- `--ctx-size 32768`: this is the model context; in some sense, it indicates how much it remembers of the chat. The default is 4096. If you don't need a long chat, keep the default since the longer the context the more additional memory you will need. While the context generally uses 32 bits for its storage, you can reduce this by playing with the `-ctv` and `-ctk` parameters. In many cases setting them both to `q8_0` cuts the amount of memory required for the context by a factor of 4 at a negligible cost, but small models can be a bit sensitive to this. You'll need some trial and error.
 
-- `--no-mmproj`: Gemma4 E2B can also read images and audio (up to 30s); this is done using an additional small "model" saved in an mmproj file. This flag says: save the memory, I only need to operate on text. Drop it if you want to pass images or sounds to the model (provided that the model supports it, of course).
+- `--no-mmproj`: Gemma4 E2B can also read images and audio (up to 30s); this is done using an additional small "model" saved in an mmproj file. This flag says: save the memory, I only need to operate on text. Drop it if you want to pass images or audio to the model (provided that the model supports it, of course).
 
 - `-ngl 99`: how many layers of the model need to be offloaded to the GPU. With 0 the model runs fully on CPU, while with 99 or 999 any small model will be fully loaded on GPU. It is not necessarily faster; for instance, using my laptop's GPU slows down inference a lot, while on my Mac mini it improves substantially.
 
@@ -71,17 +71,17 @@ Note that `llama-server` is able to switch models on the fly; in that case you s
 
 As a rule of thumb, you need a model that is a lot smaller than your RAM since it needs to be able to store simultaneously the (active part of the) model, its context (yes, all your messages and responses are going to take lots of space), and the rest of your running software.
 
-I already gave away two remarkable small models above. [Gemma4 E2B](https://huggingface.co/unsloth/gemma-4-E2B-it-qat-GGUF) is quite good with text (translation, summarization, manipulation of sentences, multilingual use, etc.) plus it is the only one in this list that also supports audio and video processing (not generation!). And [LFM2.5 2.6B](https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF) is quite good with tool use and information retrieval. Both are very small and can run on a laptop with 8 GB of RAM, being fast even without a GPU. Now, don't get me wrong, these are _small_ models, so _you must very carefully review their output, prompt them very precisely if you want them to do anything useful, and use them only for tasks they are stronger at_, but they surely punch above their weight in their niches.
+I already gave away two remarkable small models above. [Gemma4 E2B](https://huggingface.co/unsloth/gemma-4-E2B-it-qat-GGUF) is quite good with text (translation, summarization, sentence manipulation, multilingual use, etc.) and is the only one in this list that also supports audio and video processing (not generation!). And [LFM2.5 2.6B](https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF) is quite good with tool use and information retrieval. Both are very small and can run on a laptop with 8 GB of RAM, and can be fast even without a GPU. Now, don't get me wrong, these are _small_ models, so _you must very carefully review their output, prompt them very precisely if you want them to do anything useful, and use them only for tasks they are stronger at_, but they surely punch above their weight in their niches.
 
 If you have 16 GB of RAM you could also try [Gemma4 E4B](https://huggingface.co/unsloth/gemma-4-E4B-it-qat-GGUF), with a noticeable quality improvement, or even [Gemma4 26B A4B](https://huggingface.co/unsloth/gemma-4-26B-A4B-it-qat-GGUF). This last one is a lot larger, but since it only effectively needs to load 4B weights at a time, it can also run on less powerful and memory-constrained machines (don't expect it to be fast!).
 
 The small models above are not really good at coding tasks. For those, in a resource-constrained environment, you could try [Qwen3.5-4B](https://huggingface.co/unsloth/Qwen3.5-4B-MTP-GGUF) (I'd go with `unsloth/Qwen3.5-4B-MTP-GGUF:UD-Q4_K_XL`). It is small but punches well above its weight, also on tool calling, and runs quite fast.
 
-There are many other interesting models out there, each with their strengths and weaknesses. IBM's [Granite 4](https://huggingface.co/ibm-granite) are very malleable for example, Mistral's [Ministral](https://huggingface.co/collections/mistralai/ministral-3) seem to perform better than the others when using other European languages, NVIDIA Nemotron models tend to also be quite good (but there is no recent small enough release), there are pretty decent very small OCR models when `tesseract` fails, and so on. Depending on what you need, different more specialized models may be better choices. The only way to find out is to look around on <https://huggingface.co> and try them out.
+There are many other interesting models out there, each with their strengths and weaknesses. IBM's [Granite 4](https://huggingface.co/ibm-granite) models are very malleable, for example, while Mistral's [Ministral](https://huggingface.co/collections/mistralai/ministral-3) models seem to perform better than the others when using other European languages, NVIDIA Nemotron models tend to also be quite good (but there is no recent small enough release), there are pretty decent very small OCR models when `tesseract` fails, and so on. Depending on what you need, different more specialized models may be better choices. The only way to find out is to look around on <https://huggingface.co> and try them out.
 
-_Remember to look on the model page what are the recommended inference settings (usually `temperature`, `top-p` or `top-k`, and `repeat-penalty`), using different settings may help (depending on what you need) but for some models it makes them practically unusable._
+_Remember to check the model page for the recommended inference settings (usually `temperature`, `top-p` or `top-k`, and `repeat-penalty`), using different settings may help (depending on what you need) but for some models it makes them practically unusable._
 
-There is also a lot of crap around, as a rule of thumb if benchmarks look too good and the models are trained by unknown entities, they are probably not worth your time.
+There is also a lot of crap around. As a rule of thumb, if benchmarks look too good and the models are trained by unknown entities, they are probably not worth your time.
 
 ## A note about audio
 
@@ -89,11 +89,11 @@ Now all these models, even the ones taking in multimedia input, are only going t
 
 If you would like something to read your text out loud, on constrained hardware the best option in my opinion is [kokoro](https://huggingface.co/hexgrad/Kokoro-82M); it is tiny, very fast, and quite decent for machine-generated audio. I don't know what is the best way of using it because I use my own tool: [kokoro-reader](https://github.com/mseri/kokoro-reader). There are many Text-To-Speech (TTS) models; you can search on Hugging Face for them too, but I think you would soon agree with me (or maybe prefer Pocket TTS).
 
-There is also another extremely useful family of LLMs: the Speech-To-Text (STT) ones. I used to dictate stuff to my phone while cycling, and it does a decent job at transcribing what I mean, but recent very small STT models have just become vastly superior (in some cases at a lot higher computational cost).
+There is also another extremely useful family of LLMs: the Speech-To-Text (STT) ones. I used to dictate stuff to my phone while cycling, and it does a decent job of transcribing what I mean, but recent very small STT models have just become vastly superior (in some cases at a much higher computational cost though).
 
 Many people know Whisper by OpenAI. I don't use that. Unless you use the very large one, it is slow and cumbersome and not that good. My first eye-opener was NVIDIA Parakeet, a lot faster for the same quality. But what really changed the game for me was [Qwen3-ASR](https://github.com/QwenLM/Qwen3-ASR). I am running it with [my fork of a C implementation by Antirez](https://github.com/mseri/qwen-asr). In fact, even the small model is astonishingly good, multilingual, and does an ok job also at translating on the fly (all local!).
 
-For English-only, IBM has released [Granite Speech 5.0](https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc) which is also very small and exceptionally fast. It can easily do faster than real-time translation on my old laptop. This I run with my own C engine, not yet released. Once I have time to polish it, it will appear on my GitHub page.
+For English-only, IBM has released [Granite Speech 5.0](https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc) which is also very small and exceptionally fast. It can easily transcribe faster than real time on my old laptop. This I run with my own C engine, not yet released. Once I have time to polish it, it will appear on my GitHub page.
 
 In any case, most STT and TTS models can be run with the cousin of `llama.cpp`: [`audio.cpp`](https://github.com/0xShug0/audio.cpp). It also has a web interface and is very customizable but, not using it, the best I can do is point you directly at its README.
 
@@ -105,7 +105,7 @@ This is a chat, running in your terminal, and able to interact with your files. 
 
 Very easy to install and use if you have some familiarity with a terminal (and if not, you should probably not do it), but very much unsandboxed. While you can install a sandboxing plugin, I would avoid it and use the sandbox that comes with your OS via [`nono`](https://github.com/always-further/nono).
 
-This means that you should install both `nono` and `pi`, then run 
+This means that you should install both `nono` and `pi`, then run
 
 ```bash
 nono run --allow-cwd pi
@@ -146,14 +146,24 @@ where the `id` should match the models you want to use, and the `baseUrl` may ne
 
 You are ready to go. Just remember to start `llama-server`, then launch `pi` with `nono` and ask it to read or write some markdown or HTML file and see what happens :)
 
-Beware: processing a not-so-long file can be unbeareably slow if you don't have a decent GPU...
+Beware: processing a not-so-long file can be unbearably slow if you don't have a decent GPU...
 
 ![Pi using the local Gemma4 E2B to summarize this post](/images/85-pi.png)
 
 ## Largish models on low-resource systems
 
-We reached the end of this. Now many of the models above will not run on a machine with just 8 GB of RAM, unless you also have a GPU that can lend you some extra memory. This is a problem for recent Apple hardware if you, like me, are RAM poor.
+We reached the end of this. Now many of the models above will not run on a machine with just 8 GB of RAM, unless you also have a GPU that can lend you some extra memory. This is a problem for recent Apple hardware if you, like me, are RAM-poor.
 
 Turns out that you can still run pretty decent models at pretty decent speed, but you need to customize the engine to squeeze as much as possible from your hardware and to be smart in loading and unloading the model to disk. I supervised a vibecoding of my own thing [`zunzuncito`](https://github.com/mseri/zunzuncito) to run quantized Gemma-4 26B-A4B, LFM2.5-8B-A1B, Maple-preview 20B-A1B and Ling-3.0-tiny on my limited hardware.
 
-I only tested it on Intel and ARM macOS, and there it works like a charm. It should work also on Linux (CPU only), but it is only usable if you have a decent enough CPU (a 10-year-old i7 works more than well) and a fast SSD. Not worth even trying otherwise. I dropped it here in case, like me, you are resigned to wait for the bubble to burst until you can buy more modern hardware...
+I only tested it on Intel and ARM macOS, and there it works like a charm. It should work also on Linux (CPU only), but it is only usable if you have a decent enough CPU (a 10-year-old i7 works very well) and a fast SSD. Not worth even trying otherwise. I dropped it here in case, like me, you are resigned to wait for the bubble to burst until you can buy more modern hardware...
+
+## Update (Artificial Intelligence Index on 5 September 2026)
+
+In response to this post, someone pointed me to the [Small Models page](https://artificialanalysis.ai/models/open-source/small?models=gemma-4-26b-a4b%2Cqwen3-5-9b%2Cqwen3-5-4b%2Cgemma-4-12b%2Cgemma-4-e4b%2Cgemma-4-e2b%2Cgranite-4-2-8b%2Cling-3-0-tiny%2Cministral-3-8b%2Clfm2-5-8b-a1b%2Cqwen3-5-9b-non-reasoning%2Cqwen3-5-4b-non-reasoning%2Cgemma-4-e4b-non-reasoning%2Cgemma-4-e2b-non-reasoning#artificial-analysis-intelligence-index) of the Artificial Intelligence Index, and especially to the performance of the recent [Ling 3.0 Tiny](https://huggingface.co/inclusionAI/Ling-3.0-tiny-GGUF) (~8B parameters, of which 1.3B are active at a time). I tweaked the AA Index graph to include all sufficiently small models from the list above (and more). Sadly, LFM2.5 2.6B is not there, I bet it would not score badly.
+
+![Bar chart titled "Artificial Analysis Intelligence Index" displaying scores of AI models: Gemma 4 26B A4B (19), Ling 3.0 Tiny (16), Gemma 4 12B (16), Qwen3.5 9B (15), Qwen3.5 9B (Non-reasoning) (14), Granite 4.2 8B (14), Qwen3.5 4B (14), Qwen3.5 4B (Non-reasoning) (10), Gemma 4 4B (6), Gemma 4 2B (4), Mistral 3.8B (3), Gemma 4 2B (Non-reasoning) (3), LFM2.5-8B-A1B (3), and Gemma 4 2B (Non-reasoning) (1). Obtained on September 5, 2026](/images/85-aai-20260905.png)
+
+Always take these benchmarks with a grain of salt, especially the aggregated value above for small models, since it is an average of different types of capabilities. But if you open the page linked above and look at the tests that were run, you can get a rough idea of what each model can do well and what you should avoid.
+
+As for Ling 3.0 Tiny, I added it to `zunzuncito` out of curiosity but have not had time to try it out, so I cannot say much from direct experience. From what I could read online, it works remarkably well for agentic tasks (for example, when used as a model inside `pi`) and is really fast, but it is not as strong in terms of multilingual capabilities or prose.
