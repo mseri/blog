@@ -27,7 +27,9 @@ And in all of this I have not mentioned the threats. Quoting from the PDF:
 >   
 > [...] “If you don’t want me to be nice, then I don’t have to be nice.”
 
-Of course, this is not an isolated fact. Just in March, Math, Inc. abused the collaboration to complete the formalization of the Sphere Packing problem (cf. [Avigad's summary](https://arxiv.org/pdf/2603.03684) or this watered down version by [Spectrum](https://spectrum.ieee.org/ai-proof-verification)). Just a few days ago Anthropic did something similar with the [formalization of Fermat's Last Theorem](https://www.anthropic.com/research/formalizing-fermats-last-theorem), although I have to admit that they did it with a much lower level of overall shittiness.
+Nor the fact that in their first published draft, OpenAI (or should I say their agent swarm?) [had not cited the main research the work was building upon](https://mathstodon.xyz/@highergeometer/117241589729286509).
+
+Of course, this is not an isolated fact. On the one hand, not citing their sources is [kind of a common pattern in these announcements](https://www.scientificamerican.com/article/openais-latest-math-breakthroughs-commit-research-misconduct-experts-say/), only rectified after the community got riled up. On the other, social misconduct has also been the order of the day. Just in March, Math, Inc. abused the collaboration to complete the formalization of the Sphere Packing problem (cf. [Avigad's summary](https://arxiv.org/pdf/2603.03684) or this watered-down version by [Spectrum](https://spectrum.ieee.org/ai-proof-verification)). Just a few days ago Anthropic did something similar with the [formalization of Fermat's Last Theorem](https://www.anthropic.com/research/formalizing-fermats-last-theorem), although I have to admit that they did it with a much lower level of overall shittiness.
 
 I think the response by [Kevin Buzzard](https://xenaproject.wordpress.com/2026/09/04/flt-anthropic-has-beaten-me-to-it/) makes the point quite clearly, but let me lightly elaborate here.
 
