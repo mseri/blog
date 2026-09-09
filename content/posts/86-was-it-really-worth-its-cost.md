@@ -1,5 +1,5 @@
 ---
-title: "86 Was It Really Worth Its Cost"
+title: "Was It Really Worth Its Cost?"
 date: 2026-09-09T08:59:37+02:00
 tags: [mathematics, philosophy, ai, ethics]
 categories: ["Blog"]
@@ -7,17 +7,17 @@ categories: ["Blog"]
 
 The announcement of the resolution of one of Clay's math millennium problems is spreading all over the news, mostly based on the [official announcement by OpenAI](https://openai.com/index/navier-stokes-solution/).
 
-However, many of articles I have seen so far have been underplaying the shady side of this story. A few hours before the announcement, a professor from NYU involved in an alternative proof of part of the problem has published an astonishing statement. Since it is short and and I think makes a clear picture of what has happened, before going on have a read: <https://cims.nyu.edu/~tristanb/statement.pdf>. It is going to be important to understand what I am talking about.
+However, many of the articles I have seen so far have been underplaying the shady side of this story. A few hours before the announcement, a professor from NYU involved in an alternative proof of part of the problem published an astonishing statement. Since it is short and, I think, provides a clear picture of what happened, before going on, have a read: <https://cims.nyu.edu/~tristanb/statement.pdf>. It is going to be important to understand what I am talking about.
 
 I am a mathematician, so somewhat emotionally connected to all of this. If you prefer a shorter, more detached but reasonably balanced breakdown of this story, I think Simon Willison's [post](https://simonwillison.net/2026/Sep/8/on-navier-stokes/) does a good job. Otherwise, read on!
 
 - - -
 
-I am now assuming you have read the statement. I should probably not be surprised, given the repeated scandals around OpenAI, yet it puzzles me how much unethical and bullying behaviour can be packed in a single story. And it upsets me knowing that there won't be any ripercussions for OpenAI and, if anything, this will attract even more customers...
+I am now assuming you have read the statement. I should probably not be surprised, given the repeated scandals around OpenAI, yet it puzzles me how much unethical and bullying behaviour can be packed in a single story. And it upsets me knowing that there won't be any repercussions for OpenAI and, if anything, this will attract even more customers...
 
-First of all, even if the suspicions on training on the researchers material are unfounded, the choice to jump on solving the problem immediately after hearing the rumor of someone else's progress and throwing such an enormous amount of resources (more on this later) goes pretty much against any of the common practices of respect and collaboration in the mathematical community. Of course there may be competition here and there, but at least this tends to be fair and more or less evenly-resourced.
+First of all, even if the suspicions about training on the researchers' material are unfounded, the choice to jump on solving the problem immediately after hearing the rumor of someone else's progress and throwing such an enormous amount of resources at it (more on this later) goes pretty much against any of the common practices of respect and collaboration in the mathematical community. Of course there may be competition here and there, but at least this tends to be fair and more or less evenly-resourced.
 
-Secondly, but not less relevant, asking to stop crediting a direct collaborator because he works with a competitor (Anthropic) is pretty shitty, notwistanding the fact that he worked on this project outside his regular job, and used a mix of models from both companies.
+Secondly, but not less relevant, asking to stop crediting a direct collaborator because he works with a competitor (Anthropic) is pretty shitty, notwithstanding the fact that he worked on this project outside his regular job, and used a mix of models from both companies.
 
 And in all of this I have not mentioned the threats. Quoting from the PDF:
 
@@ -27,22 +27,22 @@ And in all of this I have not mentioned the threats. Quoting from the PDF:
 >   
 > [...] “If you don’t want me to be nice, then I don’t have to be nice.”
 
-Of course, this is not an isolated fact. Just in March Math, Inc. abused the collaboration to complete the formalization of the Sphere Packing problem (cf. [Avigad's summary](https://arxiv.org/pdf/2603.03684) or this watered down version by [Spectrum](https://spectrum.ieee.org/ai-proof-verification)). Just a few days ago Anthropic did something similar with the [formalization of Fermat's Last Theorem](https://www.anthropic.com/research/formalizing-fermats-last-theorem), although I have to admit that they did it with a much lower level of overall shittiness.
+Of course, this is not an isolated fact. Just in March, Math, Inc. abused the collaboration to complete the formalization of the Sphere Packing problem (cf. [Avigad's summary](https://arxiv.org/pdf/2603.03684) or this watered down version by [Spectrum](https://spectrum.ieee.org/ai-proof-verification)). Just a few days ago Anthropic did something similar with the [formalization of Fermat's Last Theorem](https://www.anthropic.com/research/formalizing-fermats-last-theorem), although I have to admit that they did it with a much lower level of overall shittiness.
 
 I think the response by [Kevin Buzzard](https://xenaproject.wordpress.com/2026/09/04/flt-anthropic-has-beaten-me-to-it/) makes the point quite clearly, but let me lightly elaborate here.
 
 Everyone in adjacent communities knew about Buzzard's effort and ongoing work on the formalization, and clearly also Anthropic did. So what was dumping a full unrevised formalization useful for, if not just marketing?
 
-The main outcome of their efforts has been diminishing the value of the ongoing work and hurting the morale of all the researchers and students involved, in a way that again goes against many of our common practices of respect and collaboration. And also in this case, I am sure there has been no consequence, and if anything it has helped for publicity and to attract new customers.
+The main outcome of their efforts has been diminishing the value of the ongoing work and hurting the morale of all the researchers and students involved, in a way that again goes against many of our common practices of respect and collaboration. And also in this case, I am sure there have been no consequences, and if anything it has helped for publicity and to attract new customers.
 
-This is not to say that shitty things never happened in the mathematical community, far from it, but the scale now (and the resource disparity) is very different. And honestly there is no benefit for anyone (except huge corporations): it won't help progressing mathematics and it does not help the development of knowledge and understanding, which is the main reason we do mathematics after all.
+This is not to say that shitty things never happened in the mathematical community, far from it, but the scale now (and the resource disparity) is very different. And honestly there is no benefit for anyone (except huge corporations): it won't help advance mathematics and it does not help the development of knowledge and understanding, which is the main reason we do mathematics after all.
 
 As most of our students know and I have repeatedly written in this blog, understanding comes from the struggle and the first-hand work that we put in. If we remove this from the picture, knowledge and the opportunity to seek new interesting problems and ideas will start stagnating, to the detriment of the whole community. Given the sheer amount of applications mathematics finds "after the fact", this will end up being a loss for everyone.
 
-So, was it worth spending 300 000\$ on autoformalizing FLT? And even more so, was it worth wasting [15 000 000\$](https://simonwillison.net/2026/Sep/8/on-navier-stokes/) to [22 000 000\$](https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/) to stealing the light from the actual researchers having done the hard work?
-And note that these numbers do not include the team that has overseen the work, nor the unnecessary environmental impact of maintaining a swarm of over 10 000 agents with your most expensive models active for days.
+So, was it worth spending $300,000 on autoformalizing FLT? And even more so, was it worth wasting [$15,000,000](https://simonwillison.net/2026/Sep/8/on-navier-stokes/) to [$22,000,000](https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/) to steal the spotlight from the actual researchers who did the hard work?
+And note that these numbers do not include the team that oversaw the work, nor the unnecessary environmental impact of maintaining a swarm of over 10,000 agents with your most expensive models active for days.
 
-I can hypocritically buy into seeing these large language models as potentially useful tools, although one has to be mindful to the actual use [since many of the tasks one offloads are the ones that can help train new generations of researchers](https://arxiv.org/pdf/2602.10181).
+I can hypocritically buy into seeing these large language models as potentially useful tools, although one has to be mindful of the actual use [since many of the tasks one offloads are the ones that can help train new generations of researchers](https://arxiv.org/pdf/2602.10181).
 But this continuous marketing abuse has become asphyxiating.
 
 Tonight Tao had an [interesting observation on this](https://mathstodon.xyz/@tao/117237320796901560):
@@ -53,7 +53,7 @@ Tonight Tao had an [interesting observation on this](https://mathstodon.xyz/@tao
 >  
 > We have now seen that even the rumor of someone working on a problem can trigger a massive amount of AI-powered effort to flatten it before the original research project has time to reach its full potential.  The incentives may now be pointing in the direction of no longer sharing any promising research directions with the broader community, which would reverse centuries of traditions of open science and do serious long-term damage to the future of the field. [...]
 
-Sadly I am startomg seeing this rhetoric against open sharing growing in many places.
+Sadly, I am starting to see this rhetoric against open sharing growing in many places.
 
 I guess all of these stories are resurfacing old worries on intelligent machines. On a lost Hacker News page, someone was quoting "Jokester", a short story written by Isaac Asimov in 1956:
 
@@ -61,10 +61,10 @@ I guess all of these stories are resurfacing old worries on intelligent machines
 
 When I was reading the above, a recent post by Anil Madhavapeddy came to mind: [Just a rumour of a bug is enough to find a security exploit these days](https://anil.recoil.org/notes/rumour-is-the-exploit). His words are pretty much explicitly reflected in Tao's reaction, in a perhaps less dangerous context.
 
-It makes me sad, to think at the impact this is going have on the perception of mathematics.
+It makes me sad to think about the impact this is going to have on the perception of mathematics.
 I started this post mentioning that most articles I saw are pretty much ignoring the ethical wrongdoings of OpenAI and are buying into the hype without any attempt to contextualize the value of it. The more we keep leaving these corporations barely accountable, the more power we are granting them, and the more damage we are allowing them to do to our societies.
 
-As for what concerns mathematics, I like they way Francis Su put it for his students just a few weeks ago: [The Enduring Value of Math, in an Age of AI](https://francissu.substack.com/p/the-enduring-value-of-math-in-an)
+As for what concerns mathematics, I like the way Francis Su put it for his students just a few weeks ago: [The Enduring Value of Math, in an Age of AI](https://francissu.substack.com/p/the-enduring-value-of-math-in-an)
 
 > [...]  
 > Maybe you’re asking questions like these:  
@@ -82,6 +82,6 @@ As for what concerns mathematics, I like they way Francis Su put it for his stud
 >   
 > In a math education, you develop into creative and flexible mathematical thinkers who have the confidence to attack problems you’ve never seen before. That’s a virtue—a character quality—built by a great math education. You learn to sit with hard problems for a long time and possibly get nowhere with them. That disposition serves you well when you encounter other hard (non-mathematical) problems in your life, so that when the going gets tough, your past experience with math teaches you how to say to yourself: it’s okay if I don’t know what to do right away, but if I persist in brainstorming even when it seems hopeless, I just might see my way out of this. [...]  
 
-It is a very elaborate post, don't leave it at my surgery above but take time to read it all and digest it.
+It is a very elaborate post, don't stop at my excerpt above, but take the time to read it all and digest it.
 
-From my personal experience, I can see how this formation has shaped my life and how it helped me also when I had left the academic world. So I cannot but agree with his conclusions.
+From my personal experience, I can see how this formation has shaped my life and how it helped me even after I left the academic world. So I cannot but agree with his conclusions.
