@@ -101,7 +101,8 @@ In any case, most STT and TTS models can be run with the cousin of `llama.cpp`: 
 
 While you can in principle enable tool use directly in `llama.cpp` server, this is a security nightmare, and with small models you should not be surprised if they suddenly screw up your computer by mistake. You should either learn about MCP and enable specific (hopefully sandboxed) ones, for instance to allow web search, or try a small and simple coding harness.
 
-This is a chat, running in your terminal, and able to interact with your files. Since you will likely have very little context available for your models, you want to get one that wastes as few tokens as possible. I would recommend using [`pi`](https://pi.dev/).
+This is a chat, running in your terminal, and able to interact with your files. 
+Since you will likely have very little context available and rather constrained computing power for your models, you want to get one that wastes as few tokens as possible. I would recommend using [`pi`](https://pi.dev/) or another very barebones tool like [`kon`](https://github.com/0xku/kon) or [`hax`](https://usehax.dev), the latter supporting `llama-server` out of the box. The guide below is written for `pi` but applies pretty much to all of them.
 
 Very easy to install and use if you have some familiarity with a terminal (and if not, you should probably not do it), but very much unsandboxed. While you can install a sandboxing plugin, I would avoid it and use the sandbox that comes with your OS via [`nono`](https://github.com/always-further/nono).
 
@@ -146,7 +147,7 @@ where the `id` should match the models you want to use, and the `baseUrl` may ne
 
 You are ready to go. Just remember to start `llama-server`, then launch `pi` with `nono` and ask it to read or write some markdown or HTML file and see what happens :)
 
-Beware: processing a not-so-long file can be unbearably slow if you don't have a decent GPU...
+Beware: processing a not-so-long file can be unbearably slow if you don't have a decent GPU...  Try one of the other mentioned options in that case, or call `pi --offline --no-extensions --no-skills --no-prompt-templates -nc -nt --thinking low --system-prompt "custom-purpose system/role prompt"` (a good way to use it purely for chat, though you lose tool access).
 
 ![Pi using the local Gemma4 E2B to summarize this post](/images/85-pi.png)
 
