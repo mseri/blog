@@ -77,7 +77,7 @@
             letter-spacing: 0.5px;
         }
 
-        select, input[type="number"] {
+        select, input[type="number"], .color-picker input[type="text"] {
             padding: 10px 12px;
             border: 1px solid #cbd5e1;
             border-radius: 6px;
@@ -176,6 +176,165 @@
             touch-action: none;
             -webkit-user-select: none;
             user-select: none;
+        }
+
+        .grid-size {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            width: 100%;
+        }
+
+        .grid-size input {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .grid-size-separator {
+            color: var(--text-light);
+            font-weight: 600;
+        }
+
+        /* In-page picker: the native colour input hands off to the macOS
+           system colour panel, which takes a noticeable moment to appear. */
+        .color-picker {
+            position: relative;
+        }
+
+        .color-button {
+            display: block;
+            width: 100%;
+            min-width: 120px;
+            border: 4px solid var(--surface);
+            outline: 1px solid #cbd5e1;
+        }
+
+        .color-button:hover:not(:disabled) {
+            transform: none;
+            filter: none;
+        }
+
+        .color-popover {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            z-index: 10;
+            width: 220px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .color-popover[hidden] {
+            display: none;
+        }
+
+        .sv-area {
+            position: relative;
+            height: 140px;
+            border-radius: 4px;
+            background-image:
+                linear-gradient(to top, #000, transparent),
+                linear-gradient(to right, #fff, transparent);
+            cursor: crosshair;
+            touch-action: none;
+        }
+
+        .sv-thumb {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            margin: -8px 0 0 -8px;
+            border: 2px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.5);
+            pointer-events: none;
+        }
+
+        .hue-slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 14px;
+            margin: 0;
+            border-radius: 7px;
+            background: linear-gradient(to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+            cursor: pointer;
+        }
+
+        .hue-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            border: 2px solid white;
+            border-radius: 50%;
+            background: transparent;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.5);
+        }
+
+        .hue-slider::-moz-range-thumb {
+            width: 14px;
+            height: 14px;
+            border: 2px solid white;
+            border-radius: 50%;
+            background: transparent;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.5);
+        }
+
+        .color-picker input[type="text"] {
+            min-height: 36px;
+            padding: 6px 10px;
+            font-family: ui-monospace, Menlo, monospace;
+            cursor: text;
+        }
+
+        .save-row {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        .rule-details {
+            margin: 20px 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: #f8f9fa;
+        }
+
+        .rule-details > summary {
+            list-style: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            font-weight: 600;
+            font-size: 0.85em;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-height: 44px;
+            box-sizing: border-box;
+        }
+
+        .rule-details > summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .rule-details > summary::before {
+            content: '▸';
+            color: var(--primary);
+            font-size: 1.1em;
+            transition: transform 0.2s;
+        }
+
+        .rule-details[open] > summary::before {
+            transform: rotate(90deg);
         }
 
         .rule-visualization {
@@ -299,6 +458,10 @@
             button {
                 width: 100%;
             }
+            .save-row button {
+                width: auto;
+                min-width: 60%;
+            }
         }
     </style>
 </head>
@@ -308,8 +471,12 @@
         
         <div class="controls-row">
             <div class="control-group">
-                <label for="width">Grid Width:</label>
-                <input type="number" id="width" min="10" max="300" value="75">
+                <label for="width">Grid:</label>
+                <div class="grid-size">
+                    <input type="number" id="width" min="10" max="300" value="75" aria-label="Grid width">
+                    <span class="grid-size-separator">×</span>
+                    <input type="number" id="height" min="10" max="4096" value="100" aria-label="Grid height">
+                </div>
             </div>
             
             <div class="control-group">
@@ -336,9 +503,24 @@
                     <option value="black">Always Black</option>
                 </select>
             </div>
+
+            <div class="control-group">
+                <label for="colorButton">Color:</label>
+                <div class="color-picker">
+                    <button type="button" class="color-button" id="colorButton" aria-haspopup="dialog" aria-expanded="false" aria-controls="colorPopover" aria-label="Choose cell color"></button>
+                    <div class="color-popover" id="colorPopover" role="dialog" aria-label="Cell color" hidden>
+                        <div class="sv-area" id="svArea"><div class="sv-thumb" id="svThumb"></div></div>
+                        <input type="range" class="hue-slider" id="hueSlider" min="0" max="359" value="0" aria-label="Hue">
+                        <input type="text" id="cellColor" value="#1e293b" maxlength="7" spellcheck="false" autocomplete="off" aria-label="Hex color">
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="rule-visualization" id="ruleVisualization"></div>
+        <details class="rule-details" id="ruleDetails">
+            <summary>Rule breakdown</summary>
+            <div class="rule-visualization" id="ruleVisualization"></div>
+        </details>
         
         <div class="controls-row" style="background: transparent; border: none; padding: 0;">
             <div class="control-group" style="flex: 1;">
@@ -354,25 +536,26 @@
                         <option value="two-cells">Two Cells</option>
                         <option value="three-cells">Three Cells</option>
                     </select>
-                    <div class="button-group">
-                        <button class="danger" id="clearBtn">Clear</button>
-                    </div>
                 </div>
             </div>
             
             <div class="control-group" style="flex: 1; align-items: flex-end;">
                 <label>Simulation</label>
                 <div class="button-group">
-                    <button class="secondary" id="stepBtn">Step</button>
-                    <button id="startBtn">Play</button>
+                    <button class="success" id="startBtn">Play</button>
                     <button id="stopBtn" class="danger" disabled>Stop</button>
-                    <button class="success" id="saveBtn">Save Pattern</button>
+                    <button class="secondary" id="stepBtn">Step</button>
+                    <button class="danger" id="resetBtn">Reset</button>
                 </div>
             </div>
         </div>
-        
+
         <canvas id="gridCanvas"></canvas>
-        
+
+        <div class="save-row">
+            <button id="saveBtn">Save Pattern</button>
+        </div>
+
         <div class="info">
             <p><strong>Pro tip:</strong> Tap and drag on the highlighted top row to draw your custom starting sequence.</p>
         </div>
@@ -402,14 +585,17 @@
         let width = 75; 
         let cellSize = 12; 
         let rule = 30; 
-        let boundary = 'periodic'; 
-        let grid = []; 
+        let boundary = 'periodic';
+        let cellColor = '#1e293b'; // colour used for "black" cells everywhere
+        let grid = [];
+        let startRow = []; // the starting configuration, preserved across resets
         let isRunning = false;
         let animationId = null;
         let speed = 60; 
         let currentRow = 0;
         const minimumRows = 40;
         let maxRows = minimumRows;
+        let manualRows = null; // non-null once the user types a height
 
         // Drawing state variables
         let isDrawing = false;
@@ -453,12 +639,197 @@
         };
 
         function init() {
+            adoptRestoredControls();
             updateCanvasSize();
             createEmptyGrid();
             applyPreset('single');
             document.getElementById('preset').value = 'single';
             setupEventListeners();
             updateRuleVisualization();
+            setupRuleDisclosure();
+        }
+
+        // Browsers restore the form controls after a reload, so read the state
+        // back out of them instead of leaving the script on its defaults.
+        function adoptRestoredControls() {
+            const colorInput = document.getElementById('cellColor');
+            if (/^#[0-9a-f]{6}$/i.test(colorInput.value)) {
+                cellColor = darkenIfTooLight(colorInput.value.toLowerCase());
+            }
+            pickerHsv = hexToHsv(cellColor);
+            renderColorPicker();
+
+            const ruleSelect = document.getElementById('rule');
+            if (ruleSelect.value === 'custom') {
+                document.getElementById('customRuleGroup').style.display = 'flex';
+                rule = Math.max(0, Math.min(255, parseInt(document.getElementById('customRule').value) || 0));
+            } else {
+                rule = commonRules[ruleSelect.value];
+            }
+
+            boundary = document.getElementById('boundary').value;
+
+            const restoredWidth = parseInt(document.getElementById('width').value);
+            if (!isNaN(restoredWidth)) width = Math.max(10, Math.min(300, restoredWidth));
+            document.getElementById('width').value = width;
+
+            // Only treat the restored height as manual if it isn't what the
+            // width would have produced anyway, so auto-sizing keeps working.
+            const restoredHeight = parseInt(document.getElementById('height').value);
+            const autoHeight = Math.max(minimumRows, Math.ceil(width * 4 / 3));
+            if (!isNaN(restoredHeight) && restoredHeight !== autoHeight) {
+                manualRows = Math.max(10, Math.min(4096, restoredHeight));
+            }
+        }
+
+        // Keep the rule breakdown expanded only when the screen is wide enough
+        // for it to sit on a single row; collapse it otherwise so it doesn't
+        // push the grid off-screen on phones. A manual toggle wins from then on.
+        function setupRuleDisclosure() {
+            const details = document.getElementById('ruleDetails');
+            const wideEnough = window.matchMedia('(min-width: 820px)');
+            let userToggled = false;
+            let programmatic = false;
+
+            details.addEventListener('toggle', () => {
+                if (programmatic) programmatic = false;
+                else userToggled = true;
+            });
+
+            const sync = () => {
+                if (userToggled || details.open === wideEnough.matches) return;
+                programmatic = true;
+                details.open = wideEnough.matches;
+            };
+            sync();
+            wideEnough.addEventListener('change', () => {
+                userToggled = false;
+                sync();
+            });
+        }
+
+        // Cells must stay clearly visible against the white background, so any
+        // colour above this relative luminance gets scaled down until it fits.
+        const maxCellLuminance = 0.35;
+
+        function darkenIfTooLight(hex) {
+            const toLinear = v => (v <= 0.04045) ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
+            const toSrgb = v => (v <= 0.0031308) ? v * 12.92 : 1.055 * v ** (1 / 2.4) - 0.055;
+
+            const channels = [1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16) / 255);
+            const linear = channels.map(toLinear);
+            const luminance = 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2];
+
+            if (luminance <= maxCellLuminance) return hex;
+
+            const factor = maxCellLuminance / luminance;
+            const scaled = linear.map(v => Math.round(Math.min(1, toSrgb(v * factor)) * 255));
+            return '#' + scaled.map(v => v.toString(16).padStart(2, '0')).join('');
+        }
+
+        let pickerHsv = {h: 0, s: 0, v: 0};
+
+        function hexToHsv(hex) {
+            const [r, g, b] = [1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16) / 255);
+            const max = Math.max(r, g, b);
+            const delta = max - Math.min(r, g, b);
+            let h = 0;
+            if (delta > 0) {
+                if (max === r) h = ((g - b) / delta + 6) % 6;
+                else if (max === g) h = (b - r) / delta + 2;
+                else h = (r - g) / delta + 4;
+            }
+            return {h: h * 60, s: max === 0 ? 0 : delta / max, v: max};
+        }
+
+        function hsvToHex({h, s, v}) {
+            const f = n => {
+                const k = (n + h / 60) % 6;
+                return v - v * s * Math.max(0, Math.min(k, 4 - k, 1));
+            };
+            return '#' + [f(5), f(3), f(1)]
+                .map(c => Math.round(c * 255).toString(16).padStart(2, '0')).join('');
+        }
+
+        function renderColorPicker() {
+            document.getElementById('colorButton').style.backgroundColor = cellColor;
+            document.getElementById('svArea').style.backgroundColor = `hsl(${pickerHsv.h}, 100%, 50%)`;
+            const thumb = document.getElementById('svThumb');
+            thumb.style.left = `${pickerHsv.s * 100}%`;
+            thumb.style.top = `${(1 - pickerHsv.v) * 100}%`;
+            thumb.style.backgroundColor = cellColor;
+            document.getElementById('hueSlider').value = Math.round(pickerHsv.h);
+            const hexInput = document.getElementById('cellColor');
+            if (document.activeElement !== hexInput) hexInput.value = cellColor;
+        }
+
+        // The thumb follows the clamped colour, so dragging into the too-light
+        // corner visibly pins it to the darkest allowed shade.
+        function setCellColor(hex, hue = null) {
+            cellColor = darkenIfTooLight(hex);
+            pickerHsv = hexToHsv(cellColor);
+            if (hue !== null) pickerHsv.h = hue;
+            renderColorPicker();
+            updateRuleVisualization();
+            drawGrid();
+        }
+
+        function setupColorPicker() {
+            const button = document.getElementById('colorButton');
+            const popover = document.getElementById('colorPopover');
+            const svArea = document.getElementById('svArea');
+            const hueSlider = document.getElementById('hueSlider');
+            const hexInput = document.getElementById('cellColor');
+
+            const setOpen = open => {
+                popover.hidden = !open;
+                button.setAttribute('aria-expanded', String(open));
+            };
+
+            button.addEventListener('click', () => setOpen(popover.hidden));
+            document.addEventListener('pointerdown', e => {
+                if (!popover.hidden && !e.target.closest('.color-picker')) setOpen(false);
+            });
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape' && !popover.hidden) {
+                    setOpen(false);
+                    button.focus();
+                }
+            });
+
+            const pickAt = e => {
+                const rect = svArea.getBoundingClientRect();
+                const clamp = x => Math.max(0, Math.min(1, x));
+                const s = clamp((e.clientX - rect.left) / rect.width);
+                const v = 1 - clamp((e.clientY - rect.top) / rect.height);
+                setCellColor(hsvToHex({h: pickerHsv.h, s, v}), pickerHsv.h);
+            };
+            svArea.addEventListener('pointerdown', e => {
+                svArea.setPointerCapture(e.pointerId);
+                pickAt(e);
+            });
+            svArea.addEventListener('pointermove', e => {
+                if (svArea.hasPointerCapture(e.pointerId)) pickAt(e);
+            });
+
+            // Keep the saturation/brightness the user picked while the hue
+            // moves, rather than the clamped values, so sweeping the hue
+            // doesn't drift the thumb downwards.
+            let hueBase = null;
+            hueSlider.addEventListener('pointerdown', () => hueBase = {...pickerHsv});
+            hueSlider.addEventListener('input', () => {
+                const base = hueBase || pickerHsv;
+                const h = Number(hueSlider.value);
+                setCellColor(hsvToHex({h, s: base.s, v: base.v}), h);
+            });
+            hueSlider.addEventListener('change', () => hueBase = null);
+
+            hexInput.addEventListener('input', () => {
+                let value = hexInput.value.trim();
+                if (!value.startsWith('#')) value = '#' + value;
+                if (/^#[0-9a-f]{6}$/i.test(value)) setCellColor(value.toLowerCase());
+            });
+            hexInput.addEventListener('change', () => hexInput.value = cellColor);
         }
 
         function updateRuleVisualization() {
@@ -490,7 +861,7 @@
                 pattern.bits.forEach(bit => {
                     const square = document.createElement('div');
                     square.className = 'neighborhood-square';
-                    square.style.backgroundColor = bit ? '#1e293b' : 'white';
+                    square.style.backgroundColor = bit ? cellColor : 'white';
                     squaresDiv.appendChild(square);
                 });
 
@@ -500,7 +871,7 @@
 
                 const resultSquare = document.createElement('div');
                 resultSquare.className = 'result-square';
-                resultSquare.style.backgroundColor = resultBit ? '#1e293b' : 'white';
+                resultSquare.style.backgroundColor = resultBit ? cellColor : 'white';
 
                 const contributionDiv = document.createElement('div');
                 contributionDiv.className = 'rule-contribution';
@@ -530,7 +901,11 @@
         function updateCanvasSize() {
             // Keep smaller grids at their current height, but add rows once
             // the grid would otherwise become wider than a 4:3 rectangle.
-            maxRows = Math.max(minimumRows, Math.ceil(width * 4 / 3));
+            // A height typed by the user overrides that.
+            maxRows = manualRows !== null
+                ? manualRows
+                : Math.max(minimumRows, Math.ceil(width * 4 / 3));
+            document.getElementById('height').value = maxRows;
             cellSize = Math.max(8, Math.min(20, 800 / width));
             canvas.width = width * cellSize;
             canvas.height = maxRows * cellSize;
@@ -554,7 +929,7 @@
             }
 
             // Draw cells
-            ctx.fillStyle = '#1e293b';
+            ctx.fillStyle = cellColor;
             for (let r = 0; r < grid.length; r++) {
                 for (let c = 0; c < grid[r].length; c++) {
                     if (grid[r][c] === 1) {
@@ -595,6 +970,13 @@
                 document.getElementById('preset').value = 'single';
             });
 
+            document.getElementById('height').addEventListener('change', function() {
+                const rows = parseInt(this.value);
+                manualRows = isNaN(rows) ? null : Math.max(10, Math.min(4096, rows));
+                updateCanvasSize();
+                resetSimulation();
+            });
+
             document.getElementById('rule').addEventListener('change', function() {
                 if (this.value === 'custom') {
                     document.getElementById('customRuleGroup').style.display = 'flex';
@@ -614,17 +996,14 @@
 
             document.getElementById('boundary').addEventListener('change', e => boundary = e.target.value);
 
+            setupColorPicker();
+
             document.getElementById('preset').addEventListener('change', function() {
                 applyPreset(this.value);
             });
 
             // Button actions
-            document.getElementById('clearBtn').addEventListener('click', () => {
-                stopSimulation();
-                createEmptyGrid();
-                document.getElementById('preset').value = 'none';
-                drawGrid();
-            });
+            document.getElementById('resetBtn').addEventListener('click', resetSimulation);
 
             document.getElementById('startBtn').addEventListener('click', startSimulation);
             document.getElementById('stopBtn').addEventListener('click', stopSimulation);
@@ -676,8 +1055,13 @@
             const clientX = (e.touches && e.touches[0]) ? e.touches[0].clientX : e.clientX;
             const clientY = (e.touches && e.touches[0]) ? e.touches[0].clientY : e.clientY;
 
-            const col = Math.floor((clientX - rect.left) / cellSize);
-            const row = Math.floor((clientY - rect.top) / cellSize);
+            // The canvas is often displayed smaller than its backing store
+            // (max-width: 100%), so convert CSS pixels to canvas pixels first.
+            const scaleX = canvas.width / rect.width;
+            const scaleY = canvas.height / rect.height;
+
+            const col = Math.floor((clientX - rect.left) * scaleX / cellSize);
+            const row = Math.floor((clientY - rect.top) * scaleY / cellSize);
 
             // Only interact with the top row
             if (row === 0 && col >= 0 && col < width) {
@@ -708,6 +1092,8 @@
                     lastDrawnCol = col;
                     drawGrid();
                 }
+
+                startRow = [...grid[0]];
             }
         }
 
@@ -718,6 +1104,14 @@
             if (presetFn) {
                 grid[0] = presetFn(width);
             }
+            startRow = [...grid[0]];
+            drawGrid();
+        }
+
+        function resetSimulation() {
+            stopSimulation();
+            createEmptyGrid();
+            grid[0] = [...startRow];
             drawGrid();
         }
 
