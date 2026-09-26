@@ -1,7 +1,7 @@
 ---
 title: "Aimath or Not Aimath"
 date: 2026-09-24T11:03:12+02:00
-tags: [Mathematics, ai]
+tags: [mathematics, ai]
 categories: ["Blog"]
 ---
 
