@@ -75,7 +75,7 @@ A careful look at my wonderfully hand-drawn map of a neighbourhood of Groningen,
   width="100%"
 >}}
 
-As you can see from the picture, also in manhattan there are very few diagonals, large parks leading to large squares, and pretty much squares all over the place. And indeed, the geometry we just defined by bringing the kids to school is called [**Taxicab** or **Manhattan geometry**](Taxicab Geometry](https://en.wikipedia.org/wiki/Taxicab_geometry): a non-Euclidean geometry (i.e. the usual Pythagoras' theorem does not hold), where the distance between two points
+As you can see from the picture, also in manhattan there are very few diagonals, large parks leading to large squares, and pretty much squares all over the place. And indeed, the geometry we just defined by bringing the kids to school is called [**Taxicab** or **Manhattan geometry**](https://en.wikipedia.org/wiki/Taxicab_geometry): a non-Euclidean geometry (i.e. the usual Pythagoras' theorem does not hold), where the distance between two points
 
 $\overline{AB} = |x| + |y|$
 
